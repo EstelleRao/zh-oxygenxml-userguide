@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="direct_reuse_example">
+    <title>常见用法和示例</title>
+    <body>
+        <p>下表列出了使用 @href 属性或 @conref 属性直接引用资源的常见用法和示例。</p>
+        <table frame="all" id="table_k32_f3g_f1c">
+            <tgroup cols="2">
+                <colspec colname="c1" colnum="1" colwidth="1*"/>
+                <colspec colname="c2" colnum="2" colwidth="1*"/>
+                <thead>
+                    <row>
+                        <entry>用法</entry>
+                        <entry>示例</entry>
+                    </row>
+                </thead>
+                <tbody>
+                    <row>
+                        <entry>引用外部网站</entry>
+                        <entry><codeph>href = "http://www.example.com"</codeph></entry>
+                    </row>
+                    <row>
+                        <entry>引用本机上的某个 map</entry>
+                        <entry><codeph>href = "filename.ditamap"</codeph> 或 <codeph>href = "path/filename.ditamap"</codeph><p>需要搭配 @format 属性使用，@format 属性值为 ditamap</p></entry>
+                    </row>
+                    <row>
+                        <entry>引用本机上的某个 topic</entry>
+                        <entry><codeph>href = "filename.dita"</codeph> 或 <codeph>href = "path/filename.dita"</codeph></entry>
+                    </row>
+                    <row>
+                        <entry>引用本机某个 topic 中的元素</entry>
+                        <entry><codeph>conref = "filename.dita#topicID/elementID"</codeph> 或 <codeph>conref = "path/filename.dita#topicID/elementID"</codeph></entry>
+                    </row>
+                    <row>
+                        <entry>引用本机某个 map 中的元素</entry>
+                        <entry><codeph>conref = "filename.ditamap#elementID"</codeph> 或 <codeph>conref = "path/filename.ditamap#elementID"</codeph><p>需要搭配 @format 属性使用，@format 属性值为 ditamap</p></entry>
+                    </row>
+                </tbody>
+            </tgroup>
+        </table>
+    </body>
+</topic>

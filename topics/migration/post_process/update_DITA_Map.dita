@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="ugr_pps_xzb">
+    <title>更新DITA Map</title>
+    <body>
+        <ol id="ol_dlh_mbt_xzb">
+            <li>重命名DITA文件后，需更新DITA map中的DITA topic引用，确保<codeph>&lt;topicref></codeph>元素中的@href属性值或@keyref属性值正确。</li>
+            <li><p>检查DITA topic之间的层级，确保内容结构正确。</p> <image placement="break"
+                keyref="dita.update_ditamap" width="330" id="image_ezb_fdt_xzb"/></li>
+        </ol>
+    </body>
+</topic>

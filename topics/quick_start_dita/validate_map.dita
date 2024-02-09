@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="topic_ywm_rfp_dzb">
+    <title>校验DITA Map</title>
+    <shortdesc>Oxygen XML Author 提供 DITA 文件（DITA Topic 或 DITA Map）校验功能，可帮助写作人员识别错误标签、无效链接、无效引用等问题。校验 DITA 文件之前需要配置校验场景。</shortdesc>
+    <taskbody>
+        <context>
+            <p>请按照如下步骤配置 DITA Map 的校验场景，校验 DITA Map。</p>
+        </context>
+        <steps id="steps_o3n_ysb_kzb">
+            <step>
+                <cmd>在 <uicontrol>DITA Maps Manager</uicontrol> 视图，选中需要校验的 DITA Map。</cmd>
+            </step>
+            <step>
+                <cmd>点击 <image keyref="oxygen_validate.apply_button" id="image_hxp_p5b_kzb"
+                        /> 图标旁的三角箭头，点击 <uicontrol>Configure Validation Scenario(s)</uicontrol>。</cmd>
+                <info>
+                    <image placement="break" keyref="oxygen_validate.configure_dropdown" width="200"
+                        id="image_u5h_n2t_xzb"/>
+                </info>
+            </step>
+            <step>
+                <cmd>勾选 <uicontrol>DITA Map</uicontrol> 和 <uicontrol>DITA Map Validation and Completeness Check</uicontrol>。</cmd>
+                <info> <image placement="break" keyref="oxygen_validate.configure_window"
+                    width="300" id="image_d4h_42t_xzb"/> </info>
+            </step>
+            <step>
+                <cmd>点击 <uicontrol>Apply associated</uicontrol>，开始校验。</cmd>
+            </step>
+            <step>
+                <cmd>如校验失败，请按照 <uicontrol>Results</uicontrol> 窗口的提示排查问题。</cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task>

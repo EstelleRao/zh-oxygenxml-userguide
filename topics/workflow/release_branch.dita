@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="topic_rcn_yxf_fzb">
+    <title>发布版本</title>
+    <shortdesc>在即将发布版本（提交型检注册、临床发货或受控归档）时，需从 <codeph>develop</codeph> 分支新建 <codeph>release</codeph> 分支，用于测试版本并保留版本记录。从 <codeph>develop</codeph> 分支拉出 <codeph>release</codeph> 分支后，<codeph>develop</codeph> 分支进入下个版本的开发状态。</shortdesc>
+    <taskbody>
+        <context id="context_qm2_ykv_pzb"
+                ><codeph>release</codeph> 分支稳定前，可接受少量变更，变更后合入改动到 <codeph>develop</codeph> 分支。<codeph>release</codeph> 分支稳定后，不可改动，不可删除，用于保留正式的发布版本。</context>
+        <steps id="steps_pxq_zq2_jzb">
+            <step>
+                <cmd>从本地 <codeph>develop</codeph> 分支新建本地 <codeph>release</codeph> 分支。</cmd>
+            </step>
+            <step>
+                <cmd>发布 PDF，检查 PDF 是否正常显示。</cmd>
+                <substeps id="substeps_lj1_llv_pzb">
+                    <substep>
+                        <cmd>如果 PDF 显示正常，直接点击 <uicontrol>Push</uicontrol> 推送本地 <codeph>release</codeph> 分支到远程仓库，无需填写 commit message。</cmd>
+                    </substep>
+                    <substep>
+                        <cmd>如果 PDF 显示异常，在本地 <codeph>release</codeph> 分支变更，完成变更后推送变更到远程仓库，推送前需要填写 commit message，见 <xref keyref="commit_message"/>。</cmd>
+                    </substep>
+                </substeps>
+            </step>
+            <step>
+                <cmd>推送到远程仓库后，如有遗漏改动，可继续在本地 <codeph>release</codeph> 分支变更，完成变更后推送变更到远程仓库。</cmd>
+            </step>
+            <step>
+                <cmd>使用 cherry-pick 方法将 <codeph>release</codeph> 分支改动合入 <codeph>develop</codeph> 分支。</cmd>
+            </step>
+            <step>
+                <cmd>在 <codeph>release</codeph> 分支稳定后，将 <codeph>release</codeph> 分支设为受保护分支，原则上不再接受任何改动，见 <xref keyref="protected_branches"/>。</cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type='text/css' href='file:/C:/Users/CSR000369/Oxygen%20XML%20Author%2026/frameworks/dita/DITA-OT/plugins/com.oxygenxml.webhelp.responsive/oxygen-webhelp/app/topic-page-print.css'?>
+<?xml-stylesheet type='text/css' href='file:/C:/Users/CSR000369/Oxygen%20XML%20Author%2026/frameworks/dita/DITA-OT/plugins/com.oxygenxml.pdf.css/css/print/p-dita.css'?>
+<?xml-stylesheet type='text/css' href='file:/C:/Users/CSR000369/Oxygen%20XML%20Author%2026/frameworks/dita/DITA-OT/plugins/com.oxygenxml.editlink/pdf-css.css'?>
+<?xml-stylesheet type='text/css' href='file:/C:/Users/CSR000369/Oxygen%20XML%20Author%2026/frameworks/dita/DITA-OT/plugins/com.oxygenxml.webhelp.responsive/templates/oxygen/oxygen-with-colors.css'?>
+<?xml-stylesheet type='text/css' href='file:/C:/Users/CSR000369/Oxygen%20XML%20Author%2026/frameworks/dita/DITA-OT/plugins/com.oxygenxml.webhelp.responsive/templates/oxygen/notes.css'?>
+<?xml-stylesheet type='text/css' href='file:/E:/RAI-IFU/publishment-template/pdf-css/knst/CUSTOM.css'?>
+<?workdir /E:\oxygen_user_manual\topics\quick_start_dita\temp\pdf-css-html5?><?workdir-uri file:/E:/oxygen_user_manual/topics/quick_start_dita/temp/pdf-css-html5/?><?path2project?><?path2project-uri ./?><?path2rootmap-uri ./?><?doctype-public -//OASIS//DTD DITA Task//EN?><?doctype-system task.dtd?><task xmlns:css2fo="http://www.oxygenxml.com/css2fo" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:nd="http://www.oxygenxml.com/css2fo/named-destinations" xmlns:opentopic="http://www.idiominc.com/opentopic" xmlns:opentopic-index="http://www.idiominc.com/opentopic/index" xmlns:oxy="http://www.oxygenxml.com/extensions/author" xmlns:xs="http://www.w3.org/2001/XMLSchema" class="- topic/topic task/task " ditaarch:DITAArchVersion="1.3" domains="(topic task) (topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d) (topic task strictTaskbody-c)" id="topic_bbn_rfp_dzb" specializations="@props/deliveryTarget" xtrc="task:1;3:30" xtrf="file:/E:/oxygen_user_manual/topics/quick_start_dita/publish.dita" xml:lang="en">
+    <title class="- topic/title "><ph class="- topic/ph topic/title-wrapper ">发布DITA Map</ph></title>
+    <shortdesc class="- topic/shortdesc ">使用 Oxygen XML Author  发布 DITA 文件（DITA Topic 或 DITA Map），需要先配置发布场景。在发布场景中添加 CSS 样式表，可将 DITA 文件导出为定制的 PDF 样式。在发布场景中添加过滤文件，可根据过滤条件导出指定的说明书。</shortdesc>
+    <taskbody class="- topic/body task/taskbody ">
+        <context class="- topic/section task/context ">
+            <p class="- topic/p ">请按照如下步骤配置 DITA Map 的发布场景，发布 DITA Map。</p>
+        </context>
+        <steps class="- topic/ol task/steps " id="steps_hlj_jwb_kzb">
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">在 <uicontrol class="+ topic/ph ui-d/uicontrol ">DITA Maps Manager</uicontrol> 视图打开并选中 <ph class="- topic/ph " outputclass="blue">index.ditamap</ph>。</cmd>
+                <info class="- topic/itemgroup task/info ">
+                    <note class="- topic/note " id="note_t1h_brx_31c" type="tip">
+                        <ul class="- topic/ul " id="ul_g4m_brx_31c">
+                            <li class="- topic/li ">如需发布 DITA Topic（指定的小节），则在编辑区域打开DITA文件，将光标定位在文件内的任意位置。</li>
+                        </ul>
+                    </note>
+                </info>
+            </step>
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">点击 <uicontrol class="+ topic/ph ui-d/uicontrol "><image class="- topic/image " id="image_slg_pwb_kzb" keyref="oxygen_transform.edit_button" placement="inline"/> Configure Transformation Scenario(s)</uicontrol>，在 <wintitle class="+ topic/keyword ui-d/wintitle ">Configure Transformation Scenario(s)</wintitle> 窗口选择 <uicontrol class="+ topic/ph ui-d/uicontrol ">DITA Map PDF - based on HTML5 &amp; CSS</uicontrol>，创建 DITA Map PDF 发布场景。</cmd>
+                <info class="- topic/itemgroup task/info ">
+                    <image class="- topic/image " id="image_tbl_1xb_kzb" keyref="oxygen_transform.edit_scenario" placement="break" width="300"/>
+                </info>
+            </step>
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">点击 <uicontrol class="+ topic/ph ui-d/uicontrol ">Edit</uicontrol>，配置发布场景。</cmd>
+                <substeps class="- topic/ol task/substeps " id="substeps_ph2_4xb_kzb">
+                    <substep class="- topic/li task/substep ">
+                        <cmd class="- topic/ph task/cmd ">在 <uicontrol class="+ topic/ph ui-d/uicontrol ">Templates</uicontrol> 标签页，点击 <uicontrol class="+ topic/ph ui-d/uicontrol ">Choose Custom Publishing Template</uicontrol>，选择 <b class="+ topic/ph hi-d/b ">.opt</b> 发布模板。</cmd>
+                        <info class="- topic/itemgroup task/info ">
+                            <image class="- topic/image " id="image_j12_qzb_kzb" keyref="oxygen_transform.edit_template" placement="break" width="400"/>
+                        </info>
+                    </substep>
+                    <substep class="- topic/li task/substep ">
+                        <cmd class="- topic/ph task/cmd ">在 <uicontrol class="+ topic/ph ui-d/uicontrol ">Parameters</uicontrol> 标签页，将光标定位在参数列表上方的搜索框，分别输入图表交叉引用参数和位置参数，设置图表的交叉引用格式和标题位置。</cmd>
+                        <info class="- topic/itemgroup task/info ">
+                            <image class="- topic/image " id="image_y3n_rzb_kzb" keyref="oxygen_transform.edit_parameters" placement="break" width="400"/>
+                        </info>
+                    </substep>
+                    <substep class="- topic/li task/substep ">
+                        <cmd class="- topic/ph task/cmd ">在 <uicontrol class="+ topic/ph ui-d/uicontrol ">Filters</uicontrol> 标签页，点击 <uicontrol class="+ topic/ph ui-d/uicontrol ">Use DITAVAL file</uicontrol>，选择指定说明书对应的过滤文件。如果不添加过滤文件，则默认导出整个 <ph class="- topic/ph " outputclass="blue">index.ditamap</ph> 为一本说明书。</cmd>
+                        <info class="- topic/itemgroup task/info ">
+                            <image class="- topic/image " id="image_qc3_szb_kzb" keyref="oxygen_transform.edit_filters" placement="break" width="400"/>
+                            <note class="- topic/note " id="note_ib5_gqx_31c" type="tip">
+                                <ul class="- topic/ul " id="ul_pj1_hqx_31c">
+                                    <li class="- topic/li ">如需导出多本说明书，请使用批量发布文件（cornerstonepdfpublishing_{product}.xml）。</li>
+                                </ul>
+                            </note>
+                        </info>
+                    </substep>
+                </substeps>
+            </step>
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">点击 <uicontrol class="+ topic/ph ui-d/uicontrol ">Apply associated</uicontrol> 发布说明书。</cmd>
+            </step>
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">发布后，检查说明书样式。</cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task>

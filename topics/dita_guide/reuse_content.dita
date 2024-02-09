@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="reuse_content">
+    <title>复用颗粒度</title>
+    <body>
+        <ol id="ol_xnv_mcg_f1c">
+            <li>复用DITA map<p>复用DITA map就是复用一个完整的内容架构（<b>.ditamap</b> 文件）。以现有说明书为例，一本说明书对应一个DITA map，复用DITA map就是复用整本说明书。</p><codeblock id="codeblock_t3j_smg_f1c" outputclass="language-xml">&lt;chapter href="topics/IPU/image_processor_user_manual.ditamap" format="ditamap" product="8003-000030-1-0001"/>
+&lt;chapter href="topics/END/endoscope_user_manual.ditamap" format="ditamap" product="8003-000031-1-0001"/></codeblock></li>
+            <li>复用DITA topic<p>复用DITA topic就是复用一个内容模块（<b>.dita</b> 文件）。以现有说明书为例，一个小节对应一个DITA topic，复用DITA topic就是复用一个小节。</p><codeblock id="codeblock_sk4_xmg_f1c" outputclass="language-xml">&lt;chapter href="operation.dita">
+    &lt;topicref href="operation/power_on.dita"/>
+    &lt;topicref href="operation/view_images.dita">
+&lt;/chapter></codeblock></li>
+            <li>复用DITA element<p>复用DITA element就是复用内容模块中的DITA元素。DITA元素对应文档的组成部分，如标题、目录、段落等。以现有说明书为例，一个DITA元素可以对应一个产品名称（<codeph>&lt;ph></codeph>）、一个段落（<codeph>&lt;p></codeph>）、一个安全提示（<codeph>&lt;note></codeph>）、一个表格（<codeph>&lt;table></codeph>）或一张图片（<codeph>&lt;fig> 或 &lt;image></codeph>）。复用DITA element就是复用这些DITA元素和DITA元素包裹的内容。</p><codeblock id="codeblock_mkp_zmg_f1c" outputclass="language-xml">&lt;note conref="../IPU/safety_instructions.dita#topic_safety_instructions/note_safety_instructions"/></codeblock></li>
+        </ol>
+    </body>
+</topic>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="transform">
+    <title>发布</title>
+    <body>
+        <p>发布功能用于导出DITA文件（DITA topic和DITA map）为目标格式。常见的输出格式包括PDF手册、HTML网页和在线帮助文档。</p>
+        <p>如需配置发布场景，可在顶部菜单栏点击 <menucascade>
+                <uicontrol>Document</uicontrol>
+                <uicontrol>Transformation</uicontrol>
+                <uicontrol>Configure Transformation Scenario(s)</uicontrol>
+            </menucascade> 进行配置，也可在工具栏或 <uicontrol>DITA Maps Manager</uicontrol> 视图点击 <uicontrol><image
+                    keyref="oxygen_transform.edit_button" id="image_tkh_ljq_31c"
+                /> Configure Transformation Scenario(s)</uicontrol> 进行配置。</p>
+        <image placement="break"
+            keyref="oxygen_transform.edit_scenario" width="300" id="image_tbl_1xb_kzb"/>
+        <p>有关DITA map的发布操作，请查阅：<xref keyref="quick_start_dita.publish"/>。</p>
+    </body>
+</topic>

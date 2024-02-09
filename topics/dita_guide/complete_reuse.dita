@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="complete_reuse">
+    <title>完整复用</title>
+    <body>
+        <p>完整复用指一个内容模块在多个信息产品中共同使用，在多个信息产品中呈现的内容一模一样。</p>
+        <p>无论是直接引用还是间接引用，都可以轻松实现完整复用。</p>
+    </body>
+</topic>

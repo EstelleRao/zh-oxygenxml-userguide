@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_fgw_hnt_hzb">
+    <title>开发本地临时分支</title>
+    <shortdesc>切换到指定的本地临时分支进行内容开发。进行内容开发前，务必确认 <uicontrol>Context</uicontrol> 应用的根目录为当前分支对应的 <ph
+        outputclass="blue">index.ditamap</ph> 文件。</shortdesc>
+    <taskbody>
+        <steps>
+            <step>
+                <cmd>使用任一方法切换到指定的本地临时分支。</cmd>
+                <choices id="choices_e4t_tfb_3zb">
+                    <choice>方法一：在 <uicontrol>Git Staging</uicontrol> 视图点击 <uicontrol>Branch</uicontrol> 下拉框，选择指定的本地临时分支。选择后会自动切换到该分支。<image
+                        placement="break" keyref="git_client.checkout_temp_branch_dropbox"
+                        id="image_ogk_ngb_3zb" width="250"/></choice>
+                    <choice>方法二：在 <uicontrol>Git Staging</uicontrol> 视图点击 <uicontrol><image
+                        placement="inline" keyref="git_client.show_Git_Branch_Manager_view"
+                        id="image_v31_jpw_3zb"
+                        />Show Git Branch Manager view</uicontrol>。在 <uicontrol>Git Branch Manager</uicontrol> 视图双击分支名或单击右键后点击 <uicontrol>Checkout</uicontrol> 切换分支。<image
+                        placement="break" keyref="git_client.checkout_temp_branch_right_click"
+                        id="image_zy1_5gb_3zb" height="250"/></choice>
+                </choices>
+            </step>
+            <step>
+                <cmd>打开 <uicontrol>DITA Maps Manager</uicontrol> 视图，确认 <uicontrol>Context</uicontrol> 应用的根目录为当前分支对应的 <ph
+                    outputclass="blue">index.ditamap</ph> 文件。</cmd>
+                <info> <image placement="break" keyref="oxygen_dita_maps_manager.context"
+                    id="image_oc3_13b_3zb"/> </info>
+            </step>
+            <step importance="optional">
+                <cmd><uicontrol>Context</uicontrol> 通常随本地分支自动切换。如果切换不成功，在 <uicontrol>Context</uicontrol> 下拉框双击当前分支对应的 <ph
+                    outputclass="blue">index.ditamap</ph> 文件，手动切换。</cmd>
+            </step>
+            <step>
+                <cmd>确认 <ph outputclass="blue">index.ditamap</ph> 文件正常显示后，开始编写手册。</cmd>
+            </step>
+            <step importance="optional">
+                <cmd>如需临时切换到其他分支进行开发，可点击 <uicontrol><image keyref="git_client.stash_drop-down_menu"
+                    id="image_k5t_v4x_3zb"/>Stash</uicontrol> 保存当前分支的改动，之后可回到该分支选择应用或放弃保存的改动。</cmd>
+                <info>
+                    <image placement="break" keyref="git_client.stash_changes" width="300"
+                        id="image_o5h_2zc_jzb"/>
+                </info>
+                <substeps id="substeps_nsd_gcd_jzb">
+                    <substep>
+                        <cmd>点击 <menucascade>
+                            <uicontrol><image keyref="git_client.stash_drop-down_menu"
+                                id="image_xhb_hcd_jzb"/>Stash</uicontrol>
+                            <uicontrol>Stash changes</uicontrol>
+                            </menucascade> 保存当前分支的改动。</cmd>
+                    </substep>
+                    <substep>
+                        <cmd>切换到其他分支进行开发和提交。</cmd>
+                    </substep>
+                    <substep>
+                        <cmd>切换回原先的分支，点击 <menucascade>
+                            <uicontrol><image keyref="git_client.stash_drop-down_menu"
+                                id="image_ntp_mzc_jzb"/>Stash</uicontrol>
+                            <uicontrol>List changes</uicontrol>
+                            </menucascade>，选择 <uicontrol>Apply</uicontrol> 应用或 <uicontrol>Discard</uicontrol> 放弃保存的改动。</cmd>
+                    </substep>
+                </substeps>
+            </step>
+            <step importance="optional">
+                <cmd>如需同步改动到其他 <codeph>develop</codeph> 分支，可点击 <uicontrol><image
+                    keyref="git_client.stash_drop-down_menu" id="image_od3_mdd_jzb"
+                    />Stash</uicontrol> 保存当前分支的改动，再切换到目标 <codeph>develop</codeph> 分支的本地临时分支，应用保存的改动。</cmd>
+                <substeps id="substeps_ehd_cdd_jzb">
+                    <substep>
+                        <cmd>点击 <menucascade>
+                            <uicontrol><image keyref="git_client.stash_drop-down_menu"
+                                id="image_frn_tzc_jzb"/>Stash</uicontrol>
+                            <uicontrol>Stash changes</uicontrol>
+                            </menucascade> 保存当前分支的改动。</cmd>
+                    </substep>
+                    <substep>
+                        <cmd>切换到其他 <codeph>develop</codeph> 分支，从该 <codeph>develop</codeph> 分支创建本地临时分支。</cmd>
+                    </substep>
+                    <substep>
+                        <cmd>切换到新建的本地临时分支，点击 <menucascade>
+                            <uicontrol><image keyref="git_client.stash_drop-down_menu"
+                                id="image_fcm_vzc_jzb"/>Stash</uicontrol>
+                            <uicontrol>List changes</uicontrol>
+                            </menucascade>，选择 <uicontrol>Apply</uicontrol>，应用保存的改动。</cmd>
+                    </substep>
+                    <substep>
+                        <cmd>在工作区双击文件查看更改，可选择保留或放弃应用的更改。</cmd>
+                    </substep>
+                </substeps>
+            </step>
+        </steps>
+    </taskbody>
+</task>

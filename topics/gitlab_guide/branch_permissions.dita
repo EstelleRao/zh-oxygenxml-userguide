@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="zfj_vhz_hzb">
+    <title>分支权限</title>
+    <conbody>
+        <ol id="ol_csz_lqz_hzb">
+            <li>重要分支（<codeph>develop</codeph>分支）由项目负责人创建并设为受保护分支，其他项目成员提交更改需创建合并请求，更改经由至少两位审核人审查并批准后才可合入重要分支。</li>
+            <li>临时辅助分支中的<codeph>feature</codeph>分支和<codeph>hotfix</codeph>分支可由任一项目成员创建，从<codeph>develop</codeph>分支创建，完成后merge到<codeph>develop</codeph>分支，合入后可删除。</li>
+            <li>临时辅助分支中的<codeph>release</codeph>分支由项目负责人在版本发布（受控或型检注册提交）时创建，从<codeph>develop</codeph>分支创建，如有改动，发布后merge到<codeph>develop</codeph>，如无改动，发布后保留分支。</li>
+        </ol>
+    </conbody>
+</concept>

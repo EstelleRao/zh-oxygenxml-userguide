@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="wqx_dss_xzb">
+    <title>纠正<codeph>&lt;note></codeph>元素和属性</title>
+    <body>
+        <section id="section_jlh_f4p_g1c">
+            <title>错误原因</title>
+            <ol id="ol_bnh_f4p_g1c">
+                <li>元素误用：安全提示使用<codeph>&lt;b></codeph>元素或<codeph>&lt;p></codeph>元素，未使用<codeph>&lt;note></codeph>元素。</li>
+                <li>错误嵌套：<codeph>&lt;table></codeph>元素和<codeph>&lt;p></codeph>元素嵌套<codeph>&lt;note></codeph>元素。<image
+                        placement="break" keyref="dita.incorrect_note" width="500"
+                        id="image_llh_f4p_g1c"/></li>
+            </ol>
+        </section>
+        <section> <title>纠正方法</title>
+            <ol id="ol_c1n_34p_g1c">
+                <li>使用 <codeph>Ctrl+Shift+H</codeph> 快捷键打开查找/替换窗口，依次输入以下文本，指定查找/替换范围和文档格式，全局替换错误元素为<codeph>&lt;note></codeph>元素。 <ul
+                        id="ul_f2f_l3p_g1c">
+                        <li>替换前文本：<codeph>&lt;b>Note&lt;/b></codeph>、<codeph>&lt;b>Warning&lt;/b></codeph>、<codeph>&lt;b>Danger&lt;/b></codeph>、<codeph>&lt;p>Note&lt;/p></codeph>、<codeph>&lt;p>Warning&lt;/p></codeph>、<codeph>&lt;p>Danger&lt;/p></codeph></li>
+                        <li>替换后文本：<codeph>&lt;note type="attention"></codeph>、<codeph>&lt;note type="warning"></codeph>、<codeph>&lt;note type="restriction"></codeph></li>
+                        <li>查找/替换范围：当前仓库路径</li>
+                        <li>查找/替换的文档格式：*.dita, *.ditamap, *.ditaval, *.xml</li>
+                    </ul>
+                    <image placement="break" keyref="dita.replace_b_with_note" width="440"
+                        id="image_e1n_34p_g1c"/>
+                    <image placement="break" keyref="dita.replace_p_with_note" width="440"
+                        id="image_f1n_34p_g1c"/>
+                </li>
+                <li>删除<codeph>&lt;p></codeph>元素，补全<codeph>&lt;note></codeph>元素的结束标签<codeph>&lt;/note></codeph>。</li>
+                <li>复制整个安全提示（含<codeph>&lt;note></codeph>元素和<codeph>&lt;ul></codeph>元素），替换<codeph>&lt;table></codeph>元素及其内容。</li>
+                <li><p>检查安全提示类型。如有必要，可修改<codeph>&lt;note></codeph>元素的@type属性（attention, warning, restriction）。</p><image
+                        placement="inline" keyref="dita.correct_note" id="image_id3_sjp_g1c"
+                        width="600"/></li>
+            </ol> </section>
+    </body>
+</topic>

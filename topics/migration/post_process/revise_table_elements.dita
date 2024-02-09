@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="ogl_4ss_xzb">
+    <title>纠正 <codeph>&lt;table></codeph> 元素和属性</title>
+    <body>
+        <ol id="ol_nz4_xkt_xzb">
+            <li>为标题行添加@header属性。</li>
+            <li>如有必要，可在表格属性窗口调整特定行或列的对齐方式。表格中的文字默认左对齐，图标或图片默认居中对齐。</li>
+            <li>在表格的@colwidth属性中调整列宽。</li>
+        </ol>
+    </body>
+</topic>

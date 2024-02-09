@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="indirect_reuse_example">
+    <title>常见用法和示例</title>
+    <body>
+        <section id="section_kbl_mpk_j1c">
+            <title>@keyref 属性</title>
+            <p>下表列出了使用 @keyref 属性引用 DITA topic、图片、变量的方法。在 DITA 文件中引用这些资源之前，需要在 DITA map 中使用 @keys 属性定义资源别名。</p>
+            <table id="table_qkz_npk_j1c">
+                <tgroup cols="2">
+                    <colspec colname="c1" colnum="1" colwidth="0.4*"/>
+                    <colspec colname="c2" colnum="2" colwidth="1.6*"/>
+                    <thead>
+                        <row>
+                            <entry>用法</entry>
+                            <entry>示例</entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry align="left" valign="middle">引用 DITA topic</entry>
+                            <entry>
+                                <ol id="ol_rkz_npk_j1c">
+                                    <li>
+                                        <p>在 <b>common.ditamap</b> 中使用 <codeph>&lt;topicref></codeph> 元素或 <codeph>&lt;keydef></codeph> 元素引入文档符号说明文档，使用 @keys 属性定义文档别名。</p>
+                                        <codeblock outputclass="language-xml" id="codeblock_skz_npk_j1c">&lt;topicref href="doc_symbols.dita" keys="doc_symbols"/>/*推荐写法*/
+&lt;keydef href="doc_symbols.dita" keys="doc_symbols"/></codeblock>
+                                    </li>
+                                    <li>
+                                        <p>在 <b>index.ditamap</b> 中使用 <codeph>&lt;topicref></codeph> 元素和 @keyref 属性引用文档符号说明文档。<codeblock outputclass="language-xml" id="codeblock_tkz_npk_j1c">&lt;topicref keyref="doc_symbols"/></codeblock></p>
+                                    </li>
+                                </ol>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry align="left" valign="middle">引用图片</entry>
+                            <entry>
+                                <ol id="ol_pz4_vvk_j1c">
+                                    <li>
+                                        <p>在 <b>common_images.ditamap</b> 中使用 <codeph>&lt;keydef></codeph> 元素引入图片，使用 @keys 属性定义图片别名。</p>
+                                        <codeblock outputclass="language-xml" id="codeblock_ukz_npk_j1c">&lt;keydef keys="CV2000_symbol.10mm_30_END" href="CV2000_symbol/CV2000_symbol.10mm_30_END.png" format="png">&lt;/keydef></codeblock>
+                                    </li>
+                                    <li>
+                                        <p>在 DITA topic 中使用 <codeph>&lt;image></codeph> 元素和 @keyref 属性引用图片。</p>
+                                        <codeblock outputclass="language-xml" id="codeblock_vkz_npk_j1c">&lt;image placement="break" keyref="common_global.common_label.instruction_manual" height="40"/></codeblock>
+                                    </li>
+                                </ol>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry align="left" valign="middle">引用页面变量</entry>
+                            <entry>
+                                <ol id="ol_rwn_ywk_j1c">
+                                    <li>
+                                        <p>在页面变量定义集（<b>pdf_page_variables.ditamap</b>）中使用 <codeph>&lt;keydef></codeph> 元素引入页面变量，使用 @keys 属性定义变量名称，使用 @product 属性定义发布条件，使用 <codeph>&lt;keyword></codeph> 元素定义变量在特定条件下发布的值。</p>
+                                        <codeblock outputclass="language-xml" id="codeblock_alz_npk_j1c">&lt;keydef keys="booktitle" navtitle="手册名称" product="8003-000030-1-0001">
+    &lt;topicmeta>
+        &lt;keywords>
+            &lt;keyword>内窥镜图像处理器说明书&lt;/keyword>
+        &lt;/keywords>
+    &lt;/topicmeta>
+&lt;/keydef>
+&lt;keydef keys="pn" navtitle="PN" product="8003-000030-1-0001">
+    &lt;topicmeta>
+        &lt;keywords>
+            &lt;keyword>8003-000030-1-0001&lt;/keyword>
+        &lt;/keywords>
+    &lt;/topicmeta>
+&lt;/keydef>
+&lt;keydef keys="release" navtitle="版本号"
+product="8003-000030-1-0001 8003-000031-1-0001 8003-000032-1-0001">
+    &lt;topicmeta>
+        &lt;keywords>
+            &lt;keyword>1-0001&lt;/keyword>
+        &lt;/keywords>
+    &lt;/topicmeta>
+&lt;/keydef>
+&lt;keydef keys="currentyear" navtitle="版权归属年份"
+product="8003-000030-1-0001 8003-000031-1-0001 8003-000032-1-0001">
+    &lt;topicmeta>
+        &lt;keywords>
+            &lt;keyword>2023&lt;/keyword>
+        &lt;/keywords>
+    &lt;/topicmeta>
+&lt;/keydef></codeblock>
+                                    </li>
+                                    <li>
+                                        <p>在 <b>index.ditamap</b> 和封底中使用 <codeph>&lt;keyword></codeph> 元素和 @keyref 属性引用页面变量。</p>
+                                        <codeblock outputclass="language-xml" id="codeblock_blz_npk_j1c">&lt;mainbooktitle>&lt;keyword keyref="booktitle"/>&lt;/mainbooktitle>
+&lt;p>深圳康诺思腾科技有限公司出版/P/N：&lt;keyword keyref="pn"/>/版本号：&lt;keyword keyref="release"/>/编制日期：20240209&lt;/p>
+&lt;p>©&lt;keyword keyref="currentyear"/> 深圳康诺思腾科技有限公司&lt;/p></codeblock>
+                                    </li>
+                                </ol>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry align="left" valign="middle">引用文本变量</entry>
+                            <entry>
+                                <ol id="ol_kwn_nbl_j1c">
+                                    <li>
+                                        <p>在文本变量定义集（<b>variable_text.ditamap</b>）中使用 <codeph>&lt;keydef></codeph> 元素引入文本变量，使用 @keys 属性定义变量名称，使用 @product 属性定义发布条件，使用 <codeph>&lt;keyword></codeph> 元素定义变量在特定条件下发布的值。</p>
+                                        <codeblock id="codeblock_wbs_1bl_j1c" outputclass="language-xml">&lt;keydef keys="prodname" navtitle="产品名称" product="8003-000003-D-0001">
+    &lt;topicmeta>
+        &lt;keywords>
+            &lt;keyword>胸腹腔内窥镜手术系统用无源附件-套管附件&lt;/keyword>
+        &lt;/keywords>
+    &lt;/topicmeta>
+&lt;/keydef>
+&lt;keydef keys="prodname" navtitle="产品名称" product="8003-000014-D-0001">
+    &lt;topicmeta>
+        &lt;keywords>
+            &lt;keyword>无菌保护套&lt;/keyword>
+        &lt;/keywords>
+    &lt;/topicmeta>
+&lt;/keydef>
+&lt;keydef keys="prodname" navtitle="产品名称" product="8003-000015-D-0001 8003-000024-A-0001 8003-000029-A-0001">
+    &lt;topicmeta>
+        &lt;keywords>
+            &lt;keyword>胸腹腔内窥镜手术系统用无源附件-单极弯剪绝缘套&lt;/keyword>
+        &lt;/keywords>
+    &lt;/topicmeta>
+&lt;/keydef></codeblock>
+                                    </li>
+                                    <li>
+                                        <p>在公共组件定义集（<b>xx_components.dita</b>）中使用 <codeph>&lt;ph></codeph> 元素和 @keyref 属性引用文本变量。</p>
+                                        <codeblock outputclass="language-xml" id="codeblock_dlz_npk_j1c">&lt;p>&lt;ph keyref="prodname"/>只能配合康诺思腾 C1000 胸腹腔内窥镜手术系统使用。该系统的禁忌证同样适用于本产品。以下为康诺思腾 C1000 胸腹腔内窥镜手术系统的禁忌证：&lt;/p></codeblock>
+                                    </li>
+                                </ol>
+                            </entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
+        </section>
+        <section id="section_cxj_1qk_j1c">
+            <title> @conkeyref 属性</title>
+            <p>下表列出了使用 @conkeyref 属性引用 DITA 元素的方法。在 DITA 文件中引用 DITA 元素之前，需要在公共组件定义集中使用 @id 属性为 DITA 元素定义别名 。</p>
+            <table id="table_ev5_d4k_j1c">
+                <tgroup cols="2">
+                    <colspec colname="c1" colnum="1" colwidth="0.4*"/>
+                    <colspec colname="c2" colnum="2" colwidth="1.6*"/>
+                    <thead>
+                        <row>
+                            <entry>用法</entry>
+                            <entry>示例</entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry align="left" valign="middle">引用产品名称</entry>
+                            <entry>
+                                <ol id="ol_bwv_pcl_j1c">
+                                    <li>
+                                        <p> 在公共名称定义集（<b>product_names.dita</b>）中使用 <codeph>&lt;ph></codeph> 元素引入产品名称，使用 @id 属性定义产品名称的别名。</p>
+                                        <codeblock id="codeblock_wk3_xhh_f1c" outputclass="language-xml">&lt;ph id="prodname_C1000_new">内窥镜手术系统&lt;/ph></codeblock>
+                                    </li>
+                                    <li>
+                                        <p>在 DITA 文件中使用 <codeph>&lt;ph></codeph> 元素和 @conkeyref 属性引用产品名称。</p>
+                                        <codeblock id="codeblock_gwr_yhh_f1c" outputclass="language-xml">&lt;p>本内窥镜仅限与康诺思腾&lt;ph conkeyref = "common_zh-CN.product_names/prodname_C1000_new"/>（型号：C1000）和内窥镜图像处理器（型号：CV2001）配合使用。&lt;/p></codeblock>
+                                    </li>
+                                </ol>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry align="left" valign="middle">引用安全提示</entry>
+                            <entry>
+                                <ol id="ol_izj_gcl_j1c">
+                                    <li>
+                                        <p>在公共组件定义集（<b>xx_components.dita</b>）中使用 <codeph>&lt;li></codeph> 元素引入安全提示，使用 @id 属性定义安全提示的别名。</p>
+                                        <codeblock id="codeblock_umw_d3h_f1c" outputclass="language-xml">&lt;li id="warning_refer_IFU_before_use">使用本产品前，确保已充分了解适用的说明书中的所有信息，特别是禁止和警告信息。未能正确遵循说明书中的所有说明，可能导致产品损坏或患者、操作人员和其他人员受伤。&lt;/li></codeblock>
+                                    </li>
+                                    <li>
+                                        <p>在 DITA 文件中使用 <codeph>&lt;li></codeph> 元素和 @conkeyref 属性引用安全提示。</p>
+                                        <codeblock id="codeblock_usj_f3h_f1c" outputclass="language-xml">&lt;li conkeyref = "common_zh-CN.common_components/warning_refer_IFU_before_use"/></codeblock>
+                                    </li>
+                                </ol>
+                            </entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
+        </section>
+    </body>
+</topic>
+
+

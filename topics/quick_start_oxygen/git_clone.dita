@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="git_clone">
+    <title>克隆仓库</title>
+    <body>
+        <p>在顶部菜单栏点击 <menucascade>
+            <uicontrol>Git</uicontrol>
+            <uicontrol><image placement="inline" keyref="git_client.clone_new_repository"
+                height="15" id="image_y1d_2pw_3zb"/>Clone new repository</uicontrol>
+            </menucascade>，在 <wintitle>Clone Repository</wintitle> 弹窗填写以下信息。</p>
+        <image placement="break"
+            keyref="gitlab.clone_repository" width="400" id="image_bv5_3lt_hzb"/>
+        <ul id="ul_twq_nm3_31c">
+            <li><uicontrol>Repository URL</uicontrol> ：填写待克隆的远程仓库的 URL。</li>
+            <li><uicontrol>Checkout branch</uicontrol>：选择待克隆的远程仓库的特定分支。如未指定分支，则克隆远程仓库的默认分支。</li>
+            <li><uicontrol>Destination path</uicontrol>：选择待克隆的远程仓库的本地路径。输入远程仓库的 URL，系统会建议将其保存在同名文件夹中。</li>
+        </ul>
+        <p id="git-addon_p_jgp_p3y_kpb">完成克隆后，可在当前仓库进行更改和提交。</p>
+    </body>
+</topic>

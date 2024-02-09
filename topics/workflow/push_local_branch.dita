@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_ljt_ynt_hzb">
+    <title>推送本地临时分支</title>
+    <shortdesc>完成开发后，提交变更到本地临时分支，再推送本地临时分支到远程仓库。推送到远程仓库后，远程仓库会自动创建对应分支。</shortdesc>
+    <taskbody>
+        <steps>
+            <step>
+                <cmd>完成变更后，点击 <uicontrol><image keyref="git_client.stage_selected"
+                            id="image_pnv_wpw_3zb"/>Stage selected</uicontrol> 或 <uicontrol><image
+                            keyref="git_client.stage_all" id="image_ndm_spw_3zb"
+                        />Stage all</uicontrol>，将工作区的改动添加到暂存区。</cmd>
+                <info>
+                    <image placement="break" keyref="git_client.stage_files"
+                        width="300" id="image_p3w_b5c_jzb"/>
+                </info>
+            </step>
+            <step importance="optional">
+                <cmd>如需撤销暂存操作，点击 <uicontrol><image
+                            keyref="git_client.unstage_selected"
+                            id="image_uym_2qw_3zb"/>Unstage selected</uicontrol> 或 <uicontrol><image
+                            keyref="git_client.unstage_all" id="image_fyf_dqw_3zb"
+                        />Unstage all</uicontrol>。</cmd>
+                <info>
+                    <image placement="break" keyref="git_client.unstage_files" width="300"
+                        id="image_utc_5tc_jzb"/>
+                </info>
+            </step>
+            <step>
+                <cmd>添加到暂存区后，填写 <uicontrol>Commit message</uicontrol>。点击 <uicontrol><image
+                            keyref="git_client.choose_a_previously_used_comment"
+                            id="image_vbk_tpc_jzb"
+                    />Choose a previously used comment</uicontrol> 可复用历史提交记录。</cmd>
+                <info>
+                    <image placement="break" keyref="git_client.commit_message"
+                        width="300" id="image_pc1_btc_jzb"/>
+                </info>
+            </step>
+            <step>
+                <cmd>点击 <uicontrol>Commit</uicontrol>，将暂存区的改动提交到当前的本地分支。提交记录的书写规范见 <xref keyref="commit_message"/>。</cmd>
+            </step>
+            <step importance="optional">
+                <cmd>提交变更到本地分支后，如需在最近一次的提交中添加新的小改动或修改提交记录，可点击 <uicontrol><image
+                    keyref="git_client.amend_last_commit" id="image_jhd_msc_jzb"
+                    />Amend last commit</uicontrol>。</cmd>
+                <info>
+                    <note id="note_hd3_q2d_jzb" type="warning">
+                        <ul id="ul_vbm_r2d_jzb">
+                            <li>如果最近一次提交已推送到远程仓库，请勿使用 <uicontrol><image
+                                keyref="git_client.amend_last_commit" id="image_jyc_jhh_31c"
+                                />Amend last commit</uicontrol> 操作，否则容易产生冲突，影响其他团队成员的使用。</li>
+                        </ul>
+                    </note>
+                </info>
+            </step>
+            <step>
+                <cmd>提交变更到本地分支后，点击 <uicontrol><image placement="inline"
+                    keyref="git_client.push_icon" height="15" id="image_fb3_wnw_3zb"
+                    />Push</uicontrol> 箭头将本地分支手动推送到远程仓库。</cmd>
+                <info>
+                    <image placement="break" keyref="git_client.push" id="image_x23_4tc_jzb"
+                        width="300"/>
+                </info>
+            </step>
+            <step>
+                <cmd>推送变更到远程仓库后，如需添加遗漏改动或审核要求改动，请重复前述步骤。</cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task>

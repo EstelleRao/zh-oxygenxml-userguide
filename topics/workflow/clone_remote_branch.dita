@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="yvc_lqg_fzb">
+    <title>克隆远程仓库</title>
+    <shortdesc>使用 Oxygen XML Author 的 Git 插件克隆远程仓库到本地。</shortdesc>
+    <taskbody>
+        <steps id="ol_lq3_l2g_fzb">
+            <step>
+                <cmd>在 GitLab 上复制远程仓库的 URL（HTTPS 协议地址）。</cmd>
+                <info>
+                    <image placement="break" keyref="gitlab.copy_URL" width="400"
+                        id="image_z55_3lt_hzb"/>
+                </info>
+            </step>
+            <step>
+                <cmd>在 Oxygen XML Author 顶部菜单栏点击 <menucascade>
+                    <uicontrol>Git</uicontrol>
+                    <uicontrol><image placement="inline" keyref="git_client.clone_new_repository"
+                        height="15" id="image_y1d_2pw_3zb"/>Clone new repository</uicontrol>
+                    </menucascade>。</cmd>
+            </step>
+            <step>
+                <cmd>在 <wintitle>Clone Repository</wintitle> 弹窗填写以下信息。</cmd>
+                <info>
+                    <image placement="break" keyref="gitlab.clone_repository" width="400"
+                        id="image_bv5_3lt_hzb"/>
+                </info>
+                <substeps id="substeps_dbh_ys1_3zb">
+                    <substep>
+                        <cmd><uicontrol>Repository URL</uicontrol> ：填写待克隆的远程仓库的 URL。</cmd>
+                    </substep>
+                    <substep>
+                        <cmd><uicontrol>Checkout branch</uicontrol>：选择待克隆的远程仓库的特定分支。如未指定分支，则克隆远程仓库的默认分支。</cmd>
+                    </substep>
+                    <substep>
+                        <cmd><uicontrol>Destination path</uicontrol>：选择待克隆的远程仓库的本地路径。输入远程仓库的 URL，系统会建议将其保存在同名文件夹中。</cmd>
+                    </substep>
+                </substeps>
+            </step>
+            <step>
+                <cmd>点击 <uicontrol>Clone</uicontrol>，开始克隆。 </cmd>
+            </step>
+            <step>
+                <cmd>完成克隆后，点击 <uicontrol><image placement="inline"
+                    keyref="git_client.show_Git_Branch_Manager_view" id="image_v31_jpw_3zb"
+                    />Show Git Branch Manager view</uicontrol>，手动检出其他分支。</cmd>
+                <info>
+                    <image placement="break" keyref="git_client.checkout_branch" width="400"/>
+                </info>
+            </step>
+            <step importance="optional">
+                <cmd>按需调整本地仓库目录。 </cmd>
+                <stepxmp> <ul id="ul_kls_rz1_3zb">
+                    <li>fork 的仓库会继承源仓库的所有文件，克隆到本地后，本地生成对应的完整目录。</li>
+                    </ul> <fig id="fig_qq3_rz1_3zb">
+                    <image placement="break" keyref="gitlab.local_repository" width="400"
+                        id="image_h5d_jdn_fzb"/>
+                    </fig> <ul id="ul_rwr_wz1_3zb">
+                    <li>新建的空仓库克隆到本地后，本地只有一个空文件夹，需要调整为完整的目录。</li>
+                    </ul> </stepxmp>
+            </step>
+        </steps>
+    </taskbody>
+</task>

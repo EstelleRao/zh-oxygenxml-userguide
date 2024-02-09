@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="find_replace">
+    <title>查找和替换</title>
+    <body>
+        <p>查找和替换功能用于批量查找和替换文本、图片、元素、属性和属性值，可以自定义查找范围（项目范围和文件类型）和使用正则表达式。</p>
+        <p>在顶部菜单栏点击 <menucascade>
+                <uicontrol>Find</uicontrol>
+                <uicontrol>Find/Replace in Files</uicontrol>
+            </menucascade>，可打开查找和替换窗口。</p>
+        <image keyref="oxygen_find_replace.window"
+            id="image_vcr_smq_31c" width="400"/>
+        <ul id="ul_o2r_wmq_31c">
+            <li><uicontrol>Text to find</uicontrol>：待查找的文本或替换前的文本。如需使用正则表达式匹配文本，必须勾选 <uicontrol>Regular expression</uicontrol>。</li>
+            <li><uicontrol>Replace with</uicontrol>：替换后的文本。</li>
+            <li><uicontrol>Make backup files with extension</uicontrol>：保持取消勾选状态，否则会生成多余的.bak文件。</li>
+            <li><uicontrol>Scope</uicontrol>：查找或替换的范围。</li>
+            <li><uicontrol>Included files</uicontrol>：查找或替换的文档格式，在DITA项目中查找文本通常选择 <uicontrol>*.dita, *.ditamap, *.ditaval, *.xml</uicontrol> 文档格式。</li>
+        </ul>
+        <note id="note_n3s_ymq_31c" type="warning">
+            <ul id="ul_xfj_zmq_31c">
+                <li>
+                    <p>批量替换之前，建议预览改动前后的差异，避免批量替换文本时错误修改不相干的文件。</p>
+                </li>
+            </ul>
+        </note>
+    </body>
+</topic>

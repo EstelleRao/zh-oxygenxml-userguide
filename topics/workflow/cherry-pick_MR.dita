@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="qd1_rxq_qzb">
+    <title>Cherry-pick MR</title>
+    <shortdesc>在无需合并整个源分支的场景下，如需同步源分支 MR 上的多个 commit 到同仓库或关联仓库（fork 后的目标仓库）的目标分支，可在源分支合并 MR 后执行 cherry-pick MR 操作，复制该 MR 上的所有 commit 到目标分支。</shortdesc>
+    <taskbody>
+        <steps id="steps_x2x_sgr_qzb">
+            <step>
+                <cmd>在远程仓库主页点击 <menucascade>
+                    <uicontrol>Merge requests</uicontrol>
+                    <uicontrol>Merged</uicontrol>
+                    </menucascade>，查看已合并的所有合并请求。</cmd>
+                <info><image keyref="gitlab.merged_requests" id="image_ttg_r1s_qzb" width="400"
+                    /></info>
+            </step>
+            <step>
+                <cmd>点击需要同步的合并请求，在合并请求的详情页点击 <uicontrol>Cherry-pick</uicontrol>。</cmd>
+                <info><image keyref="gitlab.MR_cherry-pick" id="image_tb1_t1s_qzb" width="300"
+                    /></info>
+            </step>
+            <step>
+                <cmd>在 <wintitle>Cherry-pick this merge request</wintitle> 弹窗，选择目标仓库和目标分支，点击 <uicontrol>Cherry-pick</uicontrol>。</cmd>
+                <info><image keyref="gitlab.cherry-pick_this_MR" id="image_vdt_mbs_qzb" width="300"
+                    /></info>
+                <choices id="choices_fqc_3hr_qzb">
+                    <choice>如果目标分支是受保护分支，建议勾选 <uicontrol>Start a new merge request with these changes</uicontrol>，方便触发合并请求并进入合并请求编辑页面。</choice>
+                    <choice>
+                        <p>如果目标分支不是受保护分支，点击 <uicontrol>Cherry-pick</uicontrol> 后，选择的 MR 即合入目标分支。</p>
+                        <image placement="break" keyref="gitlab.cherry-pick_successful"
+                        id="image_itm_gdr_qzb" width="600"/> </choice>
+                    <choice>
+                        <p>如果 cherry-pick 失败，说明当前合并请求的改动和目标分支的已有改动冲突，无法执行 cherry-pick 操作，只能使用临时分支提交改动。</p>
+                        <image placement="break" keyref="gitlab.cherry-pick_failed"
+                        id="image_bwx_3dr_qzb" width="600"/> </choice>
+                </choices>
+            </step>
+        </steps>
+    </taskbody>
+</task>

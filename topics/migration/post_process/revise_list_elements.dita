@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="i53_yss_xzb">
+    <title>纠正 <codeph>&lt;ol></codeph> 和 <codeph>&lt;ul></codeph> 元素和属性</title>
+    <body>
+        <section id="section_szl_lxp_g1c">
+            <title>错误原因</title>
+            <p>无序列表嵌套多余的无序列表，导致显示异常。</p>
+            <image keyref="dita.incorrect_li" placement="break" id="image_fx3_xxp_g1c"
+                width="400"/>
+            <image placement="break" keyref="dita.incorrect_li_xml" width="400"
+                id="image_p22_nyp_g1c"/>
+        </section>
+        <section id="section_iyz_lxp_g1c"><title>纠正方法</title><p>移除多余的无序列表，确保显示正常。</p><image
+                keyref="dita.correct_li" id="image_tjn_yxp_g1c" width="600"/></section>
+    </body>
+</topic>

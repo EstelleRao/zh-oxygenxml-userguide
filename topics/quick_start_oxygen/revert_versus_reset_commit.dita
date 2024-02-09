@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="git_reset_commands">
+    <title>Revert commit vs. Reset commit</title>
+    <body>
+        <bodydiv>
+            <p>"Revert commit" 和 "Reset commit" 是 Git 中用于处理提交历史的两种不同的操作，它们有不同的目的和影响：</p>
+        </bodydiv>
+        <ol id="ol_bly_4kb_31c">
+            <li>
+                <p><b>Revert Commit</b></p>
+                <ul id="ul_cly_4kb_31c">
+                    <li><b>目的</b>：用于撤销某个提交，但不影响其之前或之后的提交。</li>
+                    <li><b>影响</b>：Revert 操作不会改变提交历史，而是在其后添加一个新的提交，该提交的更改与先前提交的更改相反。通过这种反向修改的方式撤销先前提交的更改，可以保持提交历史的完整性。</li>
+                    <li><b>适用场景</b>：假设提交历史中有三个提交（版本一、版本二、版本三），版本二有问题，需要撤销，这时可以使用 <codeph>git revert</codeph> 命令撤销版本二的更改，生成新的版本四。版本四保留了版权一和版本三的更改，但撤销了版本二的更改。</li>
+                </ul>
+                <codeblock id="codeblock_ely_4kb_31c" outputclass="language-xml">git revert &lt;commit-SHA></codeblock>
+            </li>
+            <li>
+                <p><b>Reset Commit</b></p>
+                <ul id="ul_fly_4kb_31c">
+                    <li><b>目的</b>：用于回退当前分支到指定版本，回退后重置提交历史。可以使用不同的模式进行回退，如 <codeph>--soft</codeph>、<codeph>--mixed</codeph> 或 <codeph>--hard</codeph>。</li>
+                    <li><b>影响</b>：Reset 操作会更改提交历史，因为它移除了指定提交之后的所有提交。在硬重置（<codeph>--hard</codeph>）模式下，不仅会移除提交，还会删除工作区和暂存区的更改。</li>
+                    <li><b>适用场景</b>：假设提交历史中有三个提交（版本一、版本二、版本三），最终上线只需发布版本一包含的更改，不需要发布版本二和版本三包含的更改，这时可以使用 <codeph>git reset</codeph> 命令回退当前分支到版本一，回退后，提交历史中不包含版本二和版本三的提交。</li>
+                </ul>
+                <codeblock id="codeblock_hly_4kb_31c" outputclass="language-xml">git reset --soft &lt;commit-SHA>   # 从提交历史中移除指定提交之后的所有提交，保留更改至暂存区，可在保留更改的基础上进行调整，并创建一个新的提交
+git reset --mixed &lt;commit-SHA>  # 从提交历史中移除指定提交之后的所有提交，保留更改至工作区，可将工作区的更改添加到暂存区，并创建一个新的提交
+git reset --hard &lt;commit-SHA>   # 从提交历史中移除指定提交之后的所有提交，不保留更改</codeblock>
+            </li>
+        </ol>
+        <p>在实际项目中，可根据具体需求选择使用 <codeph>git revert</codeph> 或 <codeph>git reset</codeph> 命令。<ul
+            id="ul_h2n_zwb_31c">
+            <li>对于公共分支（如主分支），应谨慎使用 <codeph>git reset</codeph> 命令，避免重置提交历史影响其他成员使用公共分支。</li>
+            <li>对于尚未推送到远程仓库的个人分支，可以使用 <codeph>git revert</codeph> 命令撤销更改，使用 <codeph>git reset</codeph> 命令回退版本。</li>
+            <li>对于已经推送到远程仓库且发起合并请求的个人分支，应谨慎使用 <codeph>git reset</codeph> 命令，避免重置提交历史影响审核人员理解。</li>
+            </ul></p>
+    </body>
+</topic>

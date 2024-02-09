@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="topic_dhh_3rd_hzb">
+    <title>新建远程分支</title>
+    <shortdesc>fork 的仓库会继承源仓库的所有分支，而新建的空仓库只有一个 <codeph>master</codeph> 默认分支。多分支管理时，可重新指定默认分支。</shortdesc>
+    <taskbody>
+        <context id="context_od3_kvz_hzb">
+            <p>在实际项目中，通常使用 <codeph>develop</codeph> 分支作为主要分支，合入临时分支改动，保持最新的开发状态。</p>
+        </context>
+        <steps id="steps_a21_vrz_hzb">
+            <step>
+                <cmd>在远程仓库主页新建  <codeph>develop</codeph> 分支。</cmd>
+                <substeps id="substeps_nyz_fq1_3zb">
+                    <substep>
+                        <cmd>选择源分支。</cmd>
+                        <info>
+                            <image placement="break" keyref="gitlab.source_branch"
+                                width="400" id="image_kgm_vq1_3zb"/>
+                        </info>
+                    </substep>
+                    <substep>
+                        <cmd>点击 <menucascade>
+                                <uicontrol>+</uicontrol>
+                                <uicontrol>New branch</uicontrol>
+                            </menucascade>，基于源分支新建一个  <codeph>develop</codeph> 分支。</cmd>
+                    </substep>
+                </substeps>
+                <info>
+                    <image placement="break" keyref="gitlab.new_branch" width="400"
+                        id="image_tmv_pvz_hzb"/>
+                </info>
+            </step>
+            <step>
+                <cmd>为 <codeph>develop</codeph> 分支命名，命名规范见 <xref keyref="branch_naming_rule"
+                    />。</cmd>
+                <info>
+                    <image placement="break" keyref="gitlab.branch_name" width="450"
+                        id="image_ift_qvz_hzb"/>
+                </info>
+            </step>
+            <step importance="optional">
+                <cmd>以同样的方式新建其他 <codeph>develop</codeph> 分支。</cmd>
+            </step>
+            <step>
+                <cmd>重新指定默认分支。</cmd>
+            <substeps>
+                <substep>
+                    <cmd>在左侧导航栏点击 <menucascade>
+                        <uicontrol>Settings</uicontrol>
+                        <uicontrol>Repository</uicontrol>
+                    </menucascade>。</cmd>
+                    <info>
+                        <image placement="inline" keyref="gitlab.settings_repository"
+                            height="200"/>
+                    </info>
+                </substep>
+                <substep>
+                    <cmd>在 <uicontrol>Repository Settings</uicontrol> 页面展开 <uicontrol>Branch defaults</uicontrol> 折叠面板，重新指定默认分支。默认分支不可删除。</cmd>
+                    <info>
+                        <image placement="inline" keyref="gitlab.branch_defaults"
+                            width="300"/>
+                        <image placement="inline" keyref="gitlab.default_branch"
+                            width="300"/>
+                    </info>
+                </substep>
+            </substeps>
+            </step>
+            <step>
+                <cmd>将 <codeph>develop</codeph> 分支设为受保护分支，具体步骤见<xref keyref="protected_branches"/>。</cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task>

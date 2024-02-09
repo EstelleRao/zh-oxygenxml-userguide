@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="concept">
+    <title>Concept topic</title>
+    <body>
+        <p>Concept topic（概念型主题）回答“是什么”的问题，用于引出任务或参考型信息的背景或概述。</p>
+        <p>以下示例展示了概念型主题的基本数据结构。<codeph>&lt;concept></codeph> 元素是根元素，不可缺失。</p>
+        <codeblock id="codeblock_bg2_s4z_21c" outputclass="language-xml">&lt;concept id="concept">
+ &lt;title>Introduction to Bird Calling&lt;/title>
+ &lt;shortdesc>If you wish to attract more birds to your Acme Bird Feeder,
+learn the art of bird calling. Bird calling is an efficient way
+to alert more birds to the presence of your bird feeder.&lt;/shortdesc>
+ &lt;conbody>
+   &lt;p>Bird calling requires learning:&lt;/p>
+   &lt;ul>
+    &lt;li>Popular and classical bird songs&lt;/li>
+    &lt;li>How to whistle like a bird&lt;/li>
+   &lt;/ul>
+ &lt;/conbody>
+&lt;/concept></codeblock>
+    </body>
+</topic>

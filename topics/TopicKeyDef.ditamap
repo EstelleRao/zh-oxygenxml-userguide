@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd"[]>
+<map xml:lang="zh-CN">
+    <topicref keys="customize_pdf" href="customize_pdf/customize_pdf.dita" format="dita"/>
+    <topicref keys="dita_guide" href="dita_guide/dita_guide.dita" format="dita"/>
+    <topicref keys="elements_attributes" href="quick_start_dita/elements_attributes.dita"
+        format="dita"/>
+    <topicref keys="figures" href="dita_guide/figures.dita" format="dita"/>
+    <topicref keys="linking" href="dita_guide/linking.dita" format="dita"/>
+    <topicref keys="reuse" href="dita_guide/reuse.dita" format="dita"/>
+    <topicref keys="reuse_content" href="dita_guide/reuse_content.dita" format="dita"/>
+    <topicref keys="reuse_methods" href="dita_guide/reuse_methods.dita" format="dita"/>
+    <topicref keys="reuse_elements" href="dita_guide/reuse_elements.dita" format="dita"/>
+    <topicref keys="topic_type" href="quick_start_dita/topic_type.dita" format="dita"/>
+    <topicref keys="branch" href="gitlab_guide/branch.dita" format="dita"/>
+    <topicref keys="branch_model" href="gitlab_guide/branch_model.dita" format="dita"/>
+    <topicref keys="branch_naming_rule" href="gitlab_guide/branch_naming_rule.dita" format="dita"/>
+    <topicref keys="branch_permissions" href="gitlab_guide/branch_permissions.dita" format="dita"/>
+    <topicref keys="cherry-pick_commit" href="workflow/cherry-pick_commit.dita" format="dita"/>
+    <topicref keys="cherry-pick_MR" href="workflow/cherry-pick_MR.dita" format="dita"/>
+    <topicref keys="commit_message" href="gitlab_guide/commit_message.dita" format="dita"/>
+    <topicref keys="new_repo_dir" href="gitlab_guide/new_repo_dir.dita" format="dita"/>
+    <topicref keys="new_repo_type" href="gitlab_guide/new_repo_type.dita" format="dita"/>
+    <topicref keys="gitlab_guide" href="gitlab_guide/gitlab_guide.dita" format="dita"/>
+    <topicref keys="cherry-pick" href="workflow/cherry-pick.dita" format="dita"/>
+    <topicref keys="old_repo_dir" href="gitlab_guide/old_repo_dir.dita" format="dita"/>
+    <topicref keys="old_repo_type" href="gitlab_guide/old_repo_type.dita" format="dita"/>
+    <topicref keys="repo" href="gitlab_guide/repo.dita" format="dita"/>
+    <topicref keys="convert" href="migration/convert/convert.dita" format="dita"/>
+    <topicref keys="create_DITA_map" href="migration/prepare/create_DITA_map.dita" format="dita"/>
+    <topicref keys="create_project" href="migration/prepare/create_project.dita" format="dita"/>
+    <topicref keys="migration" href="migration/migration.dita" format="dita"/>
+    <topicref keys="publish" href="migration/post_process/publish.dita" format="dita"
+        keyscope="migration"/>
+    <topicref keys="rename" href="migration/post_process/rename.dita" format="dita"/>
+    <topicref keys="revise_elements" href="migration/post_process/revise_elements.dita" format="dita"/>
+    <topicref keys="revise_images" href="migration/post_process/revise_images.dita" format="dita"/>
+    <topicref keys="revise_image_elements" href="migration/post_process/revise_image_elements.dita"
+        format="dita"/>
+    <topicref keys="revise_list_elements" href="migration/post_process/revise_list_elements.dita"
+        format="dita"/>
+    <topicref keys="revise_note_elements" href="migration/post_process/revise_note_elements.dita"
+        format="dita"/>
+    <topicref keys="revise_table_elements" href="migration/post_process/revise_table_elements.dita"
+        format="dita"/>
+    <topicref keys="update_DITA_Map" href="migration/post_process/update_DITA_Map.dita" format="dita"/>
+    <topicref keys="prepare_word" href="migration/prepare/prepare_word.dita" format="dita"/>
+    <topicref keys="overview" href="overview/overview.dita" format="dita"/>
+    <topicref keys="add_existing_topic" href="quick_start_dita/add_existing_topic.dita" format="dita"/>
+    <topicref keys="add_new_topic" href="quick_start_dita/add_new_topic.dita" format="dita"/>
+    <topicref keys="create_new_manual" href="workflow/create_new_manual.dita" format="dita"/>
+    <topicref keys="create_new_map" href="quick_start_dita/create_new_map.dita" format="dita"/>
+    <topicref keys="create_new_topic" href="quick_start_dita/create_new_topic.dita" format="dita"/>
+    <topicref keys="create_project" href="quick_start_dita/manage_dita_project.dita"
+        format="dita"/>
+    <topicref keys="dita_map" href="quick_start_dita/dita_map.dita" format="dita"/>
+    <topicref keys="dita_project" href="quick_start_dita/dita_project.dita" format="dita"/>
+    <topicref keys="dita_topic" href="quick_start_dita/dita_topic.dita" format="dita"/>
+    <topicref keys="publish" href="quick_start_dita/publish.dita" format="dita"
+        keyscope="quick_start_dita"/>
+    <topicref keys="quick_start_dita" href="quick_start_dita/quick_start_dita.dita" format="dita"/>
+    <topicref keys="update_manual_version" href="workflow/update_manual_version.dita"
+        format="dita"/>
+    <topicref keys="validate_map" href="quick_start_dita/validate_map.dita" format="dita"/>
+    <topicref keys="layout" href="quick_start_oxygen/layout.dita" format="dita"/>
+    <topicref keys="quick_start_oxygen" href="quick_start_oxygen/quick_start_oxygen.dita"
+        format="dita"/>
+    <topicref keys="git" href="quick_start_oxygen/git.dita" format="dita"/>
+    <topicref keys="tools" href="quick_start_oxygen/tools.dita" format="dita"/>
+    <topicref keys="translation_process" href="translation/translation_process.dita" format="dita"/>
+    <topicref keys="output_failed" href="troubleshoot/output_failed.dita" format="dita"/>
+    <topicref keys="reusable_components_not_listed"
+        href="troubleshoot/reusable_components_not_listed.dita" format="dita"/>
+    <topicref keys="troubleshoot" href="troubleshoot/troubleshoot.dita" format="dita"/>
+    <topicref keys="clone_remote_branch" href="workflow/clone_remote_branch.dita" format="dita"/>
+    <topicref keys="create_local_branch" href="workflow/create_local_branch.dita" format="dita"/>
+    <topicref keys="create_merge_request" href="workflow/create_merge_request.dita" format="dita"/>
+    <topicref keys="create_new_repo" href="workflow/create_new_repo.dita" format="dita"/>
+    <topicref keys="create_remote_branch" href="workflow/create_remote_branch.dita" format="dita"/>
+    <topicref keys="develop_local_branch" href="workflow/develop_local_branch.dita" format="dita"/>
+    <topicref keys="merge_requests" href="workflow/merge_requests.dita" format="dita"/>
+    <topicref keys="protected_branches" href="workflow/protected_branches.dita" format="dita"/>
+    <topicref keys="push_local_branch" href="workflow/push_local_branch.dita" format="dita"/>
+    <topicref keys="release_branch" href="workflow/release_branch.dita" format="dita"/>
+    <topicref keys="review_merge_request" href="workflow/review_merge_request.dita" format="dita"/>
+    <topicref keys="workflow" href="workflow/workflow.dita" format="dita"/>
+</map>

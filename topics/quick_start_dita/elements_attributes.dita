@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_p1t_yzf_fzb">
+    <title>DITA元素和属性</title>
+    <body>
+        <p>DITA元素用来标记文档的组成部分，如标题、目录、段落等。</p>
+        <table frame="all" id="table_wd3_3cy_21c">
+            <tgroup cols="2">
+                <colspec colname="c1" colnum="1" colwidth="0.8*"/>
+                <colspec colname="c2" colnum="2" colwidth="1.2*"/>
+                <thead>
+                    <row>
+                        <entry>元素名称</entry>
+                        <entry>文档内容对象</entry>
+                    </row>
+                </thead>
+                <tbody>
+                    <row>
+                        <entry>&lt;map></entry>
+                        <entry>完整的说明书或多个章节的合集</entry>
+                    </row>
+                    <row>
+                        <entry>&lt;toc></entry>
+                        <entry>目录</entry>
+                    </row>
+                    <row>
+                        <entry>&lt;chapter></entry>
+                        <entry>章节</entry>
+                    </row>
+                    <row>
+                        <entry>&lt;topic></entry>
+                        <entry>组成章节的最小单元</entry>
+                    </row>
+                    <row>
+                        <entry>&lt;title></entry>
+                        <entry>标题</entry>
+                    </row>
+                    <row>
+                        <entry>&lt;p></entry>
+                        <entry>段落</entry>
+                    </row>
+                    <row>
+                        <entry>&lt;ol></entry>
+                        <entry>有序列表</entry>
+                    </row>
+                    <row>
+                        <entry>&lt;ul></entry>
+                        <entry>无序列表</entry>
+                    </row>
+                    <row>
+                        <entry>&lt;li></entry>
+                        <entry>列表项</entry>
+                    </row>
+                    <row>
+                        <entry>&lt;table></entry>
+                        <entry>表格</entry>
+                    </row>
+                    <row>
+                        <entry>&lt;fig></entry>
+                        <entry>带题注的图片</entry>
+                    </row>
+                    <row>
+                        <entry>&lt;image></entry>
+                        <entry>图片</entry>
+                    </row>
+                    <row>
+                        <entry>……</entry>
+                        <entry>……</entry>
+                    </row>
+                </tbody>
+            </tgroup>
+        </table>
+        <p>DITA属性除了标记文档组成部分，如图片引用、超链接等，还可用于条件发布。</p>
+        <table frame="all" id="table_hn2_wcy_21c">
+            <tgroup cols="2">
+                <colspec colname="c1" colnum="1" colwidth="0.8*"/>
+                <colspec colname="c2" colnum="2" colwidth="1.2*"/>
+                <thead>
+                    <row>
+                        <entry>属性名称</entry>
+                        <entry>文档内容对象或作用</entry>
+                    </row>
+                </thead>
+                <tbody>
+                    <row>
+                        <entry>@id</entry>
+                        <entry>文档内容对象的唯一标识符，用于基于@id的元素复用，要求同一主题内的元素@id不可重复，同一DITA Map内的主题@id不可重复，子Map@id不可重复</entry>
+                    </row>
+                    <row>
+                        <entry>@href</entry>
+                        <entry>图片、超链接等对象的引用地址，用于直接引用</entry>
+                    </row>
+                    <row>
+                        <entry>@keyref</entry>
+                        <entry>主题、组件、图片等对象的Key值，用于间接引用</entry>
+                    </row>
+                    <row>
+                        <entry>@format</entry>
+                        <entry>引用文件的格式</entry>
+                    </row>
+                    <row>
+                        <entry>@navtitle</entry>
+                        <entry>引用文件的导航标题</entry>
+                    </row>
+                    <row>
+                        <entry>@product</entry>
+                        <entry>条件发布常用过滤项</entry>
+                    </row>
+                    <row>
+                        <entry>@platform</entry>
+                        <entry>条件发布常用过滤项</entry>
+                    </row>
+                    <row>
+                        <entry>@audience</entry>
+                        <entry>条件发布常用过滤项</entry>
+                    </row>
+                    <row>
+                        <entry>……</entry>
+                        <entry>……</entry>
+                    </row>
+                </tbody>
+            </tgroup>
+        </table>
+        <p>元素的标签通常成对出现，由起始标签、结束标签共同包含相应内容。<codeblock id="codeblock_wgq_2by_21c" outputclass="language-xml">&lt;起始元素标签>我是文档内容&lt;/结束元素标签>
+&lt;title>元素和属性&lt;/title></codeblock></p>
+        <p>当元素标签不包含内容时，会出现单个的自闭合标签。自闭合标签通常与属性配合使用。<codeblock id="codeblock_jlj_xby_21c" outputclass="language-xml">&lt;自闭合元素标签 属性和值/>
+&lt;image keyref="common_global.common_label.no_use_package_damaged" height="30"/></codeblock></p>
+        <p>不同元素可以嵌套，但不能随意嵌套。每个元素都有可匹配使用的属性，但元素和属性不能随意搭配。</p>
+    </body>
+</topic>

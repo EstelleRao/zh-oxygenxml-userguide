@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="topic_uqm_yxf_fzb">
+    <title>新建远程仓库</title>
+    <shortdesc>新建 GitLab 远程仓库有两种方式：一是从零开始新建一个仓库，二是复制现有仓库生成新仓库。复制现有仓库可继承该仓库的目录和 <ph
+        outputclass="blue">index.ditamap</ph>，在其基础上改造省时省力。</shortdesc>
+    <taskbody>
+        <steps id="ol_lq3_l2g_fzb">
+            <step>
+                <cmd>新建一个空仓库或复制现有仓库。</cmd>
+                <choices>
+                    <choice> <p>在 GitLab RAI 空间点击 <uicontrol>New project</uicontrol>，新建一个空仓库。</p>
+                        <image placement="break" keyref="gitlab.new_project"
+                        width="600"/> </choice>
+                    <choice> <p>在现有仓库主页点击 <uicontrol>fork</uicontrol>，复制该仓库。</p> <image
+                        placement="break" keyref="gitlab.fork_project" width="600"/>
+                    </choice>
+                </choices>
+            </step>
+            <step>
+                <cmd>填写 <uicontrol>Project name</uicontrol> 字段，命名规范见 <xref keyref="new_repo_type"
+                    />。</cmd>
+                <info>
+                    <image placement="break" keyref="gitlab.project_name" width="200"
+                        id="image_yq2_tmc_jzb"/>
+                </info>
+            </step>
+            <step>
+                <cmd>填写 <uicontrol>Project URL</uicontrol> 和 <uicontrol>Project slug </uicontrol>字段。</cmd>
+                <info> <image placement="break" width="450" keyref="gitlab.project_URL" id="image_ulb_fmc_jzb"/>
+                    <ul id="ul_vwd_mj4_f1c">
+                        <li><uicontrol>Project URL</uicontrol>：<xref
+                            href="https://gitlab.csrbtx.com/rai" format="html" scope="external"
+                            /></li>
+                        <li><uicontrol>Project slug</uicontrol>：同 <uicontrol>Project name</uicontrol>，包括大小写。</li>
+                    </ul> </info>
+            </step>
+            <step>
+                <cmd>其他选项保留默认设置。</cmd>
+            </step>
+            <step>
+                <cmd>点击 <uicontrol>Create project</uicontrol> 或 <uicontrol>Fork project</uicontrol>，完成仓库创建。</cmd>
+            </step>
+            <step>
+                <cmd>（可选）如需重命名仓库，在左侧导航栏点击 <menucascade>
+                    <uicontrol>Settings</uicontrol>
+                    <uicontrol>General</uicontrol>
+                    </menucascade>，修改 <uicontrol>Project name</uicontrol> 和 <uicontrol>Advanced</uicontrol> 设置中的 <uicontrol>Path</uicontrol>。</cmd>
+                <info>
+                    <image placement="break" keyref="gitlab.change_path" width="500"
+                        id="image_hty_cl5_hzb"/>
+                </info>
+            </step>
+        </steps>
+    </taskbody>
+</task>

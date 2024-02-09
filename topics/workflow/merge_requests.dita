@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="spn_nf5_hzb">
+    <title>设置合并请求权限</title>
+    <shortdesc>提交变更到受保护分支之前，需要创建合并请求。经过至少两位审核人的审查和批准后，才能合并变更到受保护分支。</shortdesc>
+    <taskbody>
+        <steps>
+            <step>
+                <cmd>在远程仓库的左侧导航栏点击 <menucascade>
+                        <uicontrol>Settings</uicontrol>
+                        <uicontrol>Merge requests</uicontrol>
+                    </menucascade>。</cmd>
+                <info>
+                    <image placement="break" keyref="gitlab.settings_merge_requests"
+                        height="200" id="image_fcg_th5_hzb"/>
+                </info>
+            </step>
+            <step>
+                <cmd>在 <uicontrol>Squash commits when merging</uicontrol> 下勾选 <uicontrol>Encourage</uicontrol>，方便合并多条提交记录，保持提交记录的简洁性。</cmd>
+                <info>
+                    <image placement="break"
+                        keyref="gitlab.squash_commits_when_merging" width="400"
+                        id="image_jlz_5h5_hzb"/>
+                </info>
+            </step>
+            <step importance="optional">
+                <cmd>如果当前仓库为其他仓库的副本（fork），需把当前仓库设置为合并请求的目标仓库。</cmd>
+                <info>
+                    <image placement="break"
+                        keyref="gitlab.merge_request_target_project" width="400"
+                        id="image_ihy_541_kzb"/>
+                </info>
+            </step>
+            <step>
+                <cmd>为受保护分支的合并请求设置审核规则。</cmd>
+                <info>
+                    <ul id="ul_e2f_scb_3zb">
+                        <li>受保护分支的审核规则命名为 <uicontrol>All protected branches approval</uicontrol>。</li>
+                        <li>受保护分支的审核人员数量设为3人，限制提交者批准时，由另外两位审核人员审核并批准。</li>
+                        <li><codeph>All branches</codeph> 的审核人员数量设为0，表示非受保护分支的合并请求无需审核和批准，可直接合并。</li>
+                    </ul>
+                    <image placement="break" keyref="gitlab.merge_request_approvals"
+                        width="400" id="image_bgs_wh5_hzb"/>
+                </info>
+            </step>
+            <step>
+                <cmd>在 <uicontrol>Approval settings</uicontrol> 下勾选 <uicontrol>Prevent approval by author</uicontrol> 和 <uicontrol>Keep approvals</uicontrol>。</cmd>
+                <info>
+                    <image placement="break" keyref="gitlab.approval_settings"
+                        width="400" id="image_p1l_xh5_hzb"/>
+                </info>
+            </step>
+            <step>
+                <cmd>其他设置保留默认选项，点击 <uicontrol>Save changes</uicontrol> 保存。</cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task>

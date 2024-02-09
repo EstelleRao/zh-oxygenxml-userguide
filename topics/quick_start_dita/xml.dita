@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="xml_rule">
+    <title>XML文档</title>
+    <body>
+        <p>技术文档包括内容、结构和样式。XML专为传输和存储数据而设计。XML自身是纯文本（内容本身）和元语言（用于定义计算机可以理解的语言标记），即可阅读的一切内容。XML的DTD或者Schema是对内容结构以及其他写作规则的定义，能够约束内容的结构。CSS和XSLT等样式转换技术帮助确定发布的样式。</p>
+        <p>XML文档由文档的序言和XML的根元素组成。序言部分必须包括XML的声明语句以及可选的处理指令。在如下示例中，<codeph>&lt;?xml version="1.0" encoding="UTF-8"?></codeph>为XML文档的序言部分，<codeph>&lt;topic></codeph>为该XML文档的根元素。<codeblock id="codeblock_ux5_wpb_f1c" outputclass="language-xml">&lt;?xml version="1.0" encoding="UTF-8"?>
+&lt;!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+&lt;topic id="xml_rule">
+    &lt;title>XML文档&lt;/title>
+    &lt;body>
+        &lt;p>段落1&lt;/p>
+        &lt;p>段落2&lt;/p>
+    &lt;/body>
+&lt;/topic></codeblock></p>
+    </body>
+</topic>

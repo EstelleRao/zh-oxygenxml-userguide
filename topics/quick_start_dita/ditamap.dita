@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="ditamap">
+    <title>DITA Map</title>
+    <body>
+        <p>DITA map用于定义不同topic之间的层级关系，使其形成一个按照某种逻辑顺序组织的信息产品，易于浏览，易于理解，易于使用。 DITA map也可用于定义其他重要资源，例如Key定义、内容复用、条件发布。</p>
+    <p>DITA map以 .ditamap 为文件扩展名，常见输出格式有PDF手册、HTML网页、在线帮助文档。</p>
+        <p>DITA map包括两类元素：</p>
+        <ol id="ul_jsm_db1_f1c">
+            <li>基础map元素，例如<codeph>&lt;map></codeph>（DITA map的根元素，一个map中可以包含其他map，可以包含topic，甚至可以包含非DITA的元素）、<codeph>&lt;topicref></codeph>（DITA map的基础元素，可以指向一个DITA主题，也可以指向其他DITA map，或者非DITA内容，可以嵌套<codeph>&lt;topicref></codeph>元素创建层级）、<codeph>&lt;topicmeta></codeph>（用于提供map、单个topic或topic分组的描述性数据）、<codeph>&lt;reltable></codeph>（关系表格可以用来定义一个map中DITA topic之间或DITA topic与非DITA内容之间的关系，在出版物中表现为链接形式）。</li>
+            <li>map分组元素，例如<codeph>&lt;keydef></codeph>（用于定义资源的Key值，便于灵活管理和复用资源）、<codeph>&lt;topichead></codeph>（搭配<codeph>@navtitle</codeph>属性或元素生成一个章节标题，显示在导航、目录、正文中）。</li>
+        </ol>
+        <p>以下示例展示了DITA map的基本数据结构。元素是根元素，不可缺失。</p>
+        <codeblock id="codeblock_nr2_p4z_21c" outputclass="language-xml">&lt;map id="mybats">
+  &lt;title>Bats&lt;/title>
+  &lt;topicref href="bathistory.dita" type="reference">&lt;/topicref>
+  &lt;topicref href="batspecies.dita">
+    &lt;topicmeta>
+      &lt;audience type="programmer" job="troubleshooting" experiencelevel="expert"/>
+    &lt;/topicmeta>
+  &lt;topicref href="batsonar.dita" type="concept">&lt;/topicref>
+  &lt;topicref href="batguano.dita" type="reference">&lt;/topicref>
+  &lt;/topicref>
+  &lt;topichead>
+    &lt;topicmeta>&lt;navtitle>Caring&lt;/navtitle>&lt;/topicmeta>
+    &lt;topicref href="batcaring.dita">&lt;/topicref>
+    &lt;topicref href="batfeeding.dita">&lt;/topicref>
+  &lt;/topichead>
+&lt;/map></codeblock>
+    </body>
+</topic>

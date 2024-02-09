@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="topic_snm_rfp_dzb">
+    <title>新建DITA Map</title>
+    <taskbody>
+        <steps id="steps_ppg_f51_kzb">
+            <step>
+                <cmd>在顶部菜单栏点击 <menucascade>
+                    <uicontrol>File</uicontrol>
+                    <uicontrol><image keyref="oxygen_new_file.button" id="image_d4m_ms1_kzb"
+                        />New</uicontrol>
+                    </menucascade> 或在工具栏点击 <uicontrol><image keyref="oxygen_new_file.button"
+                    id="image_ebt_ms1_kzb"/>New</uicontrol>。</cmd>
+            </step>
+            <step>
+                <cmd>在 <wintitle>New</wintitle> 窗口点击 <menucascade>
+                    <uicontrol>Framework templates</uicontrol>
+                    <uicontrol>DITA</uicontrol>
+                    <uicontrol>Maps</uicontrol>
+                    </menucascade>，选择需要的Map类型。</cmd>
+            </step>
+            <step>
+                <cmd>使用 <uicontrol>DITA Maps Manager</uicontrol> 视图打开DITA Map文件， <uicontrol>DITA Maps Manager</uicontrol> 视图类似导航窗格或目录。</cmd>
+                <info> <image placement="break" keyref="oxygen_dita_maps_manager.view" width="200"
+                    id="image_jdk_cmb_kzb"/> </info>
+            </step>
+        </steps>
+    </taskbody>
+</task>

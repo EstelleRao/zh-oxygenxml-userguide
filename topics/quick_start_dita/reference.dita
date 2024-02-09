@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="reference">
+    <title>Reference topic</title>
+    <body>
+        <p>Reference topic（参考型主题）用于提供参数或指令查询表或产品的事实性信息，旨在帮助用户快速获取和检索这些信息。常见的参考型主题包括产品规格、环境条件、设备清单、部件清单、必备工具清单、API参数表、命令行等。</p>
+    <p>以下示例展示了 reference topic 的基本数据结构。<codeph>&lt;reference></codeph> 元素是根元素，不可缺失。</p>
+        <codeblock id="codeblock_y21_w4z_21c" outputclass="language-xml">&lt;reference id="requiredTools">
+  &lt;title>Tools required to maintain a big machine&lt;/title>
+  &lt;refbody>
+    &lt;section>
+      &lt;title>Small tools&lt;/title>
+      &lt;ul>
+        &lt;li>Hard hat&lt;/li>
+        &lt;li>Hammer&lt;/li>
+        &lt;li>Nail&lt;/li>
+        &lt;li>Metal polish&lt;/li>
+      &lt;/ul>
+    &lt;/section>
+    &lt;section>
+      &lt;title>Expensive tools&lt;/title>
+      ...
+    &lt;/section>
+  &lt;/refbody>
+&lt;/reference></codeblock>
+    </body>
+</topic>

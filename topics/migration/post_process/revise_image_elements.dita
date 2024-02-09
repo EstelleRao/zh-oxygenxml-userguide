@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="gfj_5ss_xzb">
+    <title>纠正 <codeph>&lt;image></codeph> 元素和属性</title>
+    <body>
+        <section id="section_fvv_5np_g1c">
+            <title>错误原因</title>
+            <ol id="ol_r14_14p_g1c">
+                <li><p>生成多余元素：转换过程中从Word文档中的图片自动生成文本生成<codeph>&lt;alt></codeph>元素。</p><image
+                        placement="inline" keyref="dita.alt_element" id="image_dmv_vnp_g1c"
+                        width="375"/></li>
+                <li><p>错误嵌套：<codeph>&lt;p></codeph>元素嵌套<codeph>&lt;image></codeph>元素。</p><image
+                        placement="inline" keyref="dita.replace_p_with_image" width="375"
+                        id="image_b31_ynp_g1c"/></li>
+                <li><p>引用失效：大量图片已调整位置并重命名，转换后自动生成的基于相对路径（@href属性）的图片引用失效。</p><image
+                        keyref="dita.image_href" id="image_bvr_15p_g1c" width="220"/></li>
+                <li>图片位置和尺寸有误：图片太大或太小，行内图片换行显示。</li>
+            </ol>
+        </section>
+        <section id="section_plc_nkt_xzb"
+            ><title>删除 <codeph>&lt;alt></codeph> 元素</title><p>使用 <codeph>Ctrl+Shift+H</codeph> 快捷键打开查找/替换窗口，输入以下文本，指定查找/替换范围和文档格式，全局删除<codeph>&lt;alt></codeph>元素及其内容。<ul
+            id="ul_yvk_mkp_g1c">
+            <li>替换前文本（正则表达式）：<codeph>&lt;alt>.*?&lt;/alt></codeph><ul id="ul_kvt_5kp_g1c">
+                <li><codeph>.*?</codeph> 通配符：用于匹配任意字符。</li>
+                <li><uicontrol>Regular expression</uicontrol> 选项：必选项。</li>
+                </ul></li>
+            <li>替换后文本：无需输入任何文本</li>
+            <li>查找/替换范围：当前仓库路径</li>
+            <li>查找/替换的文档格式：*.dita, *.ditamap, *.ditaval, *.xml</li>
+            </ul></p><image placement="inline" keyref="dita.delete_alt_element"
+            id="image_rrn_dkp_g1c" width="400"/></section>
+        <section id="section_fpr_zjp_g1c">
+            <title>纠正错误嵌套元素</title>
+            <p>使用 <codeph>Ctrl+Shift+H</codeph> 快捷键打开查找/替换窗口，依次输入以下文本，指定查找/替换范围和文档格式，全局删除<codeph>&lt;image></codeph>元素外的<codeph>&lt;p></codeph>元素。<ul>
+                <li>替换前文本（正则表达式）：<codeph>&lt;p>\s+&lt;image</codeph>、<codeph>&lt;/image>\s+&lt;/p></codeph><ul
+                    id="ul_fjs_fqp_g1c">
+                    <li><codeph>\s+</codeph> 通配符：用于匹配任意空格、空行。</li>
+                    <li><uicontrol>Regular expression</uicontrol> 选项：必选项。</li>
+                    </ul></li>
+                <li>替换后文本：<codeph>&lt;image</codeph>、<codeph>&lt;/image></codeph></li>
+                <li>查找/替换范围：当前仓库路径</li>
+                <li>查找/替换的文档格式：*.dita, *.ditamap, *.ditaval, *.xml</li>
+                </ul></p>
+        </section>
+        <section id="section_eh1_tkt_xzb"> <title>更新 <codeph>&lt;image></codeph> 引用</title>
+            <ol id="ol_zvr_25p_g1c">
+                <li>使用 <codeph>Ctrl+Shift+H</codeph> 快捷键打开查找/替换窗口，输入以下文本，指定查找/替换范围和文档格式，全局替换@href属性为@keyref属性。<ul
+                    id="ul_kqj_f5p_g1c">
+                    <li>替换前文本（正则表达式）：<codeph>&lt;image\s+href="media.*?.(png|svg|jpg|jepg)"/></codeph><ul
+                        id="ul_ajx_j5p_g1c">
+                        <li><codeph>\s+</codeph> 通配符：用于匹配任意空格、空行。</li>
+                        <li><codeph>.*?</codeph> 通配符：用于匹配任意字符。</li>
+                        <li><codeph>(png|svg|jpg|jepg)</codeph>：用于匹配<codeph>png</codeph>、<codeph>svg</codeph>、<codeph>jpg</codeph>或<codeph>jepg</codeph>图片格式。</li>
+                        <li><uicontrol>Regular expression</uicontrol> 选项：必选项。</li>
+                        </ul></li>
+                    <li>替换后文本：<codeph>&lt;image keyref=""/></codeph></li>
+                    <li>查找/替换范围：当前仓库路径</li>
+                    <li>查找/替换的文档格式：*.dita, *.ditamap, *.ditaval, *.xml</li>
+                    </ul></li>
+                <li>使用 <uicontrol>Validate</uicontrol> 校验功能过滤出DITA map中的所有图片问题，Oxygen提示 <codeph>&lt;image keyref=""/></codeph> 缺少属性值。</li>
+                <li>逐个点击提示，进入提示关联文件，使用 <uicontrol>DITA Reusable Components</uicontrol> 视图插入正确的图片。</li>
+                <li>再次校验DITA map，确认图片引用正确。</li>
+            </ol> </section>
+        <section id="section_mzj_cwp_g1c">
+            <title>图片位置和尺寸</title>
+            <ol id="ol_gz4_dwp_g1c">
+                <li>单击图片，使用 <codeph>Alt+Enter</codeph> 快捷键打开属性编辑窗口。</li>
+                <li>设置图片位置为行内或换行，在 <uicontrol>Name</uicontrol> 输入框输入 <codeph>placement</codeph>，在 <uicontrol>Value</uicontrol> 输入框输入 <codeph>inline</codeph>（行内显示）或 <codeph>break</codeph>（换行显示）。</li>
+                <li>设置图片宽度或高度，在 <uicontrol>Name</uicontrol> 输入框输入 <codeph>width</codeph> 或 <codeph>height</codeph>，在 <uicontrol>Value</uicontrol> 输入框输入具体的数值。</li>
+                <li>发布DITA map，确认图片正常显示。</li>
+            </ol>
+        </section>
+    </body>
+</topic>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE troubleshooting PUBLIC "-//OASIS//DTD DITA Troubleshooting//EN" "troubleshooting.dtd">
+<troubleshooting id="topic_xt5_tcs_4zb">
+    <title>发布失败</title>
+    <troublebody>
+        <troubleSolution>
+            <cause>
+                <title>可能原因</title>
+                <p>本地打开了之前发布的index.pdf文件。</p>
+            </cause>
+            <remedy>
+                <title>解决方法</title>
+                <steps-unordered>
+                    <step>
+                        <cmd>关闭打开的index.pdf文件，重新发布。</cmd>
+                    </step>
+               </steps-unordered>
+            </remedy>
+        </troubleSolution>
+    </troublebody>
+</troubleshooting>

@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE bookmap PUBLIC "-//OASIS//DTD DITA BookMap//EN" "bookmap.dtd">
+<bookmap id="oxygen_xml_author_user_manual" xml:lang="zh-CN">
+    <booktitle>
+        <mainbooktitle>Oxygen XML Author使用指南</mainbooktitle>
+    </booktitle>
+    <bookmeta>
+        <author>Estelle Rao</author>
+        <critdates>
+            <created date="20231023"/>
+        </critdates>
+    </bookmeta>
+    <frontmatter>
+        <topicref href="topics/revision.dita"/>
+        <booklists>
+            <toc/>
+        </booklists>
+    </frontmatter>
+    <chapter keyref="overview"/>
+    <chapter keyref="quick_start_oxygen">
+        <topicref keyref="layout"/>
+        <topicref keyref="tools">
+            <topicref keyref="dita_project">
+                <topicref href="topics/quick_start_dita/manage_dita_project.dita"/>
+                <topicref href="topics/quick_start_dita/share_project_settings.dita"/>
+            </topicref>
+            <topicref keyref="git">
+                <topicref href="topics/quick_start_oxygen/git_clone.dita"/>
+                <topicref href="topics/quick_start_oxygen/resolve_conflict.dita"/>
+                <topicref href="topics/quick_start_oxygen/git_merge_versus_rebase.dita"/>
+                <topicref href="topics/quick_start_oxygen/revert_versus_reset_commit.dita"/>
+            </topicref>
+            <topicref href="topics/quick_start_oxygen/find_replace.dita"/>
+            <topicref href="topics/quick_start_oxygen/compare_files.dita"/>
+            <topicref href="topics/quick_start_oxygen/validate.dita"/>
+            <topicref href="topics/quick_start_oxygen/transform.dita"/>
+        </topicref>
+    </chapter>
+    <chapter keyref="quick_start_dita">
+        <topicref href="topics/quick_start_dita/xml.dita">
+            <topicref href="topics/quick_start_dita/xml_elements.dita"/>
+            <topicref href="topics/quick_start_dita/xml_rule.dita"/>
+        </topicref>
+        <topicref keyref="elements_attributes">
+            <topicref href="topics/quick_start_dita/general_text_elements.dita"/>
+            <topicref href="topics/quick_start_dita/special_text_elements.dita"/>
+            <topicref href="topics/quick_start_dita/table_elements.dita"/>
+            <topicref href="topics/quick_start_dita/image_elements.dita"/>
+            <topicref href="topics/quick_start_dita/xref_elements.dita"/>
+        </topicref>
+        <topicref keyref="dita_topic">
+            <topicref keyref="topic_type">
+                <topicref href="topics/quick_start_dita/topic.dita"/>
+                <topicref href="topics/quick_start_dita/concept.dita"/>
+                <topicref href="topics/quick_start_dita/task.dita"/>
+                <topicref href="topics/quick_start_dita/reference.dita"/>
+            </topicref>
+            <topicref keyref="create_new_topic"/>
+        </topicref>
+        <topicref href="topics/quick_start_dita/dita_map.dita">
+            <topicref href="topics/quick_start_dita/map_type.dita">
+                <topicref href="topics/quick_start_dita/ditamap.dita"/>
+                <topicref href="topics/quick_start_dita/bookmap.dita"/>
+            </topicref>
+            <topicref keyref="create_new_map"/>
+            <topicref keyref="add_existing_topic"/>
+            <topicref keyref="add_new_topic"/>
+            <topicref keyref="validate_map"/>
+            <topicref keyref="quick_start_dita.publish"/>
+        </topicref>
+    </chapter>
+    <chapter keyref="gitlab_guide">
+        <topicref keyref="repo">
+            <topicref href="topics/gitlab_guide/repo_change.dita"/>
+            <topicref href="topics/gitlab_guide/old_repo.dita">
+                <topicref keyref="old_repo_type"/>
+                <topicref href="topics/gitlab_guide/old_repo_dir.dita"/>
+            </topicref>
+            <topicref href="topics/gitlab_guide/new_repo.dita">
+                <topicref keyref="new_repo_type"/>
+                <topicref keyref="new_repo_dir"/>
+            </topicref>
+        </topicref>
+        <topicref keyref="branch">
+            <topicref keyref="branch_model"/>
+            <topicref keyref="branch_naming_rule"/>
+            <topicref keyref="branch_permissions"/>
+        </topicref>
+        <topicref keyref="commit_message"/>
+        <topicref href="topics/workflow/cherry-pick.dita">
+            <topicref keyref="cherry-pick_MR"/>
+            <topicref keyref="cherry-pick_commit"/>
+        </topicref>
+    </chapter>
+    <chapter keyref="workflow">
+        <topicref keyref="create_new_repo">
+            <topicref keyref="protected_branches"/>
+            <topicref keyref="merge_requests"/>
+        </topicref>
+        <topicref keyref="create_remote_branch"/>
+        <topicref keyref="clone_remote_branch"/>
+        <topicref keyref="create_local_branch"/>
+        <topicref keyref="develop_local_branch">
+            <topicref keyref="create_new_manual"/>
+            <topicref keyref="update_manual_version"/>
+        </topicref>
+        <topicref keyref="push_local_branch"/>
+        <topicref keyref="create_merge_request"/>
+        <topicref keyref="review_merge_request"/>
+        <topicref keyref="release_branch"/>
+    </chapter>
+    <chapter keyref="migration">
+        <topichead>
+            <topicmeta>
+                <navtitle>迁移前</navtitle>
+            </topicmeta>
+            <topicref keyref="prepare_word"/>
+            <topicref keyref="create_project"/>
+            <topicref keyref="create_DITA_map"/>
+        </topichead>
+        <topichead>
+            <topicmeta>
+                <navtitle>迁移中</navtitle>
+            </topicmeta>
+            <topicref keyref="convert"/>
+        </topichead>
+        <topichead>
+            <topicmeta>
+                <navtitle>迁移后</navtitle>
+            </topicmeta>
+            <topicref keyref="rename"/>
+            <topicref keyref="update_DITA_Map"/>
+            <topicref keyref="validate_map" copy-to="validate_map"/>
+            <topicref keyref="revise_images"/>
+            <topicref keyref="revise_elements">
+                <topicref keyref="revise_image_elements"/>
+                <topicref keyref="revise_note_elements"/>
+                <topicref keyref="revise_list_elements"/>
+                <topicref href="topics/migration/post_process/revise_xref_elements.dita"/>
+                <topicref keyref="revise_table_elements"/>
+            </topicref>
+            <topicref keyref="migration.publish"/>
+        </topichead>
+    </chapter>
+    <chapter keyref="translation_process"/>
+    <chapter keyref="dita_guide">
+        <topicref keyref="reuse">
+            <topicref keyref="reuse_content"/>
+            <topicref keyref="reuse_elements">
+                <topicref href="topics/dita_guide/direct_reuse.dita">
+                    <topicref href="topics/dita_guide/href_conref.dita"/>
+                    <topicref href="topics/dita_guide/direct_reuse_example.dita"/>
+                </topicref>
+                <topicref href="topics/dita_guide/indirect_reuse.dita">
+                    <topicref href="topics/dita_guide/keyref_conkeyref.dita"/>
+                    <topicref href="topics/dita_guide/indirect_reuse_example.dita"/>
+                    <topicref href="topics/dita_guide/keyscope.dita"/>
+                </topicref>
+            </topicref>
+            <topicref keyref="reuse_methods">
+                <topicref href="topics/dita_guide/complete_reuse.dita"/>
+                <topicref href="topics/dita_guide/variable_reuse.dita"/>
+            </topicref>
+        </topicref>
+        <topicref keyref="linking"/>
+        <topicref keyref="figures"/>
+    </chapter>
+    <chapter keyref="troubleshoot">
+        <topicref keyref="output_failed"/>
+        <topicref keyref="reusable_components_not_listed"/>
+    </chapter>
+    <chapter keyref="customize_pdf"/>
+    <chapter href="topics/glossary/glossary.dita"/>
+    <chapter href="topics/bibliography/bibliography.dita"/>
+    <chapter href="topics/TopicKeyDef.ditamap" processing-role="resource-only" toc="no"
+        format="ditamap"/>
+    <chapter href="images/ImageKeyDef.ditamap" processing-role="resource-only" toc="no"
+        format="ditamap"/>
+    <reltable>
+        <relrow>
+            <relcell>
+                <topicref keyref="create_new_repo"/>
+            </relcell>
+            <relcell>
+                <topicref href="https://gitlab.csrbtx.com/rai" format="html" scope="external"
+                    navtitle="RAI projects on GitLab" outputclass="nopage-xref"/>
+            </relcell>
+        </relrow>
+        <relrow>
+            <relcell>
+                <topicref keyref="reusable_components_not_listed"/>
+            </relcell>
+            <relcell>
+                <topicref href="https://www.oxygenxml.com/forum/post53740.html" format="html"
+                    scope="external" navtitle="Components not Reusable Components"
+                    outputclass="nopage-xref"/>
+            </relcell>
+        </relrow>
+        <relrow>
+            <relcell>
+                <topicref keyref="overview"/>
+            </relcell>
+            <relcell>
+                <topicref
+                    href="https://www.oxygenxml.com/doc/versions/26.0/ug-author/topics/introduction.html"
+                    format="html" scope="external" navtitle="User Manual of Oxygen XML Author 26.0"
+                    outputclass="nopage-xref"/>
+                <topicref href="https://www.oxygenxml.com/dita/1.3/specs/index.html" format="html"
+                    scope="external" navtitle="DITA 1.3 Specification" outputclass="nopage-xref"/>
+                <topicref
+                    href="https://www.amazon.com/DITA-Best-Practices-Roadmap-Architecting/dp/0132480522"
+                    format="html" navtitle="DITA Best Practices" scope="external"
+                    outputclass="nopage-xref"/>
+            </relcell>
+        </relrow>
+        <relrow>
+            <relcell>
+                <topicref keyref="quick_start_oxygen"/>
+            </relcell>
+            <relcell>
+                <topicref
+                    href="https://www.oxygenxml.com/doc/versions/26.0/ug-author/topics/add-ons.html"
+                    format="html" scope="external" outputclass="nopage-xref"
+                    navtitle="Oxygen Add-ons"/>
+                <topicref
+                    href="https://www.oxygenxml.com/doc/versions/26.0/ug-author/topics/oxygen-tools.html"
+                    format="html" scope="external" outputclass="nopage-xref" navtitle="Oxygen Tools"
+                />
+            </relcell>
+        </relrow>
+    </reltable>
+</bookmap>

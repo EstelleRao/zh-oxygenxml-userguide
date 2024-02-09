@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="quick_start_oxygen">
+    <title>Oxygen基础入门</title>
+    <body>
+        <p>Oxygen XML Author是一款使用结构化标记语言（如XML、XSL、DTD）进行文档开发的XML编辑器。强大的功能可满足从XML编写到发布的所有需求。</p>
+        <p>
+            <ul>
+                <li>提供所见即所得的编辑模式和直观的图形界面，支持拖放调整DITA Map结构，编写体验近似Word</li>
+                <li>支持生成多种目标格式，包括PDF、TXT、HTML、JavaHelp、WebHelp和XML</li>
+                <li>通过条件发布、变量等多种方式进行最大化重用和定制，实现内容同源，一处更新，多处同步更新</li>
+                <li>提供预定义的数据结构和校验功能，帮助用户轻松排查标记对问题</li>
+                <li>提供内容补全功能，自动提示XML标记对，无需记忆</li>
+            </ul>
+        </p>
+        <p>借助Oxygen XML Author，文档工程师可轻松实现XML编辑、PDF发布、内容复用和同源更新。</p>
+    </body>
+</topic>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="direct_reuse">
+    <title>直接引用</title>
+    <body>
+        <p>直接引用是基于资源 URI（统一资源标识符，可以理解为资源路径或存储位置）的引用，通过在 DITA 文件中指定资源的 URI 来引用资源。</p>
+    </body>
+</topic>

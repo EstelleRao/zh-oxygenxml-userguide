@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="reuse_scope">
+    <title>复用机制</title>
+    <body>
+        <p>DITA 提供两种复用机制：基于资源路径的直接引用（URI-based direct reference）和基于别名的间接引用（Key-based indirect reference）。</p>
+        <ul id="ul_nly_cw2_j1c">
+            <li>直接引用：通过资源路径来引用对象，一旦引用对象和被引用对象的相对位置变化，原来的引用就会失效，需要回到引用的文件一一修改资源路径。</li>
+            <li>间接引用：通过资源别名来引用对象，如果引用对象和被引用对象的相对位置变化，只需回到定义资源别名的文件修改一次资源路径。只要资源别名未变化，引用该资源的文件不会受影响。</li>
+        </ul>
+        <p>相比直接引用，间接引用更加灵活，更易维护，更易理解。</p>
+        <ul id="ol_ydf_4c2_czb">
+            <li>灵活性：间接引用可以在 DITA 文件中使用别名来引用资源，不需要指定资源路径，引用资源更方便。 </li>
+            <li>维护性：当引用对象（如 DITA 文件）或被引用对象（如图片、DITA topic）移动位置后，只需在定义资源别名的文件中（通常使用 DITA map 文件来管理）更新一次 @href 属性中的资源路径，不需要更新每处引用的资源路径，简化了更新操作。</li>
+            <li>可读性：间接引用使用别名来引用资源，不需要指定冗长的资源路径，使得文档的结构和意图更加清晰，更易理解。 </li>
+        </ul>
+    </body>
+</topic>

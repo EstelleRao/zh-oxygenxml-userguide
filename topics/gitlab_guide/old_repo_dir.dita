@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="project_repo_old">
+    <title>仓库目录</title>
+    <body>
+        <table>
+            <tgroup cols="3">
+                <colspec colname="c1" colnum="1" colwidth="0.6*"/>
+                <colspec colname="c2" colnum="2" colwidth="0.8*"/>
+                <colspec colname="c3" colnum="3" colwidth="1.6*"/>
+                <thead>
+                    <row>
+                        <entry>仓库类型</entry>
+                        <entry>
+                            <p>仓库目录</p>
+                        </entry>
+                        <entry>目录下文件</entry>
+                    </row>
+                </thead>
+                <tbody>
+                    <row>
+                        <entry>公共仓库</entry>
+                        <entry>
+                            <ol id="ol_ohz_zfm_f1c">
+                                <li>filters</li>
+                                <li>images</li>
+                                <li>links</li>
+                                <li>Reusables</li>
+                                <li>Taxonomy</li>
+                            </ol>
+                        </entry>
+                        <entry>
+                            <p>使用horizontal_common.ditamap链接和引用以下公共资源</p>
+                            <ol id="ol_bzq_bhm_f1c">
+                                <li>filters：存放公共过滤文件，暂未用到</li>
+                                <li>images：存放公共图片，包括标签、UI符号、logo、安全符号、文档符号和其他公共图片</li>
+                                <li>links：存放公共链接定义表，暂未用到</li>
+                                <li>Reusables：存放公共主题、公共组件、公共名称、产品名称变量</li>
+                                <li>Taxonomy：存放元数据定义集</li>
+                            </ol>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry>项目仓库</entry>
+                        <entry>
+                            <ol id="ol_g4k_r2m_f1c">
+                                <li>commonFilesDir</li>
+                                <li>filters</li>
+                                <li>images</li>
+                                <li>topics</li>
+                                <li>index.ditamp</li>
+                                <li>common.ditamap</li>
+                                <li>每本说明书的.ditamap</li>
+                            </ol>
+                        </entry>
+                        <entry>
+                            <ol id="ol_qxp_s2m_f1c">
+                                <li>commonFilesDir：存放页面变量定义集（keydef_pdf.ditamap）</li>
+                                <li>filters：存放用于条件发布的过滤文件（.ditaval）</li>
+                                <li>images：存放产品图片，根据产品组成单元划分子文件夹</li>
+                                <li>topics：存放当前项目的所有.dita文件，可按照不同说明书划分子文件夹</li>
+                                <li><b>index.ditamp</b>：使用DITA bookmap链接和引用所有项目资源和公共资源</li>
+                                <li>common.ditamap：使用DITA map链接和引用项目内的commonFilesDir资源，主要是页面变量</li>
+                                <li>每本说明书的.ditamap：每本说明书的DITA map</li>
+                            </ol>
+                        </entry>
+                    </row>
+                </tbody>
+            </tgroup>
+        </table>
+    </body>
+</topic>

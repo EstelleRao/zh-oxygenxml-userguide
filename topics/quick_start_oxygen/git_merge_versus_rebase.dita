@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="git_merge_versus_rebase">
+    <title>Pull (merge) vs. Pull (rebase)</title>
+    <body>
+        <bodydiv><codeph>Pull</codeph> 操作可以选择使用 <codeph>merge</codeph> 或 <codeph>rebase</codeph> 任一方式将远程仓库的更改合并到本地仓库。这两种方式有一些关键的区别：<ol
+            id="ol_lxr_kvz_h1c">
+            <li>
+                <p><b>Pull (merge): </b></p>
+                <ul id="ul_mxr_kvz_h1c">
+                    <li><b>操作过程</b>：<codeph>git pull</codeph> 默认使用 <codeph>merge</codeph>，它将远程仓库的更改合并到本地仓库，并创建一个新的合并提交。</li>
+                    <li><b>提交历史</b>：每次合并会在提交历史中创建一个合并节点，显示哪些分支合并到了主分支，在提交历史中保留远程分支的完整历史。</li>
+                    <li><b>适用场景</b>：<codeph>merge</codeph> 通常适用于公共分支，如主分支。公共分支是团队共享的主要开发线，多个开发者同时贡献，使用 <codeph>merge</codeph> 可以创建合并节点，保留更详细的提交历史，清晰显示每个分支的贡献。</li>
+                </ul>
+                <codeblock id="codeblock_oxr_kvz_h1c" outputclass="language-xml">git pull origin main</codeblock>
+            </li>
+            <li>
+                <p><b>Pull (rebase): </b></p>
+                <ul id="ul_pxr_kvz_h1c">
+                    <li><b>操作过程</b>：<codeph>git pull --rebase</codeph> 使用 <codeph>rebase</codeph>，它先将本地的提交暂时保存，应用远程仓库的更改，然后再将本地提交应用在远程仓库的最新提交之上。</li>
+                    <li><b>提交历史</b>：<codeph>rebase</codeph> 操作可以产生一个更线性的提交历史，避免了合并节点，看起来更加整洁。</li>
+                    <li><b>适用场景</b>：<codeph>rebase</codeph> 通常适用于个人分支。使用 <codeph>rebase</codeph> 可以产生更为线性的提交历史，保持清晰的提交历史，减少不必要的合并节点。</li>
+                </ul>
+                <codeblock id="codeblock_rxr_kvz_h1c" outputclass="language-xml">git pull --rebase origin main</codeblock>
+            </li>
+            </ol><p>按照当前的分支管理模型，临时辅助分支（feature、hotfix、release）从长期保护分支（develop）创建，推送到远程仓库后通过合并请求合入长期保护分支，合入后即可删除。</p><ul
+            id="ul_sxr_kvz_h1c">
+            <li>
+                <p>develop分支作为公共分支，更适合使用 <codeph>pull（merge）</codeph> 合并远程仓库更改，以便保留更详细的提交历史。此外，临时分支合入develop分支，默认勾选 <codeph>Squash commits</codeph> 和 <codeph>Delete source branch</codeph>，也可以保持develop分支提交历史的整洁性。</p>
+            </li>
+            <li>
+                <p>临时辅助分支作为个人分支，无需多人协作，不存在合并远程仓库更改的场景，无需使用 <codeph>pull</codeph> 操作。</p>
+            </li>
+            </ul></bodydiv>
+    </body>
+</topic>

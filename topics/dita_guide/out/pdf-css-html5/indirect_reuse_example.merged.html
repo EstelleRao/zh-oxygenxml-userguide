@@ -1,0 +1,151 @@
+<!DOCTYPE html><html xtrf="file:/E:/oxygen_user_manual/topics/dita_guide/indirect_reuse_example.dita" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><meta name="copyright" content="(C) Copyright 2024"/><meta name="DC.rights.owner" content="(C) Copyright 2024"/>
+<link rel="stylesheet" type="text/css" href="file:/C:/Users/CSR000369/Oxygen%20XML%20Author%2026/frameworks/dita/DITA-OT/plugins/com.oxygenxml.webhelp.responsive/oxygen-webhelp/app/topic-page-print.css"/>
+<link rel="stylesheet" type="text/css" href="file:/C:/Users/CSR000369/Oxygen%20XML%20Author%2026/frameworks/dita/DITA-OT/plugins/com.oxygenxml.pdf.css/css/print/p-dita.css"/>
+<link rel="stylesheet" type="text/css" href="file:/C:/Users/CSR000369/Oxygen%20XML%20Author%2026/frameworks/dita/DITA-OT/plugins/com.oxygenxml.editlink/pdf-css.css"/>
+<link rel="stylesheet" type="text/css" href="file:/C:/Users/CSR000369/Oxygen%20XML%20Author%2026/frameworks/dita/DITA-OT/plugins/com.oxygenxml.webhelp.responsive/templates/oxygen/oxygen-with-colors.css"/>
+<link rel="stylesheet" type="text/css" href="file:/C:/Users/CSR000369/Oxygen%20XML%20Author%2026/frameworks/dita/DITA-OT/plugins/com.oxygenxml.webhelp.responsive/templates/oxygen/notes.css"/>
+<link rel="stylesheet" type="text/css" href="file:/E:/RAI-IFU/publishment-template/pdf-css/knst/CUSTOM.css"/>
+<meta name="generator" content="DITA-OT"/><meta name="DC.type" content="topic"/><meta name="DC.format" content="HTML5"/><meta name="DC.identifier" content="indirect_reuse_example"/><meta name="DC.language" content="en"/><title>常见用法和示例</title></head><body class="wh_topic_page"><div class="wh_content_area"><div class="wh_topic_body"><div class="wh_topic_content"><div xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic topic" ditaarch:DITAArchVersion="1.3" domains="(topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" id="indirect_reuse_example" specializations="@props/deliveryTarget" xml:lang="en" lang="en">
+    <h1 class="- topic/title title topictitle1" id="ariaid-title1"><span class="- topic/ph topic/title-wrapper ph title-wrapper">常见用法和示例</span></h1>
+    <div class="- topic/body body">
+        <section class="- topic/section section" id="section_kbl_mpk_j1c"><h2 class="- topic/title title sectiontitle">@keyref 属性</h2>
+            
+            <p class="- topic/p p">下表列出了使用 @keyref 属性引用 DITA topic、图片、变量的方法。在 DITA 文件中引用这些资源之前，需要在 DITA map 中使用 @keys 属性定义资源别名。</p>
+            <div xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" class="table-container"><table class="- topic/table table" id="table_qkz_npk_j1c" data-cols="2"><caption></caption><colgroup><col style="width:20%"/><col style="width:80%"/></colgroup><thead class="- topic/thead thead">
+                        <tr class="- topic/row row"><th class="- topic/entry entry colsep-0 rowsep-0" colname="col1" dita-ot:x="1" dita-ot:y="1" id="indirect_reuse_example__table_qkz_npk_j1c__entry__1">用法</th><th class="- topic/entry entry colsep-0 rowsep-0" colname="col2" dita-ot:x="2" dita-ot:y="1" id="indirect_reuse_example__table_qkz_npk_j1c__entry__2">示例</th></tr>
+                    </thead><tbody class="- topic/tbody tbody">
+                        <tr class="- topic/row row"><td align="left" class="- topic/entry entry align-left colsep-0 rowsep-0 valign-middle" colname="col1" dita-ot:x="1" dita-ot:y="2" valign="middle" headers="indirect_reuse_example__table_qkz_npk_j1c__entry__1">引用 DITA topic</td><td class="- topic/entry entry colsep-0 rowsep-0" colname="col2" dita-ot:x="2" dita-ot:y="2" headers="indirect_reuse_example__table_qkz_npk_j1c__entry__2">
+                                <ol class="- topic/ol ol" id="ol_rkz_npk_j1c">
+                                    <li class="- topic/li li">
+                                        <p class="- topic/p p">在 <strong class="+ topic/ph hi-d/b ph b">common.ditamap</strong> 中使用 <code class="+ topic/ph pr-d/codeph ph codeph">&lt;topicref&gt;</code> 元素或 <code class="+ topic/ph pr-d/codeph ph codeph">&lt;keydef&gt;</code> 元素引入文档符号说明文档，使用 @keys 属性定义文档别名。</p>
+                                        <pre class="+ topic/pre pr-d/codeblock pre codeblock language-xml" id="codeblock_skz_npk_j1c" outputclass="language-xml" xml:space="preserve"><strong class="hl-tag">&lt;topicref</strong> <span class="hl-attribute">href</span>=<span class="hl-value">"doc_symbols.dita"</span> <span class="hl-attribute">keys</span>=<span class="hl-value">"doc_symbols"</span><strong class="hl-tag">/&gt;</strong>/*推荐写法*/
+<strong class="hl-tag">&lt;keydef</strong> <span class="hl-attribute">href</span>=<span class="hl-value">"doc_symbols.dita"</span> <span class="hl-attribute">keys</span>=<span class="hl-value">"doc_symbols"</span><strong class="hl-tag">/&gt;</strong></pre>
+                                    </li>
+                                    <li class="- topic/li li">
+                                        <div class="- topic/p p">在 <strong class="+ topic/ph hi-d/b ph b">index.ditamap</strong> 中使用 <code class="+ topic/ph pr-d/codeph ph codeph">&lt;topicref&gt;</code> 元素和 @keyref 属性引用文档符号说明文档。<pre class="+ topic/pre pr-d/codeblock pre codeblock language-xml" id="codeblock_tkz_npk_j1c" outputclass="language-xml" xml:space="preserve"><strong class="hl-tag">&lt;topicref</strong> <span class="hl-attribute">keyref</span>=<span class="hl-value">"doc_symbols"</span><strong class="hl-tag">/&gt;</strong></pre></div>
+                                    </li>
+                                </ol>
+                            </td></tr>
+                        <tr class="- topic/row row"><td align="left" class="- topic/entry entry align-left colsep-0 rowsep-0 valign-middle" colname="col1" dita-ot:x="1" dita-ot:y="3" valign="middle" headers="indirect_reuse_example__table_qkz_npk_j1c__entry__1">引用图片</td><td class="- topic/entry entry colsep-0 rowsep-0" colname="col2" dita-ot:x="2" dita-ot:y="3" headers="indirect_reuse_example__table_qkz_npk_j1c__entry__2">
+                                <ol class="- topic/ol ol" id="ol_pz4_vvk_j1c">
+                                    <li class="- topic/li li">
+                                        <p class="- topic/p p">在 <strong class="+ topic/ph hi-d/b ph b">common_images.ditamap</strong> 中使用 <code class="+ topic/ph pr-d/codeph ph codeph">&lt;keydef&gt;</code> 元素引入图片，使用 @keys 属性定义图片别名。</p>
+                                        <pre class="+ topic/pre pr-d/codeblock pre codeblock language-xml" id="codeblock_ukz_npk_j1c" outputclass="language-xml" xml:space="preserve"><strong class="hl-tag">&lt;keydef</strong> <span class="hl-attribute">keys</span>=<span class="hl-value">"CV2000_symbol.10mm_30_END"</span> <span class="hl-attribute">href</span>=<span class="hl-value">"CV2000_symbol/CV2000_symbol.10mm_30_END.png"</span> <span class="hl-attribute">format</span>=<span class="hl-value">"png"</span><strong class="hl-tag">&gt;</strong><strong class="hl-tag">&lt;/keydef&gt;</strong></pre>
+                                    </li>
+                                    <li class="- topic/li li">
+                                        <p class="- topic/p p">在 DITA topic 中使用 <code class="+ topic/ph pr-d/codeph ph codeph">&lt;image&gt;</code> 元素和 @keyref 属性引用图片。</p>
+                                        <pre class="+ topic/pre pr-d/codeblock pre codeblock language-xml" id="codeblock_vkz_npk_j1c" outputclass="language-xml" xml:space="preserve"><strong class="hl-tag">&lt;image</strong> <span class="hl-attribute">placement</span>=<span class="hl-value">"break"</span> <span class="hl-attribute">keyref</span>=<span class="hl-value">"common_global.common_label.instruction_manual"</span> <span class="hl-attribute">height</span>=<span class="hl-value">"40"</span><strong class="hl-tag">/&gt;</strong></pre>
+                                    </li>
+                                </ol>
+                            </td></tr>
+                        <tr class="- topic/row row"><td align="left" class="- topic/entry entry align-left colsep-0 rowsep-0 valign-middle" colname="col1" dita-ot:x="1" dita-ot:y="4" valign="middle" headers="indirect_reuse_example__table_qkz_npk_j1c__entry__1">引用页面变量</td><td class="- topic/entry entry colsep-0 rowsep-0" colname="col2" dita-ot:x="2" dita-ot:y="4" headers="indirect_reuse_example__table_qkz_npk_j1c__entry__2">
+                                <ol class="- topic/ol ol" id="ol_rwn_ywk_j1c">
+                                    <li class="- topic/li li">
+                                        <p class="- topic/p p">在页面变量定义集（<strong class="+ topic/ph hi-d/b ph b">pdf_page_variables.ditamap</strong>）中使用 <code class="+ topic/ph pr-d/codeph ph codeph">&lt;keydef&gt;</code> 元素引入页面变量，使用 @keys 属性定义变量名称，使用 @product 属性定义发布条件，使用 <code class="+ topic/ph pr-d/codeph ph codeph">&lt;keyword&gt;</code> 元素定义变量在特定条件下发布的值。</p>
+                                        <pre class="+ topic/pre pr-d/codeblock pre codeblock language-xml" id="codeblock_alz_npk_j1c" outputclass="language-xml" xml:space="preserve"><strong class="hl-tag">&lt;keydef</strong> <span class="hl-attribute">keys</span>=<span class="hl-value">"booktitle"</span> <span class="hl-attribute">navtitle</span>=<span class="hl-value">"手册名称"</span> <span class="hl-attribute">product</span>=<span class="hl-value">"8003-000030-1-0001"</span><strong class="hl-tag">&gt;</strong>
+    <strong class="hl-tag">&lt;topicmeta&gt;</strong>
+        <strong class="hl-tag">&lt;keywords&gt;</strong>
+            <strong class="hl-tag">&lt;keyword&gt;</strong>内窥镜图像处理器说明书<strong class="hl-tag">&lt;/keyword&gt;</strong>
+        <strong class="hl-tag">&lt;/keywords&gt;</strong>
+    <strong class="hl-tag">&lt;/topicmeta&gt;</strong>
+<strong class="hl-tag">&lt;/keydef&gt;</strong>
+<strong class="hl-tag">&lt;keydef</strong> <span class="hl-attribute">keys</span>=<span class="hl-value">"pn"</span> <span class="hl-attribute">navtitle</span>=<span class="hl-value">"PN"</span> <span class="hl-attribute">product</span>=<span class="hl-value">"8003-000030-1-0001"</span><strong class="hl-tag">&gt;</strong>
+    <strong class="hl-tag">&lt;topicmeta&gt;</strong>
+        <strong class="hl-tag">&lt;keywords&gt;</strong>
+            <strong class="hl-tag">&lt;keyword&gt;</strong>8003-000030-1-0001<strong class="hl-tag">&lt;/keyword&gt;</strong>
+        <strong class="hl-tag">&lt;/keywords&gt;</strong>
+    <strong class="hl-tag">&lt;/topicmeta&gt;</strong>
+<strong class="hl-tag">&lt;/keydef&gt;</strong>
+<strong class="hl-tag">&lt;keydef</strong> <span class="hl-attribute">keys</span>=<span class="hl-value">"release"</span> <span class="hl-attribute">navtitle</span>=<span class="hl-value">"版本号"</span>
+<span class="hl-attribute">product</span>=<span class="hl-value">"8003-000030-1-0001 8003-000031-1-0001 8003-000032-1-0001"</span><strong class="hl-tag">&gt;</strong>
+    <strong class="hl-tag">&lt;topicmeta&gt;</strong>
+        <strong class="hl-tag">&lt;keywords&gt;</strong>
+            <strong class="hl-tag">&lt;keyword&gt;</strong>1-0001<strong class="hl-tag">&lt;/keyword&gt;</strong>
+        <strong class="hl-tag">&lt;/keywords&gt;</strong>
+    <strong class="hl-tag">&lt;/topicmeta&gt;</strong>
+<strong class="hl-tag">&lt;/keydef&gt;</strong>
+<strong class="hl-tag">&lt;keydef</strong> <span class="hl-attribute">keys</span>=<span class="hl-value">"currentyear"</span> <span class="hl-attribute">navtitle</span>=<span class="hl-value">"版权归属年份"</span>
+<span class="hl-attribute">product</span>=<span class="hl-value">"8003-000030-1-0001 8003-000031-1-0001 8003-000032-1-0001"</span><strong class="hl-tag">&gt;</strong>
+    <strong class="hl-tag">&lt;topicmeta&gt;</strong>
+        <strong class="hl-tag">&lt;keywords&gt;</strong>
+            <strong class="hl-tag">&lt;keyword&gt;</strong>2023<strong class="hl-tag">&lt;/keyword&gt;</strong>
+        <strong class="hl-tag">&lt;/keywords&gt;</strong>
+    <strong class="hl-tag">&lt;/topicmeta&gt;</strong>
+<strong class="hl-tag">&lt;/keydef&gt;</strong></pre>
+                                    </li>
+                                    <li class="- topic/li li">
+                                        <p class="- topic/p p">在 <strong class="+ topic/ph hi-d/b ph b">index.ditamap</strong> 和封底中使用 <code class="+ topic/ph pr-d/codeph ph codeph">&lt;keyword&gt;</code> 元素和 @keyref 属性引用页面变量。</p>
+                                        <pre class="+ topic/pre pr-d/codeblock pre codeblock language-xml" id="codeblock_blz_npk_j1c" outputclass="language-xml" xml:space="preserve"><strong class="hl-tag">&lt;mainbooktitle&gt;</strong><strong class="hl-tag">&lt;keyword</strong> <span class="hl-attribute">keyref</span>=<span class="hl-value">"booktitle"</span><strong class="hl-tag">/&gt;</strong><strong class="hl-tag">&lt;/mainbooktitle&gt;</strong>
+<strong class="hl-tag">&lt;p&gt;</strong>深圳康诺思腾科技有限公司出版/P/N：<strong class="hl-tag">&lt;keyword</strong> <span class="hl-attribute">keyref</span>=<span class="hl-value">"pn"</span><strong class="hl-tag">/&gt;</strong>/版本号：<strong class="hl-tag">&lt;keyword</strong> <span class="hl-attribute">keyref</span>=<span class="hl-value">"release"</span><strong class="hl-tag">/&gt;</strong>/编制日期：20240209<strong class="hl-tag">&lt;/p&gt;</strong>
+<strong class="hl-tag">&lt;p&gt;</strong>©<strong class="hl-tag">&lt;keyword</strong> <span class="hl-attribute">keyref</span>=<span class="hl-value">"currentyear"</span><strong class="hl-tag">/&gt;</strong> 深圳康诺思腾科技有限公司<strong class="hl-tag">&lt;/p&gt;</strong></pre>
+                                    </li>
+                                </ol>
+                            </td></tr>
+                        <tr class="- topic/row row"><td align="left" class="- topic/entry entry align-left colsep-0 rowsep-0 valign-middle" colname="col1" dita-ot:x="1" dita-ot:y="5" valign="middle" headers="indirect_reuse_example__table_qkz_npk_j1c__entry__1">引用文本变量</td><td class="- topic/entry entry colsep-0 rowsep-0" colname="col2" dita-ot:x="2" dita-ot:y="5" headers="indirect_reuse_example__table_qkz_npk_j1c__entry__2">
+                                <ol class="- topic/ol ol" id="ol_kwn_nbl_j1c">
+                                    <li class="- topic/li li">
+                                        <p class="- topic/p p">在文本变量定义集（<strong class="+ topic/ph hi-d/b ph b">variable_text.ditamap</strong>）中使用 <code class="+ topic/ph pr-d/codeph ph codeph">&lt;keydef&gt;</code> 元素引入文本变量，使用 @keys 属性定义变量名称，使用 @product 属性定义发布条件，使用 <code class="+ topic/ph pr-d/codeph ph codeph">&lt;keyword&gt;</code> 元素定义变量在特定条件下发布的值。</p>
+                                        <pre class="+ topic/pre pr-d/codeblock pre codeblock language-xml" id="codeblock_wbs_1bl_j1c" outputclass="language-xml" xml:space="preserve"><strong class="hl-tag">&lt;keydef</strong> <span class="hl-attribute">keys</span>=<span class="hl-value">"prodname"</span> <span class="hl-attribute">navtitle</span>=<span class="hl-value">"产品名称"</span> <span class="hl-attribute">product</span>=<span class="hl-value">"8003-000003-D-0001"</span><strong class="hl-tag">&gt;</strong>
+    <strong class="hl-tag">&lt;topicmeta&gt;</strong>
+        <strong class="hl-tag">&lt;keywords&gt;</strong>
+            <strong class="hl-tag">&lt;keyword&gt;</strong>胸腹腔内窥镜手术系统用无源附件-套管附件<strong class="hl-tag">&lt;/keyword&gt;</strong>
+        <strong class="hl-tag">&lt;/keywords&gt;</strong>
+    <strong class="hl-tag">&lt;/topicmeta&gt;</strong>
+<strong class="hl-tag">&lt;/keydef&gt;</strong>
+<strong class="hl-tag">&lt;keydef</strong> <span class="hl-attribute">keys</span>=<span class="hl-value">"prodname"</span> <span class="hl-attribute">navtitle</span>=<span class="hl-value">"产品名称"</span> <span class="hl-attribute">product</span>=<span class="hl-value">"8003-000014-D-0001"</span><strong class="hl-tag">&gt;</strong>
+    <strong class="hl-tag">&lt;topicmeta&gt;</strong>
+        <strong class="hl-tag">&lt;keywords&gt;</strong>
+            <strong class="hl-tag">&lt;keyword&gt;</strong>无菌保护套<strong class="hl-tag">&lt;/keyword&gt;</strong>
+        <strong class="hl-tag">&lt;/keywords&gt;</strong>
+    <strong class="hl-tag">&lt;/topicmeta&gt;</strong>
+<strong class="hl-tag">&lt;/keydef&gt;</strong>
+<strong class="hl-tag">&lt;keydef</strong> <span class="hl-attribute">keys</span>=<span class="hl-value">"prodname"</span> <span class="hl-attribute">navtitle</span>=<span class="hl-value">"产品名称"</span> <span class="hl-attribute">product</span>=<span class="hl-value">"8003-000015-D-0001 8003-000024-A-0001 8003-000029-A-0001"</span><strong class="hl-tag">&gt;</strong>
+    <strong class="hl-tag">&lt;topicmeta&gt;</strong>
+        <strong class="hl-tag">&lt;keywords&gt;</strong>
+            <strong class="hl-tag">&lt;keyword&gt;</strong>胸腹腔内窥镜手术系统用无源附件-单极弯剪绝缘套<strong class="hl-tag">&lt;/keyword&gt;</strong>
+        <strong class="hl-tag">&lt;/keywords&gt;</strong>
+    <strong class="hl-tag">&lt;/topicmeta&gt;</strong>
+<strong class="hl-tag">&lt;/keydef&gt;</strong></pre>
+                                    </li>
+                                    <li class="- topic/li li">
+                                        <p class="- topic/p p">在公共组件定义集（<strong class="+ topic/ph hi-d/b ph b">xx_components.dita</strong>）中使用 <code class="+ topic/ph pr-d/codeph ph codeph">&lt;ph&gt;</code> 元素和 @keyref 属性引用文本变量。</p>
+                                        <pre class="+ topic/pre pr-d/codeblock pre codeblock language-xml" id="codeblock_dlz_npk_j1c" outputclass="language-xml" xml:space="preserve"><strong class="hl-tag">&lt;p&gt;</strong><strong class="hl-tag">&lt;ph</strong> <span class="hl-attribute">keyref</span>=<span class="hl-value">"prodname"</span><strong class="hl-tag">/&gt;</strong>只能配合康诺思腾 C1000 胸腹腔内窥镜手术系统使用。该系统的禁忌证同样适用于本产品。以下为康诺思腾 C1000 胸腹腔内窥镜手术系统的禁忌证：<strong class="hl-tag">&lt;/p&gt;</strong></pre>
+                                    </li>
+                                </ol>
+                            </td></tr>
+                    </tbody></table></div>
+        </section>
+        <section class="- topic/section section" id="section_cxj_1qk_j1c"><h2 class="- topic/title title sectiontitle"> @conkeyref 属性</h2>
+            
+            <p class="- topic/p p">下表列出了使用 @conkeyref 属性引用 DITA 元素的方法。在 DITA 文件中引用 DITA 元素之前，需要在公共组件定义集中使用 @id 属性为 DITA 元素定义别名 。</p>
+            <div xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" class="table-container"><table class="- topic/table table" id="table_ev5_d4k_j1c" data-cols="2"><caption></caption><colgroup><col style="width:20%"/><col style="width:80%"/></colgroup><thead class="- topic/thead thead">
+                        <tr class="- topic/row row"><th class="- topic/entry entry colsep-0 rowsep-0" colname="col1" dita-ot:x="1" dita-ot:y="1" id="indirect_reuse_example__table_ev5_d4k_j1c__entry__1">用法</th><th class="- topic/entry entry colsep-0 rowsep-0" colname="col2" dita-ot:x="2" dita-ot:y="1" id="indirect_reuse_example__table_ev5_d4k_j1c__entry__2">示例</th></tr>
+                    </thead><tbody class="- topic/tbody tbody">
+                        <tr class="- topic/row row"><td class="- topic/entry entry colsep-0 rowsep-0" colname="col1" dita-ot:x="1" dita-ot:y="2" headers="indirect_reuse_example__table_ev5_d4k_j1c__entry__1">引用产品名称</td><td class="- topic/entry entry colsep-0 rowsep-0" colname="col2" dita-ot:x="2" dita-ot:y="2" headers="indirect_reuse_example__table_ev5_d4k_j1c__entry__2">
+                                <ol class="- topic/ol ol" id="ol_bwv_pcl_j1c">
+                                    <li class="- topic/li li">
+                                        <p class="- topic/p p"> 在公共名称定义集（<strong class="+ topic/ph hi-d/b ph b">product_names.dita</strong>）中使用 <code class="+ topic/ph pr-d/codeph ph codeph">&lt;ph&gt;</code> 元素引入产品名称，使用 @id 属性定义产品名称的别名。</p>
+                                        <pre class="+ topic/pre pr-d/codeblock pre codeblock language-xml" id="codeblock_wk3_xhh_f1c" outputclass="language-xml" xml:space="preserve"><strong class="hl-tag">&lt;ph</strong> <span class="hl-attribute">id</span>=<span class="hl-value">"prodname_C1000_new"</span><strong class="hl-tag">&gt;</strong>内窥镜手术系统<strong class="hl-tag">&lt;/ph&gt;</strong></pre>
+                                    </li>
+                                    <li class="- topic/li li">
+                                        <p class="- topic/p p">在 DITA 文件中使用 <code class="+ topic/ph pr-d/codeph ph codeph">&lt;ph&gt;</code> 元素和 @conkeyref 属性引用产品名称。</p>
+                                        <pre class="+ topic/pre pr-d/codeblock pre codeblock language-xml" id="codeblock_gwr_yhh_f1c" outputclass="language-xml" xml:space="preserve"><strong class="hl-tag">&lt;p&gt;</strong>本内窥镜仅限与康诺思腾<strong class="hl-tag">&lt;ph</strong> <span class="hl-attribute">conkeyref</span> = <span class="hl-value">"common_zh-CN.product_names/prodname_C1000_new"</span><strong class="hl-tag">/&gt;</strong>（型号：C1000）和内窥镜图像处理器（型号：CV2001）配合使用。<strong class="hl-tag">&lt;/p&gt;</strong></pre>
+                                    </li>
+                                </ol>
+                            </td></tr>
+                        <tr class="- topic/row row"><td class="- topic/entry entry colsep-0 rowsep-0" colname="col1" dita-ot:x="1" dita-ot:y="3" headers="indirect_reuse_example__table_ev5_d4k_j1c__entry__1">引用安全提示</td><td class="- topic/entry entry colsep-0 rowsep-0" colname="col2" dita-ot:x="2" dita-ot:y="3" headers="indirect_reuse_example__table_ev5_d4k_j1c__entry__2">
+                                <ol class="- topic/ol ol" id="ol_izj_gcl_j1c">
+                                    <li class="- topic/li li">
+                                        <p class="- topic/p p">在公共组件定义集（<strong class="+ topic/ph hi-d/b ph b">xx_components.dita</strong>）中使用 <code class="+ topic/ph pr-d/codeph ph codeph">&lt;li&gt;</code> 元素引入安全提示，使用 @id 属性定义安全提示的别名。</p>
+                                        <pre class="+ topic/pre pr-d/codeblock pre codeblock language-xml" id="codeblock_umw_d3h_f1c" outputclass="language-xml" xml:space="preserve"><strong class="hl-tag">&lt;li</strong> <span class="hl-attribute">id</span>=<span class="hl-value">"warning_refer_IFU_before_use"</span><strong class="hl-tag">&gt;</strong>使用本产品前，确保已充分了解适用的说明书中的所有信息，特别是禁止和警告信息。未能正确遵循说明书中的所有说明，可能导致产品损坏或患者、操作人员和其他人员受伤。<strong class="hl-tag">&lt;/li&gt;</strong></pre>
+                                    </li>
+                                    <li class="- topic/li li">
+                                        <p class="- topic/p p">在 DITA 文件中使用 <code class="+ topic/ph pr-d/codeph ph codeph">&lt;li&gt;</code> 元素和 @conkeyref 属性引用安全提示。</p>
+                                        <pre class="+ topic/pre pr-d/codeblock pre codeblock language-xml" id="codeblock_usj_f3h_f1c" outputclass="language-xml" xml:space="preserve"><strong class="hl-tag">&lt;li</strong> <span class="hl-attribute">conkeyref</span> = <span class="hl-value">"common_zh-CN.common_components/warning_refer_IFU_before_use"</span><strong class="hl-tag">/&gt;</strong></pre>
+                                    </li>
+                                </ol>
+                            </td></tr>
+                    </tbody></table></div>
+        </section>
+    </div>
+</div></div></div></div></body></html>

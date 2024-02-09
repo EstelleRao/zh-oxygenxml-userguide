@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="o4v_2fh_d1c">
+    <title>文档概述</title>
+    <shortdesc>为解决说明书工作中的难题（排版与发布、内容复用与一致性、多版本管理），技术文档团队于2023年10月从传统的Word写作模式过渡到更高效的DITA结构化写作模式。为帮助团队成员快速掌握结构化写作的要点和写作工具的使用，特制定了本使用指南，用作结构化写作的指导文档。</shortdesc>
+    <conbody>
+        <p>本使用指南旨在帮助团队成员快速上手，包括DITA基础入门、Oxygen基础入门、说明书工作流程以及相关规范。如需深入学习Oxygen XML Author使用和DITA写作，请查阅Oxygen官方网站和DITA 1.3 Specification。</p>
+        <ol id="ol_ufn_hsp_d1c">
+            <li><xref keyref="quick_start_oxygen"/></li>
+            <li><xref keyref="quick_start_dita"/></li>
+            <li><xref keyref="gitlab_guide"/></li>
+            <li><xref keyref="workflow"/></li>
+            <li><xref keyref="migration"/></li>
+            <li><xref keyref="translation_process"/></li>
+            <li><xref keyref="dita_guide"/></li>
+            <li><xref keyref="troubleshoot"/></li>
+        </ol>
+    </conbody>
+</concept>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA 2.x Topic//EN" "topic.dtd">
+<topic id="revision">
+    <title>修订记录</title>
+    <body>
+        <p>
+            <table frame="all" id="table_etg_mgd_j1c">
+                <tgroup cols="3">
+                    <colspec colname="c1" colnum="1" colwidth="0.8*"/>
+                    <colspec colname="c2" colnum="2" colwidth="0.6*"/>
+                    <colspec colname="c3" colnum="3" colwidth="1.6*"/>
+                    <thead>
+                        <row>
+                            <entry colsep="1" rowsep="1">修订日期</entry>
+                            <entry colsep="1" rowsep="1">修订人员</entry>
+                            <entry colsep="1" rowsep="1">修订内容</entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry colsep="1" rowsep="1">2023年11月6日</entry>
+                            <entry colsep="1" rowsep="1">饶雅惠</entry>
+                            <entry colsep="1" rowsep="1">初版发布</entry>
+                        </row>
+                        <row>
+                            <entry colsep="1" rowsep="1">2023年11月10日</entry>
+                            <entry colsep="1" rowsep="1">饶雅惠</entry>
+                            <entry colsep="1" rowsep="1">
+                                <ol id="ol_rvw_jhd_j1c">
+                                    <li>新增快速上手章节</li>
+                                    <li>业务流程补充版本发布流程</li>
+                                </ol>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry colsep="1" rowsep="1">2023年11月10日</entry>
+                            <entry colsep="1" rowsep="1">饶雅惠</entry>
+                            <entry colsep="1" rowsep="1">
+                                <ol id="ol_bz1_c3d_j1c">
+                                    <li>修改“新建手册”“升版手册”的步骤描述</li>
+                                    <li>修改 Commit 规范</li>
+                                </ol>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry colsep="1" rowsep="1">2023年12月1日</entry>
+                            <entry colsep="1" rowsep="1">饶雅惠</entry>
+                            <entry colsep="1" rowsep="1">
+                                <ol id="ol_etq_j3d_j1c">
+                                    <li>新增故障排除指南</li>
+                                    <li>修改 <codeph>release</codeph> 分支说明</li>
+                                </ol>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry colsep="1" rowsep="1">2023年12月29日</entry>
+                            <entry colsep="1" rowsep="1">饶雅惠</entry>
+                            <entry colsep="1" rowsep="1">新增单本说明书的迁移流程</entry>
+                        </row>
+                        <row>
+                            <entry colsep="1" rowsep="1">2024年1月26日</entry>
+                            <entry colsep="1" rowsep="1">饶雅惠</entry>
+                            <entry colsep="1" rowsep="1">
+                                <ol id="ol_r34_q12_j1c">
+                                    <li>新增文档概述、Oxygen基础入门、DITA基础入门、GitLab协作规范</li>
+                                    <li>新增新旧仓库架构说明（含仓库类型和仓库目录说明）</li>
+                                    <li>新增复用规范（含复用颗粒度、直接引用和间接引用、完整复用和变量复用说明）</li>
+                                    <li>调整迁移流程为“迁移前”“迁移中”“迁移后”，细化纠正错误元素的操作步骤，补充示意图</li>
+                                </ol>
+                            </entry>
+                        </row>
+                        <row rowsep="1">
+                            <entry colsep="1" rowsep="1">2024年2月9日</entry>
+                            <entry colsep="1" rowsep="1">饶雅惠</entry>
+                            <entry colsep="1" rowsep="1">
+                                <ol id="ol_cgv_m12_j1c">
+                                    <li>新增常用功能说明（项目管理、Git客户端、查找和替换、文件对比、校验、发布）</li>
+                                    <li>修改复用规范</li>
+                                    <li>修改迁移流程</li>
+                                    <li>新增名词解释</li>
+                                    <li>新增修订记录</li>
+                                    <li>新增参考资料</li>
+                                </ol>
+                            </entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
+        </p>
+    </body>
+</topic>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="my4_mf5_hzb">
+    <title>设置受保护分支</title>
+    <shortdesc>分支保护用于限制对某些分支的更改和推送权限。该设置可以确保某些重要分支的代码质量和稳定性，防止未经审查或授权的更改合入某些重要分支。</shortdesc>
+    <taskbody>
+        <context id="context_dkg_pbb_3zb">长期使用的主要分支通常设为受保护分支。设置受保护分支可按照如下步骤操作。</context>
+        <steps id="steps_khn_tf5_hzb">
+            <step>
+                <cmd>在远程仓库的左侧导航栏点击 <menucascade>
+                        <uicontrol>Settings</uicontrol>
+                        <uicontrol>Repository</uicontrol>
+                    </menucascade>。</cmd>
+                <info>
+                    <image placement="inline" keyref="gitlab.settings_repository"
+                        id="image_mhn_tf5_hzb" height="200"/>
+                </info>
+            </step>
+            <step>
+                <cmd>在 <uicontrol>Repository Settings</uicontrol> 页面点击 <uicontrol>Protected branches</uicontrol> 右侧的 <uicontrol>Expand</uicontrol>。</cmd>
+                <info>
+                    <image placement="inline"
+                        keyref="gitlab.protected_branches_expand"
+                        id="image_nhn_tf5_hzb" width="400"/>
+                </info>
+            </step>
+            <step>
+                <cmd>为主要分支设置推送、强制推送、合并、审核权限。</cmd>
+                <info>
+                    <image placement="break"
+                        keyref="gitlab.protected_branches_settings" width="400"
+                        id="image_ohn_tf5_hzb"/>
+                    <ul id="ul_phn_tf5_hzb">
+                        <li><uicontrol>Allowed to merge</uicontrol>：Developers + Maintainers</li>
+                        <li><uicontrol>Allowed to push and merge</uicontrol>：No one</li>
+                        <li><uicontrol>Allowed to force push</uicontrol>：No</li>
+                        <li><uicontrol>Code owner approval</uicontrol>：Yes</li>
+                    </ul>
+                </info>
+            </step>
+        </steps>
+    </taskbody>
+</task>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="compare_files">
+    <title>文件对比</title>
+    <body>
+        <p>文件对比功能用于对比和合并不同文件之间和不同文件夹之间的差异。</p>
+        <p>在顶部菜单栏点击 <menucascade>
+                <uicontrol>Tools</uicontrol>
+                <uicontrol>Compare Files</uicontrol>
+            </menucascade>打开文件对比窗口，点击 <menucascade>
+                <uicontrol>Tools</uicontrol>
+                <uicontrol>Compare Directories</uicontrol>
+            </menucascade>打开文件夹对比窗口。</p>
+    </body>
+</topic>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="bzh_tqs_xzb">
+    <title>调整图片</title>
+    <shortdesc>完成转换后，从 Word 文档提取的所有图片存放在目标存储路径的 media 文件夹。</shortdesc>
+    <body>
+        <ol>
+            <li>删除 media 文件夹中的重复图片。</li>
+            <li>进行图片分类，并移动图片至对应仓库和文件夹。<ol>
+                <li>根据公共属性，将图片划分为通用公共图片、业务公共图片和项目图片。通用公共图片放 common 仓库，业务公共图片放 common-{product} 仓库，常规业务图片放业务仓库。</li>
+                <li>根据语言属性，将图片继续划分为中文图片、英文图片和通用图片，分别放置在对应语言的 images 文件夹中。</li>
+                <li>根据图片内容，对图片继续分类，并根据图片类型创建对应的子文件夹。<ol id="ol_nqm_tx3_f1c">
+                    <li>公共图片按照 common_note、common_label、common_symbol、common_MISC 进行分类，放进对应类型的文件夹。</li>
+                    <li>产品图片按照产品组成单元进行分类，放进对应类型的文件夹。产品图片文件夹使用 <uicontrol>product_unit</uicontrol> 的命名规则，例如“C1000_PSR”、“C1000_SGC”。</li>
+                    </ol></li>
+                </ol></li>
+            <li>确认图片的准确性（最新图片）和清晰度。如有必要，可替换图片。</li>
+            <li>重命名图片。<ol>
+                <li>公共图片使用 <uicontrol>common_type.description</uicontrol> 的命名规则命名，例如“common_note.warning.png”、“common_label.no_stepping.svg”。</li>
+                <li>产品图片使用 <uicontrol>product_unit.description</uicontrol> 的命名规则命名，例如“C1000_VCT.stow_FAT.png”、“common_note.warning.png”。</li>
+                </ol></li>
+            <li>在公共仓库和常规业务仓库的images文件夹中，分别创建 common_images.ditamap 和 images.ditamap，在 DITA map 中使用@keydef和@keyscope属性为图片定义 key。关于 key 定义方法，请查阅：<xref
+                    href="../../dita_guide/indirect_reuse.dita"/>。</li>
+            <li>将 common_images.ditamap 添加到 common.ditamap，将 images.ditamap 添加到用于管理项目资源的 DITA map 中，参照如下示例。<codeblock id="codeblock_ong_3z3_f1c" outputclass="language-xml">&lt;map xml:lang="global" keyscope="common_global">
+    &lt;title>通用公共资源（global）&lt;/title>
+    &lt;topicref href="metadata.ditamap" format="ditamap"/>
+    &lt;topicref href="images/common_images.ditamap" format="ditamap"/>
+&lt;/map></codeblock></li>
+            <li>使用 <uicontrol>DITA Reusable Components</uicontrol> 视图在 DITA 文件中插入图片，确保@keyref属性的值正确。<codeblock id="codeblock_r1q_pz3_f1c" outputclass="language-xml">&lt;image keyref="common_global.common_note.danger" id="image_o2w_tr3_f1c" width="500"/></codeblock></li>
+            <li>使用 <uicontrol>placement</uicontrol> 属性设置图片位置（inline：行内；break：换行），使用 <uicontrol>width</uicontrol> 或 <uicontrol>height</uicontrol> 属性设置图片尺寸。</li>
+            <li>校验并发布 DITA Map，确认无样式问题。</li>
+        </ol>
+    </body>
+</topic>

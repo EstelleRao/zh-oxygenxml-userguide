@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="Task">
+    <title>Task topic</title>
+    <body>
+        <p>Task topic（任务型主题）回答“怎么做”的问题，用于描述任务的操作步骤和操作顺序，用以指导用户完成特定目标。</p>
+        <p>以下示例展示了任务型主题的基本数据结构。除了常见元素外，还包括背景、前置条件、步骤、子步骤、操作结果、操作示例等元素。其中，<codeph>&lt;task></codeph> 元素是根元素，不可缺失。</p>
+        <codeblock id="codeblock_jfh_t4z_21c" outputclass="language-xml">&lt;task id="sqlj">
+ &lt;title>Creating an SQLJ file&lt;/title>
+ &lt;taskbody>
+  &lt;context>Once you have set up SQLJ, you need to create a new SQLJ file.
+  &lt;/context>
+  &lt;steps>
+   &lt;step>&lt;cmd>Open...&lt;/cmd>&lt;/step>
+  &lt;/steps>
+ &lt;/taskbody>
+&lt;/task> </codeblock>
+    </body>
+</topic>

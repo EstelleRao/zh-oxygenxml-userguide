@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="tools">
+    <title>常用功能</title>
+    <body>
+        <p>在工具栏的任意位置单击右键，点击 <uicontrol>Configure Toolbars</uicontrol>，可将常用功能添加到工具栏。</p>
+    </body>
+
+</topic>

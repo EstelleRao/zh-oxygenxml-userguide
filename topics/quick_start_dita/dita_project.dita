@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="dita_project">
+    <title>项目管理</title>
+    <conbody>
+        <p>Oxygen XML Author 提供项目管理视图，用于集中管理和组织 DITA 项目中的各种资源以及团队协作。在顶部菜单栏点击 <menucascade>
+                <uicontrol>Window</uicontrol>
+                <uicontrol>Show View</uicontrol>
+                <uicontrol>Project</uicontrol>
+            </menucascade>，可以打开项目管理视图。</p>
+        <p>在项目管理视图，可以看到 DITA 项目的所有资源，包括 DITA 文件、图片、变量、样式包、批量发布文件，也可以对这些资源进行组织和管理，例如创建文件夹、重命名文件、移动文件，以便更好地管理项目结构。</p>
+        <image keyref="oxygen_project.project_view" width="250"/>
+        <p>写作团队也可使用 <b>.xpr</b> 项目管理文件存储和共享首选项、校验、发布等项目设置，简化操作步骤，保证 XML 文档格式和样式的一致性。</p>
+    </conbody>
+</concept>

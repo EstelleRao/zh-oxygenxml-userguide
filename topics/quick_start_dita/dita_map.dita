@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="dita_map">
+    <title>DITA Map</title>
+    <body>
+        <p>DITA map用于定义不同topic之间的层级关系，使其形成一个完整的、易于使用、易于理解、易于浏览的信息产品，例如使用手册、安装手册、安全手册、装机手册、再处理说明。</p>
+        <p>DITA map也可用于定义其他重要资源，例如定义topic和图片的key，定义变量，定义条件发布属性和值（@product）。</p>
+        <p>DITA map的文件格式为 <b>.ditamap</b>，常见的输出格式包括PDF手册、HTML网页和在线帮助文档。</p>
+    </body>
+</topic>

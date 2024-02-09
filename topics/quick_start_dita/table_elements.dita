@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="table_elements">
+    <title>表格元素</title>
+    <body>
+        <table frame="all" id="table_sjm_xnx_21c">
+            <tgroup cols="2">
+                <colspec colname="c1" colnum="1" colwidth="0.8*"/>
+                <colspec colname="c3" colnum="2" colwidth="1.2*"/>
+                <thead>
+                    <row>
+                        <entry>内容对象</entry>
+                        <entry>操作方法</entry>
+                    </row>
+                </thead>
+                <tbody>
+                    <row>
+                        <entry>表格</entry>
+                        <entry>
+                            <p>方法一：Author 模式下，从工具栏选择相关按钮。</p>
+                            <p>方法二： 在目标位置按下回车键，双击 <b>table</b>元素。</p>
+                            <p>注：通常选择CALS表格，支持更丰富的表格样式。</p>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry>合并、拆分单元格</entry>
+                        <entry morerows="3">方法一或选中目标后从鼠标右键菜单操作</entry>
+                    </row>
+                    <row>
+                        <entry>插入、删除行列</entry>
+                    </row>
+                    <row>
+                        <entry>排序</entry>
+                    </row>
+                    <row>
+                        <entry>对齐方式、表格边框及分隔线 （表格属性按钮）</entry>
+                    </row>
+                </tbody>
+            </tgroup>
+        </table>
+        <p>表格元素必须正确嵌套。关于表格元素的嵌套，请查看如下示例。</p>
+        <codeblock id="codeblock_hzj_nzy_21c" outputclass="language-xml">&lt;table>/*表格*/  
+    &lt;title>表格标题&lt;/title>
+    &lt;tgroup>/*表格内容*/
+        &lt;thead>/*标题行*/
+            &lt;row>/*单行*/
+                &lt;/entry>/*单元格*/
+            &lt;/row>
+        &lt;/thead>
+        &lt;tbody>/*表格正文*/
+            &lt;row>
+                &lt;/entry>
+            &lt;/row>
+        &lt;/tbody>
+    &lt;/tgroup>
+&lt;/table></codeblock>
+    </body>
+</topic>

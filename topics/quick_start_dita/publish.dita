@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="topic_bbn_rfp_dzb">
+    <title>发布DITA Map</title>
+    <shortdesc>使用 Oxygen XML Author  发布 DITA 文件（DITA Topic 或 DITA Map），需要先配置发布场景。在发布场景中添加 CSS 样式表，可将 DITA 文件导出为定制的 PDF 样式。在发布场景中添加过滤文件，可根据过滤条件导出指定的说明书。</shortdesc>
+    <taskbody>
+        <context>
+            <p>请按照如下步骤配置 DITA Map 的发布场景，发布 DITA Map。</p>
+        </context>
+        <steps id="steps_hlj_jwb_kzb">
+            <step>
+                <cmd>在 <uicontrol>DITA Maps Manager</uicontrol> 视图打开并选中 <ph outputclass="blue"
+                        >index.ditamap</ph>。</cmd>
+                <info>
+                    <note id="note_t1h_brx_31c" type="tip">
+                        <ul id="ul_g4m_brx_31c">
+                            <li>如需发布 DITA Topic（指定的小节），则在编辑区域打开DITA文件，将光标定位在文件内的任意位置。</li>
+                        </ul>
+                    </note>
+                </info>
+            </step>
+            <step>
+                <cmd>点击 <uicontrol><image keyref="oxygen_transform.edit_button"
+                            id="image_slg_pwb_kzb"
+                        /> Configure Transformation Scenario(s)</uicontrol>，在 <wintitle>Configure Transformation Scenario(s)</wintitle> 窗口选择 <uicontrol>DITA Map PDF - based on HTML5 &amp; CSS</uicontrol>，创建 DITA Map PDF 发布场景。</cmd>
+                <info>
+                    <image placement="break" keyref="oxygen_transform.edit_scenario" width="300"
+                        id="image_tbl_1xb_kzb"/>
+                </info>
+            </step>
+            <step>
+                <cmd>点击 <uicontrol>Edit</uicontrol>，配置发布场景。</cmd>
+                <substeps id="substeps_ph2_4xb_kzb">
+                    <substep>
+                        <cmd>在 <uicontrol>Templates</uicontrol> 标签页，点击 <uicontrol>Choose Custom Publishing Template</uicontrol>，选择 <b>.opt</b> 发布模板。</cmd>
+                        <info>
+                            <image placement="break" keyref="oxygen_transform.edit_template"
+                                width="400" id="image_j12_qzb_kzb"/>
+                        </info>
+                    </substep>
+                    <substep>
+                        <cmd>在 <uicontrol>Parameters</uicontrol> 标签页，将光标定位在参数列表上方的搜索框，分别输入图表交叉引用参数和位置参数，设置图表的交叉引用格式和标题位置。</cmd>
+                        <info>
+                            <image placement="break" keyref="oxygen_transform.edit_parameters"
+                                width="400" id="image_y3n_rzb_kzb"/>
+                        </info>
+                    </substep>
+                    <substep>
+                        <cmd>在 <uicontrol>Filters</uicontrol> 标签页，点击 <uicontrol>Use DITAVAL file</uicontrol>，选择指定说明书对应的过滤文件。如果不添加过滤文件，则默认导出整个 <ph
+                                outputclass="blue">index.ditamap</ph> 为一本说明书。</cmd>
+                        <info>
+                            <image placement="break" keyref="oxygen_transform.edit_filters"
+                                width="400" id="image_qc3_szb_kzb"/>
+                            <note id="note_ib5_gqx_31c" type="tip">
+                                <ul id="ul_pj1_hqx_31c">
+                                    <li>如需导出多本说明书，请使用批量发布文件（cornerstonepdfpublishing_{product}.xml）。</li>
+                                </ul>
+                            </note>
+                        </info>
+                    </substep>
+                </substeps>
+            </step>
+            <step>
+                <cmd>点击 <uicontrol>Apply associated</uicontrol> 发布说明书。</cmd>
+            </step>
+            <step>
+                <cmd>发布后，检查说明书样式。</cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task>

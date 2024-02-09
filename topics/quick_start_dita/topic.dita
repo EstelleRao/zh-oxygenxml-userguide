@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic">
+    <title>Generic topic</title>
+    <body>
+        <p>Generic topic（通用型主题）不区分信息类型，包括标题、正文、相关链接、段落、列表、短语、图片、表格等核心元素。</p>
+        <p>以下示例展示了通用型主题的基本数据结构。<codeph>&lt;topic></codeph> 元素是根元素，不可缺失。</p>
+        <codeblock id="codeblock_k3s_pnz_21c" outputclass="language-xml">&lt;topic id="topic">
+ &lt;title>Some little topic&lt;/title>
+ &lt;body>
+  &lt;p>Here's a little topic.&lt;/p>
+  &lt;ul>
+   &lt;li>Some item&lt;/li>
+   &lt;li>Another item&lt;/li>
+  &lt;/ul>
+ &lt;/body>
+&lt;/topic></codeblock>
+    </body>
+</topic>

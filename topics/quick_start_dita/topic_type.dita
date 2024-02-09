@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_zws_yzf_fzb">
+    <title>Topic类型</title>
+    <shortdesc>DITA提供四个常见的信息类型：Generic topic、Concept topic、Task topic、Reference topic。每种信息类型的侧重点不同，预定义的数据结构和允许使用的元素和属性也有所不同。具体差异见下表。</shortdesc>
+    <body>
+        <table frame="all" id="table_vl5_jys_21c">
+            <tgroup cols="4">
+                <colspec colname="c1" colnum="1" colwidth="0.7*"/>
+                <colspec colname="c2" colnum="2" colwidth="1.1*"/>
+                <colspec colname="c3" colnum="3" colwidth="1.1*"/>
+                <colspec colname="c4" colnum="4" colwidth="1.1*"/>
+                <thead>
+                    <row>
+                        <entry>Generic topic<p>（通用型）</p></entry>
+                        <entry>
+                            <p>Concept topic</p>
+                            <p>（概念型）</p>
+                        </entry>
+                        <entry><p>Task topic</p>（任务型）</entry>
+                        <entry>Reference topic<p>（参考型）</p></entry>
+                    </row>
+                </thead>
+                <tbody>
+                    <row>
+                        <entry>/</entry>
+                        <entry>回答“是什么”“为什么要这么做”</entry>
+                        <entry>回答“怎么做”</entry>
+                        <entry>回答“有哪些参数/指令/工具” “这个参数/指令是什么意思”</entry>
+                    </row>
+                    <row>
+                        <entry>/</entry>
+                        <entry>提供解释性信息、概览性信息或背景知识，用于支撑任务型或参考型信息</entry>
+                        <entry>提供完整的步骤指导，帮助用户完成一个特定的操作目标</entry>
+                        <entry>提供用户执行任务时需要的参考信息，一般包括命令、警告、API、配件清单等，通常以表格或列表呈现</entry>
+                    </row>
+                    <row>
+                        <entry>/</entry>
+                        <entry>用户的使用频率：读一两次来理解概念</entry>
+                        <entry>用户的使用频率：高频使用，说明书核心内容，帮助用户完成任务、解决问题</entry>
+                        <entry>用户的使用频率：需要用户多次去查找细节</entry>
+                    </row>
+                </tbody>
+            </tgroup>
+        </table>
+        <p>区分信息类型是最大化结构化数据价值的基础，但要体现数据价值还需打通整个数据链，需要内容管理平台、模块化内容管理平台，甚至知识库、数据管理平台的支撑。</p>
+        <p>当前我司的结构化转型刚刚起步，结构化写作工具未与其他平台打通，输出物以PDF格式为主。区分信息类型不仅增加编写人员负担，增加样式定制负担，也无法体现数据价值。所以，在实际项目中，我们还是使用通用型信息类型，使用常规元素和属性。</p>
+    </body>
+</topic>

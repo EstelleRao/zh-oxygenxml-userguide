@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="prepare_word">
+    <title>准备Word文档</title>
+    <shortdesc>将Word文档转换为DITA文档时，转换工具会使用Word样式来识别和创建DITA文档的内容结构，应用文本样式。转换时，转换工具会忽略Word文档中的文本字体、字号和颜色。为达到最理想的迁移效果，务必确保Word文档应用Word样式正确排版。</shortdesc>
+    <taskbody>
+        <context id="context_ex4_wp3_f1c">在迁移Word文档之前，请按照以下步骤检查Word文档样式。</context>
+        <steps id="steps_f4t_jq3_f1c">
+            <step>
+                <cmd>确保章节标题应用了Word样式，因为迁移后文档的内容结构由这些标题决定。</cmd>
+                <info><p>错误示例：修改标题的字体、字号和颜色时，未通过修改“Heading 1（标题 1）”样式来实现，而是直接修改标题，保留了默认的“Normal（正文）”样式。</p>
+                    <image keyref="dita.migration_word_example" id="image_o2w_tr3_f1c" width="500"/>
+                </info>
+            </step>
+            <step>
+                <cmd>确保Word文档的其他内容应用了Word样式。</cmd>
+                <info>
+                    <note id="note_nt1_ps3_f1c" type="tip">
+                        <ul id="ul_pq4_ps3_f1c">
+                            <li>应用正文样式的段落迁移到DITA后会自动生成DITA中的<codeph>p</codeph>元素。</li>
+                            <li>带有加粗、斜体、下划线、删除线、上标或下标格式的文本迁移到DITA后会自动生成对应的DITA元素。</li>
+                        </ul>
+                    </note>
+                </info>
+            </step>
+            <step>
+                <cmd>将Word文档中插入的形状另存为SVG图片。</cmd>
+                <info>
+                    <note id="note_r44_k53_f1c" type="tip">
+                        <ul id="ul_nhz_k53_f1c">
+                            <li>将Word文档转换为DITA文档时，在Word文档中插入的形状会被忽略。如果需要保留这些形状，可以在转换之前手动保存形状为SVG图片，迁移后在DITA文档中引用这些图片。</li>
+                        </ul>
+                    </note>
+                </info>
+            </step>
+        </steps>
+    </taskbody>
+</task>

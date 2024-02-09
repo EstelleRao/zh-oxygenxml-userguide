@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="validate">
+    <title>校验</title>
+    <body>
+        <p>校验功能用于校验XML文档的格式问题（比如无效链接和引用、错误元素和属性）和可用性问题（比如为 <codeph>&lt;image></codeph> 元素提供替代文本（alternate text）的<codeph>&lt;alt></codeph> 元素，在图像无法加载或显示时提供图像的简要描述，帮助用户理解图像的内容和作用）。</p>
+        <p>不同的文档类型（DITA Map或DITA Topic）需要配置不同的校验场景。如需配置校验场景，可在顶部菜单栏点击 <menucascade>
+                <uicontrol>Document</uicontrol>
+                <uicontrol>Validate</uicontrol>
+                <uicontrol>Configure Validation Scenario(s)</uicontrol>
+            </menucascade> 进行配置，也可在工具栏或 <uicontrol>DITA Maps Manager</uicontrol> 视图点击 <menucascade>
+                <uicontrol><image keyref="oxygen_validate.apply_button" id="image_jvc_jgq_31c"
+                    /> Validate</uicontrol>
+                <uicontrol>Configure Validation Scenario(s)</uicontrol>
+            </menucascade> 进行配置。</p>
+        <image placement="break" keyref="oxygen_validate.configure_window"
+            width="300" id="image_d4h_42t_xzb"/>
+        <p>有关DITA map的校验操作，请查阅：<xref keyref="validate_map"/>。</p>
+    </body>
+</topic>

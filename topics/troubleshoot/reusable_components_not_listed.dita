@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE troubleshooting PUBLIC "-//OASIS//DTD DITA Troubleshooting//EN" "troubleshooting.dtd">
+<troubleshooting id="b3j_bhs_4zb">
+    <title>复用组件视图未展示复用组件</title>
+    <troublebody>
+        <condition>
+            <title>故障现象</title>
+            <p><uicontrol>DITA Reusable Components</uicontrol> 视图识别到复用组件所在文件，但未展示复用组件。</p>
+            <image keyref="oxygen_dita_reusable_components.reuse_failed" height="450"/>
+        </condition>
+        <troubleSolution>
+            <cause>
+                <title>可能原因</title>
+                <p>Oxygen XML Author 26.0 版本问题</p>
+            </cause>
+            <remedy>
+                <title>解决方法</title>
+                <steps>
+                    <step>
+                        <cmd>确认根目录 <ph outputclass="blue"
+                            >index.ditamap</ph> 已在 <uicontrol>DITA Maps Manage</uicontrol> 视图打开。</cmd>
+                    </step>
+                    <step>
+                        <cmd>确认 <ph outputclass="blue"
+                            >index.ditamap</ph> 已声明公共资源为 <codeph>resource-only</codeph>。</cmd>
+                        <info><image keyref="dita.resource-only" id="image_jgm_f4s_4zb" width="500"
+                            /></info>
+                    </step>
+                    <step>
+                        <cmd>点击 <menucascade>
+                            <uicontrol>Options</uicontrol>
+                            <uicontrol>Preferences</uicontrol>
+                            <uicontrol>Open/Find Resource</uicontrol>
+                            </menucascade>，按照下图进行 index 相关设置。</cmd>
+                        <info><image keyref="oxygen_preferences.open_find_index"
+                            id="image_j4z_cps_4zb" width="400"/></info>
+                    </step>
+                    <step>
+                        <cmd>点击 <uicontrol>Reindex</uicontrol>，重新索引根目录和复用文件。</cmd>
+                        <info><image keyref="oxygen_dita_reusable_components.reindex"
+                            id="image_wm2_1qs_4zb" width="270"/></info>
+                    </step>
+                    <step>
+                        <cmd importance="optional">如未展示复用组件，则重启 Oxygen XML Author 软件，重复步骤1。</cmd>
+                    </step>
+                </steps>
+            </remedy>
+        </troubleSolution>
+    </troublebody>
+</troubleshooting>

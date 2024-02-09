@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="oxygen_interface">
+    <title>页面布局</title>
+    <shortdesc>DITA项目使用如下页面布局。如需重置布局，在菜单栏点击 <menucascade>
+            <uicontrol>Window</uicontrol>
+            <uicontrol>Reset Layout</uicontrol>
+        </menucascade>。如需显示特定视图，点击 <menucascade>
+            <uicontrol>Window</uicontrol>
+            <uicontrol>Show View</uicontrol>
+        </menucascade>，找到并单击特定视图。</shortdesc>
+    <body>
+        <image keyref="oxygen_layout.overview" width="600"/>
+        <ul id="ul_zyw_kmk_21c">
+            <li>菜单栏：提供所有功能的入口。</li>
+            <li>工具栏：提供图片、表格、列表、校验、发布、跟踪修订等快捷工具。如需自定义工具栏，可通过以下方式打开 <uicontrol>Configure Toolbars</uicontrol> 对话框进行调整。<ul
+                    id="ul_b2l_ktk_21c">
+                    <li>右键单击工具栏的任意位置，点击 <uicontrol>Configure Toolbars</uicontrol>。</li>
+                    <li>或在菜单栏点击 <menucascade>
+                            <uicontrol>Window</uicontrol>
+                            <uicontrol>Configure Toolbars</uicontrol>
+                        </menucascade>。</li>
+                </ul></li>
+            <li>编辑区域：在此区域查看和编辑文档，支持三种编辑模式。顶部显示已打开文档的页签，直接拖动页签可调整文档顺序或设置并排显示、多窗口显示。如有未保存的修改，页签右侧显示星号 <uicontrol>*</uicontrol>。<ul
+                    id="ul_yv1_rvk_21c">
+                    <li><uicontrol>Text</uicontrol> 模式：源文档视图，以XML标签形式展示XML文档结构，便于排查DITA元素和属性问题。输入 <uicontrol>&lt;</uicontrol>，提供标签提示。输入 <uicontrol>&lt;/</uicontrol>，自动补全结束标签。</li>
+                    <li><uicontrol>Grid</uicontrol> 模式：数据库视图，几乎不使用，以表格形式展示标签层级和内容。</li>
+                    <li><uicontrol>Author</uicontrol> 模式：常用视图，使用CSS样式表展示类似Word的视图。按下 <uicontrol>Enter</uicontrol> 键，提供标签提示。</li>
+                </ul></li>
+            <li>视图：<ul id="ul_jfb_pmk_21c">
+                <li><uicontrol>Project</uicontrol>视图：提供项目管理视图，用于集中管理和组织 DITA 项目中的各种资源（比如DITA文件、图片、变量、样式表）以及团队协作（比如共享首选项、校验、发布等项目设置）。</li>
+                <li><uicontrol>DITA Maps Manager</uicontrol>视图：提供DITA Map的导航视图，用于管理和组织DITA Map的结构。如需调整DITA Map结构，可直接拖动DITA文件。</li>
+                <li><uicontrol>DITA Reusable Components</uicontrol>视图：展示根目录（index.ditamap）中定义的Key、复用组件、复用图片，方便快速查找和插入复用资源。</li>
+                <li><uicontrol>Git</uicontrol>视图：用于GitLab版本管理和团队协作，支持克隆仓库，拉取远程提交，推送本地提交，新建、切换和检出分支，查看更改记录，对比差异等操作。</li>
+                <li><uicontrol>Outline</uicontrol>视图：提供DITA Topic的导航视图，用于管理和组织DITA Topic的结构。如需调整DITA Topic结构，可直接拖动DITA元素。</li>
+                <li><uicontrol>Results</uicontrol>视图：展示因用户操作而返回的提示，如校验提示、发布提示、查找结果等。双击提示进入提示关联的文件，查看提示关联的内容。</li>
+                </ul></li>
+            <li>状态栏：提供当前文档的相关信息，如文档路径、校验状态、编辑状态（Modified 表示文档已修改但未保存）、当前光标所在行数（仅在Text模式显示）。</li>
+        </ul>
+    </body>
+</topic>

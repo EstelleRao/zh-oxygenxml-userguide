@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="indirect_reuse">
+    <title>间接引用</title>
+    <body>
+        <p>间接引用是基于资源别名的引用，通过在 DITA map 中定义资源别名，然后在 DITA 文件中插入资源别名来引用资源。</p>
+    </body>
+</topic>

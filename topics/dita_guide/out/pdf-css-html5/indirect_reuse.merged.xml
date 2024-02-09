@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type='text/css' href='file:/C:/Users/CSR000369/Oxygen%20XML%20Author%2026/frameworks/dita/DITA-OT/plugins/com.oxygenxml.webhelp.responsive/oxygen-webhelp/app/topic-page-print.css'?>
+<?xml-stylesheet type='text/css' href='file:/C:/Users/CSR000369/Oxygen%20XML%20Author%2026/frameworks/dita/DITA-OT/plugins/com.oxygenxml.pdf.css/css/print/p-dita.css'?>
+<?xml-stylesheet type='text/css' href='file:/C:/Users/CSR000369/Oxygen%20XML%20Author%2026/frameworks/dita/DITA-OT/plugins/com.oxygenxml.editlink/pdf-css.css'?>
+<?xml-stylesheet type='text/css' href='file:/C:/Users/CSR000369/Oxygen%20XML%20Author%2026/frameworks/dita/DITA-OT/plugins/com.oxygenxml.webhelp.responsive/templates/oxygen/oxygen-with-colors.css'?>
+<?xml-stylesheet type='text/css' href='file:/C:/Users/CSR000369/Oxygen%20XML%20Author%2026/frameworks/dita/DITA-OT/plugins/com.oxygenxml.webhelp.responsive/templates/oxygen/notes.css'?>
+<?xml-stylesheet type='text/css' href='file:/E:/RAI-IFU/publishment-template/pdf-css/knst/CUSTOM.css'?>
+<?workdir /E:\oxygen_user_manual\topics\dita_guide\temp\pdf-css-html5?><?workdir-uri file:/E:/oxygen_user_manual/topics/dita_guide/temp/pdf-css-html5/?><?path2project?><?path2project-uri ./?><?path2rootmap-uri ./?><?doctype-public -//OASIS//DTD DITA Topic//EN?><?doctype-system topic.dtd?><topic xmlns:css2fo="http://www.oxygenxml.com/css2fo" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:nd="http://www.oxygenxml.com/css2fo/named-destinations" xmlns:opentopic="http://www.idiominc.com/opentopic" xmlns:opentopic-index="http://www.idiominc.com/opentopic/index" xmlns:oxy="http://www.oxygenxml.com/extensions/author" xmlns:xs="http://www.w3.org/2001/XMLSchema" class="- topic/topic " ditaarch:DITAArchVersion="1.3" domains="(topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" id="indirect_reuse" specializations="@props/deliveryTarget" xtrc="topic:1;3:28" xtrf="file:/E:/oxygen_user_manual/topics/dita_guide/indirect_reuse.dita" xml:lang="en">
+    <title class="- topic/title "><ph class="- topic/ph topic/title-wrapper ">间接引用</ph></title>
+    <body class="- topic/body ">
+        <p class="- topic/p ">间接引用是基于资源别名的引用，通过在 DITA map 中定义资源别名，然后在 DITA 文件中插入资源别名来引用资源。</p>
+        <section class="- topic/section " id="section_jyw_sch_f1c">
+            <title class="- topic/title "> @keyref 和 @conkeyref 属性</title>
+            <p class="- topic/p ">间接引用使用 @keyref 和 @conkeyref 属性引用资源。下表展示了复用不同类型资源常用的元素和属性。</p>
+            <table class="- topic/table " id="table_usl_xzg_f1c">
+                <tgroup class="- topic/tgroup " cols="3">
+                    <colspec class="- topic/colspec " colname="col1" colnum="1" colwidth="0.8*" xtrc="colspec:1;12:71" xtrf="file:/E:/oxygen_user_manual/topics/dita_guide/indirect_reuse.dita" style="width:26.6667%;"/>
+                    <colspec class="- topic/colspec " colname="col2" colnum="2" colwidth="1.4*" xtrc="colspec:2;13:71" xtrf="file:/E:/oxygen_user_manual/topics/dita_guide/indirect_reuse.dita" style="width:46.6667%;"/>
+                    <colspec class="- topic/colspec " colname="col3" colnum="3" colwidth="0.8*" xtrc="colspec:3;14:71" xtrf="file:/E:/oxygen_user_manual/topics/dita_guide/indirect_reuse.dita" style="width:26.6667%;"/>
+                    <thead class="- topic/thead ">
+                        <row class="- topic/row "><entry class="- topic/entry " colname="col1" dita-ot:x="1" dita-ot:y="1">复用内容</entry><entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="1">常用元素</entry><entry class="- topic/entry " colname="col3" dita-ot:x="3" dita-ot:y="1">常用属性</entry></row>
+                    </thead>
+                    <tbody class="- topic/tbody ">
+                        <row class="- topic/row "><entry class="- topic/entry " colname="col1" dita-ot:x="1" dita-ot:y="2">DITA map</entry><entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="2"><codeph class="+ topic/ph pr-d/codeph ">&lt;mapref&gt;</codeph>、<codeph class="+ topic/ph pr-d/codeph ">&lt;topicref&gt;</codeph> 或 <codeph class="+ topic/ph pr-d/codeph ">&lt;chapter&gt;</codeph></entry><entry class="- topic/entry " colname="col3" dita-ot:x="3" dita-ot:y="2">@keyref </entry></row>
+                        <row class="- topic/row "><entry class="- topic/entry " colname="col1" dita-ot:x="1" dita-ot:y="3">DITA topic</entry><entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="3"><codeph class="+ topic/ph pr-d/codeph ">&lt;topicref&gt;</codeph></entry><entry class="- topic/entry " colname="col3" dita-ot:x="3" dita-ot:y="3">@keyref </entry></row>
+                        <row class="- topic/row "><entry class="- topic/entry " colname="col1" dita-ot:x="1" dita-ot:y="4">DITA element</entry><entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="4">被引用资源对应的元素</entry><entry class="- topic/entry " colname="col3" dita-ot:x="3" dita-ot:y="4">@conkeyref</entry></row>
+                        <row class="- topic/row "><entry class="- topic/entry " colname="col1" dita-ot:x="1" dita-ot:y="5">图片</entry><entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="5"><codeph class="+ topic/ph pr-d/codeph ">&lt;image&gt;</codeph></entry><entry class="- topic/entry " colname="col3" dita-ot:x="3" dita-ot:y="5">@keyref </entry></row>
+                        <row class="- topic/row "><entry class="- topic/entry " colname="col1" dita-ot:x="1" dita-ot:y="6">变量</entry><entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="6"><codeph class="+ topic/ph pr-d/codeph ">&lt;ph&gt;</codeph></entry><entry class="- topic/entry " colname="col3" dita-ot:x="3" dita-ot:y="6">@keyref </entry></row>
+                    </tbody>
+                </tgroup>
+            </table>
+            <note class="- topic/note " id="note_jgq_qnh_d1c" type="attention">
+                <ul class="- topic/ul " id="ul_qh5_qnh_d1c">
+                    <li class="- topic/li ">使用 @keyref 属性引用资源之前，必须先在 DITA map 中为资源定义 @keys 属性和值。原则是先定义后引用。</li>
+                    <li class="- topic/li ">通用公共组件或业务公共组件（可复用的 DITA 元素）必须使用公共组件文件（<b class="+ topic/ph hi-d/b ">xx_components.dita</b>）集中存储和管理。</li>
+                    <li class="- topic/li ">使用 @conkeyref 属性复用 DITA 元素之前，必须先在公共组件文件（<b class="+ topic/ph hi-d/b ">xx_components.dita</b>）中为该元素定义 @id 属性和值，然后在公共资源管理文件（<b class="+ topic/ph hi-d/b ">common.ditamap</b>）中为整个公共组件文件定义 Key。定义后，在 DITA 文件中插入 @conkeyref 属性，引用的内容会自动插入 DITA 文件。</li>
+                </ul>
+            </note>
+        </section>
+        <section class="- topic/section " id="section_oz4_bdh_f1c">
+            <title class="- topic/title ">常见用法和示例</title>
+            <p class="- topic/p ">下表展示了在 DITA map 和 DITA topic 中为资源定义 @keys 属性和 @id 属性的方法和示例，以及使用 @keyref 和 @conkeyref 属性引用资源的方法和示例。<table class="- topic/table ">
+                    <tgroup class="- topic/tgroup " cols="2">
+                        <colspec class="- topic/colspec " colname="col1" colnum="1" colwidth="0.4*" xtrc="colspec:4;63:75" xtrf="file:/E:/oxygen_user_manual/topics/dita_guide/indirect_reuse.dita" style="width:20%;"/>
+                        <colspec class="- topic/colspec " colname="col2" colnum="2" colwidth="1.6*" xtrc="colspec:5;64:75" xtrf="file:/E:/oxygen_user_manual/topics/dita_guide/indirect_reuse.dita" style="width:80%;"/>
+                        <thead class="- topic/thead ">
+                            <row class="- topic/row "><entry class="- topic/entry " colname="col1" dita-ot:x="1" dita-ot:y="1">用法</entry><entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="1">操作示例</entry></row>
+                        </thead>
+                        <tbody class="- topic/tbody ">
+                            <row class="- topic/row "><entry class="- topic/entry " colname="col1" dita-ot:x="1" dita-ot:y="2">引用 DITA topic</entry><entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="2">以引用文档符号说明文档为例：<ol class="- topic/ol " id="ol_mwp_hhk_j1c">
+                                        <li class="- topic/li ">
+                                            <p class="- topic/p ">在 <b class="+ topic/ph hi-d/b ">common.ditamap</b> 中为文档符号说明文档定义 @keys 属性。</p>
+                                            <codeblock class="+ topic/pre pr-d/codeblock " id="codeblock_qyd_vhh_f1c" outputclass="language-xml" xml:space="preserve">&lt;topicref href="doc_symbols.dita" keys="doc_symbols"/&gt;
+&lt;keydef href="doc_symbols.dita" keys="doc_symbols"/&gt;</codeblock>
+                                        </li>
+                                        <li class="- topic/li ">
+                                            <p class="- topic/p ">在 <b class="+ topic/ph hi-d/b ">index.ditamap</b> 中使用 @keyref 属性引用文档符号说明文档。<codeblock class="+ topic/pre pr-d/codeblock " id="codeblock_kwl_4hk_j1c" outputclass="language-xml" xml:space="preserve">&lt;topicref keyref="reuse"/&gt;</codeblock></p>
+                                        </li>
+                                    </ol></entry></row>
+                            <row class="- topic/row "><entry class="- topic/entry " colname="col1" dita-ot:x="1" dita-ot:y="3">引用图片</entry><entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="3">定义 @keys 属性<codeblock class="+ topic/pre pr-d/codeblock " id="codeblock_m4n_g3h_f1c" outputclass="language-xml" xml:space="preserve">&lt;keydef keys="CV2000_symbol.10mm_30_END" href="CV2000_symbol/CV2000_symbol.10mm_30_END.png" format="png"&gt;&lt;/keydef&gt;</codeblock><p class="- topic/p ">使用 @keyref 属性引用资源</p><p class="- topic/p ">
+                                        <codeblock class="+ topic/pre pr-d/codeblock " id="codeblock_e5m_h3h_f1c" outputclass="language-xml" xml:space="preserve">&lt;image placement="break" keyref="common_global.common_label.instruction_manual" height="40"/&gt;</codeblock>
+                                    </p></entry></row>
+                            <row class="- topic/row "><entry class="- topic/entry " colname="col1" dita-ot:x="1" dita-ot:y="4">引用 DITA 元素</entry><entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="4">以引用系统产品名称为例：<p class="- topic/p ">定义 @id 属性</p><codeblock class="+ topic/pre pr-d/codeblock " id="codeblock_wk3_xhh_f1c" outputclass="language-xml" xml:space="preserve">&lt;ph id="prodname_C1000_new"&gt;内窥镜手术系统&lt;/ph&gt;</codeblock><p class="- topic/p ">使用 @conkeyref 属性引用资源<codeblock class="+ topic/pre pr-d/codeblock " id="codeblock_gwr_yhh_f1c" outputclass="language-xml" xml:space="preserve">&lt;ph conkeyref = "common_zh-CN.product_names/prodname_C1000_new"/&gt;</codeblock></p></entry></row>
+                            <row class="- topic/row "><entry class="- topic/entry " colname="col1" dita-ot:x="1" dita-ot:y="5">引用 DITA 元素</entry><entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="5">以引用安全提示为例：<p class="- topic/p ">定义 @id 属性</p><codeblock class="+ topic/pre pr-d/codeblock " id="codeblock_umw_d3h_f1c" outputclass="language-xml" xml:space="preserve">&lt;li id="warning_refer_IFU_before_use"&gt;使用本产品前，确保已充分了解适用的说明书中的所有信息，特别是禁止和警告信息。未能正确遵循说明书中的所有说明，可能导致产品损坏或患者、操作人员和其他人员受伤。&lt;/li&gt;</codeblock><p class="- topic/p ">使用 @conkeyref 属性引用资源<codeblock class="+ topic/pre pr-d/codeblock " id="codeblock_usj_f3h_f1c" xml:space="preserve">&lt;li conkeyref = "common_zh-CN.common_components/warning_refer_IFU_before_use"/&gt;</codeblock></p></entry></row>
+                            <row class="- topic/row "><entry class="- topic/entry " colname="col1" dita-ot:x="1" dita-ot:y="6">引用页面变量</entry><entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="6">定义 @keys 属性<codeblock class="+ topic/pre pr-d/codeblock " id="codeblock_v23_kfh_f1c" outputclass="language-xml" xml:space="preserve">页面变量
+&lt;keydef keys="booktitle" navtitle="手册名称" product="8003-000030-1-0001"&gt;
+    &lt;topicmeta&gt;
+        &lt;keywords&gt;
+            &lt;keyword&gt;内窥镜图像处理器说明书&lt;/keyword&gt;
+        &lt;/keywords&gt;
+    &lt;/topicmeta&gt;
+ &lt;/keydef&gt;</codeblock><p class="- topic/p ">使用 @keyref 属性引用资源</p><codeblock class="+ topic/pre pr-d/codeblock " id="codeblock_pm5_pjh_f1c" outputclass="language-xml" xml:space="preserve">页面变量
+&lt;keyword keyref="booktitle"/&gt;</codeblock></entry></row>
+                            <row class="- topic/row "><entry class="- topic/entry " colname="col1" dita-ot:x="1" dita-ot:y="7">引用文本变量</entry><entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="7">定义 @keys 属性<codeblock class="+ topic/pre pr-d/codeblock " id="codeblock_xfn_5gk_j1c" outputclass="language-xml" xml:space="preserve">&lt;keydef keys="booktitle" navtitle="手册名称" product="8003-000030-1-0001"&gt;
+    &lt;topicmeta&gt;
+        &lt;keywords&gt;
+            &lt;keyword&gt;内窥镜图像处理器说明书&lt;/keyword&gt;
+        &lt;/keywords&gt;
+    &lt;/topicmeta&gt;
+ &lt;/keydef&gt;</codeblock><p class="- topic/p ">使用 @keyref 属性引用资源</p><codeblock class="+ topic/pre pr-d/codeblock " id="codeblock_yfn_5gk_j1c" outputclass="language-xml" xml:space="preserve">&lt;p&gt;&lt;ph keyref="prodname"/&gt;只能配合康诺思腾 C1000 胸腹腔内窥镜手术系统使用。该系统的禁忌证同样适用于本产品。以下为康诺思腾 C1000 胸腹腔内窥镜手术系统的禁忌证：&lt;/p&gt;</codeblock></entry></row>
+                        </tbody>
+                    </tgroup>
+                </table></p>
+        </section>
+        <section class="- topic/section " id="section_ofq_1gf_f1c">
+            <title class="- topic/title ">@keyscope 属性</title>
+            <p class="- topic/p ">@keyscope 属性用于定义 key 的作用域，避免同名 key 冲突问题。当一个文档引用了不同 ditamap 中的同名 key，默认只使用其中一个 key，通常在内容结构中靠前的 ditamap 中的key优先级高于其他 ditamap 中的同名 key。</p>
+            <p class="- topic/p ">为了在该文档的不同位置顺利引用不同 ditamap 中的同名 key，可以在这些 ditamap 中定义 @keyscope 属性，通过 @keyscope 属性和 @keys 属性的组合区分同名 key。</p>
+            <p class="- topic/p ">@keyscope 属性在 <codeph class="+ topic/ph pr-d/codeph ">&lt;map&gt;</codeph> 元素或 <codeph class="+ topic/ph pr-d/codeph ">&lt;topicref&gt;</codeph> 元素中指定。 @keyscope 属性的值由一个或多个以空格分隔的 key作用域名称组成，可以自定义。</p>
+            <p class="- topic/p ">在以下示例中，示例1和示例2为适用不同语言的通用公共资源和公共图片定义了 @keyscope 属性，这样即使同时引用了多个同名 key 也可以正确引用。</p>
+            <p class="- topic/p ">示例1：</p>
+            <p class="- topic/p ">
+                <codeblock class="+ topic/pre pr-d/codeblock " id="codeblock_qz2_tmh_f1c" outputclass="language-xml" xml:space="preserve">&lt;map xml:lang="en-US" keyscope="common_en-US"&gt;
+    &lt;title&gt;通用公共资源（en-US）&lt;/title&gt;
+    &lt;topicref href="images/common_images.ditamap" format="ditamap"/&gt;
+    &lt;topicref href="topics/common_topics.ditamap" format="ditamap"/&gt;
+    &lt;topicref href="components/common_components.dita" keys="common_components"/&gt;
+    &lt;topicref href="components/product_names.dita" keys="product_names"/&gt;
+&lt;/map&gt;
+&lt;map xml:lang="zh-CN" keyscope="common_zh-CN"&gt;
+    &lt;title&gt;通用公共资源（zh-CN）&lt;/title&gt;
+    &lt;topicref href="images/common_images.ditamap" format="ditamap"/&gt;
+    &lt;topicref href="topics/common_topics.ditamap" format="ditamap"/&gt;
+    &lt;topicref href="components/common_components.dita" keys="common_components"/&gt;
+    &lt;topicref href="components/product_names.dita" keys="product_names"/&gt;
+&lt;/map&gt;</codeblock>
+            </p>
+        </section>
+        <p class="- topic/p ">示例2：</p>
+        <codeblock class="+ topic/pre pr-d/codeblock " id="codeblock_wmx_jnh_f1c" outputclass="language-xml" xml:space="preserve">&lt;map&gt;
+    &lt;title&gt;通用公共图片&lt;/title&gt;
+    &lt;topicref href="images/common_images.ditamap" format="ditamap" keyscope="common_zh-CN"/&gt;
+    &lt;topicref href="topics/common_images.ditamap" format="ditamap" keyscope="common_en-US"/&gt;
+&lt;/map&gt;</codeblock>
+    </body>
+</topic>

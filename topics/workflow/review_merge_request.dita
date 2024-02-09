@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="topic_bjn_yxf_fzb">
+    <title>审批和合入合并请求</title>
+    <shortdesc>开发人员创建合并请求后，审核人员会在远程仓库主页或 outlook 邮箱收到通知。收到通知后，审核人员前往远程仓库主页审核合并请求，确认改动无误后，批准合并请求。</shortdesc>
+    <taskbody>
+        <context id="context_lqb_xdh_31c"
+            >如需添加修改意见，可在差异行添加评论，开发人员在本地完成修改后再次提交，审核人员确认改动无误后，批准合并请求。最终由开发人员合入合并请求。</context>
+        <steps id="steps_nph_txd_jzb">
+            <step>
+                <cmd>在远程仓库主页点击 <menucascade>
+                    <uicontrol>Merge requests</uicontrol>
+                    <uicontrol>Open</uicontrol>
+                    </menucascade>，点击待审核的合并请求。</cmd>
+                <info>
+                    <image placement="break" keyref="gitlab.merge_request_notification" width="500"
+                        id="image_gqh_vxd_jzb"/>
+                </info>
+            </step>
+            <step>
+                <cmd>在合并请求详情页点击 <uicontrol>Changes</uicontrol>，查看所有改动。</cmd>
+                <info>
+                    <image placement="break" keyref="gitlab.merge_request_changes"
+                        width="500" id="image_u11_w12_jzb"/>
+                    <p><uicontrol>Changes</uicontrol>右侧的数字表示改动的文件数量。</p>
+                    <p>在差异对比区域，左侧展示改动文件所在目录，右侧展示改动文件的差异行，右上角的绿色数字表示新增行数，红色数字表示删除行数。</p>
+                </info>
+            </step>
+            <step>
+                <cmd>如需添加修改意见，审核人员可在差异行添加评论。完成审核后，提交所有修改意见。</cmd>
+                <substeps id="substeps_klx_bn2_jzb">
+                    <substep>
+                        <cmd>点击 <uicontrol><image
+                                    keyref="gitlab.git_diff_add_comment_icon"
+                                    height="20" id="image_krw_m32_jzb"
+                        />Add a comment to this line</uicontrol> 添加评论。写完第一条评论后，点击 <uicontrol>Start a review</uicontrol>。</cmd>
+                        <info><image placement="break" keyref="gitlab.git_diff_add_comment" width="550" id="image_x15_3j2_jzb"/></info>
+                    </substep>
+                    <substep>
+                        <cmd>继续添加评论。每次写完评论，点击 <uicontrol>Add to review</uicontrol>。</cmd>
+                        <info><image placement="break" keyref="gitlab.git_diff_add_to_review" width="250"
+                                id="image_jpd_zk2_jzb"/></info>
+                    </substep>
+                    <substep>
+                        <cmd>完成审核后，点击 <uicontrol>Finish review</uicontrol>，填写总结性评论（可选），最后点击 <uicontrol>Submit review</uicontrol>，完成审核。</cmd>
+                        <info><image placement="break" keyref="gitlab.git_diff_finish_review" width="375"
+                                id="image_hjs_lk2_jzb"/></info>
+                    </substep>
+                </substeps>
+            </step>
+            <step>
+                <cmd>开发人员查看修改意见，在本地完成修改后再次提交。</cmd>
+                <substeps id="substeps_scp_yn2_jzb">
+                    <substep>
+                        <cmd>在合并请求详情页的 <uicontrol>Activity</uicontrol> 区域查看所有修改意见。</cmd>
+                        <info><image placement="break" keyref="gitlab.merge_request_activity" width="375"
+                                id="image_khn_vm2_jzb"/></info>
+                    </substep>
+                    <substep>
+                        <cmd>在本地临时分支完成修改，再次提交改动到远程仓库。</cmd>
+                    </substep>
+                    <substep>
+                        <cmd>问题解决后，点击 <uicontrol>Resolve thread</uicontrol> 关闭评论。</cmd>
+                    </substep>
+                </substeps>
+            </step>
+            <step>
+                <cmd>审核人员再次确认所有改动，确认无误后，点击 <uicontrol>Approve</uicontrol> 批准合并请求。</cmd>
+                <info>
+                    <image placement="break" keyref="gitlab.approve_merge_request" width="400"
+                        id="image_ztr_pp2_jzb"/>
+                </info>
+            </step>
+            <step>
+                <cmd>开发人员点击 <uicontrol>Merge</uicontrol> 合入合并请求。</cmd>
+                <info>
+                    <image placement="break" keyref="gitlab.merge_merge_request"
+                        width="375" id="image_tsp_5p2_jzb"/>
+                </info>
+            </step>
+            <step>
+                <cmd importance="optional"
+                        >合入合并请求后，如需同步改动到其他受保护分支，可点击 <uicontrol>Cherry-pick</uicontrol> 选择目标仓库和目标分支。有关 cherry-pick 合并请求的操作，请查阅：<xref
+                        keyref="cherry-pick_MR"/>。</cmd>
+                <info><image keyref="gitlab.MR_cherry-pick" id="image_c1j_s2h_31c" width="300"
+                    /></info>
+            </step>
+        </steps>
+    </taskbody>
+</task>

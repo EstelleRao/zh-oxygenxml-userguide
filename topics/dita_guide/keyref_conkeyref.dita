@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="keyref_conkeyref">
+    <title>@keyref属性和@conkeyref属性</title>
+    <body>
+        <p>间接引用使用 @keyref 和 @conkeyref 属性引用资源。下表展示了复用不同类型资源常用的元素和属性。</p>
+        <table id="table_usl_xzg_f1c">
+            <tgroup cols="3">
+                <colspec colname="c1" colnum="1" colwidth="0.8*"/>
+                <colspec colname="c2" colnum="2" colwidth="1.4*"/>
+                <colspec colname="c3" colnum="3" colwidth="0.8*"/>
+                <thead>
+                    <row>
+                        <entry>复用内容</entry>
+                        <entry>常用元素</entry>
+                        <entry>常用属性</entry>
+                    </row>
+                </thead>
+                <tbody>
+                    <row>
+                        <entry>DITA map</entry>
+                        <entry><codeph>&lt;mapref></codeph>、<codeph>&lt;topicref></codeph> 或 <codeph>&lt;chapter></codeph></entry>
+                        <entry>@keyref </entry>
+                    </row>
+                    <row>
+                        <entry>DITA topic</entry>
+                        <entry><codeph>&lt;topicref></codeph></entry>
+                        <entry>@keyref </entry>
+                    </row>
+                    <row>
+                        <entry>DITA element</entry>
+                        <entry>被引用资源对应的元素</entry>
+                        <entry>@conkeyref</entry>
+                    </row>
+                    <row>
+                        <entry>图片</entry>
+                        <entry><codeph>&lt;image></codeph></entry>
+                        <entry>@keyref </entry>
+                    </row>
+                    <row>
+                        <entry>变量</entry>
+                        <entry><codeph>&lt;ph></codeph></entry>
+                        <entry>@keyref </entry>
+                    </row>
+                </tbody>
+            </tgroup>
+        </table>
+        <note id="note_jgq_qnh_d1c" type="attention">
+            <ul id="ul_qh5_qnh_d1c">
+                <li>使用 @keyref 属性引用资源之前，必须先在 DITA map 中为资源定义 @keys 属性和值。原则是先定义后引用。</li>
+                <li>通用公共组件或业务公共组件（可复用的 DITA 元素）必须使用公共组件定义集（<b>xx_components.dita</b>）集中存储和管理。</li>
+                <li>使用 @conkeyref 属性复用 DITA 元素之前，必须先在公共组件定义集（<b>xx_components.dita</b>）中为该元素定义 @id 属性和值，然后在公共资源管理文件（<b>common.ditamap</b>）中为整个公共组件定义集定义 Key。定义后，在 DITA 文件中插入 @conkeyref 属性，引用的内容会自动插入 DITA 文件。</li>
+            </ul>
+        </note>
+    </body>
+</topic>

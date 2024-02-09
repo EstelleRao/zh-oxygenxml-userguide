@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="resolve_conflict">
+    <title>解决冲突</title>
+    <body>
+        <p>完成更改并提交到本地仓库后，需要将更改再推送到远程仓库。如果推送时出现冲突，则表明远程仓库有新的提交，未同步到本地仓库。请按照如下步骤解决冲突。</p>
+        <ol>
+            <li>使用 <codeph>Pull（merge）</codeph> 操作拉取远程仓库的最新提交，合并更改到本地仓库。</li>
+            <li>在工作区，选中存在冲突的文件，单击右键后点击 <uicontrol>Resolve using Mine</uicontrol>、<uicontrol>Resolve using Theirs</uicontrol> 或 <uicontrol>Mark as resolved </uicontrol>，快速解决冲突。</li>
+            <li>如需逐行解决冲突，可使用文件对比窗口逐个打开存在冲突的文件，查看并解决冲突。<ol id="ol_xks_pkp_31c">
+                <li>选中文件后，双击文件或单击右键后点击 <uicontrol>Open in compare editor</uicontrol>，在文件对比窗口打开冲突文件。</li>
+                <li>查看冲突行，选择要保留和舍弃的更改，解决冲突后保存文件。</li>
+                <li>关闭文件对比窗口后，保存的文件将自动移至暂存区。</li>
+                </ol></li>
+            <li>在所有冲突均已解决，且工作区的文件均移至暂存区后，可以继续提交和推送更改。<ol>
+                <li>输入一条提交记录，提交更改到本地仓库。</li>
+                <li>推送本地仓库的更改到远程仓库。</li>
+                </ol></li>
+        </ol>
+        <note type="tip">
+            <ul>
+                <li>如需中止合并，可点击 <uicontrol>Abort merge</uicontrol>，使本地仓库恢复到拉取操作之前的状态。</li>
+            </ul>
+        </note>
+    </body>
+</topic>

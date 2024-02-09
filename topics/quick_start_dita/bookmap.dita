@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="bookmap">
+    <title>DITA Bookmap</title>
+    <body>
+        <p>DITA bookmap专为书籍而设计。 如需将一组或多组topic发布成书，可使用DITA bookmap。</p>
+        <p>DITA bookmap包括两类元素：</p>
+    <ol id="ul_jsm_db1_f1c">
+      <li>划分书籍各个部分的内容元素，例如 <codeph>&lt;bookmap></codeph>（DITA bookmap的根元素）、<codeph>&lt;booktitle></codeph>（书籍标题）、<codeph>&lt;frontmatter></codeph>（前言）、<codeph>&lt;chapter></codeph>（章节）、<codeph>&lt;appendix></codeph>（附录）、<codeph>&lt;backmatter></codeph>（后记）。</li>
+      <li>描述书籍信息的数据元素，不会显示在出版物中，例如 <codeph>&lt;bookmeta></codeph>（记录版权、作者等信息）、<codeph>&lt;bookchangehistory></codeph>（记录编写、审核、测试人员和时间信息）。</li>
+    </ol>
+    <p> 以下示例展示了DITA Bookmap的基本数据结构。</p>
+        <codeblock id="codeblock_tw5_x4z_21c" outputclass="language-xml">&lt;bookmap xml:lang="en-us">
+  &lt;booktitle>/*书籍标题*/
+    &lt;booklibrary>Books about stuff&lt;/booklibrary>
+    &lt;mainbooktitle>A book about one thing&lt;/mainbooktitle>
+  &lt;/booktitle>
+  &lt;bookmeta>
+    &lt;bookrights>
+      &lt;copyrfirst>&lt;year>1994&lt;/year>&lt;/copyrfirst>
+      &lt;copyrlast>&lt;year>2006&lt;/year>&lt;/copyrlast>
+      &lt;bookowner>OASIS&lt;/bookowner>
+    &lt;/bookrights>
+  &lt;/bookmeta>
+  &lt;frontmatter>/*前言*/
+    &lt;booklists>
+      &lt;toc/>/*目录*/
+      &lt;figurelist/>/*图片目录*/
+      &lt;tablelist/>/*表格目录*/
+    &lt;/booklists>
+    &lt;bookabstract href="MyBookAbstract.dita"/>/*摘要*/
+    &lt;preface href="preface.dita">&lt;/preface>/*序言*/
+  &lt;/frontmatter>
+  &lt;chapter href="chapter1.dita">/*章节1*/
+    &lt;topicref href="subchap1.dita">&lt;/topicref>/*章节1-1*/
+  &lt;/chapter>
+  &lt;chapter href="chapter2.dita">/*章节2*/
+    &lt;topicref href="subchap2.dita">&lt;/topicref>
+  &lt;/chapter>
+  &lt;appendix href="app1.dita">/*附录1*/
+    &lt;topicref href="insideApp1.dita">&lt;/topicref>
+  &lt;/appendix>
+  &lt;appendix href="app2.dita">/*附录2*/
+    &lt;topicref href="insideApp2.dita">&lt;/topicref>
+  &lt;/appendix>
+  &lt;backmatter>/*后记*/
+    &lt;amendments href="updatesToTheBook.dita"/>/*增补*/
+    &lt;booklists>
+      &lt;trademarklist href="listoftrademarks.dita"/>/*商标*/
+      &lt;indexlist/>/*索引*/
+    &lt;/booklists>
+  &lt;/backmatter>
+&lt;/bookmap></codeblock>
+    </body>
+</topic>

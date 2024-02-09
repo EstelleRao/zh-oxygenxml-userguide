@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_uqv_b4t_hzb">
+    <title>创建合并请求</title>
+    <taskbody>
+        <context id="context_nxp_n1h_31c"
+                >推送本地临时分支到远程仓库后，创建从远程临时分支到远程 <codeph>develop</codeph> 分支的合并请求，待审核人员审核并批准后，合入远程 <codeph>develop</codeph> 分支。</context>
+        <steps>
+            <step>
+                <cmd>依次点击远程仓库左侧导航栏的 <uicontrol>Merge Requests</uicontrol>和页面中央的 <uicontrol>New merge request</uicontrol>，创建一个新的合并请求。</cmd>
+                <info><image keyref="gitlab.merge_requests" id="image_dc5_rrd_jzb" width="500"
+                    /></info>
+            </step>
+            <step>
+                <cmd>选择需要合并的源分支和目标分支，点击 <uicontrol>Compare branches and continue</uicontrol>。</cmd>
+                <info><image keyref="gitlab.compare_branches_and_continue" id="image_khl_wrd_jzb"
+                    width="500"/></info>
+            </step>
+            <step>
+                <cmd>填写合并请求的标题和描述。标题的书写规范见 <xref keyref="commit_message"
+                    />。如果有ECR编号，描述需附上ECR编号、标题和链接。如果没有ECR编号，描述可不填写。</cmd>
+                <info><image keyref="gitlab.merge_request_title" id="image_myl_yrd_jzb" width="500"
+                    /></info>
+            </step>
+            <step>
+                <cmd>添加两位审核人员。不得添加源分支的开发人员为审核人员。</cmd>
+                <info><image keyref="gitlab.add_reviewers" id="image_nvq_zrd_jzb" width="200"
+                    /></info>
+            </step>
+            <step importance="optional">
+                <cmd>如果当前合并请求和其他合并请求有依赖关系，则需在 <uicontrol>Merge request dependencies</uicontrol> 输入框填写其他合并请求的 URL，先合入其他合并请求，再合入当前合并请求。</cmd>
+                <info>
+                    <image placement="break" keyref="gitlab.merge_request_dependencies" width="350"
+                        id="image_isv_sr1_kzb"/>
+                </info>
+            </step>
+            <step>
+                <cmd>其他选项保留默认设置。</cmd>
+                <info><image keyref="gitlab.merge_options" id="image_mb3_1vd_jzb"
+                        width="300"/></info>
+            </step>
+            <step>
+                <cmd>点击 <uicontrol>Create merge request</uicontrol>，等待审核人员审核并批准。</cmd>
+                <info><image keyref="gitlab.create_merge_request" id="image_hdl_1sd_jzb" width="400"
+                    /></info>
+            </step>
+        </steps>
+    </taskbody>
+</task>

@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="topic_b5m_yxf_fzb">
+        <title>新建本地临时分支</title>
+        <shortdesc>主要分支（<codeph>develop</codeph>分支）均为受保护分支，不可直接修改。如需提交变更到主要分支，需从本地主要分支新建本地临时分支，推送到远程仓库后创建合并请求，待审核人员审核并批准后合并到主要分支。</shortdesc>
+        <taskbody>
+                <steps id="ol_qj2_rqn_fzb">
+                        <step>
+                                <cmd>使用任一方法切换到指定的 <codeph>develop</codeph> 分支。</cmd>
+                                <choices id="choices_e4t_tfb_3zb">
+                                        <choice>方法一：在 <uicontrol>Git Staging</uicontrol> 视图点击 <uicontrol>Branch</uicontrol> 下拉框，选择指定的 <codeph>develop</codeph> 分支。选择后会自动切换到该分支。<image
+                                                placement="break"
+                                                keyref="git_client.checkout_branch_dropbox"
+                                                id="image_ogk_ngb_3zb" width="300"/></choice>
+                                        <choice>方法二：在 <uicontrol>Git Staging</uicontrol> 视图点击 <uicontrol><image
+                                                placement="inline"
+                                                keyref="git_client.show_Git_Branch_Manager_view"
+                                                id="image_v31_jpw_3zb"
+                                                />Show Git Branch Manager view</uicontrol>。在 <uicontrol>Git Branch Manager</uicontrol> 视图双击分支名或单击右键后点击 <uicontrol>Checkout</uicontrol> 切换分支。<image
+                                                placement="break"
+                                                keyref="git_client.checkout_branch_right_click"
+                                                id="image_zy1_5gb_3zb" height="250"/></choice>
+                                </choices>
+                        </step>
+                        <step>
+                                <cmd>点击 <uicontrol><image keyref="git_client.pull_icon"
+                                        id="image_btm_mqw_3zb"
+                                        />Pull</uicontrol>，拉取远程分支更新。默认使用 <uicontrol>Pull (merge)</uicontrol> 的方式拉取远程更新，以保留完整的提交记录。</cmd>
+                                <info> <image placement="break" keyref="git_client.pull" width="250" id="image_c4f_cvc_jzb"/> </info>
+                        </step>
+                        <step>
+                                <cmd>在 <uicontrol>Git Branch Manager</uicontrol> 视图点击 <uicontrol>Create branch</uicontrol>，从本地 <codeph>develop</codeph> 分支新建本地临时分支。</cmd>
+                                <info> <image placement="break" keyref="git_client.create_local_temp_branch" height="250"
+                                                id="image_n4h_w2b_3zb"/> </info>
+                        </step>
+                        <step>
+                                <cmd>为本地临时分支命名，见 <xref keyref="branch_model"/> 和 <xref
+                                        keyref="branch_naming_rule"/>。</cmd>
+                        </step>
+                        <step>
+                                <cmd>点击 <uicontrol>Create</uicontrol>，完成分支创建。如勾选 <uicontrol>Checkout branch</uicontrol>，分支创建后会自动切换到该分支。</cmd>
+                        </step>
+                </steps>
+        </taskbody>
+</task>

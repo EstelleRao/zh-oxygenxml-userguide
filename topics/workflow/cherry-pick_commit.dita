@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="jn2_pvq_qzb">
+    <title>Cherry-pick commit</title>
+    <shortdesc>在无需合并整个源分支的场景下，如需同步源分支的单个 commit 到同仓库或关联仓库（fork 后的目标仓库）的目标分支，可按照如下步骤执行 cherry-pick commit 操作。</shortdesc>
+    <taskbody>
+        <steps id="steps_m5h_vyq_qzb">
+            <step>
+                <cmd>在远程仓库主页切换到指定的源分支，点击 <uicontrol>History</uicontrol> 查看提交记录。</cmd>
+                <info>
+                    <image placement="break" keyref="gitlab.repo_history" width="600"/>
+                </info>
+            </step>
+            <step>
+                <cmd>在 <uicontrol>Commits</uicontrol> 页面找到需要同步的 commit，点击 commit 标题进入 commit 详情页。</cmd>
+                <info>
+                    <image placement="break" keyref="gitlab.commits" id="image_u5p_c1r_qzb"
+                        width="600"/>
+                </info>
+            </step>
+            <step>
+                <cmd>在 commit 详情页，点击右上角的 <uicontrol>Options</uicontrol> 下拉框，点击 <uicontrol>Cherry-pick</uicontrol>。</cmd>
+                <info>
+                    <image placement="break" keyref="gitlab.commits_cherry-pick"
+                        id="image_vsp_h1r_qzb" width="300"/>
+                </info>
+            </step>
+            <step>
+                <cmd>在 <wintitle>Cherry-pick this commit</wintitle> 弹窗，选择目标仓库和目标分支，点击 <uicontrol>Cherry-pick</uicontrol>。</cmd>
+                <info>
+                    <image placement="break" keyref="gitlab.cherry-pick_this_commit"
+                        id="image_l3q_2br_qzb" width="300"/>
+                </info>
+                <choices id="choices_wgp_yfr_qzb">
+                    <choice>如果目标分支是受保护分支，建议勾选 <uicontrol>Start a new merge request with these changes</uicontrol>，方便触发合并请求并进入合并请求编辑页面。</choice>
+                    <choice>
+                        <p>如果目标分支不是受保护分支，点击 <uicontrol>Cherry-pick</uicontrol> 后，选择的 commit 即合入目标分支。</p>
+                        <image placement="break" keyref="gitlab.cherry-pick_successful"
+                            id="image_itm_gdr_qzb" width="650"/>
+                    </choice>
+                    <choice>
+                        <p>如果 cherry-pick 失败，说明当前 commit 的改动和目标分支的改动冲突，无法执行 cherry-pick 操作，只能使用临时分支提交改动。</p>
+                        <image placement="break" keyref="gitlab.cherry-pick_failed"
+                            id="image_bwx_3dr_qzb" width="650"/>
+                    </choice>
+                </choices>
+            </step>
+        </steps>
+    </taskbody>
+</task>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type='text/css' href='file:/C:/Users/CSR000369/Oxygen%20XML%20Author%2026/frameworks/dita/DITA-OT/plugins/com.oxygenxml.webhelp.responsive/oxygen-webhelp/app/topic-page-print.css'?>
+<?xml-stylesheet type='text/css' href='file:/C:/Users/CSR000369/Oxygen%20XML%20Author%2026/frameworks/dita/DITA-OT/plugins/com.oxygenxml.pdf.css/css/print/p-dita.css'?>
+<?xml-stylesheet type='text/css' href='file:/C:/Users/CSR000369/Oxygen%20XML%20Author%2026/frameworks/dita/DITA-OT/plugins/com.oxygenxml.editlink/pdf-css.css'?>
+<?xml-stylesheet type='text/css' href='file:/C:/Users/CSR000369/Oxygen%20XML%20Author%2026/frameworks/dita/DITA-OT/plugins/com.oxygenxml.webhelp.responsive/templates/oxygen/oxygen-with-colors.css'?>
+<?xml-stylesheet type='text/css' href='file:/C:/Users/CSR000369/Oxygen%20XML%20Author%2026/frameworks/dita/DITA-OT/plugins/com.oxygenxml.webhelp.responsive/templates/oxygen/notes.css'?>
+<?xml-stylesheet type='text/css' href='file:/E:/RAI-IFU/publishment-template/pdf-css/knst/CUSTOM.css'?>
+<?workdir /E:\oxygen_user_manual\topics\dita_guide\temp\pdf-css-html5?><?workdir-uri file:/E:/oxygen_user_manual/topics/dita_guide/temp/pdf-css-html5/?><?path2project?><?path2project-uri ./?><?path2rootmap-uri ./?><?doctype-public -//OASIS//DTD DITA Topic//EN?><?doctype-system topic.dtd?><topic xmlns:css2fo="http://www.oxygenxml.com/css2fo" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:nd="http://www.oxygenxml.com/css2fo/named-destinations" xmlns:opentopic="http://www.idiominc.com/opentopic" xmlns:opentopic-index="http://www.idiominc.com/opentopic/index" xmlns:oxy="http://www.oxygenxml.com/extensions/author" xmlns:xs="http://www.w3.org/2001/XMLSchema" class="- topic/topic " ditaarch:DITAArchVersion="1.3" domains="(topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" id="keyscope" specializations="@props/deliveryTarget" xtrc="topic:1;3:22" xtrf="file:/E:/oxygen_user_manual/topics/dita_guide/keyscope.dita" xml:lang="en">
+    <title class="- topic/title "><ph class="- topic/ph topic/title-wrapper ">@keyscope 属性</ph></title>
+    <body class="- topic/body ">
+        <p class="- topic/p ">@keyscope 属性用于定义 key 的作用域，避免同名 key 产生冲突。当引用了不同 DITA map 中的同名 key 时，只有一个 key 会生效。key 的优先级取决于 DITA map 在根目录中的引用位置。如果引用位置靠前，则在该 DITA map 定义的 key 优先级更高。</p>
+        <p class="- topic/p ">为了保证引用的同名 key 都生效，可以在 DITA map 中定义 @keyscope 属性，通过 @keyscope 属性和 @keys 属性的组合区分同名 key。</p>
+        <p class="- topic/p ">@keyscope 属性的值由一个或多个以空格分隔的作用域组成，使用“{资源属性}_{语言属性}”的命名规则，比如“common_en-US”“common_zh-CN”“C1000_en-US”。</p>
+        <p class="- topic/p ">定义 @keyscope 属性后，资源的引用格式为“{@keyscope属性的值}.{@keys属性的值}，比如“common_global.common_label.instruction_manual”“common_en-US.doc_symbols”“common_zh-CN.doc_symbols”。</p>
+        <p class="- topic/p ">@keyscope 属性通常在 <codeph class="+ topic/ph pr-d/codeph ">&lt;map&gt;</codeph> 元素中定义。在以下示例中，根据资源属性和语言属性在对应的公共资源管理文件（<b class="+ topic/ph hi-d/b ">common.ditamap</b>）中定义了 key 的作用域，以保证引用的同名 key 都生效。</p>
+        <p class="- topic/p ">示例1：<codeblock class="+ topic/pre pr-d/codeblock " id="codeblock_jwh_snk_j1c" outputclass="language-xml" xml:space="preserve">&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd"[]&gt;
+&lt;map xml:lang="en-US" keyscope="common_en-US"&gt;
+    &lt;title&gt;通用公共资源（en-US）&lt;/title&gt;
+    &lt;topicref href="images/common_images.ditamap" format="ditamap"/&gt;
+    &lt;topicref href="topics/common_topics.ditamap" format="ditamap"/&gt;
+    &lt;topicref href="components/common_components.dita" keys="common_components"/&gt;
+    &lt;topicref href="components/product_names.dita" keys="product_names"/&gt;
+&lt;/map&gt;</codeblock></p>
+        <p class="- topic/p ">示例2：<codeblock class="+ topic/pre pr-d/codeblock " id="codeblock_sq4_5lk_j1c" outputclass="language-xml" xml:space="preserve">&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd"[]&gt;
+&lt;map xml:lang="zh-CN" keyscope="common_zh-CN"&gt;
+    &lt;title&gt;通用公共资源（zh-CN）&lt;/title&gt;
+    &lt;topicref href="images/common_images.ditamap" format="ditamap"/&gt;
+    &lt;topicref href="topics/common_topics.ditamap" format="ditamap"/&gt;
+    &lt;topicref href="components/common_components.dita" keys="common_components"/&gt;
+    &lt;topicref href="components/product_names.dita" keys="product_names"/&gt;
+&lt;/map&gt;</codeblock></p>
+        <p class="- topic/p ">示例3：<codeblock class="+ topic/pre pr-d/codeblock " id="codeblock_ysl_vlk_j1c" outputclass="language-xml" xml:space="preserve">&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd"[]&gt;
+&lt;map xml:lang="en-US" keyscope="C1000_en-US"&gt;
+    &lt;title&gt;C1000公共资源（en-US）&lt;/title&gt;
+    &lt;topicref href="variables/variable_text.ditamap" format="ditamap"/&gt;
+    &lt;topicref href="images/common_images.ditamap" format="ditamap"/&gt;
+    &lt;topicref href="topics/common_topics.ditamap" format="ditamap"/&gt;
+    &lt;topicref href="components/C1000_reusable_components.dita" keys="C1000_reusable_components"/&gt;
+&lt;/map&gt;</codeblock></p>
+        <p class="- topic/p ">@keyscope 属性也可在 <codeph class="+ topic/ph pr-d/codeph ">&lt;topicref&gt;</codeph> 元素中定义。 在以下示例中，根据语言属性为同名的通用公共图片定义了各自的作用域，以保证引用的同名 key 都生效。</p>
+        <codeblock class="+ topic/pre pr-d/codeblock " id="codeblock_wmx_jnh_f1c" outputclass="language-xml" xml:space="preserve">&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd"[]&gt;
+&lt;map&gt;
+    &lt;title&gt;通用公共图片&lt;/title&gt;
+    &lt;topicref href="images/common_images.ditamap" format="ditamap" keyscope="common_zh-CN"/&gt;
+    &lt;topicref href="topics/common_images.ditamap" format="ditamap" keyscope="common_en-US"/&gt;
+&lt;/map&gt;</codeblock>
+    </body>
+</topic>

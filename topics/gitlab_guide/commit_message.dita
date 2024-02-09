@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="f2n_bpc_3zb">
+    <title>Commit规范</title>
+    <shortdesc>提交记录有规范，检索追溯更高效。</shortdesc>
+    <conbody>
+        <section id="section_sbf_fhv_3zb"> <title>正确使用Commit</title>
+            <p>commit的使用必须遵循独立性和完整性两大原则。</p> <ul id="ul_gwp_v3v_3zb">
+            <li>独立性：每个提交只解决一个问题或实现一个功能。通过保持提交的独立性，可以更容易地理解和审查代码，减少冲突和问题的发生，并使回滚和撤销更加简单。</li>
+            <li>完整性：每个提交应包含所有必要的更改，以实现承诺的功能或修复。通过保持提交的完整性，可以确保内容的一致性和稳定性，并减少因未完成的更改而引入的错误。</li>
+            </ul> <p>具体来说，在实际项目中应遵循如下原则。</p> <ol id="ol_sqg_y3v_3zb">
+            <li>一个临时分支限制commit一次。在合并到主要分支之前，如遗漏修改或审核要求修改，可commit多次。如有多条提交记录，需在合并请求页面勾选 <uicontrol>Squash commits</uicontrol>，将多条提交记录合并为一条，保持提交记录的简洁性。</li>
+            <li>一个变更需求（注册反馈、ECR等）使用一个临时分支，commit一次。</li>
+            <li>一个ECR使用一个临时分支，commit一次。</li>
+            <li>commit包含的变更必须相关。不同变更不能包含在一个commit中。</li>
+            </ol> </section>
+        <section id="section_l1c_ghv_3zb"> <title>正确书写Commit Message和Merge Request Title</title> <ul id="ul_vnq_dlk_lzb">
+                <li>格式<p>【Source】【Scope】{action}{description}<?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?></p></li><?oxy_custom_end?>
+            </ul> <ul id="ul_lky_2lk_lzb">
+            <li>示例<ul id="ul_wyd_llk_lzb">
+                <li>【ECR#59676】【再处理】新增新华灭菌器型号</li>
+                <li>【自查】【套管附件】新增套管外径匹配警告</li>
+                <li>【注册反馈】【操作臂无菌围帘】修订产品名称为无菌保护套</li>
+                <li>【注册反馈】【套管附件、操作臂无菌围帘、单极弯剪绝缘套STC1-K2】新增一次性使用腹部穿刺器注册审查指导原则4.1、4.2、4.3、4.5警示项</li>
+                </ul></li>
+            <li>说明<ul id="ul_hjn_slk_lzb">
+                <li>【Source】（需求来源）：【新产品】【ECR#{number}】【自查】【评审反馈】【型检反馈】【注册反馈】【用户反馈】</li>
+                <li>【Scope】（改动范围）：【组件类型】或【说明书简称】<ul id="ul_vs4_5lk_lzb">
+                        <li>公共资源：元数据、文本变量、公共主题、公共组件、公共名称、公共图片</li>
+                        <li>项目资源：过滤文件、图片、页面变量</li>
+                        <li>C1000说明书：系统使用、器械和附件、再处理、Logic内窥镜、CV1000内窥镜</li>
+                        <li>SUD说明书：套管附件、操作臂无菌围帘（更名后使用“无菌保护套”）、单极弯剪绝缘套STC1-K2、单极弯剪绝缘套STC2-K2、单极弯剪绝缘套STC1-K9</li>
+                        <li>CV2000说明书：图像处理器、3D腹腔镜、C1000配套3D腹腔镜</li>
+                        </ul></li>
+                <li>{action}（改动类型）：新增、删除、修改、替换（如果句首用这几个动作难以表述，可以用更合适的表达）</li>
+                <li>{description}（改动内容）：具体描述改动内容</li>
+                </ul></li>
+            </ul> <note id="note_pd4_fjv_3zb" type="tip"> <ul id="ol_hhb_gjv_3zb">
+            <li>一条提交记录或一个合并请求标题不得超过50个字。</li>
+            <li>不同组成部分无需用任何符号连接，例如【Source】【Scope】。</li>
+            <li>同一组成部分的多个常量用中文顿号连接，例如【套管附件、操作臂无菌围帘、单极弯剪绝缘套STC1-K2】。</li>
+            <li>{} 表示变量，在实际书写中不需要保留。</li>
+            </ul> </note> </section>
+    </conbody>
+</concept>
+<?oxy_options track_changes="on"?>

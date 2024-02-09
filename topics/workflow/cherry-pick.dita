@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="merge_request">
+    <title>Merge requests or cherry-pick？</title>
+    <conbody>
+        <p>Merge request（简称“MR”）用于<b>合并一个完整的分支到另一个分支</b>，通常用于合并临时分支到受保护分支，方便审核人员审核并批准改动。</p>
+        <p>Cherry-pick 用于<b>将一个或多个 commit 从一个分支复制到另一个分支，而无需合并整个分支</b>，通常用于同步 <codeph>develop</codeph>分支的单个或多个改动到其他 <codeph>develop</codeph> 分支。</p>
+    </conbody>
+</concept>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_dlg_5vf_fzb">
+    <title>Git客户端</title>
+    <body>
+        <p>Git客户端用于GitLab版本管理和团队协作，支持克隆和切换仓库，拉取远程仓库变更，推送本地仓库变更，新建、切换和检出分支，查看变更记录，对比差异等操作。</p>
+        <p>在顶部菜单栏点击 <menucascade>
+                <uicontrol>Window</uicontrol>
+                <uicontrol>Show View</uicontrol>
+                <uicontrol>Git Staging</uicontrol>
+            </menucascade>，可打开Git视图。</p>
+        <image placement="break" keyref="git_client.git_staging_view" height="400"
+            id="image_dkv_t4c_jzb"/>
+        <ul id="ul_bdl_1pn_h1c">
+            <li><uicontrol>Working copy</uicontrol>：选择并打开本地仓库。</li>
+            <li><uicontrol>Branch</uicontrol>：切换本地分支。</li>
+            <li><uicontrol><image keyref="git_client.push_icon" id="image_rkq_rnh_31c"
+                /> Push</uicontrol>：将本地分支的更改手动推送到远程分支，与团队成员共享最新的代码。当有更改未推送到远程分支时，箭头图标的右下角显示加号。</li>
+            <li><uicontrol><image keyref="git_client.pull_icon" id="image_skq_rnh_31c"
+                /> Pull</uicontrol>：从远程分支拉取最新的更改到本地分支，以保持代码同步。默认使用 <uicontrol>Pull（merge）</uicontrol> 操作。</li>
+            <li><uicontrol><image keyref="git_client.stash_drop-down_menu" id="image_tkq_rnh_31c"
+                /> Stash</uicontrol>：选中工作区或暂存区的文件，点击 <menucascade>
+                <uicontrol>Stash</uicontrol>
+                <uicontrol>Stash changes</uicontrol>
+                </menucascade> 保存更改，方便切换或查看其他分支。</li>
+            <li><uicontrol><image keyref="git_client.show_current_repository_history"
+                id="image_ukq_rnh_31c"
+                /> Show current repository history</uicontrol>：查看项目的提交历史，包括提交者、提交记录和提交时间等信息。在提交历史窗口可创建分支，创建标签，撤销提交（Revert commit）或回退版本（Reset commit）。</li>
+            <li><uicontrol><image keyref="git_client.show_Git_Branch_Manager_view"
+                id="image_vkq_rnh_31c"
+                /> Show Git Branch Manager view</uicontrol>：显示远程仓库分支和本地仓库分支。在此视图可检出远程分支到本地，创建、切换或删除本地分支。</li>
+            <li><uicontrol>Unstaged files</uicontrol>：通常称为“工作区”，显示本地分支所有已更改、未暂存的文件。在工作区可 <image
+                keyref="git_client.stage_selected" id="image_a42_tmh_31c"/> 移动选定文件到暂存区，<image
+                keyref="git_client.stage_all" id="image_b42_tmh_31c"
+                /> 移动所有文件到暂存区，查看变更，放弃更改，解决冲突，查看提交历史，或查看文件中每行内容关联的提交记录。</li>
+            <li><uicontrol>Staged files</uicontrol>：通常称为“暂存区”，显示本地分支所有已暂存、未提交的文件。在暂存区可 <image
+                keyref="git_client.unstage_selected" id="image_c42_tmh_31c"/> 移动选定文件到工作区，<image
+                keyref="git_client.unstage_all" id="image_ltl_pxg_31c"
+                /> 移动所有文件到工作区，查看变更，放弃变更，或解决冲突。</li>
+            <li><uicontrol>Commit message</uicontrol>：将暂存区的更改提交到本地仓库。提交时，必须按照 <xref
+                keyref="commit_message"/> 填写提交记录，方便跟踪项目的提交历史。<ul id="ul_c1s_cqn_h1c">
+                <li><uicontrol><image keyref="git_client.choose_a_previously_used_comment"
+                    /> Choose a previously used comment</uicontrol>：如果提交过相似或相同的更改，可重用历史提交记录或在其基础上稍加修改，以便保持提交记录的一致性。</li>
+                <li><uicontrol><image keyref="git_client.auto_push_changes"
+                    /> Automatically push changes to remote branch</uicontrol>：在本地分支提交更改后，自动推送更改到远程分支，减少手动推送操作。</li>
+                <li>
+                    <p><uicontrol><image keyref="git_client.amend_last_commit"
+                        id="image_fsb_3hh_31c"
+                        /> Ammend last commit</uicontrol>：在不创建新的提交的情况下，在最近一次的提交中添加新的小改动或修改提交记录。</p>
+                    <note type="warning" id="note_hyc_jhh_31c">
+                        <ul id="ul_iyc_jhh_31c">
+                            <li>如果最近一次提交已推送到远程仓库，请勿使用 <uicontrol><image
+                                keyref="git_client.amend_last_commit" id="image_jyc_jhh_31c"
+                                />Amend last commit</uicontrol> 操作，否则容易产生冲突，影响其他团队成员的使用。</li>
+                            <li>在团队协作中需谨慎使用自动推送操作，避免推送不成熟（未经完整测试）的更改到远程仓库或覆盖其他人的更改。</li>
+                        </ul>
+                    </note>
+                </li>
+                </ul></li>
+        </ul>
+    </body>
+</topic>

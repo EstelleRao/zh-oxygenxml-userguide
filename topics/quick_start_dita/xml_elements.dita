@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="xml_elements">
+    <title>XML元素和属性</title>
+    <body>
+        <p>在XML文档中，内容由一个个元素组成。元素是XML最基本的单元，XML是一个树结构，有根（根元素或所有其他元素的父元素）有枝叶（其他元素）。</p>
+        <p>XML使用&lt;>符号表示元素标签，使用@符号表示属性。<codeblock id="codeblock_if1_51y_21c" outputclass="language-xml">&lt;element> &lt;元素名称>
+@attribute @属性名称</codeblock></p>
+        <p>每个元素都有起始标签和结束标签。在起始标签和结束标签之间的就是具体的内容。<codeblock id="codeblock_ary_vqb_f1c" outputclass="language-xml">&lt;p>这里是内容。&lt;/p></codeblock></p>
+    </body>
+</topic>

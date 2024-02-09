@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="two_figures_side_by_side">
+    <title>两张图片并排</title>
+    <body>
+        <p><b>两张图片共用一个标题且尺寸相同时，推荐使用此写法。</b></p>
+        <fig outputclass="side-by-side">
+            <title>插入正确的接头</title>
+            <image placement="inline"
+                href="../IFU-C1000/images/C1000_SGI/C1000_SGI.connect_bipolar_IEC_ESU"/>
+            <image placement="inline"
+                href="../IFU-C1000/images/C1000_SGI/C1000_SGI.connect_monopolar_IEC_ESU"/>
+        </fig>
+        <p><b>两张图片各带一个标题且尺寸相同时，推荐使用此写法。</b></p>
+        <fig outputclass="side-by-side">
+            <title>无菌保护套图示</title>
+            <div><image placement="inline"
+                href="../IFU-C1000/images/SUD_CSD/SUD_CSD.sterile_protective_sleeve_frontend.jpg"/><p>无菌保护套前端（有系带）</p></div>
+            <div><image placement="inline"
+                href="../IFU-C1000/images/SUD_CSD/SUD_CSD.sterile_protective_sleeve_backend.jpg"/><p>无菌保护套后端</p></div>
+        </fig>
+        <p><b>两张图片各带一个标题且尺寸不同时，可以在dita中设置相同的高度值</b>，以保证并排图片间距适宜且上下对齐。如可行，最好修改原图尺寸，统一高宽。</p>
+        <fig outputclass="side-by-side">
+            <title>触摸屏提示（无菌围帘）</title>
+            <div><image placement="inline" height="180"
+                href="../IFU-C1000/images/C1000_VCT/C1000_VCT.arm4_not_draped"/><p>4号臂未安装无菌围帘</p></div>
+            <div><image placement="inline" height="180"
+                href="../IFU-C1000/images/C1000_VCT/C1000_VCT.arm4_draped"/><p>4号臂已安装无菌围帘</p></div>
+        <p><b>多张图片两两并排，并排图片共用一个标题且尺寸相同时，推荐使用此写法。</b></p>
+        </fig>
+        <fig>
+            <title>弯曲固定带</title>
+            <div outputclass="side-by-side">
+                <image placement="inline" href="../IFU-C1000/images/SUD_ASD/SUD_ASD.bend_drape_wires_step1.jpg"/>
+                <image placement="inline" href="../IFU-C1000/images/SUD_ASD/SUD_ASD.bend_drape_wires_step2.jpg"/>
+            </div>
+            <div outputclass="side-by-side"> 
+                <image placement="inline" href="../IFU-C1000/images/SUD_ASD/SUD_ASD.bend_drape_wires_step3.jpg"/> 
+                <image placement="inline" href="../IFU-C1000/images/SUD_ASD/SUD_ASD.bend_drape_wires_step4.jpg"/> 
+            </div>
+        </fig>
+        <p><b>多张图片两两并排，并排图片共用一个标题且尺寸相同时，也可在dita中设置相同的宽度值或高度值</b>，以调整图片显示大小。</p>
+        <fig>
+            <title>弯曲固定带</title>
+            <div>
+                <image placement="inline" width="200" href="../IFU-C1000/images/SUD_ASD/SUD_ASD.bend_drape_wires_step1.jpg"/>
+                <image placement="inline" width="200"  href="../IFU-C1000/images/SUD_ASD/SUD_ASD.bend_drape_wires_step2.jpg"/>
+            </div>
+            <div> 
+                <image placement="inline" width="200" href="../IFU-C1000/images/SUD_ASD/SUD_ASD.bend_drape_wires_step3.jpg"/> 
+                <image placement="inline" width="200" href="../IFU-C1000/images/SUD_ASD/SUD_ASD.bend_drape_wires_step4.jpg"/> 
+            </div>
+            <div>
+                <image placement="inline" width="200" href="../IFU-C1000/images/SUD_ASD/SUD_ASD.bend_drape_wires_step5.jpg"/>
+            </div>
+        </fig>
+        <p><b>多张图片两两并排，并排图片各带一个标题且尺寸不同时，可以在dita中设置相同的高度值</b>，以保证并排图片间距适宜且上下对齐。如可行，最好修改原图尺寸，统一高宽。</p>
+        <fig>
+            <title>Logic 3D CR 内窥镜系统组成部分</title>
+            <div outputclass="side-by-side">
+                <div><image placement="inline" height="120"
+                    href="../IFU-C1000/images/C1000_LG1000/C1000_LG1000.camera_control_unit.jpeg"/><p>Logic 3D CR 摄像控制单元</p></div>
+                <div><image placement="break" height="120"
+                    href="../IFU-C1000/images/C1000_LG1000/C1000_LG1000.light_source"/><p>内窥镜冷光源</p></div>
+            </div>
+            <div outputclass="side-by-side">
+                <div><image placement="inline" height="120"
+                    href="../IFU-C1000/images/C1000_LG1000/C1000_LG1000.camera_head"/><p>Logic 3D CR 内窥镜摄像头</p></div>
+                <div><image placement="break" height="120"
+                    href="../IFU-C1000/images/C1000_LG1000/C1000_LG1000.0°_END"/><p>Logic 3D CR 10毫米0°内窥镜镜头</p></div>
+            </div>
+            <div outputclass="side-by-side">
+                <div><image placement="inline" height="120"
+                    href="../IFU-C1000/images/C1000_LG1000/C1000_LG1000.30°_END"/><p>Logic 3D CR 10毫米30°内窥镜镜头 </p></div>
+                <div><image placement="break" height="120"
+                    href="../IFU-C1000/images/C1000_LG1000/C1000_LG1000.light_cable"/><p>Logic 3D CR 导光光缆</p></div>
+            </div>
+        </fig>
+        <p><b>以上写法无法实现理想的并排效果时，可考虑使用以下写法。</b></p>
+        <fig>
+            <title>检查视觉推车是否正常充电</title>
+            <div> 
+                <image placement="inline" height="200" href="../IFU-C1000/images/C1000_VCT/C1000_VCT.inspect_proper_charging.jpeg"/>
+                <image placement="inline" height="200" href="../IFU-C1000/images/C1000_VCT/C1000_VCT.proper_charging.jpeg"/> 
+            </div>
+        </fig>
+    </body>
+</topic>

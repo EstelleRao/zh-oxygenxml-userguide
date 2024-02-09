@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="share_project_settings">
+    <title>团队协作</title>
+    <body>
+        <p>使用项目管理功能不仅可以集中管理和组织DITA项目资源，还可以通过 <b>.xpr</b> 项目文件存储和共享首选项、校验、发布等项目设置，方便团队协作。</p>
+        <section>
+            <title>共享首选项</title>
+            <p>请按照如下步骤配置首选项，并将配置的首选项保存到 <b>.xpr</b> 项目文件中。</p>
+            <ol id="ol_kml_kjx_31c">
+                <li>在 <uicontrol>Project</uicontrol> 视图创建一个项目或打开一个现有项目。 </li>
+                <li>点击 <menucascade>
+                        <uicontrol>Options</uicontrol>
+                        <uicontrol>Preferences</uicontrol>
+                    </menucascade>，打开 <uicontrol>Preferences</uicontrol> 对话框。</li>
+                <li><p>在需要配置首选项的页面配置首选项，配置后更改存储选项为 <uicontrol>Project Options</uicontrol>。</p><image
+                        keyref="oxygen_project.preferences" id="image_qwz_nkx_31c" width="600"
+                    /></li>
+                <li>点击 <uicontrol>OK</uicontrol> 关闭对话框，配置的首选项自动保存到项目文件中。分享该项目文件给他人，他人可直接应用保存在项目文件中的首选项。</li>
+            </ol>
+        </section>
+        <section>
+            <title>共享发布场景</title>
+            <p>请按照如下步骤保存发布场景到 <b>.xpr</b> 项目文件中。</p>
+            <ol id="ol_gv2_mmx_31c">
+                <li>在 <uicontrol>Project</uicontrol> 视图创建一个项目或打开一个现有项目。 </li>
+                <li><p>创建新的发布场景或编辑现有的发布场景，配置后更改存储选项为 <uicontrol>Project Options</uicontrol>。</p><image
+                        keyref="oxygen_project.transform" id="image_xjg_5nx_31c" width="250"/></li>
+                <li>点击 <uicontrol>OK</uicontrol>，发布场景自动保存到项目文件中。分享该项目文件给他人，他人可直接使用保存在项目文件中的发布场景。</li>
+            </ol>
+        </section>
+        <section>
+            <title>共享校验场景</title>
+            <p>请按照如下步骤保存校验场景到 <b>.xpr</b> 项目文件中。</p>
+            <ol id="ol_cqv_z4x_31c">
+                <li>在 <uicontrol>Project</uicontrol> 视图创建一个项目或打开一个现有项目。 </li>
+                <li><p>创建新的校验场景或编辑现有的校验场景，配置后更改存储选项为 <uicontrol>Project Options</uicontrol>。</p><image
+                        keyref="oxygen_project.validate" id="image_a5k_tnx_31c" width="400"/></li>
+                <li>点击 <uicontrol>OK</uicontrol>，校验场景自动保存到项目文件中。分享该项目文件给他人，他人可直接使用保存在项目文件中的校验场景。</li>
+            </ol>
+        </section>
+    </body>
+</topic>

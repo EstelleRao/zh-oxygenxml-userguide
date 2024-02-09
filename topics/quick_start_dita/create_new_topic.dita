@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="topic_clm_rfp_dzb">
+    <title>新建DITA Topic</title>
+    <taskbody>
+        <steps id="steps_gqh_ps1_kzb">
+            <step>
+                <cmd>在顶部菜单栏点击 <menucascade>
+                    <uicontrol>File</uicontrol>
+                    <uicontrol><image keyref="oxygen_new_file.button" id="image_d4m_ms1_kzb"
+                        />New</uicontrol>
+                    </menucascade> 或在工具栏点击 <uicontrol><image keyref="oxygen_new_file.button"
+                    id="image_ebt_ms1_kzb"/>New</uicontrol>。</cmd>
+                <info> <image placement="break" keyref="oxygen_new_file.window" width="300"
+                    id="image_lbk_rs1_kzb"/> </info>
+            </step>
+            <step>
+                <cmd>在 <uicontrol>New</uicontrol> 窗口点击 <menucascade>
+                    <uicontrol>Framework templates</uicontrol>
+                    <uicontrol>DITA</uicontrol>
+                    <uicontrol>Topics</uicontrol>
+                    </menucascade>，选择主题类型。如使用通用主题，则选择 <uicontrol>Topic</uicontrol> 类型 。</cmd>
+            </step>
+            <step>
+                <cmd>选择文件存储路径。<codeph>Untitled</codeph> 为当前Topic的DITA文件名，请参考当前采用的数字命名规则命名。<codeph>Title</codeph> 为当前Topic在DITA Map中的导航标题，同时也是PDF文档中的章节标题。</cmd>
+            </step>
+            <step>
+                <cmd>点击 <uicontrol>Create</uicontrol>。</cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task>
