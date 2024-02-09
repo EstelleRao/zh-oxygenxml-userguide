@@ -18,7 +18,7 @@
                 </info>
             </step>
             <step>
-                <cmd>在 keydef_pdf.ditamap 中为升版后的说明书创建页面变量。</cmd>
+                <cmd>在  pdf_page_variables.ditamap 中为升版后的说明书创建页面变量。</cmd>
                 <substeps id="substeps_lyr_hh2_j1c">
                     <substep>
                         <cmd>在@product属性中添加新版本的料号，删除旧版本的料号。</cmd>
@@ -48,8 +48,7 @@
                 </substeps>
             </step>
             <step>
-                <cmd>在 <ph outputclass="blue"
-                        >index.ditamap</ph> 中使用 <codeph>&lt;frontmatter></codeph> 元素和 <codeph>&lt;backmatter></codeph> 元素为升版后的说明书添加公共资源，包括版权、商标、声明、文档符号说明、联系信息、封底等公共主题。如果升版不涉及公共资源的变更，则直接修改@product属性值为升版后的料号，无需重新添加公共资源。</cmd>
+                <cmd>在 index.ditamap 中使用 <codeph>&lt;frontmatter></codeph> 元素和 <codeph>&lt;backmatter></codeph> 元素为升版后的说明书添加公共资源，包括版权、商标、声明、文档符号说明、联系信息、封底等公共主题。如果升版不涉及公共资源的变更，则直接修改@product属性值为升版后的料号，无需重新添加公共资源。</cmd>
                 <info>
                     <image placement="break" keyref="dita.frontmatter" width="450"
                         id="image_qt2_zjc_3zb"/>

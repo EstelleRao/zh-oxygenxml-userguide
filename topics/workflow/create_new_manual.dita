@@ -18,7 +18,7 @@
                 </info>
             </step>
             <step>
-                <cmd>在 keydef_pdf.ditamap 中为新说明书创建页面变量。</cmd>
+                <cmd>在 pdf_page_variables.ditamap 中为新说明书创建页面变量。</cmd>
                 <substeps id="substeps_lyr_hh2_j1c">
                     <substep>
                         <cmd>在@product属性中添加新说明书的料号，删除旧说明书的料号。</cmd>
@@ -48,8 +48,7 @@
                 </substeps>
             </step>
             <step>
-                <cmd>在 <ph outputclass="blue"
-                        >index.ditamap</ph> 中使用 <codeph>&lt;frontmatter></codeph> 元素和 <codeph>&lt;backmatter></codeph> 元素为新说明书添加公共资源，包括版权、商标、声明、文档符号说明、联系信息、封底等公共主题。如果新说明书和旧说明书引用同样的公共资源，则直接修改@product属性值为新说明书的料号，无需重新添加公共资源。</cmd>
+                <cmd>在 index.ditamap 中使用 <codeph>&lt;frontmatter></codeph> 元素和 <codeph>&lt;backmatter></codeph> 元素为新说明书添加公共资源，包括版权、商标、声明、文档符号说明、联系信息、封底等公共主题。如果新说明书和旧说明书引用同样的公共资源，则直接修改@product属性值为新说明书的料号，无需重新添加公共资源。</cmd>
                 <info>
                     <image placement="break" keyref="dita.frontmatter" width="450"
                         id="image_qt2_zjc_3zb"/>
@@ -59,14 +58,26 @@
                 <cmd>为新说明书创建说明文件（specification.dita），在 <codeph>&lt;frontmatter></codeph> 元素中使用 <codeph>&lt;topicref></codeph> 元素引用该文件。</cmd>
             </step>
             <step>
-                <cmd>在旧说明书对应的DITA Map中，修改旧说明书的标题为新说明书的标题。</cmd>
+                <cmd>在 <ph outputclass="blue"
+                    >index.ditamap</ph> 中使用 <codeph>&lt;chapter></codeph> 元素添加其他项目资源（引用页面变量）和公共资源（引用公共图片、公共主题、公共组件等），设置@processing-role、@toc、@format属性。</cmd>
+                <info><image keyref="dita.resource-only" id="image_mvh_ltj_g1c" width="500"/></info>
+                <info>
+                    <ul id="ul_gzf_kwj_g1c">
+                        <li>@processing-role：“resource-only”表示当前资源为复用资源，可在 <uicontrol>DITA Reusable Components</uicontrol> 视图中查看和使用。</li>
+                        <li>@toc：“no”表示当前资源不会显示在目录中。</li>
+                        <li>@format：“ditamap”表示当前资源为 DITA Map。</li>
+                    </ul>
+                </info>
+            </step>
+            <step>
+                <cmd>在旧说明书对应的 DITA Map 中，修改旧说明书的标题为新说明书的标题。</cmd>
                 <info>
                     <image placement="break" keyref="dita.ditamap_title" width="400"
                         id="image_mt3_3kc_3zb"/>
                 </info>
             </step>
             <step>
-                <cmd>使用新说明书的料号或英文名称重命名旧说明书的DITA Map文件名。</cmd>
+                <cmd>使用新说明书的料号或英文名称重命名旧说明书的 DITA Map 文件名。</cmd>
                 <info>
                     <image placement="break" keyref="dita.ditamap_file_name" width="400"
                         id="image_v2s_hkc_3zb"/>
