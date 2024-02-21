@@ -11,7 +11,7 @@
         </critdates>
     </bookmeta>
     <frontmatter>
-        <topicref href="topics/revision.dita"/>
+        <topicref href="topics/revision.dita" toc="no"/>
         <booklists>
             <toc/>
         </booklists>
@@ -21,8 +21,8 @@
         <topicref keyref="layout"/>
         <topicref keyref="tools">
             <topicref keyref="dita_project">
-                <topicref href="topics/quick_start_dita/manage_dita_project.dita"/>
-                <topicref href="topics/quick_start_dita/share_project_settings.dita"/>
+                <topicref href="topics/quick_start_oxygen/manage_dita_project.dita"/>
+                <topicref href="topics/quick_start_oxygen/share_project_settings.dita"/>
             </topicref>
             <topicref keyref="git">
                 <topicref href="topics/quick_start_oxygen/git_clone.dita"/>
@@ -66,7 +66,7 @@
             <topicref keyref="add_existing_topic"/>
             <topicref keyref="add_new_topic"/>
             <topicref keyref="validate_map"/>
-            <topicref keyref="quick_start_dita.publish"/>
+            <topicref keyref="publish"/>
         </topicref>
     </chapter>
     <chapter keyref="gitlab_guide">
@@ -93,11 +93,11 @@
         </topicref>
     </chapter>
     <chapter keyref="workflow">
-        <topicref keyref="create_new_repo">
+        <topicref keyref="create_new_repo"/>
+        <topicref keyref="create_remote_branch">
             <topicref keyref="protected_branches"/>
             <topicref keyref="merge_requests"/>
         </topicref>
-        <topicref keyref="create_remote_branch"/>
         <topicref keyref="clone_remote_branch"/>
         <topicref keyref="create_local_branch"/>
         <topicref keyref="develop_local_branch">
@@ -128,9 +128,10 @@
             <topicmeta>
                 <navtitle>迁移后</navtitle>
             </topicmeta>
+            <topicref href="topics/migration/post_process/change_map_type.dita"/>
             <topicref keyref="rename"/>
             <topicref keyref="update_DITA_Map"/>
-            <topicref keyref="validate_map" copy-to="validate_map"/>
+            <topicref keyref="validate_map"/>
             <topicref keyref="revise_images"/>
             <topicref keyref="revise_elements">
                 <topicref keyref="revise_image_elements"/>
@@ -139,7 +140,8 @@
                 <topicref href="topics/migration/post_process/revise_xref_elements.dita"/>
                 <topicref keyref="revise_table_elements"/>
             </topicref>
-            <topicref keyref="migration.publish"/>
+            <topicref keyref="validate_and_publish"/>
+            <topicref href="topics/migration/post_process/commit_new_manuals.dita"/>
         </topichead>
     </chapter>
     <chapter keyref="translation_process"/>
@@ -171,11 +173,13 @@
     </chapter>
     <chapter keyref="customize_pdf"/>
     <chapter href="topics/glossary/glossary.dita"/>
-    <chapter href="topics/bibliography/bibliography.dita"/>
     <chapter href="topics/TopicKeyDef.ditamap" processing-role="resource-only" toc="no"
         format="ditamap"/>
     <chapter href="images/ImageKeyDef.ditamap" processing-role="resource-only" toc="no"
         format="ditamap"/>
+    <backmatter>
+        <topicref href="topics/bibliography.dita"/>  
+    </backmatter>
     <reltable>
         <relrow>
             <relcell>

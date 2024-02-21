@@ -10,110 +10,169 @@
                     <colspec colname="c3" colnum="2" colwidth="1.8*"/>
                     <thead>
                         <row>
-                            <entry>名词</entry>
-                            <entry>解释</entry>
+                            <entry colsep="1" rowsep="1">名词</entry>
+                            <entry colsep="1" rowsep="1">解释</entry>
                         </row>
                     </thead>
                     <tbody>
                         <row>
-                            <entry>DITA map</entry>
-                            <entry>
-                                <p>DITA map用于定义不同topic之间的层级关系，使其形成一个完整的、易于使用、易于理解、易于浏览的信息产品，例如使用手册、安装手册、安全手册、装机手册、再处理说明。</p>
-                                <p>DITA map也可用于定义其他重要资源，例如定义topic和图片的key，定义变量，定义条件发布属性和值（@product）。</p>
-                                <p>DITA map的文件格式为 <b>.ditamap</b>，常见的输出格式包括PDF手册、HTML网页和在线帮助文档。</p>
+                            <entry colsep="1" rowsep="1">
+                                <p>DITA map</p>
+                            </entry>
+                            <entry colsep="1" rowsep="1"
+                                    ><p>DITA map 用于定义不同 topic 之间的层级关系，使其形成一个完整的、易于使用的、易于理解的信息产品，例如使用手册、安装手册、安全手册、装机手册、再处理说明。</p><p>DITA map 也可用于定义其他重要资源，例如定义 topic 和图片的 key，定义变量，定义条件发布属性。</p>DITA map 有两种类型：基础的 DITA map 和 DITA Bookmap。两种类型使用不同的结构和元素。<p>DITA map 的文件格式均为 <b>.ditamap</b>，常见的输出格式包括 PDF 手册、HTML 网页和在线帮助文档。</p></entry>
+                        </row>
+                        <row>
+                            <entry colsep="1" rowsep="1">
+                                <p>DITA topic（主题）</p>
+                            </entry>
+                            <entry colsep="1" rowsep="1">
+                                <p>DITA topic 是一个独立的信息单元，存储在独立的 DITA 文件中，文件格式为 <b>.dita</b>。</p>
+                                <p>每个 topic 内容独立，紧扣一个要点，回答一个问题，不会扩展到其他主题。</p>
                             </entry>
                         </row>
                         <row>
-                            <entry>DITA topic（主题）</entry>
-                            <entry>
-                                <p>DITA topic是一个独立的信息单元，存储在独立的DITA文件中，文件格式为 <b>.dita</b>。每个topic内容独立，紧扣一个要点，回答一个问题，不会扩展到其他主题。</p>
+                            <entry colsep="1" rowsep="1">
+                                <p>Element（元素）</p>
                             </entry>
+                            <entry colsep="1" rowsep="1"
+                                    >用于标记文档的组成部分，如标题、段落、表格、图片等。使用 <codeph>&lt;></codeph> 符号表示，成对出现，如段落元素 <codeph>&lt;p>&lt;/p></codeph>。</entry>
                         </row>
                         <row>
-                            <entry>Element（元素）</entry>
-                            <entry>用于标记文档的组成部分，如标题、段落、表格、图片等。使用 <codeph>&lt;></codeph> 符号表示，成对出现，如段落标签 <codeph>&lt;p>&lt;/p></codeph>。</entry>
-                        </row>
-                        <row>
-                            <entry>Attribute（属性）</entry>
-                            <entry>
+                            <entry colsep="1" rowsep="1">
+                                <p>Attribute（属性）</p>
+                            </entry>
+                            <entry colsep="1" rowsep="1">
                                 <p>除了标记文档组成部分，如图片和超链接引用（@href ）、图片尺寸和位置（@placement、@width），还可用于条件发布，如@product属性。</p>
                             </entry>
                         </row>
                         <row>
-                            <entry>Key（别名）</entry>
-                            <entry>key 是用于在文档中标识特定内容的一种机制。key 可以看作是一个唯一的标识符，用于识别文档中的某个元素或组件。通过 key，可以在文档中引用或链接到特定的内容，而无需知道其具体位置或其他详细信息。<p>key 在 DITA 1.3 规范中通常以 <codeph>&lt;keydef></codeph> 元素的形式定义，并在文档的头部或其他适当位置进行声明。key 可以分配给文档中的任何元素，如段落、标题、图像等，以及自定义元素或特定属性。一旦定义了 key，就可以在文档的其他地方引用它，以实现各种目的，例如创建跨文档链接、实现内容重用、定义条件性处理等。</p><p>key 的使用使得 DITA 文档变得更加灵活和可维护。通过将 key 分配给特定的内容，可以使文档更易于管理和维护，同时提高了内容的可重用性和可组合性。此外，通过 key，还可以实现文档的自动化处理和工具集成，例如内容检索、转换和发布等。</p><p>总之，key 在 DITA 1.3 规范中是一种重要的机制，用于标识和引用文档中的特定内容，从而实现文档的组织、管理和重用。</p></entry>
+                            <entry colsep="1" rowsep="1">
+                                <p>Key</p>
+                            </entry>
+                            <entry colsep="1" rowsep="1"
+                                        >key 可以看作是一个唯一的标识符，用于识别文档中的某个元素，如段落、标题、图片等，相当于这些元素的别名。<p>key 通常以 <codeph>&lt;keydef></codeph> 元素的形式在 DITA map 中定义，原则是先定义后引用。</p><p>key 的使用使得 DITA 文档变得更易维护和管理，是仓库架构调整和图片调整的前提条件。</p></entry>
                         </row>
                         <row>
-                            <entry>直接引用</entry>
-                            <entry>
-                                <p>直接引用是基于资源 URI（统一资源标识符，可以理解为资源路径或存储位置）的引用，通过在 DITA 文件中指定资源的 URI 来引用资源。如引用文件和被引用资源的相对位置发生变化，则需要更新每处引用的资源路径。</p>
+                            <entry colsep="1" rowsep="1">
+                                <p>Keyscope</p>
+                            </entry>
+                            <entry colsep="1" rowsep="1"
+                                    >@keyscope 属性用于定义 key 的作用域，避免同名 key 产生冲突。当引用了不同 DITA map 中的同名 key 时，只有一个 key 会生效。<p>为了保证引用的同名 key 都生效，可以在 DITA map 中定义 @keyscope 属性，通过 @keyscope 属性和 @keys 属性的组合区分同名 key。</p></entry>
+                        </row>
+                        <row>
+                            <entry colsep="1" rowsep="1">
+                                <p>直接引用</p>
+                            </entry>
+                            <entry colsep="1" rowsep="1">
+                                <p>直接引用是基于资源 URI（统一资源标识符，可以理解为资源路径或存储位置）的引用，通过在 DITA 文件中指定资源的 URI 来引用资源。如果引用文件和被引用资源的相对位置发生变化，则需要更新每处引用的资源路径。</p>
                             </entry>
                         </row>
                         <row>
-                            <entry>间接引用</entry>
-                            <entry>间接引用是基于资源别名的引用，通过在 DITA map 中定义资源别名，然后在 DITA 文件中插入资源别名来引用资源。如引用文件和被引用资源的相对位置发生变化，只需回到定义资源别名的文件修改一次资源路径。</entry>
+                            <entry colsep="1" rowsep="1">
+                                <p>间接引用</p>
+                            </entry>
+                            <entry colsep="1" rowsep="1"
+                                >间接引用是基于资源别名的引用，通过在 DITA map 中定义资源别名，然后在 DITA 文件中插入资源别名来引用资源。如果引用文件和被引用资源的相对位置发生变化，只需回到定义资源别名的文件修改一次资源路径。</entry>
                         </row>
                         <row>
-                            <entry>metadata（元数据）</entry>
-                            <entry>元数据是指与文档或文档组件相关联的信息，用于描述文档内容、属性和特征。这些元数据可以提供关于文档的各种信息，包括作者、创建日期、修改历史、版本信息、关键词、主题等。metadata 元数据的目的是为了帮助用户更好地管理和理解文档，以及为自动化和工具集成提供支持。<p>在 DITA 1.3 规范中，metadata 元数据通常以 XML 元素的形式嵌入在文档的头部或其他适当的位置。常见的 metadata 元素包括 <codeph>&lt;author></codeph>（作者）、<codeph>&lt;date></codeph>（日期）、<codeph>&lt;keywords></codeph>（关键词）、<codeph>&lt;subject></codeph>（主题）、<codeph>&lt;revisionHistory></codeph>（修订历史）等。这些元素可以提供关于文档的关键信息，有助于文档管理、搜索和导航。</p><p>metadata 元数据对于协作和团队工作尤为重要，因为它可以帮助团队成员追踪文档的修改历史、了解文档的内容和目的，以及协调工作流程。此外，metadata 元数据还对于文档的搜索、分类和索引非常有用，因为它们提供了有关文档内容的详细信息，可以帮助用户更快地找到所需的信息。</p><p/>存放所有说明书的元数据（料号），存放在global目录</entry>
+                            <entry colsep="1" rowsep="1">
+                                <p>完整复用</p>
+                            </entry>
+                            <entry colsep="1" rowsep="1"
+                                >完整复用指一个内容模块在多个信息产品中共同使用，在多个信息产品中呈现的内容一模一样。</entry>
                         </row>
                         <row>
-                            <entry>元数据定义集</entry>
-                            <entry>元数据定义集用于集中存储、管理和共享自定义的条件发布属性和值，通过自定义属性和 DITA 默认属性（如 @product 属性）的关联关系，将自定义属性的值应用于 DITA 默认属性，从而满足多样化的条件发布需求。</entry>
+                            <entry colsep="1" rowsep="1">
+                                <p>可变化复用</p>
+                            </entry>
+                            <entry colsep="1" rowsep="1"
+                                >可变化复用是指一个内容模块经过少许变化，即可在多个信息产品中共同使用。可以使用条件发布或基于变量的复用来实现可变化复用。</entry>
                         </row>
                         <row>
-                            <entry>完整复用</entry>
-                            <entry>完整复用指一个内容模块在多个信息产品中共同使用，在多个信息产品中呈现的内容一模一样。</entry>
-                        </row>
-                        <row>
-                            <entry>可变化复用</entry>
-                            <entry>可变化复用是指一个内容模块经过少许变化，即可在多个信息产品中共同使用。可以使用条件发布或基于变量的复用来实现可变化复用。</entry>
-                        </row>
-                        <row>
-                            <entry>条件发布</entry>
-                            <entry>
-                                <p>DITA 提供一种使用 <b>.ditaval</b> 文件过滤和标记内容的处理方式。比如，可以根据条件发布属性（@product 属性）和属性值（说明书料号）进行过滤，发布不同的信息产品（比如 PDF 手册）。</p>
+                            <entry colsep="1" rowsep="1">
+                                <p>条件发布</p>
+                            </entry>
+                            <entry colsep="1" rowsep="1">
+                                <p>DITA 提供一种使用 <b>.ditaval</b> 文件过滤和标记内容的处理方式。可以根据条件发布属性（比如@product 属性）和属性值（比如说明书料号）进行过滤，发布不同的信息产品（比如不同料号对应的 PDF 版说明书）。</p>
                             </entry>
                         </row>
                         <row>
-                            <entry>过滤文件</entry>
-                            <entry>保存条件发布属性和值，在发布场景中添加过滤文件可发布指定的说明书。</entry>
+                            <entry colsep="1" rowsep="1">
+                                <p>过滤文件</p>
+                            </entry>
+                            <entry colsep="1" rowsep="1">保存条件发布属性和值，在发布场景中添加过滤文件可发布指定的说明书。</entry>
                         </row>
                         <row>
-                            <entry>变量</entry>
-                            <entry>变量是一个容器，这个容器可以装各种东西，这些东西就对应变量的值，变量的值可以变化。</entry>
+                            <entry colsep="1" rowsep="1">
+                                <p>变量</p>
+                            </entry>
+                            <entry colsep="1" rowsep="1"
+                                >变量是一个容器，这个容器可以装各种东西，这些东西就对应变量的值，变量的值可以变化。</entry>
                         </row>
                         <row>
-                            <entry>基于变量的复用</entry>
-                            <entry>
-                                <p>当两个内容模块绝大部分相似，只有某个短语（比如产品名称）不同时，可以使用变量处理这种差异。这样就可以使用同一个内容模块进行不同需求的发布，在最大化复用的同时实现内容定制。</p>
+                            <entry colsep="1" rowsep="1">
+                                <p>基于变量的复用</p>
+                            </entry>
+                            <entry colsep="1" rowsep="1">
+                                <p>当两个内容模块绝大部分相似，只有某个短语（比如产品名称）不同时，可以使用变量处理这种差异。这样就可以复用同一个内容模块满足不同需求的发布，在最大化复用的同时实现内容定制。</p>
                             </entry>
                         </row>
                         <row>
-                            <entry>页面变量</entry>
-                            <entry>出现在页面级文档组成部分的变量，比如出现在封面、页眉、页脚的系统名称和说明书名称，出现在声明页、封底的版权归属年份、料号、版本号。</entry>
+                            <entry colsep="1" rowsep="1">
+                                <p>页面变量</p>
+                            </entry>
+                            <entry colsep="1" rowsep="1"
+                                >出现在页面元素的变量，比如出现在封面、页眉、页脚的系统名称和说明书名称，以及出现在声明页、封底的版权归属年份、料号、版本号。</entry>
                         </row>
                         <row>
-                            <entry>文本变量</entry>
-                            <entry>出现在正文中的变量，比如出现在段落中的变量，如禁忌证和适用范围中的产品名称。如果需要根据不同场景输出不同的文本，可考虑使用变量处理这种差异。例如，如果几个产品有同一个功能，需要复用同一个主题，可考虑将主题中的产品名称配置成变量，这样每个产品对应的手册会输出对应的产品名称。</entry>
+                            <entry colsep="1" rowsep="1">
+                                <p>文本变量</p>
+                            </entry>
+                            <entry colsep="1" rowsep="1"
+                                    >出现在正文中的变量，比如出现在段落中的变量，如禁忌证和适用范围中的产品名称。<p>如果需要根据不同场景输出不同的文本，可考虑使用变量处理这种差异。比如几个产品有同一个功能，可考虑复用同一个主题，但把主题中的产品名称定义为变量，使这个主题在不同产品的手册中显示正确的产品名称。</p></entry>
                         </row>
                         <row>
-                            <entry>公共主题</entry>
-                            <entry>通用公共主题（zh-CN）适用于全部产品（C1000、S1000、SUD等）全部项目（K2、K9等）的中文版本，包括版权、商标、声明、文档符号说明、联系信息等。不同产品和项目通过引用公共主题实现整个主题的完整复用。如需更新，只需在公共主题中更新一次。</entry>
+                            <entry colsep="1" rowsep="1">
+                                <p>公共主题</p>
+                            </entry>
+                            <entry colsep="1" rowsep="1"
+                                    >公共主题分为通用公共主题和业务公共主题，区分不同语言。<p>通用公共主题适用于全部产品（C1000、S1000、SUD等）的全部项目（K2、K9等），比如版权、商标、声明、文档符号说明、联系信息。</p>业务公共主题适用于单个产品的全部项目，比如冲洗、刷洗步骤。<p>为公共主题定义 key 后，可以使用 key 引用公共主题。如需更新内容，只需在公共主题中更新一次。</p></entry>
                         </row>
                         <row>
-                            <entry>公共组件</entry>
-                            <entry>如果重用的信息比较长而且频繁出现和更新，可使用复用组件管理这些信息，既可保证同一信息在文档的不同位置或在不同的文档中完全一致，又可减少维护工作量，更新信息时，只需更新源信息。<p>此文件用于定义通用公共组件（zh-CN）的id，有了id就可以使用conkeyref复用元素组件。通用公共组件（zh-CN）适用于全部产品（C1000、S1000、SUD等）全部项目（K2、K9等）的中文手册，可以是一句话（如预期用途，禁止、警告或注意事项）、一段话（如禁忌证、环境条件）或者一个表格。如需更新这些组件的内容，只需在此文件中更新一次。</p><p>需注意的是，id在同一个文档内需保证唯一性，不可重名。note元素的id需包含@type属性前缀（restriction, warning, attention），例如 <codeph>warning_refer_IFU_before_use</codeph>、<codeph>attention_figures_for_example_purpose</codeph>。其他元素的id通过描述区分，例如 <codeph>contact_info</codeph>。定义id后，不可随意更改id，否则DITA引用会失效。如需修改id，请同步修改DITA文件中的conkeyref值。</p></entry>
+                            <entry colsep="1" rowsep="1">
+                                <p>公共组件</p>
+                            </entry>
+                            <entry colsep="1" rowsep="1"
+                                    >公共组件分为通用公共组件和业务公共组件，区分不同语言。<p>通用公共组件适用于全部产品的全部项目，可以是一个段落（如预期用途、禁忌证）、一个安全警示、一张图片或者一个表格。</p><p>业务公共组件适用于单个产品的全部项目，比如仅适用于单个产品的安全警示。</p><p>为公共组件定义 id 后，可以使用 id 引用公共组件。如需更新内容，只需在公共组件管理文件中更新一次。</p></entry>
                         </row>
                         <row>
-                            <entry>公共名称</entry>
-                            <entry>如果重用的信息频繁出现和更新而且是法规重点关注的信息，可使用复用组件管理这些信息，既可保证同一信息在文档的不同位置或在不同的文档中完全一致，又可减少维护工作量，更新信息时，只需更新源信息。<p>此文件用于定义通用公共名称（zh-CN）的id，有了id就可以使用conkeyref进行组件级别的复用。通用公共名称（zh-CN）适用于全部产品（C1000、S1000、SUD等）全部项目（K2、K9等）的中文手册，包括公司名称、产品名称和关键单元及部件名称。如需更新这些名称，只需在此文件中更新一次。</p><p>需注意的是，id唯一，不可重名，需遵循<codeph>companyname|prodname|unitname|componame_abbrev_description</codeph>的命名方式，即<codeph>固定前缀_名称英文缩写_描述</codeph>，例如 <codeph>companyname_CST</codeph>
-                                    <codeph>prodname_STC</codeph>
-                                    <codeph>unitname_SGC_new</codeph>。定义id后，不可随意更改id，否则DITA引用会失效。如需修改id，请同步修改DITA文件中的conkeyref值。</p></entry>
+                            <entry colsep="1" rowsep="1">
+                                <p>公共图片</p>
+                            </entry>
+                            <entry colsep="1" rowsep="1"
+                                    >公共图片分为通用公共图片和业务公共图片，区分不同语言。<p>通用公共图片适用于全部产品的全部项目，比如通用标签、文档符号、安全提示符号。</p>业务公共图片适用于单个产品的全部项目，比如UI图标和符号。<p>为公共图片定义 key 后，可以使用 key 引用公共图片。如需替换，直接替换公共图片即可。</p></entry>
                         </row>
                         <row>
-                            <entry>公共图片</entry>
-                            <entry>此文件用于定义通用公共图片（zh-CN）的key。通用公共图片（zh-CN）适用于全部产品（C1000、S1000等）下全部项目（K2、K9等）的中文版本，通常包括包含文字的标签、包含时间单位的冲洗和刷洗示意图等。</entry>
+                            <entry colsep="1" rowsep="1">
+                                <p>公共名称</p>
+                            </entry>
+                            <entry colsep="1" rowsep="1"
+                                    >公共名称通常包括公司名称、产品名称和关键单元及部件名称。对于法规重点关注且频繁更新的高频次术语，可以将其定义成公共名称，作为复用组件统一管理和维护。<p>公共名称为通用公共名称，适用于全部产品（C1000、S1000、SUD等）的全部项目（K2、K9等），但区分不同语言。</p><p>为公共名称定义 id 后，可以使用 id 引用公共名称。如需更新名称，只需在公共名称管理文件中更新一次。</p></entry>
+                        </row>
+                        <row>
+                            <entry colsep="1" rowsep="1">
+                                <p>metadata（元数据）</p>
+                            </entry>
+                            <entry colsep="1" rowsep="1"
+                                    >元数据是指与文档或文档组件相关联的信息，用于描述文档内容、属性和特征。这些元数据可以提供关于文档的各种信息，包括作者、创建日期、修改历史、版本或料号等。<p>元数据对于团队协作尤为重要，可以帮助团队成员追踪文档的修改历史，了解文档的内容和目的。</p><p>元数据对于文档的搜索、分类和索引也非常有用，可以帮助用户更快地找到所需的信息，也为自动化和工具集成（比如条件发布）提供了支持。</p></entry>
+                        </row>
+                        <row>
+                            <entry colsep="1" rowsep="1">
+                                <p>元数据定义集</p>
+                            </entry>
+                            <entry colsep="1" rowsep="1"
+                                    >简单来说，元数据定义集用于定义和管理所有说明书的元数据（即料号），通常存放在通用公共仓库的 global 目录。<p>从具体实现来说，元数据定义集用于集中存储、管理和共享自定义的条件发布属性（比如 @product 属性）和值（比如说明书的料号），通过自定义属性和 DITA 默认属性（如 @product 属性）的关联关系，将自定义属性的值应用于 DITA 默认属性，从而满足多样化的条件发布需求。</p></entry>
                         </row>
                     </tbody>
                 </tgroup>

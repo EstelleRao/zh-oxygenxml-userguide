@@ -3,7 +3,7 @@
 <topic id="transform">
     <title>发布</title>
     <body>
-        <p>发布功能用于导出DITA文件（DITA topic和DITA map）为目标格式。常见的输出格式包括PDF手册、HTML网页和在线帮助文档。</p>
+        <p>发布功能用于导出 DITA 文件（DITA topic 和 DITA map）为目标格式。常见的输出格式包括 PDF 手册、HTML 网页和在线帮助文档。</p>
         <p>如需配置发布场景，可在顶部菜单栏点击 <menucascade>
                 <uicontrol>Document</uicontrol>
                 <uicontrol>Transformation</uicontrol>
@@ -13,6 +13,6 @@
                 /> Configure Transformation Scenario(s)</uicontrol> 进行配置。</p>
         <image placement="break"
             keyref="oxygen_transform.edit_scenario" width="300" id="image_tbl_1xb_kzb"/>
-        <p>有关DITA map的发布操作，请查阅：<xref keyref="quick_start_dita.publish"/>。</p>
+        <p>有关 DITA map 的发布操作，请查阅：<xref keyref="publish"/>。</p>
     </body>
 </topic>

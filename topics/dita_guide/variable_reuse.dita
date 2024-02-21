@@ -6,7 +6,7 @@
         <p>可变化复用是指一个内容模块经过少许变化，即可在多个信息产品中共同使用。</p>
         <section id="section_hlt_vdf_f1c">
             <title>使用条件句过滤</title>
-            <p>DITA 提供一种使用 <b>.ditaval</b> 文件过滤和标记内容的处理方式。比如，可以根据条件发布属性（@product 属性）和属性值（说明书料号）进行过滤，发布不同的信息产品（比如 PDF 手册）。</p>
+            <p>DITA 提供一种使用 <b>.ditaval</b> 文件过滤和标记内容的处理方式。可以根据条件发布属性（比如@product 属性）和属性值（比如说明书料号）进行过滤，发布不同的信息产品（比如不同料号对应的 PDF 版说明书）。</p>
             <p>如需使用条件发布，请按照如下步骤操作。</p>
             <ol id="ol_nq3_25h_f1c">
                 <li>在 <b>.ditaval</b> 文件中添加条件句，比如添加 @action 属性包含需要发布的内容，排除不需要发布的内容。<p>示例：</p><codeblock id="codeblock_z33_1th_f1c" outputclass="language-xml">&lt;?xml version="1.0" encoding="UTF-8"?>
@@ -27,7 +27,7 @@
         <section id="section_ukm_zdf_f1c">
             <title>使用变量</title>
             <p>变量是一个容器，这个容器可以装各种东西，这些东西就对应变量的值，变量的值可以变化。</p>
-            <p>当两个内容模块绝大部分相似，只有某个短语（比如产品名称）不同时，可以使用变量处理这种差异。这样就可以使用同一个内容模块进行不同需求的发布，在最大化复用的同时实现内容定制。</p>
+            <p>当两个内容模块绝大部分相似，只有某个短语（比如产品名称）不同时，可以使用变量处理这种差异。这样就可以复用同一个内容模块满足不同需求的发布，在最大化复用的同时实现内容定制。</p>
             <p>如需使用变量发布，请按照如下步骤操作。<ol id="ol_bbf_5wh_f1c">
                 <li>在 <b>.ditamap</b> 文件中根据不同的场景定义变量。<p>示例：</p><codeblock id="codeblock_wxy_dch_f1c" outputclass="language-xml">&lt;keydef keys="product" product="basic">
     &lt;topicmeta>

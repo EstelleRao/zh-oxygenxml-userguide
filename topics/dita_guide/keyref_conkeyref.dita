@@ -4,43 +4,44 @@
     <title>@keyref属性和@conkeyref属性</title>
     <body>
         <p>间接引用使用 @keyref 和 @conkeyref 属性引用资源。下表展示了复用不同类型资源常用的元素和属性。</p>
-        <table id="table_usl_xzg_f1c">
+        <table id="table_usl_xzg_f1c" frame="all">
             <tgroup cols="3">
                 <colspec colname="c1" colnum="1" colwidth="0.8*"/>
                 <colspec colname="c2" colnum="2" colwidth="1.4*"/>
                 <colspec colname="c3" colnum="3" colwidth="0.8*"/>
                 <thead>
                     <row>
-                        <entry>复用内容</entry>
-                        <entry>常用元素</entry>
-                        <entry>常用属性</entry>
+                        <entry colsep="1" rowsep="1">复用内容</entry>
+                        <entry colsep="1" rowsep="1">常用元素</entry>
+                        <entry colsep="1" rowsep="1">常用属性</entry>
                     </row>
                 </thead>
                 <tbody>
                     <row>
-                        <entry>DITA map</entry>
-                        <entry><codeph>&lt;mapref></codeph>、<codeph>&lt;topicref></codeph> 或 <codeph>&lt;chapter></codeph></entry>
-                        <entry>@keyref </entry>
+                        <entry colsep="1" rowsep="1">DITA map</entry>
+                        <entry colsep="1" rowsep="1"
+                                ><codeph>&lt;mapref></codeph>、<codeph>&lt;topicref></codeph> 或 <codeph>&lt;chapter></codeph></entry>
+                        <entry colsep="1" rowsep="1">@keyref </entry>
                     </row>
                     <row>
-                        <entry>DITA topic</entry>
-                        <entry><codeph>&lt;topicref></codeph></entry>
-                        <entry>@keyref </entry>
+                        <entry colsep="1" rowsep="1">DITA topic</entry>
+                        <entry colsep="1" rowsep="1"><codeph>&lt;topicref></codeph></entry>
+                        <entry colsep="1" rowsep="1">@keyref </entry>
                     </row>
                     <row>
-                        <entry>DITA element</entry>
-                        <entry>被引用资源对应的元素</entry>
-                        <entry>@conkeyref</entry>
+                        <entry colsep="1" rowsep="1">DITA element</entry>
+                        <entry colsep="1" rowsep="1">被引用资源对应的元素</entry>
+                        <entry colsep="1" rowsep="1">@conkeyref</entry>
                     </row>
                     <row>
-                        <entry>图片</entry>
-                        <entry><codeph>&lt;image></codeph></entry>
-                        <entry>@keyref </entry>
+                        <entry colsep="1" rowsep="1">图片</entry>
+                        <entry colsep="1" rowsep="1"><codeph>&lt;image></codeph></entry>
+                        <entry colsep="1" rowsep="1">@keyref </entry>
                     </row>
                     <row>
-                        <entry>变量</entry>
-                        <entry><codeph>&lt;ph></codeph></entry>
-                        <entry>@keyref </entry>
+                        <entry colsep="1" rowsep="1">变量</entry>
+                        <entry colsep="1" rowsep="1"><codeph>&lt;ph></codeph></entry>
+                        <entry colsep="1" rowsep="1">@keyref </entry>
                     </row>
                 </tbody>
             </tgroup>

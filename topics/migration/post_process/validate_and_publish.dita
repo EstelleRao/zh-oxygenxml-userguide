@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="t5p_vqs_xzb">
+    <title>校验和发布DITA Map</title>
+    <body>
+        <ol>
+            <li>再次校验 DITA map，根据报错提示解决剩余问题。有关操作，请查阅：<xref keyref="validate_map"/>。</li>
+            <li>发布 DITA map，检查 PDF 样式。有关操作，请查阅：<xref keyref="publish"/>。</li>
+        </ol>
+    </body>
+</topic>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="commit_new_manuals">
+    <title>提交迁移文件</title>
+    <body>
+        <ol id="ol_kh1_bv5_m1c">
+            <li>在本地临时分支完成迁移和调整后，提交迁移文件到本地仓库和远程仓库。有关操作，请查阅：<xref keyref="push_local_branch"/>。</li>
+            <li>创建临时分支到受保护分支的合并请求，等待审核人员审核。有关操作，请查阅：<xref keyref="create_merge_request"/>。</li>
+            <li>审核批准后，合入合并请求。有关操作，请查阅：<xref keyref="review_merge_request"/>。</li>
+        </ol>
+    </body>
+</topic>

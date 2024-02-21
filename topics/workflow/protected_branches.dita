@@ -2,7 +2,7 @@
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
 <task id="my4_mf5_hzb">
     <title>设置受保护分支</title>
-    <shortdesc>分支保护用于限制对某些分支的更改和推送权限。该设置可以确保某些重要分支的代码质量和稳定性，防止未经审查或授权的更改合入某些重要分支。</shortdesc>
+    <shortdesc>分支保护用于限制对重要分支的更改和推送权限。该设置可以确保重要分支的代码质量和稳定性，防止未经审查或授权的更改合入重要分支。</shortdesc>
     <taskbody>
         <context id="context_dkg_pbb_3zb">长期使用的主要分支通常设为受保护分支。设置受保护分支可按照如下步骤操作。</context>
         <steps id="steps_khn_tf5_hzb">

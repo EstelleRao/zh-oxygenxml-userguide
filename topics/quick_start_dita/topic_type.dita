@@ -12,33 +12,34 @@
                 <colspec colname="c4" colnum="4" colwidth="1.1*"/>
                 <thead>
                     <row>
-                        <entry>Generic topic<p>（通用型）</p></entry>
-                        <entry>
+                        <entry colsep="1" rowsep="1">Generic topic<p>（通用型）</p></entry>
+                        <entry colsep="1" rowsep="1">
                             <p>Concept topic</p>
                             <p>（概念型）</p>
                         </entry>
-                        <entry><p>Task topic</p>（任务型）</entry>
-                        <entry>Reference topic<p>（参考型）</p></entry>
+                        <entry colsep="1" rowsep="1"><p>Task topic</p>（任务型）</entry>
+                        <entry colsep="1" rowsep="1">Reference topic<p>（参考型）</p></entry>
                     </row>
                 </thead>
                 <tbody>
                     <row>
-                        <entry>/</entry>
-                        <entry>回答“是什么”“为什么要这么做”</entry>
-                        <entry>回答“怎么做”</entry>
-                        <entry>回答“有哪些参数/指令/工具” “这个参数/指令是什么意思”</entry>
+                        <entry colsep="1" rowsep="1">/</entry>
+                        <entry colsep="1" rowsep="1">回答“是什么”“为什么要这么做”</entry>
+                        <entry colsep="1" rowsep="1">回答“怎么做”</entry>
+                        <entry colsep="1" rowsep="1">回答“有哪些参数/指令/工具” “这个参数/指令是什么意思”</entry>
                     </row>
                     <row>
-                        <entry>/</entry>
-                        <entry>提供解释性信息、概览性信息或背景知识，用于支撑任务型或参考型信息</entry>
-                        <entry>提供完整的步骤指导，帮助用户完成一个特定的操作目标</entry>
-                        <entry>提供用户执行任务时需要的参考信息，一般包括命令、警告、API、配件清单等，通常以表格或列表呈现</entry>
+                        <entry colsep="1" rowsep="1">/</entry>
+                        <entry colsep="1" rowsep="1">提供解释性信息、概览性信息或背景知识，用于支撑任务型或参考型信息</entry>
+                        <entry colsep="1" rowsep="1">提供完整的步骤指导，帮助用户完成一个特定的操作目标</entry>
+                        <entry colsep="1" rowsep="1"
+                            >提供用户执行任务时需要的参考信息，一般包括命令、警告、API、配件清单等，通常以表格或列表呈现</entry>
                     </row>
                     <row>
-                        <entry>/</entry>
-                        <entry>用户的使用频率：读一两次来理解概念</entry>
-                        <entry>用户的使用频率：高频使用，说明书核心内容，帮助用户完成任务、解决问题</entry>
-                        <entry>用户的使用频率：需要用户多次去查找细节</entry>
+                        <entry colsep="1" rowsep="1">/</entry>
+                        <entry colsep="1" rowsep="1">用户的使用频率：读一两次来理解概念</entry>
+                        <entry colsep="1" rowsep="1">用户的使用频率：高频使用，说明书核心内容，帮助用户完成任务、解决问题</entry>
+                        <entry colsep="1" rowsep="1">用户的使用频率：需要用户多次去查找细节</entry>
                     </row>
                 </tbody>
             </tgroup>

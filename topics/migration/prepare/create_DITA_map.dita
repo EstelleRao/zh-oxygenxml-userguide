@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
 <task id="xwq_1ss_xzb">
-    <title>添加项目资源</title>
-    <shortdesc>调整仓库目录后，需要定义元数据，创建页面变量，创建过滤文件，添加公共资源。如果复用现有项目，可在现有项目资源的基础上进行调整。</shortdesc>
+    <title>添加仓库资源</title>
+    <shortdesc>调整仓库目录后，需要定义元数据，创建页面变量，创建过滤文件，添加公共资源。如果复用现有项目，可在现有项目的 index.ditamap 上进行调整。</shortdesc>
     <taskbody>
         <steps id="steps_l1v_5bj_f1c">
             <step>
@@ -43,44 +43,45 @@
                 </substeps>
             </step>
             <step>
+                <cmd>在 <ph outputclass="blue">index.ditamap</ph> 中为新说明书添加前言、索引和封底。</cmd>
+                <substeps>
+                    <substep>
+                        <cmd>在 <codeph>&lt;frontmatter></codeph> 元素下使用 <codeph>&lt;topicref></codeph> 元素引用公共的版权、商标、声明文件。如果新说明书和旧说明书引用同样的公共资源，可直接修改@product属性中的料号为新说明书的料号。</cmd>
+                        <info>
+                            <image placement="break" keyref="dita.frontmatter" width="450"
+                                id="image_qt2_zjc_3zb"/>
+                        </info>
+                    </substep>
+                    <substep>
+                        <cmd>为新说明书创建说明文件（specification.dita），在 <codeph>&lt;frontmatter></codeph> 元素下使用 <codeph>&lt;topicref></codeph> 元素引用该文件。</cmd>
+                    </substep>
+                    <substep>
+                        <cmd>在 <codeph>&lt;backmatter></codeph> 元素下使用 <codeph>&lt;topicref></codeph> 元素引用公共的封底文件。如果新说明书和旧说明书引用同样的公共资源，可直接修改@product属性中的料号为新说明书的料号。</cmd>
+                        <info><image keyref="dita.backmatter" width="500" id="image_uw4_mbv_m1c"
+                            /></info>
+                    </substep>
+                    <substep>
+                        <cmd>如需为新说明书添加索引页，可在 <codeph>&lt;booklists></codeph> 元素的@product属性中添加该说明书的料号。</cmd>
+                    </substep>
+                </substeps>
+            </step>
+            <step>
                 <cmd>在 <ph outputclass="blue"
-                        >index.ditamap</ph> 中使用 <codeph>&lt;frontmatter></codeph> 元素和 <codeph>&lt;backmatter></codeph> 元素为新说明书添加公共资源，包括版权、商标、声明、文档符号说明、联系信息、封底等公共主题。如果新说明书和旧说明书引用同样的公共资源，则直接修改@product属性值为新说明书的料号，无需重新添加公共资源。</cmd>
-                <info>
-                    <image placement="break" keyref="dita.frontmatter" width="450"
-                        id="image_qt2_zjc_3zb"/>
-                </info>
-            </step>
-            <step>
-                <cmd>为新说明书创建说明文件（specification.dita），在 <codeph>&lt;frontmatter></codeph> 元素中使用 <codeph>&lt;topicref></codeph> 元素引用该文件。</cmd>
-            </step>
-            <step>
-                <cmd>在 <ph outputclass="blue"
-                    >index.ditamap</ph> 中使用 <codeph>&lt;chapter></codeph> 元素添加其他项目资源（引用页面变量）和公共资源（引用公共图片、公共主题、公共组件等），设置@processing-role、@toc、@format属性。</cmd>
-                <info><image keyref="dita.resource-only" id="image_mvh_ltj_g1c" width="500"/></info>
-                <info>
-                    <ul id="ul_gzf_kwj_g1c">
-                        <li>@processing-role：“resource-only”表示当前资源为复用资源，可在 <uicontrol>DITA Reusable Components</uicontrol> 视图中查看和使用。</li>
-                        <li>@toc：“no”表示当前资源不会显示在目录中。</li>
-                        <li>@format：“ditamap”表示当前资源为 DITA Map。</li>
-                    </ul>
-                </info>
-            </step>
-            <step>
-                <cmd>在旧说明书对应的 DITA Map 中，修改旧说明书的标题为新说明书的标题。</cmd>
-                <info>
-                    <image placement="break" keyref="dita.ditamap_title" width="400"
-                        id="image_mt3_3kc_3zb"/>
-                </info>
-            </step>
-            <step>
-                <cmd>使用新说明书的料号或英文名称重命名旧说明书的 DITA Map 文件名。</cmd>
-                <info>
-                    <image placement="break" keyref="dita.ditamap_file_name" width="400"
-                        id="image_v2s_hkc_3zb"/>
-                </info>
-            </step>
-            <step>
-                <cmd>按需保留旧说明书的内容，开发新说明书的内容。</cmd>
+                    >index.ditamap</ph> 中添加项目资源（页面变量等）管理文件和公共资源（公共图片、公共主题、公共组件等）管理文件。</cmd>
+                <substeps>
+                    <substep>
+                        <cmd>使用 <codeph>&lt;chapter></codeph> 元素引用项目资源管理文件（{product}_{lang}.ditamap）和公共资源管理文件（common.ditamap）。</cmd>
+                    </substep>
+                    <substep>
+                        <cmd>设置@processing-role、@toc、@format属性。</cmd>
+                        <info><image keyref="dita.resource-only" id="image_mvh_ltj_g1c" width="500"
+                                /><ul id="ul_gzf_kwj_g1c">
+                                <li>@processing-role：“resource-only”表示当前资源为复用资源，可在 <uicontrol>DITA Reusable Components</uicontrol> 视图中查看和使用。</li>
+                                <li>@toc：“no”表示当前资源不会显示在目录中。</li>
+                                <li>@format：“ditamap”表示当前资源为 DITA Map。</li>
+                            </ul></info>
+                    </substep>
+                </substeps>
             </step>
         </steps>
     </taskbody>

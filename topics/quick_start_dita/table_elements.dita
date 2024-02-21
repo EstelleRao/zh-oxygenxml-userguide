@@ -9,31 +9,31 @@
                 <colspec colname="c3" colnum="2" colwidth="1.2*"/>
                 <thead>
                     <row>
-                        <entry>内容对象</entry>
-                        <entry>操作方法</entry>
+                        <entry colsep="1" rowsep="1">内容对象</entry>
+                        <entry colsep="1" rowsep="1">操作方法</entry>
                     </row>
                 </thead>
                 <tbody>
                     <row>
-                        <entry>表格</entry>
-                        <entry>
+                        <entry colsep="1" rowsep="1">表格</entry>
+                        <entry colsep="1" rowsep="1">
                             <p>方法一：Author 模式下，从工具栏选择相关按钮。</p>
                             <p>方法二： 在目标位置按下回车键，双击 <b>table</b>元素。</p>
                             <p>注：通常选择CALS表格，支持更丰富的表格样式。</p>
                         </entry>
                     </row>
                     <row>
-                        <entry>合并、拆分单元格</entry>
-                        <entry morerows="3">方法一或选中目标后从鼠标右键菜单操作</entry>
+                        <entry colsep="1" rowsep="1">合并、拆分单元格</entry>
+                        <entry morerows="3" colsep="1" rowsep="1">方法一或选中目标后从鼠标右键菜单操作</entry>
                     </row>
                     <row>
-                        <entry>插入、删除行列</entry>
+                        <entry colsep="1" rowsep="1">插入、删除行列</entry>
                     </row>
                     <row>
-                        <entry>排序</entry>
+                        <entry colsep="1" rowsep="1">排序</entry>
                     </row>
                     <row>
-                        <entry>对齐方式、表格边框及分隔线 （表格属性按钮）</entry>
+                        <entry colsep="1" rowsep="1">对齐方式、表格边框及分隔线 （表格属性按钮）</entry>
                     </row>
                 </tbody>
             </tgroup>

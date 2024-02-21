@@ -10,62 +10,62 @@
                 <colspec colname="c2" colnum="2" colwidth="1.2*"/>
                 <thead>
                     <row>
-                        <entry>元素名称</entry>
-                        <entry>文档内容对象</entry>
+                        <entry colsep="1" rowsep="1">元素名称</entry>
+                        <entry colsep="1" rowsep="1">文档内容对象</entry>
                     </row>
                 </thead>
                 <tbody>
                     <row>
-                        <entry>&lt;map></entry>
-                        <entry>完整的说明书或多个章节的合集</entry>
+                        <entry colsep="1" rowsep="1">&lt;map></entry>
+                        <entry colsep="1" rowsep="1">完整的说明书或多个章节的合集</entry>
                     </row>
                     <row>
-                        <entry>&lt;toc></entry>
-                        <entry>目录</entry>
+                        <entry colsep="1" rowsep="1">&lt;toc></entry>
+                        <entry colsep="1" rowsep="1">目录</entry>
                     </row>
                     <row>
-                        <entry>&lt;chapter></entry>
-                        <entry>章节</entry>
+                        <entry colsep="1" rowsep="1">&lt;chapter></entry>
+                        <entry colsep="1" rowsep="1">章节</entry>
                     </row>
                     <row>
-                        <entry>&lt;topic></entry>
-                        <entry>组成章节的最小单元</entry>
+                        <entry colsep="1" rowsep="1">&lt;topic></entry>
+                        <entry colsep="1" rowsep="1">组成章节的最小单元</entry>
                     </row>
                     <row>
-                        <entry>&lt;title></entry>
-                        <entry>标题</entry>
+                        <entry colsep="1" rowsep="1">&lt;title></entry>
+                        <entry colsep="1" rowsep="1">标题</entry>
                     </row>
                     <row>
-                        <entry>&lt;p></entry>
-                        <entry>段落</entry>
+                        <entry colsep="1" rowsep="1">&lt;p></entry>
+                        <entry colsep="1" rowsep="1">段落</entry>
                     </row>
                     <row>
-                        <entry>&lt;ol></entry>
-                        <entry>有序列表</entry>
+                        <entry colsep="1" rowsep="1">&lt;ol></entry>
+                        <entry colsep="1" rowsep="1">有序列表</entry>
                     </row>
                     <row>
-                        <entry>&lt;ul></entry>
-                        <entry>无序列表</entry>
+                        <entry colsep="1" rowsep="1">&lt;ul></entry>
+                        <entry colsep="1" rowsep="1">无序列表</entry>
                     </row>
                     <row>
-                        <entry>&lt;li></entry>
-                        <entry>列表项</entry>
+                        <entry colsep="1" rowsep="1">&lt;li></entry>
+                        <entry colsep="1" rowsep="1">列表项</entry>
                     </row>
                     <row>
-                        <entry>&lt;table></entry>
-                        <entry>表格</entry>
+                        <entry colsep="1" rowsep="1">&lt;table></entry>
+                        <entry colsep="1" rowsep="1">表格</entry>
                     </row>
                     <row>
-                        <entry>&lt;fig></entry>
-                        <entry>带题注的图片</entry>
+                        <entry colsep="1" rowsep="1">&lt;fig></entry>
+                        <entry colsep="1" rowsep="1">带题注的图片</entry>
                     </row>
                     <row>
-                        <entry>&lt;image></entry>
-                        <entry>图片</entry>
+                        <entry colsep="1" rowsep="1">&lt;image></entry>
+                        <entry colsep="1" rowsep="1">图片</entry>
                     </row>
                     <row>
-                        <entry>……</entry>
-                        <entry>……</entry>
+                        <entry colsep="1" rowsep="1">……</entry>
+                        <entry colsep="1" rowsep="1">……</entry>
                     </row>
                 </tbody>
             </tgroup>
@@ -77,46 +77,47 @@
                 <colspec colname="c2" colnum="2" colwidth="1.2*"/>
                 <thead>
                     <row>
-                        <entry>属性名称</entry>
-                        <entry>文档内容对象或作用</entry>
+                        <entry colsep="1" rowsep="1">属性名称</entry>
+                        <entry colsep="1" rowsep="1">文档内容对象或作用</entry>
                     </row>
                 </thead>
                 <tbody>
                     <row>
-                        <entry>@id</entry>
-                        <entry>文档内容对象的唯一标识符，用于基于@id的元素复用，要求同一主题内的元素@id不可重复，同一DITA Map内的主题@id不可重复，子Map@id不可重复</entry>
+                        <entry colsep="1" rowsep="1">@id</entry>
+                        <entry colsep="1" rowsep="1"
+                            >文档内容对象的唯一标识符，用于基于@id的元素复用，要求同一主题内的元素@id不可重复，同一DITA Map内的主题@id不可重复，子Map@id不可重复</entry>
                     </row>
                     <row>
-                        <entry>@href</entry>
-                        <entry>图片、超链接等对象的引用地址，用于直接引用</entry>
+                        <entry colsep="1" rowsep="1">@href</entry>
+                        <entry colsep="1" rowsep="1">图片、超链接等对象的引用地址，用于直接引用</entry>
                     </row>
                     <row>
-                        <entry>@keyref</entry>
-                        <entry>主题、组件、图片等对象的Key值，用于间接引用</entry>
+                        <entry colsep="1" rowsep="1">@keyref</entry>
+                        <entry colsep="1" rowsep="1">主题、组件、图片等对象的Key值，用于间接引用</entry>
                     </row>
                     <row>
-                        <entry>@format</entry>
-                        <entry>引用文件的格式</entry>
+                        <entry colsep="1" rowsep="1">@format</entry>
+                        <entry colsep="1" rowsep="1">引用文件的格式</entry>
                     </row>
                     <row>
-                        <entry>@navtitle</entry>
-                        <entry>引用文件的导航标题</entry>
+                        <entry colsep="1" rowsep="1">@navtitle</entry>
+                        <entry colsep="1" rowsep="1">引用文件的导航标题</entry>
                     </row>
                     <row>
-                        <entry>@product</entry>
-                        <entry>条件发布常用过滤项</entry>
+                        <entry colsep="1" rowsep="1">@product</entry>
+                        <entry colsep="1" rowsep="1">条件发布常用过滤项</entry>
                     </row>
                     <row>
-                        <entry>@platform</entry>
-                        <entry>条件发布常用过滤项</entry>
+                        <entry colsep="1" rowsep="1">@platform</entry>
+                        <entry colsep="1" rowsep="1">条件发布常用过滤项</entry>
                     </row>
                     <row>
-                        <entry>@audience</entry>
-                        <entry>条件发布常用过滤项</entry>
+                        <entry colsep="1" rowsep="1">@audience</entry>
+                        <entry colsep="1" rowsep="1">条件发布常用过滤项</entry>
                     </row>
                     <row>
-                        <entry>……</entry>
-                        <entry>……</entry>
+                        <entry colsep="1" rowsep="1">……</entry>
+                        <entry colsep="1" rowsep="1">……</entry>
                     </row>
                 </tbody>
             </tgroup>

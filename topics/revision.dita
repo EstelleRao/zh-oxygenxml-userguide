@@ -18,13 +18,23 @@
                     </thead>
                     <tbody>
                         <row>
-                            <entry colsep="1" rowsep="1">2023年11月6日</entry>
-                            <entry colsep="1" rowsep="1">饶雅惠</entry>
-                            <entry colsep="1" rowsep="1">初版发布</entry>
+                            <entry colsep="1" rowsep="1">
+                                <p>2023年11月6日</p>
+                            </entry>
+                            <entry colsep="1" rowsep="1">
+                                <p>饶雅惠</p>
+                            </entry>
+                            <entry colsep="1" rowsep="1">
+                                <p>初版发布</p>
+                            </entry>
                         </row>
                         <row>
-                            <entry colsep="1" rowsep="1">2023年11月10日</entry>
-                            <entry colsep="1" rowsep="1">饶雅惠</entry>
+                            <entry colsep="1" rowsep="1">
+                                <p>2023年11月10日</p>
+                            </entry>
+                            <entry colsep="1" rowsep="1">
+                                <p>饶雅惠</p>
+                            </entry>
                             <entry colsep="1" rowsep="1">
                                 <ol id="ol_rvw_jhd_j1c">
                                     <li>新增快速上手章节</li>
@@ -33,8 +43,12 @@
                             </entry>
                         </row>
                         <row>
-                            <entry colsep="1" rowsep="1">2023年11月10日</entry>
-                            <entry colsep="1" rowsep="1">饶雅惠</entry>
+                            <entry colsep="1" rowsep="1">
+                                <p>2023年11月10日</p>
+                            </entry>
+                            <entry colsep="1" rowsep="1">
+                                <p>饶雅惠</p>
+                            </entry>
                             <entry colsep="1" rowsep="1">
                                 <ol id="ol_bz1_c3d_j1c">
                                     <li>修改“新建手册”“升版手册”的步骤描述</li>
@@ -43,8 +57,12 @@
                             </entry>
                         </row>
                         <row>
-                            <entry colsep="1" rowsep="1">2023年12月1日</entry>
-                            <entry colsep="1" rowsep="1">饶雅惠</entry>
+                            <entry colsep="1" rowsep="1">
+                                <p>2023年12月1日</p>
+                            </entry>
+                            <entry colsep="1" rowsep="1">
+                                <p>饶雅惠</p>
+                            </entry>
                             <entry colsep="1" rowsep="1">
                                 <ol id="ol_etq_j3d_j1c">
                                     <li>新增故障排除指南</li>
@@ -53,16 +71,26 @@
                             </entry>
                         </row>
                         <row>
-                            <entry colsep="1" rowsep="1">2023年12月29日</entry>
-                            <entry colsep="1" rowsep="1">饶雅惠</entry>
-                            <entry colsep="1" rowsep="1">新增单本说明书的迁移流程</entry>
+                            <entry colsep="1" rowsep="1">
+                                <p>2023年12月29日</p>
+                            </entry>
+                            <entry colsep="1" rowsep="1">
+                                <p>饶雅惠</p>
+                            </entry>
+                            <entry colsep="1" rowsep="1">
+                                <p>新增单本说明书的迁移流程</p>
+                            </entry>
                         </row>
                         <row>
-                            <entry colsep="1" rowsep="1">2024年1月26日</entry>
-                            <entry colsep="1" rowsep="1">饶雅惠</entry>
+                            <entry colsep="1" rowsep="1">
+                                <p>2024年1月26日</p>
+                            </entry>
+                            <entry colsep="1" rowsep="1">
+                                <p>饶雅惠</p>
+                            </entry>
                             <entry colsep="1" rowsep="1">
                                 <ol id="ol_r34_q12_j1c">
-                                    <li>新增文档概述、Oxygen基础入门、DITA基础入门、GitLab协作规范</li>
+                                    <li>新增文档概述、Oxygen 基础入门、DITA 基础入门（含 DITA 元素、主题、Map 介绍和操作）、GitLab 协作规范</li>
                                     <li>新增新旧仓库架构说明（含仓库类型和仓库目录说明）</li>
                                     <li>新增复用规范（含复用颗粒度、直接引用和间接引用、完整复用和变量复用说明）</li>
                                     <li>调整迁移流程为“迁移前”“迁移中”“迁移后”，细化纠正错误元素的操作步骤，补充示意图</li>
@@ -70,13 +98,17 @@
                             </entry>
                         </row>
                         <row rowsep="1">
-                            <entry colsep="1" rowsep="1">2024年2月9日</entry>
-                            <entry colsep="1" rowsep="1">饶雅惠</entry>
+                            <entry colsep="1" rowsep="1">
+                                <p>2024年2月21日</p>
+                            </entry>
+                            <entry colsep="1" rowsep="1">
+                                <p>饶雅惠</p>
+                            </entry>
                             <entry colsep="1" rowsep="1">
                                 <ol id="ol_cgv_m12_j1c">
                                     <li>新增常用功能说明（项目管理、Git客户端、查找和替换、文件对比、校验、发布）</li>
-                                    <li>修改复用规范</li>
-                                    <li>修改迁移流程</li>
+                                    <li>复用规范补充 key 定义方法和示例</li>
+                                    <li>迁移流程补充新建仓库和分支、添加资源和重构 DITA Map 相关操作</li>
                                     <li>新增名词解释</li>
                                     <li>新增修订记录</li>
                                     <li>新增参考资料</li>

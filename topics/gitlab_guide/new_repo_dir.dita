@@ -3,31 +3,31 @@
 <topic id="ef1_khh_d1c">
     <title>仓库目录</title>
     <body>
-        <table>
+        <table frame="all">
             <tgroup cols="3">
                 <colspec colname="c1" colnum="1" colwidth="0.5*"/>
                 <colspec colname="c2" colnum="2" colwidth="1*"/>
                 <colspec colname="c3" colnum="3" colwidth="1.5*"/>
                 <thead>
                     <row>
-                        <entry>仓库类型</entry>
-                        <entry>
+                        <entry colsep="1" rowsep="1">仓库类型</entry>
+                        <entry colsep="1" rowsep="1">
                             <p>仓库一级目录</p>
                         </entry>
-                        <entry>仓库二级目录和文件</entry>
+                        <entry colsep="1" rowsep="1">仓库二级目录和文件</entry>
                     </row>
                 </thead>
                 <tbody>
                     <row>
-                        <entry>通用公共仓库</entry>
-                        <entry>
+                        <entry colsep="1" rowsep="1">通用公共仓库</entry>
+                        <entry colsep="1" rowsep="1">
                             <ol id="ol_fnx_33m_f1c">
                                 <li>global：适用于全部产品下全部项目（K2、K9等）的全部语言版本（zh-CN、en-US等）</li>
                                 <li>en-US：适用于全部产品下全部项目（K2、K9等）的英文版本</li>
                                 <li>zh-CN：适用于全部产品下全部项目（K2、K9等）的中文版本</li>
                             </ol>
                         </entry>
-                        <entry>
+                        <entry colsep="1" rowsep="1">
                             <p>每种语言目录包含如下子目录，使用common.ditamap链接和引用每种语言对应的通用公共资源</p>
                             <ol id="ol_bjl_f3m_f1c">
                                 <li>images：存放通用公共图片，比如安全符号、文档符号、图标、标签、仅含时间图标的冲洗和刷洗示意图</li>
@@ -39,15 +39,15 @@
                         </entry>
                     </row>
                     <row>
-                        <entry>业务公共仓库</entry>
-                        <entry>
+                        <entry colsep="1" rowsep="1">业务公共仓库</entry>
+                        <entry colsep="1" rowsep="1">
                             <ol id="ol_kl3_j3m_f1c">
                                 <li>global：适用于特定产品下全部项目的全部语言版本</li>
                                 <li>en-US：适用于特定产品下全部项目的英文版本</li>
                                 <li>zh-CN：适用于特定产品下全部项目的中文版本</li>
                             </ol>
                         </entry>
-                        <entry>
+                        <entry colsep="1" rowsep="1">
                             <p>每种语言目录包含如下子目录，使用common.ditamap链接和引用每种语言对应的业务公共资源</p>
                             <ol id="ol_csy_k3m_f1c">
                                 <li>images：存放业务公共图片，比如只适用于C1000的UI界面图</li>
@@ -58,8 +58,8 @@
                         </entry>
                     </row>
                     <row>
-                        <entry>常规公共仓库</entry>
-                        <entry>
+                        <entry colsep="1" rowsep="1">常规公共仓库</entry>
+                        <entry colsep="1" rowsep="1">
                             <ol id="ol_vql_k3m_f1c">
                                 <li>filters</li>
                                 <li>images</li>
@@ -70,7 +70,7 @@
                                 <li>common.ditamap</li>
                             </ol>
                         </entry>
-                        <entry>
+                        <entry colsep="1" rowsep="1">
                             <ol id="ol_qxp_s2m_f1c">
                                 <li>filters：存放用于条件发布的过滤文件（.ditaval）</li>
                                 <li>images：存放仅适用当前项目的产品图片和图片Key定义文件，可根据产品组成单元划分子文件夹</li>

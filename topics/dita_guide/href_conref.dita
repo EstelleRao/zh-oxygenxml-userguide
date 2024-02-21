@@ -5,33 +5,34 @@
     <body>
         <p>如果被引用的资源是 DITA map 或 DITA topic，通常使用 @href 属性来指定被引用资源的 URI。URI 包括资源路径和资源名称。</p>
         <p>如果被引用的资源是 DITA element，通常使用 @conref 属性来指定被引用资源的 URI。URI 包括资源所在文件路径、文件名称以及片段标识符。片段标识符是 URI 中以数字符号（#）开头的部分，例如 #topicID/elementID。URI 可以使用相对路径，也可以使用绝对路径。针对同一文档中元素的 URI 引用可以只包含片段标识符。</p>
-        <table id="table_skg_1mg_f1c">
+        <table frame="all" id="table_skg_1mg_f1c">
             <tgroup cols="3">
                 <colspec colname="c1" colnum="1" colwidth="0.8*"/>
                 <colspec colname="c2" colnum="2" colwidth="1.4*"/>
                 <colspec colname="c3" colnum="3" colwidth="0.8*"/>
                 <thead>
                     <row>
-                        <entry>复用内容</entry>
-                        <entry>常用元素</entry>
-                        <entry>常用属性</entry>
+                        <entry colsep="1" rowsep="1">复用内容</entry>
+                        <entry colsep="1" rowsep="1">常用元素</entry>
+                        <entry colsep="1" rowsep="1">常用属性</entry>
                     </row>
                 </thead>
                 <tbody>
                     <row>
-                        <entry>DITA map</entry>
-                        <entry><codeph>&lt;mapref></codeph>、<codeph>&lt;topicref></codeph>或<codeph>&lt;chapter></codeph></entry>
-                        <entry>@href</entry>
+                        <entry colsep="1" rowsep="1">DITA map</entry>
+                        <entry colsep="1" rowsep="1"
+                                ><codeph>&lt;mapref></codeph>、<codeph>&lt;topicref></codeph>或<codeph>&lt;chapter></codeph></entry>
+                        <entry colsep="1" rowsep="1">@href</entry>
                     </row>
                     <row>
-                        <entry>DITA topic</entry>
-                        <entry><codeph>&lt;topicref></codeph></entry>
-                        <entry>@href</entry>
+                        <entry colsep="1" rowsep="1">DITA topic</entry>
+                        <entry colsep="1" rowsep="1"><codeph>&lt;topicref></codeph></entry>
+                        <entry colsep="1" rowsep="1">@href</entry>
                     </row>
                     <row>
-                        <entry>DITA element</entry>
-                        <entry>被引用资源对应的元素</entry>
-                        <entry>@conref</entry>
+                        <entry colsep="1" rowsep="1">DITA element</entry>
+                        <entry colsep="1" rowsep="1">被引用资源对应的元素</entry>
+                        <entry colsep="1" rowsep="1">@conref</entry>
                     </row>
                 </tbody>
             </tgroup>

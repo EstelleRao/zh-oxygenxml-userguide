@@ -10,30 +10,35 @@
                 <colspec colname="c2" colnum="2" colwidth="1*"/>
                 <thead>
                     <row>
-                        <entry>用法</entry>
-                        <entry>示例</entry>
+                        <entry colsep="1" rowsep="1">用法</entry>
+                        <entry colsep="1" rowsep="1">示例</entry>
                     </row>
                 </thead>
                 <tbody>
                     <row>
-                        <entry>引用外部网站</entry>
-                        <entry><codeph>href = "http://www.example.com"</codeph></entry>
+                        <entry colsep="1" rowsep="1">引用外部网站</entry>
+                        <entry colsep="1" rowsep="1"
+                                ><codeph>href = "http://www.example.com"</codeph></entry>
                     </row>
                     <row>
-                        <entry>引用本机上的某个 map</entry>
-                        <entry><codeph>href = "filename.ditamap"</codeph> 或 <codeph>href = "path/filename.ditamap"</codeph><p>需要搭配 @format 属性使用，@format 属性值为 ditamap</p></entry>
+                        <entry colsep="1" rowsep="1">引用本机上的某个 map</entry>
+                        <entry colsep="1" rowsep="1"
+                                ><codeph>href = "filename.ditamap"</codeph> 或 <codeph>href = "path/filename.ditamap"</codeph><p>需要搭配 @format 属性使用，@format 属性值为 ditamap</p></entry>
                     </row>
                     <row>
-                        <entry>引用本机上的某个 topic</entry>
-                        <entry><codeph>href = "filename.dita"</codeph> 或 <codeph>href = "path/filename.dita"</codeph></entry>
+                        <entry colsep="1" rowsep="1">引用本机上的某个 topic</entry>
+                        <entry colsep="1" rowsep="1"
+                                ><codeph>href = "filename.dita"</codeph> 或 <codeph>href = "path/filename.dita"</codeph></entry>
                     </row>
                     <row>
-                        <entry>引用本机某个 topic 中的元素</entry>
-                        <entry><codeph>conref = "filename.dita#topicID/elementID"</codeph> 或 <codeph>conref = "path/filename.dita#topicID/elementID"</codeph></entry>
+                        <entry colsep="1" rowsep="1">引用本机某个 topic 中的元素</entry>
+                        <entry colsep="1" rowsep="1"
+                                ><codeph>conref = "filename.dita#topicID/elementID"</codeph> 或 <codeph>conref = "path/filename.dita#topicID/elementID"</codeph></entry>
                     </row>
                     <row>
-                        <entry>引用本机某个 map 中的元素</entry>
-                        <entry><codeph>conref = "filename.ditamap#elementID"</codeph> 或 <codeph>conref = "path/filename.ditamap#elementID"</codeph><p>需要搭配 @format 属性使用，@format 属性值为 ditamap</p></entry>
+                        <entry colsep="1" rowsep="1">引用本机某个 map 中的元素</entry>
+                        <entry colsep="1" rowsep="1"
+                                ><codeph>conref = "filename.ditamap#elementID"</codeph> 或 <codeph>conref = "path/filename.ditamap#elementID"</codeph><p>需要搭配 @format 属性使用，@format 属性值为 ditamap</p></entry>
                     </row>
                 </tbody>
             </tgroup>

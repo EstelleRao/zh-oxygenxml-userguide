@@ -31,7 +31,7 @@
                 </info>
             </step>
             <step>
-                <cmd>为 <codeph>develop</codeph> 分支命名，命名规范见 <xref keyref="branch_naming_rule"
+                <cmd>为 <codeph>develop</codeph> 分支命名。有关命名规范，请查阅：<xref keyref="branch_naming_rule"
                     />。</cmd>
                 <info>
                     <image placement="break" keyref="gitlab.branch_name" width="450"
@@ -66,7 +66,8 @@
             </substeps>
             </step>
             <step>
-                <cmd>将 <codeph>develop</codeph> 分支设为受保护分支，具体步骤见<xref keyref="protected_branches"/>。</cmd>
+                <cmd>将 <codeph>develop</codeph> 分支设为受保护分支。有关操作，请查阅：<xref keyref="protected_branches"
+                    />。</cmd>
             </step>
         </steps>
     </taskbody>

@@ -10,51 +10,51 @@
                 <colspec colname="c3" colnum="3" colwidth="1.3*"/>
                 <thead>
                     <row>
-                        <entry><b>内容对象</b></entry>
-                        <entry><b>元素样例</b></entry>
-                        <entry><b>操作方法</b></entry>
+                        <entry colsep="1" rowsep="1"><b>内容对象</b></entry>
+                        <entry colsep="1" rowsep="1"><b>元素样例</b></entry>
+                        <entry colsep="1" rowsep="1"><b>操作方法</b></entry>
                     </row>
                 </thead>
                 <tbody>
                     <row>
-                        <entry>文本加粗</entry>
-                        <entry>
+                        <entry colsep="1" rowsep="1">文本加粗</entry>
+                        <entry colsep="1" rowsep="1">
                             <codeblock id="codeblock_wgn_5lf_f1c" outputclass="language-xml">&lt;b>信息架构&lt;/b></codeblock>
                         </entry>
-                        <entry morerows="3"
-                            >方法一：鼠标选中目标文本，按下回车键，在弹出列表浏览并双击相应元素或输入元素开头字符后选择。<p>方法二：Author 模式下， 从工具栏直接选用相关样式。</p></entry>
+                        <entry morerows="3" colsep="1" rowsep="1"
+                                >方法一：鼠标选中目标文本，按下回车键，在弹出列表浏览并双击相应元素或输入元素开头字符后选择。<p>方法二：Author 模式下， 从工具栏直接选用相关样式。</p></entry>
                     </row>
                     <row>
-                        <entry>文本倾斜</entry>
-                        <entry>
+                        <entry colsep="1" rowsep="1">文本倾斜</entry>
+                        <entry colsep="1" rowsep="1">
                             <codeblock id="codeblock_mb5_5lf_f1c" outputclass="language-xml">&lt;i>信息架构&lt;/i></codeblock>
                         </entry>
                     </row>
                     <row>
-                        <entry>文本下划线</entry>
-                        <entry>
+                        <entry colsep="1" rowsep="1">文本下划线</entry>
+                        <entry colsep="1" rowsep="1">
                             <codeblock id="codeblock_kpz_5lf_f1c" outputclass="language-xml">&lt;u>信息架构&lt;/u></codeblock>
                         </entry>
                     </row>
                     <row>
-                        <entry>文件路径</entry>
-                        <entry>
+                        <entry colsep="1" rowsep="1">文件路径</entry>
+                        <entry colsep="1" rowsep="1">
                             <codeblock id="codeblock_bb2_vlf_f1c" outputclass="language-xml">&lt;filepath>/用户/工具/压缩.zip&lt;/filepath></codeblock>
                         </entry>
                     </row>
                     <row>
-                        <entry>界面操作语</entry>
-                        <entry>
+                        <entry colsep="1" rowsep="1">界面操作语</entry>
+                        <entry colsep="1" rowsep="1">
                             <codeblock id="codeblock_khs_wlf_f1c" outputclass="language-xml">&lt;uicontrol>保存&lt;/uicontrol></codeblock>
                         </entry>
-                        <entry>方法一</entry>
+                        <entry colsep="1" rowsep="1">方法一</entry>
                     </row>
                     <row>
-                        <entry>代码片段</entry>
-                        <entry>
+                        <entry colsep="1" rowsep="1">代码片段</entry>
+                        <entry colsep="1" rowsep="1">
                             <codeblock id="codeblock_ghm_xlf_f1c" outputclass="language-xml">&lt;codeph>JAVA&lt;/codeph></codeblock>
                         </entry>
-                        <entry>方法一</entry>
+                        <entry colsep="1" rowsep="1">方法一</entry>
                     </row>
                 </tbody>
             </tgroup>

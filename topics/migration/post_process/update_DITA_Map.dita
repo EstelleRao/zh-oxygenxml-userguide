@@ -4,8 +4,11 @@
     <title>更新DITA Map</title>
     <body>
         <ol id="ol_dlh_mbt_xzb">
-            <li>重命名DITA文件后，需更新DITA map中的DITA topic引用，确保<codeph>&lt;topicref></codeph>元素中的@href属性值或@keyref属性值正确。</li>
-            <li><p>检查DITA topic之间的层级，确保内容结构正确。</p> <image placement="break"
+            <li>重命名 DITA 文件后，更新 DITA map 中的 DITA topic 引用。<ul id="ol_t4m_555_m1c">
+                    <li>如使用 @href 属性引用文件，确保引用的文件路径正确。</li>
+                    <li>如使用 @keyref 属性引用文件，确保引用的 key 正确。</li>
+                </ul></li>
+            <li><p>检查 DITA topic 的层级，确保内容结构正确。</p> <image placement="break"
                 keyref="dita.update_ditamap" width="330" id="image_ezb_fdt_xzb"/></li>
         </ol>
     </body>

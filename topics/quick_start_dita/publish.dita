@@ -9,8 +9,9 @@
         </context>
         <steps id="steps_hlj_jwb_kzb">
             <step>
-                <cmd>在 <uicontrol>DITA Maps Manager</uicontrol> 视图打开并选中 <ph outputclass="blue"
-                        >index.ditamap</ph>。</cmd>
+                <cmd>在 <uicontrol>DITA Maps Manager</uicontrol> 视图打开 <ph outputclass="blue"
+                        >index.ditamap</ph>，确保 <uicontrol>Context</uicontrol> 下拉框选中当前 <ph
+                        outputclass="blue">index.ditamap</ph>，单击根目录。</cmd>
                 <info>
                     <note id="note_t1h_brx_31c" type="tip">
                         <ul id="ul_g4m_brx_31c">

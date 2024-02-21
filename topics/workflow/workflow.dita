@@ -6,11 +6,11 @@
     <conbody>
         <p>熟练掌握以下业务流程，有助于高效完成说明书工作。</p>
         <ol id="ol_hgl_z13_d1c">
-            <li><xref keyref="create_new_repo"/><ol id="ol_ecs_kg3_d1c">
-                <li><xref keyref="protected_branches"/></li>
-                <li><xref keyref="merge_requests"/></li>
+            <li><xref keyref="create_new_repo"/></li>
+            <li><xref keyref="create_remote_branch"/><ol id="ol_lm3_st5_m1c">
+                    <li><xref keyref="protected_branches"/></li>
+                    <li><xref keyref="merge_requests"/></li>
                 </ol></li>
-            <li><xref keyref="create_remote_branch"/></li>
             <li><xref keyref="clone_remote_branch"/></li>
             <li><xref keyref="create_local_branch"/></li>
             <li><xref keyref="develop_local_branch"/><ol id="ol_ers_n1q_31c">

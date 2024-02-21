@@ -5,21 +5,22 @@
     <taskbody>
         <steps id="steps_pss_nbj_f1c">
             <step>
-                <cmd>新建远程仓库（常规业务仓库和业务公共仓库），可选择新建一个空仓库或 fork 现有仓库，见 <xref keyref="repo"/> 和 <xref
-                        keyref="create_new_repo"/>。</cmd>
+                <cmd>新建远程仓库，通常需要创建一个常规业务仓库和一个业务公共仓库。新建仓库时，可选择新建一个空仓库或 fork 现有仓库。有关仓库说明和操作，请查阅：<xref
+                        keyref="repo"/> 和 <xref keyref="create_new_repo"/>。</cmd>
             </step>
             <step>
-                <cmd>新建远程分支，见 <xref keyref="branch"/> 和 <xref keyref="create_remote_branch"/>。</cmd>
+                <cmd>新建远程分支，设置受保护分支和合并请求权限。有关分支说明和操作，请查阅：<xref keyref="branch"/> 和 <xref
+                        keyref="create_remote_branch"/>。</cmd>
             </step>
             <step>
-                <cmd>克隆远程仓库，见 <xref keyref="clone_remote_branch"/>。</cmd>
+                <cmd>克隆远程仓库和分支。有关操作，请查阅：<xref keyref="clone_remote_branch"/>。</cmd>
             </step>
             <step>
-                <cmd>新建本地临时分支，见 <xref keyref="branch"/> 和 <xref keyref="create_local_branch"
-                    />。</cmd>
+                <cmd>新建本地临时分支，用于迁移和提交说明书到受保护分支。有关分支说明和操作，请查阅：<xref keyref="branch"/> 和 <xref
+                        keyref="create_local_branch"/>。</cmd>
             </step>
             <step>
-                <cmd>在本地临时分支上新建或调整仓库目录，见 <xref keyref="new_repo_dir"/>。</cmd>
+                <cmd>开发本地临时分支，新建或调整仓库目录。有关说明，请查阅：<xref keyref="new_repo_dir"/>。</cmd>
             </step>
         </steps>
     </taskbody>

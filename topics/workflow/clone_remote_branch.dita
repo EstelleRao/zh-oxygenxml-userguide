@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
 <task id="yvc_lqg_fzb">
-    <title>克隆远程仓库</title>
+    <title>克隆远程仓库和分支</title>
     <shortdesc>使用 Oxygen XML Author 的 Git 插件克隆远程仓库到本地。</shortdesc>
     <taskbody>
         <steps id="ol_lq3_l2g_fzb">

@@ -3,8 +3,9 @@
 <topic id="dita_map">
     <title>DITA Map</title>
     <body>
-        <p>DITA map用于定义不同topic之间的层级关系，使其形成一个完整的、易于使用、易于理解、易于浏览的信息产品，例如使用手册、安装手册、安全手册、装机手册、再处理说明。</p>
-        <p>DITA map也可用于定义其他重要资源，例如定义topic和图片的key，定义变量，定义条件发布属性和值（@product）。</p>
-        <p>DITA map的文件格式为 <b>.ditamap</b>，常见的输出格式包括PDF手册、HTML网页和在线帮助文档。</p>
+        <p>DITA map 用于定义不同 topic 之间的层级关系，使其形成一个完整的、易于使用的、易于理解的信息产品，例如使用手册、安装手册、安全手册、装机手册、再处理说明。</p>
+        <p>DITA map 也可用于定义其他重要资源，例如定义 topic 和图片的 key，定义变量，定义条件发布属性。</p>
+        <p>DITA map 有两种类型：基础的 DITA map 和 DITA Bookmap。两种类型使用不同的结构和元素。</p>
+        <p>DITA map 的文件格式为 <b>.ditamap</b>，常见的输出格式包括 PDF 手册、HTML 网页和在线帮助文档。</p>
     </body>
 </topic>

@@ -10,22 +10,22 @@
                 <colspec colname="c3" colnum="3" colwidth="1.3*"/>
                 <thead>
                     <row>
-                        <entry>内容对象</entry>
-                        <entry>元素样例</entry>
-                        <entry>操作方法</entry>
+                        <entry colsep="1" rowsep="1">内容对象</entry>
+                        <entry colsep="1" rowsep="1">元素样例</entry>
+                        <entry colsep="1" rowsep="1">操作方法</entry>
                     </row>
                 </thead>
                 <tbody>
                     <row>
-                        <entry>界面连续操作步骤</entry>
-                        <entry>
+                        <entry colsep="1" rowsep="1">界面连续操作步骤</entry>
+                        <entry colsep="1" rowsep="1">
                             <codeblock id="codeblock_clt_4lf_f1c" outputclass="language-xml">&lt;menucascade>
     &lt;uicontrol>文件&lt;/uicontrol>
     &lt;uicontrol>保存&lt;/uicontrol>
     &lt;uicontrol>关闭&lt;/uicontrol>
 &lt;/menucascade></codeblock>
                         </entry>
-                        <entry>
+                        <entry colsep="1" rowsep="1">
                             <ol id="ol_czp_vyx_21c">
                                 <li>在目标位置按下回车键，双击 <b>menucascade</b>元素。</li>
                                 <li>第一项已默认包含 <b>uicontrol</b> 子元素，输入其他项时要通过回车键选择 <b>uicontrol</b> 子元素。 </li>
@@ -33,11 +33,11 @@
                         </entry>
                     </row>
                     <row>
-                        <entry>安全警示</entry>
-                        <entry>
+                        <entry colsep="1" rowsep="1">安全警示</entry>
+                        <entry colsep="1" rowsep="1">
                             <codeblock id="codeblock_cfk_rlf_f1c" outputclass="language-xml">&lt;note type="warning">This is a note.&lt;/note></codeblock>
                         </entry>
-                        <entry>
+                        <entry colsep="1" rowsep="1">
                             <ol id="ol_hdh_1zx_21c">
                                 <li>在目标位置按下回车键，双击 <b>note</b>元素。</li>
                                 <li>在弹出对象的冒号后直接输入文本，或按下回车键双击 <b>ul</b> 子元素后再输入文本。</li>
@@ -46,13 +46,13 @@
                         </entry>
                     </row>
                     <row>
-                        <entry>代码块</entry>
-                        <entry>
+                        <entry colsep="1" rowsep="1">代码块</entry>
+                        <entry colsep="1" rowsep="1">
                             <codeblock id="codeblock_cjq_rlf_f1c" outputclass="language-xml">&lt;codeblock outputclass="language-xml">
 这是正确的示例。
 &lt;/codeblock></codeblock>
                         </entry>
-                        <entry>
+                        <entry colsep="1" rowsep="1">
                             <ol id="ol_ctk_pzx_21c">
                                 <li>在目标位置按下回车键，双击 <b>codeblock</b>元素。</li>
                                 <li>在弹出对象内输入文本。</li>

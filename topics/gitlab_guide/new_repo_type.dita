@@ -3,7 +3,7 @@
 <topic id="zz3_3hh_d1c">
     <title>仓库类型</title>
     <body>
-        <table>
+        <table frame="all">
             <tgroup cols="4">
                 <colspec colname="c3" colnum="1" colwidth="0.7*"/>
                 <colspec colname="newCol3" colnum="2" colwidth="1*"/>
@@ -11,45 +11,45 @@
                 <colspec colname="c2" colnum="4" colwidth="1.6*"/>
                 <thead>
                     <row>
-                        <entry>仓库类型</entry>
-                        <entry>
+                        <entry colsep="1" rowsep="1">仓库类型</entry>
+                        <entry colsep="1" rowsep="1">
                             <p>仓库命名规则</p>
                         </entry>
-                        <entry>资源属性</entry>
-                        <entry>资源定义</entry>
+                        <entry colsep="1" rowsep="1">资源属性</entry>
+                        <entry colsep="1" rowsep="1">资源定义</entry>
                     </row>
                 </thead>
                 <tbody>
                     <row>
-                        <entry>通用公共仓库</entry>
-                        <entry>common</entry>
-                        <entry>通用公共属性</entry>
-                        <entry>
+                        <entry colsep="1" rowsep="1">通用公共仓库</entry>
+                        <entry colsep="1" rowsep="1">common</entry>
+                        <entry colsep="1" rowsep="1">通用公共属性</entry>
+                        <entry colsep="1" rowsep="1">
                             <p>和产品（C1000、S1000等）、项目（K2、K9等）无关的通用资源，区分目标语言，包括图片、主题和组件，如安全符号、文档符号、法律声明等</p>
                         </entry>
                     </row>
                     <row>
-                        <entry>业务公共仓库</entry>
-                        <entry>
+                        <entry colsep="1" rowsep="1">业务公共仓库</entry>
+                        <entry colsep="1" rowsep="1">
                             <p>common_{product}</p>
                             <p>示例1：common_C1000</p>
                             <p>示例2：common_S1000</p>
                         </entry>
-                        <entry>业务公共属性</entry>
-                        <entry>
+                        <entry colsep="1" rowsep="1">业务公共属性</entry>
+                        <entry colsep="1" rowsep="1">
                             <p>从单个产品下多个项目提取的公共资源，区分目标语言，包括图片、主题、组件和变量，如UI界面图、安全提示</p>
                         </entry>
                     </row>
                     <row>
-                        <entry>常规业务仓库</entry>
-                        <entry>
+                        <entry colsep="1" rowsep="1">常规业务仓库</entry>
+                        <entry colsep="1" rowsep="1">
                             <p>{product}</p>
                             <p>{product}_{lang}</p>
                             <p>示例1：C1000</p>
                             <p>示例2：C1000_EN</p>
                         </entry>
-                        <entry>常规业务属性</entry>
-                        <entry>和产品、项目紧密相关的业务资源，不可跨产品、跨项目复用，或无法判断是否能复用</entry>
+                        <entry colsep="1" rowsep="1">常规业务属性</entry>
+                        <entry colsep="1" rowsep="1">和产品、项目紧密相关的业务资源，不可跨产品、跨项目复用，或无法判断是否能复用</entry>
                     </row>
                 </tbody>
             </tgroup>

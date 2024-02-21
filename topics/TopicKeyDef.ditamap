@@ -30,8 +30,7 @@
     <topicref keys="create_DITA_map" href="migration/prepare/create_DITA_map.dita" format="dita"/>
     <topicref keys="create_project" href="migration/prepare/create_project.dita" format="dita"/>
     <topicref keys="migration" href="migration/migration.dita" format="dita"/>
-    <topicref keys="publish" href="migration/post_process/publish.dita" format="dita"
-        keyscope="migration"/>
+    <topicref keys="validate_and_publish" href="migration/post_process/validate_and_publish.dita" format="dita"/>
     <topicref keys="rename" href="migration/post_process/rename.dita" format="dita"/>
     <topicref keys="revise_elements" href="migration/post_process/revise_elements.dita" format="dita"/>
     <topicref keys="revise_images" href="migration/post_process/revise_images.dita" format="dita"/>
@@ -51,13 +50,10 @@
     <topicref keys="create_new_manual" href="workflow/create_new_manual.dita" format="dita"/>
     <topicref keys="create_new_map" href="quick_start_dita/create_new_map.dita" format="dita"/>
     <topicref keys="create_new_topic" href="quick_start_dita/create_new_topic.dita" format="dita"/>
-    <topicref keys="create_project" href="quick_start_dita/manage_dita_project.dita"
-        format="dita"/>
     <topicref keys="dita_map" href="quick_start_dita/dita_map.dita" format="dita"/>
     <topicref keys="dita_project" href="quick_start_dita/dita_project.dita" format="dita"/>
     <topicref keys="dita_topic" href="quick_start_dita/dita_topic.dita" format="dita"/>
-    <topicref keys="publish" href="quick_start_dita/publish.dita" format="dita"
-        keyscope="quick_start_dita"/>
+    <topicref keys="publish" href="quick_start_dita/publish.dita" format="dita"/>
     <topicref keys="quick_start_dita" href="quick_start_dita/quick_start_dita.dita" format="dita"/>
     <topicref keys="update_manual_version" href="workflow/update_manual_version.dita"
         format="dita"/>
@@ -66,6 +62,8 @@
     <topicref keys="quick_start_oxygen" href="quick_start_oxygen/quick_start_oxygen.dita"
         format="dita"/>
     <topicref keys="git" href="quick_start_oxygen/git.dita" format="dita"/>
+    <topicref keys="manage_dita_project" href="quick_start_oxygen/manage_dita_project.dita"
+        format="dita"/>
     <topicref keys="tools" href="quick_start_oxygen/tools.dita" format="dita"/>
     <topicref keys="translation_process" href="translation/translation_process.dita" format="dita"/>
     <topicref keys="output_failed" href="troubleshoot/output_failed.dita" format="dita"/>

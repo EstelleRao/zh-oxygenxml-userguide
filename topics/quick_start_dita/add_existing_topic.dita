@@ -8,23 +8,22 @@
                 <cmd>在 <uicontrol>DITA Maps Manager</uicontrol> 视图选中目标插入位置的前一个文件或后一个文件。</cmd>
             </step>
             <step>
-                <cmd>使用拖动文件或选择文件的方式将DITA Topic插入到当前选中文件的前面或后面，或作为当前选中文件的子文件。</cmd>
+                <cmd>使用拖动文件或选择文件的方式将 DITA Topic 插入到当前选中文件的前面或后面，或作为当前选中文件的子文件。</cmd>
                 <choices id="choices_urt_h4b_kzb">
                     <choice>从本地仓库或项目视图直接拖动文件到当前选中文件的前面、后面作为并列主题，或放进当前选中文件作为子主题。</choice>
-                    <choice>右键单击当前选中文件，选择 <uicontrol>Append Child</uicontrol>、<uicontrol>Insert Before</uicontrol> 或 <uicontrol>Insert After</uicontrol> 选项，选择 <uicontrol>Reference</uicontrol>（插入本地仓库文件）或 <uicontrol>Reference to the currently edited file</uicontrol>（插入编辑器当前打开的文件）插入DITA文件。<image
-                        placement="break"
-                        keyref="oxygen_dita_maps_manager.insert_reference" width="400"
-                        id="image_an5_fqb_kzb"/></choice>
+                    <choice>右键单击当前选中文件，选择 <uicontrol>Append Child</uicontrol>、<uicontrol>Insert Before</uicontrol> 或 <uicontrol>Insert After</uicontrol> 选项，选择 <uicontrol>Reference</uicontrol>（插入本地仓库文件）或 <uicontrol>Reference to the currently edited file</uicontrol>（插入编辑器当前打开的文件）插入 DITA 文件。<image
+                            placement="break" keyref="oxygen_dita_maps_manager.insert_reference"
+                            width="400" id="image_an5_fqb_kzb"/></choice>
                 </choices>
             </step>
             <step importance="optional">
                 <cmd>如有需要，可在 <wintitle>Insert Topic Reference</wintitle> 窗口编辑 <uicontrol>Metadata</uicontrol>、<uicontrol>Profiling</uicontrol>、<uicontrol>Attribute</uicontrol> 等属性，或稍后选中文件，单击右键，点击 <uicontrol>Edit Properties</uicontrol> 编辑属性。</cmd>
             </step>
             <step>
-                <cmd>点击 <uicontrol>Insert and close</uicontrol>，成功添加DITA Topic到DITA Map。</cmd>
+                <cmd>点击 <uicontrol>Insert and close</uicontrol>，成功添加 DITA Topic 到 DITA Map。</cmd>
             </step>
             <step>
-                <cmd>使用 <uicontrol>Ctrl + S</uicontrol> 快捷键保存DITA Map。</cmd>
+                <cmd>使用 <uicontrol>Ctrl + S</uicontrol> 快捷键保存 DITA Map。</cmd>
             </step>
         </steps>
     </taskbody>
