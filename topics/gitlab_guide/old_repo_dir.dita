@@ -11,10 +11,8 @@
                 <thead>
                     <row>
                         <entry colsep="1" rowsep="1">仓库类型</entry>
-                        <entry colsep="1" rowsep="1">
-                            <p>仓库目录</p>
-                        </entry>
-                        <entry colsep="1" rowsep="1">目录下文件</entry>
+                        <entry colsep="1" rowsep="1">仓库目录</entry>
+                        <entry colsep="1" rowsep="1">目录文件</entry>
                     </row>
                 </thead>
                 <tbody>

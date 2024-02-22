@@ -3,15 +3,17 @@
 <topic id="create_project">
     <title>管理DITA项目</title>
     <body>
+        <p>在项目管理视图打开项目管理文件，可以在项目管理视图组织和管理 DITA 项目，方便用户对文件或文件夹进行批量操作。打开主文件支持并添加主文件后，移动或重命名文件或文件夹时可以自动更新主文件范围内的所有引用。</p>
+        <p>使用项目管理视图管理 DITA 项目，请按照如下步骤操作：</p>
         <ol id="ol_flv_2pp_31c">
             <li>
-                <p><b>创建DITA Project</b></p>
+                <p><b>创建 DITA Project</b></p>
                 <ol id="ol_s5m_mpq_31c">
                     <li>
                         <p>在 <uicontrol>Project</uicontrol> 视图的任意位置单击右键，点击 <menucascade>
                                 <uicontrol>New</uicontrol>
                                 <uicontrol>Project</uicontrol>
-                            </menucascade>，创建新的DITA Project。</p>
+                            </menucascade>，创建新的 DITA Project。</p>
                     </li>
                     <li><p>在 <uicontrol>New project</uicontrol> 窗口，选择项目管理文件的模板（优先选择 <b>Default project</b>）、名称和保存位置。</p><image
                             keyref="oxygen_project.new_project" id="image_bx5_xpq_31c" width="350"
@@ -21,13 +23,13 @@
                     </li>
                 </ol>
             </li>
-            <li><p><b>添加DITA文件和其他资源</b></p><p>在根目录选中 <b>.xpr</b> 文件，单击右键，点击 <uicontrol>Add Folder</uicontrol> 添加现有文件夹到项目中，点击 <uicontrol>Add Files</uicontrol> 添加现有文件到项目中。</p><image
+            <li><p><b>添加 DITA 文件和其他资源</b></p><p>在根目录选中 <b>.xpr</b> 文件，单击右键，点击 <uicontrol>Add Folder</uicontrol> 添加现有文件夹到项目中，点击 <uicontrol>Add Files</uicontrol> 添加现有文件到项目中。</p><image
                     keyref="oxygen_project.root_file" width="250"/></li>
             <li><p><b>启用 <uicontrol>Main File support</uicontrol>（主文件支持）</b></p><image
                     keyref="oxygen_project.main_file_support" width="280"/><ol id="ol_m2j_tsq_31c">
                     <li>点击 <image keyref="oxygen_project.settings_button" id="image_vy1_g3l_21c"
                             />，勾选 <uicontrol>Enable Main File support</uicontrol>，启用 <uicontrol>主文件支持</uicontrol> 功能。</li>
-                    <li>选中DITA项目中的所有 index.ditamap 文件，单击右键，点击 <uicontrol>Add to Main Files</uicontrol>，添加 index.ditamap 为主文件。之后将在主文件中执行资源的全局搜索、移动、重命名、校验、发布操作。</li>
+                    <li>选中 DITA 项目中的所有 index.ditamap 文件，单击右键，点击 <uicontrol>Add to Main Files</uicontrol>，添加 index.ditamap 为主文件。之后将在主文件中执行资源的全局搜索、移动、重命名、校验、发布操作。</li>
                 </ol></li>
             <li><b>组织和管理项目资源</b><ol>
                     <li><p>移动资源</p><p>选中单个资源或多个资源（文件或文件夹），拖动资源至目标位置。拖动后，Oxygen XML Author 提示是否需在主文件中更新该资源的所有引用。如需更新，则勾选 <uicontrol>Update references of the moved resource(s)</uicontrol>。</p><image
@@ -35,14 +37,14 @@
                     <li><p>重命名资源</p><p>选中单个资源（文件或文件夹），单击右键，点击 <uicontrol>Rename</uicontrol> 重命名资源。重命名后，Oxygen XML Author 提示是否需在主文件中更新该资源的所有引用。如需更新，则勾选 <uicontrol>Update references of the renamed resource(s)</uicontrol>。</p><image
                             keyref="oxygen_project.rename" width="400"/></li>
                 </ol></li>
-            <li><b>查看和编辑DITA文件</b><ol>
-                    <li>双击DITA Map文件，使用 <uicontrol>DITA Maps Manager</uicontrol> 视图打开DITA Map，直接拖动导航视图中的DITA文件，可调整DITA Map结构。</li>
+            <li><b>查看和编辑 DITA 文件</b><ol>
+                    <li>双击 DITA Map 文件，使用 <uicontrol>DITA Maps Manager</uicontrol> 视图打开 DITA Map，直接拖动导航视图中的 DITA 文件，可调整 DITA Map 结构。</li>
                     <li>双击图片，在 <uicontrol>Image Preview</uicontrol> 视图查看图片。</li>
-                    <li>双击DITA项目中的其他文件，在编辑区域打开和编辑文件。</li>
+                    <li>双击 DITA 项目中的其他文件，在编辑区域打开和编辑文件。</li>
                 </ol></li>
-            <li><b>校验和发布DITA文件</b><ol>
+            <li><b>校验和发布 DITA 文件</b><ol>
                     <li>
-                        <p>校验DITA文件</p>
+                        <p>校验 DITA 文件</p>
                         <p>选中单个资源或多个资源（文件或文件夹），单击右键，点击 <menucascade>
                                 <uicontrol>Validate</uicontrol>
                                 <uicontrol>Validate</uicontrol>
@@ -50,7 +52,7 @@
                                 keyref="oxygen_validate.apply_button"
                             /> 校验图标，批量校验 index.ditamap 文件。</p>
                     </li>
-                    <li><p>发布DITA文件</p>选中单个资源或多个资源（文件或文件夹），单击右键，点击 <menucascade>
+                    <li><p>发布 DITA 文件</p>选中单个资源或多个资源（文件或文件夹），单击右键，点击 <menucascade>
                             <uicontrol>Transform</uicontrol>
                             <uicontrol>Apply Transformation Scenario(s)</uicontrol>
                         </menucascade> 开始发布。也可点击 <uicontrol>Main Files</uicontrol> 右侧的 <image

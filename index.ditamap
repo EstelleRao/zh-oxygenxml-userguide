@@ -2,7 +2,7 @@
 <!DOCTYPE bookmap PUBLIC "-//OASIS//DTD DITA BookMap//EN" "bookmap.dtd">
 <bookmap id="oxygen_xml_author_user_manual" xml:lang="zh-CN">
     <booktitle>
-        <mainbooktitle>Oxygen XML Author使用指南</mainbooktitle>
+        <mainbooktitle>Oxygen XML Author 使用指南</mainbooktitle>
     </booktitle>
     <bookmeta>
         <author>Estelle Rao</author>
@@ -11,7 +11,7 @@
         </critdates>
     </bookmeta>
     <frontmatter>
-        <topicref href="topics/revision.dita" toc="no"/>
+        <topicref href="topics/revision.dita" toc="no" outputclass="before-toc"/>
         <booklists>
             <toc/>
         </booklists>

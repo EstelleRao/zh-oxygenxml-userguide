@@ -12,9 +12,7 @@
                 <thead>
                     <row>
                         <entry colsep="1" rowsep="1">仓库类型</entry>
-                        <entry colsep="1" rowsep="1">
-                            <p>仓库命名规则</p>
-                        </entry>
+                        <entry colsep="1" rowsep="1">仓库命名规则</entry>
                         <entry colsep="1" rowsep="1">资源属性</entry>
                         <entry colsep="1" rowsep="1">资源定义</entry>
                     </row>
