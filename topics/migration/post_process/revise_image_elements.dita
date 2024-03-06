@@ -9,7 +9,7 @@
                 <li><p>生成多余元素：转换过程中从Word文档中的图片自动生成文本生成<codeph>&lt;alt></codeph>元素。</p><image
                         placement="inline" keyref="dita.alt_element" id="image_dmv_vnp_g1c"
                         width="375"/></li>
-                <li><p>错误嵌套：<codeph>&lt;p></codeph>元素嵌套<codeph>&lt;image></codeph>元素。</p><image
+                <li><p>错误嵌套：<codeph>&lt;p></codeph>元素嵌套<codeph>&lt;image></codeph>或<codeph>&lt;fig></codeph>元素。</p><image
                         placement="inline" keyref="dita.replace_p_with_image" width="375"
                         id="image_b31_ynp_g1c"/></li>
                 <li><p>引用失效：大量图片已调整位置并重命名，转换后自动生成的基于相对路径（@href属性）的图片引用失效。</p><image
