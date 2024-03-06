@@ -28,7 +28,7 @@
                             </ol>
                         </entry>
                         <entry colsep="1" rowsep="1">
-                            <p>使用horizontal_common.ditamap链接和引用以下公共资源</p>
+                            <p>使用 horizontal_common.ditamap 链接和引用以下公共资源</p>
                             <ol id="ol_bzq_bhm_f1c">
                                 <li>filters：存放公共过滤文件，暂未用到</li>
                                 <li>images：存放公共图片，包括标签、UI符号、logo、安全符号、文档符号和其他公共图片</li>
@@ -57,9 +57,9 @@
                                 <li>filters：存放用于条件发布的过滤文件（.ditaval）</li>
                                 <li>images：存放产品图片，根据产品组成单元划分子文件夹</li>
                                 <li>topics：存放当前项目的所有.dita文件，可按照不同说明书划分子文件夹</li>
-                                <li><b>index.ditamp</b>：使用DITA bookmap链接和引用所有项目资源和公共资源</li>
-                                <li>common.ditamap：使用DITA map链接和引用项目内的commonFilesDir资源，主要是页面变量</li>
-                                <li>每本说明书的.ditamap：每本说明书的DITA map</li>
+                                <li><b>index.ditamap</b>：使用 DITA bookmap 链接和引用所有项目资源和公共资源</li>
+                                <li>common.ditamap：使用 DITA map 链接和引用项目内的 commonFilesDir 资源，主要是页面变量</li>
+                                <li>每本说明书的.ditamap：每本说明书的 DITA map</li>
                             </ol>
                         </entry>
                     </row>

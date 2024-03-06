@@ -26,14 +26,13 @@
                             </ol>
                         </entry>
                         <entry colsep="1" rowsep="1">
-                            <p>每种语言目录包含如下子目录，使用common.ditamap链接和引用每种语言对应的通用公共资源</p>
+                            <p>每种语言目录包含如下子目录，使用 common.ditamap 链接和引用每种语言对应的通用公共资源</p>
                             <ol id="ol_bjl_f3m_f1c">
                                 <li>images：存放通用公共图片，比如安全符号、文档符号、图标、标签、仅含时间图标的冲洗和刷洗示意图</li>
                                 <li>topics：存放通用公共主题，比如商标、版权、声明、文档符号说明、封底等</li>
                                 <li>components：存放通用公共组件，比如产品名称、通用的安全提示</li>
-                                <li>variables：存放全局变量，预留，暂未使用</li>
                             </ol>
-                            <p>注：metadata用于存放所有说明书的元数据（料号），存放在global目录</p>
+                            <p>注：metadata 用于存放所有说明书的元数据（料号），存放在 global 目录</p>
                         </entry>
                     </row>
                     <row>
@@ -46,12 +45,11 @@
                             </ol>
                         </entry>
                         <entry colsep="1" rowsep="1">
-                            <p>每种语言目录包含如下子目录，使用common.ditamap链接和引用每种语言对应的业务公共资源</p>
+                            <p>每种语言目录包含如下子目录，使用 common.ditamap 链接和引用每种语言对应的业务公共资源</p>
                             <ol id="ol_csy_k3m_f1c">
-                                <li>images：存放业务公共图片，比如只适用于C1000的UI界面图</li>
-                                <li>topics：存放业务公共主题，比如只适用于C1000的再处理步骤</li>
-                                <li>components：存放业务公共组件，比如只适用于C1000的安全提示</li>
-                                <li>variables：存放文本变量，用于变量发布</li>
+                                <li>images：存放业务公共图片，比如只适用于 C1000 的 UI 界面图</li>
+                                <li>topics：存放业务公共主题，比如只适用于 C1000 的再处理步骤</li>
+                                <li>components：存放业务公共组件，比如只适用于 C1000 的安全提示</li>
                             </ol>
                         </entry>
                     </row>
@@ -71,12 +69,12 @@
                         <entry colsep="1" rowsep="1">
                             <ol id="ol_qxp_s2m_f1c">
                                 <li>filters：存放用于条件发布的过滤文件（.ditaval）</li>
-                                <li>images：存放仅适用当前项目的产品图片和图片Key定义文件，可根据产品组成单元划分子文件夹</li>
-                                <li>topics：存放当前项目的所有.dita文件和每本说明书的DITA map，可按照每本说明书划分子文件夹</li>
-                                <li>variables：存放页面变量定义集（pdf_page_variables.ditamap）</li>
-                                <li><b>index.ditamp</b>：使用DITA bookmap链接和引用所有项目资源和公共资源</li>
-                                <li>{product}_{project}_{lang}.ditmap：使用DITA map链接和引用当前项目的资源，如页面变量和图片Key定义文件，例如C1000_K9_en-US.ditamap</li>
-                                <li>common.ditamap：使用DITA map链接和引用公共资源</li>
+                                <li>images：存放仅适用当前项目的产品图片和 Key 定义文件，可按照产品组成单元划分子文件夹（如无图片，可不创建此目录）</li>
+                                <li>topics：存放当前项目的所有.dita文件和每本说明书的 DITA map，可按照每本说明书划分子文件夹</li>
+                                <li>variables：存放页面变量（pdf_page_variables.ditamap）和产品名称变量（prodname_variables.dita），用于可变化复用</li>
+                                <li><b>index.ditamap</b>：使用 DITA bookmap 链接和引用所有项目资源和公共资源</li>
+                                <li>{product}_{project}_{lang}.ditamap：使用 DITA map 链接和引用当前项目的资源，如页面变量和图片 Key 定义文件，例如 C1000_K9_en-US.ditamap</li>
+                                <li>common.ditamap：使用 DITA map 链接和引用公共资源</li>
                             </ol>
                         </entry>
                     </row>

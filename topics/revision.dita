@@ -114,6 +114,17 @@
                             </ol>
                         </entry>
                     </row>
+                    <row>
+                        <entry colsep="1" rowsep="1">2024年3月6日</entry>
+                        <entry colsep="1" rowsep="1">饶雅惠</entry>
+                        <entry colsep="1" rowsep="1">
+                            <ol id="ol_byr_hfr_q1c">
+                                <li>仓库目录：从业务公共仓库移除文本变量到常规业务仓库，更名为“产品名称变量”，避免因过滤器未排除所有料号导致错误发布</li>
+                                <li>Commit 规范：新增或调整【Source】【Scope】两个字段的值</li>
+                                <li>名词解释：修改变量相关解释</li>
+                            </ol>
+                        </entry>
+                    </row>
                 </tbody>
             </tgroup>
         </table>
