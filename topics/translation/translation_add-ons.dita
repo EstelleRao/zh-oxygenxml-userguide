@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="translation_add_ons">
+    <title>翻译插件</title>
+    <body>
+        <ul id="ul_j2j_y4d_v1c">
+            <li><b>Fluenta DITA Translation 插件</b>：当语言服务供应商（LSP）无法处理 DITA 源文件时，可以使用 Fluenta 插件生成 DITA 源文件对应的 XLIFF 文件，发送给 LSP 翻译。</li>
+            <li><b>DITA Translation Package Builder 插件</b>：用于创建时间戳，识别积累变更涉及的 DITA 文件，打包 DITA 源文件为 ZIP 翻译包。</li>
+            <li><b>Translator Helper 插件</b>：用于调用 Google Translate 或 DeepL Translator 机翻引擎的接口。安装插件后，可以从 <menucascade>
+                    <uicontrol>Windows</uicontrol>
+                    <uicontrol>Show View</uicontrol>
+                </menucascade> 菜单中打开 <uicontrol>Translator Helper</uicontrol> 视图，方便并排显示未翻译的内容与正在编辑/翻译的内容。</li>
+        </ul>
+    </body>
+</topic>

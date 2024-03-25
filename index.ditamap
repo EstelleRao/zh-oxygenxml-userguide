@@ -144,7 +144,17 @@
             <topicref href="topics/migration/post_process/commit_new_manuals.dita"/>
         </topichead>
     </chapter>
-    <chapter keyref="translation_process"/>
+    <chapter keyref="translation_process">
+        <topicref href="topics/translation/translation_add-ons.dita"/>
+        <topicref href="topics/translation/first_translation.dita">
+            <topicref href="topics/translation/first_translate_dita_with_trados.dita"/>
+            <topicref href="topics/translation/first_translate_xliff_with_trados.dita"/>
+        </topicref>
+        <topicref href="topics/translation/update_translation.dita">
+            <topicref href="topics/translation/update_translation_with_trados.dita"/>
+            <topicref href="topics/translation/update_translation_with_AI.dita"/>
+        </topicref>
+    </chapter>
     <chapter keyref="dita_guide">
         <topicref keyref="reuse">
             <topicref keyref="reuse_content"/>

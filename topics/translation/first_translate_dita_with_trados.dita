@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="first_translate_dita_with_trados">
+    <title>方法 1：使用 Trados 翻译 DITA 文件</title>
+    <body>
+        <p>对于新项目，首次翻译时可以直接从源语言仓库中导入包含 DITA 源文件的文件夹到 Trados，匹配记忆库后开始翻译。翻译后，直接复制整个文件夹到目标语言仓库。</p>
+        <p>为便于团队分工，保证文件处理效率，建议每次翻译时仅导入包含单本说明书 DITA 文件的子文件夹到 Trados，而不是导入包含整个项目所有 DITA 文件的 topics 文件夹。<ol
+                id="ol_pq5_kdf_v1c">
+                <li>导入包含 DITA 源文件的文件夹到 Trados，进行文件预处理。<ul id="ol_qrw_qdf_v1c">
+                        <li>如果在新建的 Trados 翻译项目中添加源文件文件夹，Trados 会自动对文件夹中的 DITA 文件进行预处理，比如转换为可翻译的 XLIFF 格式，匹配记忆库和术语库。</li>
+                        <li>如果在既有的 Trados 翻译项目中添加源文件文件夹，添加文件夹后需要手动执行文件预处理。<ol id="ol_zd5_rdf_v1c">
+                                <li>选中所有文件，单击右键，点击 <menucascade>
+                                        <uicontrol>Batch Tasks</uicontrol>
+                                        <uicontrol>Prepare</uicontrol>
+                                    </menucascade>，进行文件预处理。</li>
+                                <li>完成预处理后，在 <uicontrol>Files</uicontrol> 视图切换语言为目标语言。</li>
+                            </ol></li>
+                    </ul></li>
+                <li>完成预处理后，开始翻译，可手动复制原文到 DeepL 或 ChatGPT 进行翻译。</li>
+                <li>完成翻译后，导出译文为原格式（.dita），导出译文后会保留原始的文件夹结构。</li>
+                <li>复制包含所有译文文件的文件夹到目标语言仓库，完成首次翻译。</li>
+            </ol></p>
+    </body>
+</topic>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="update_translation_with_AI">
+    <title>方法 2：使用机翻引擎翻译 DITA 文件</title>
+    <body>
+        <p>在 <uicontrol>Author</uicontrol> 模式下打开 DITA 源文件，从 Oxygen XML Author 调用 Google Translate 或 DeepL Translator，使用机翻引擎直接翻译 DITA 源文件中的内容为目标语言。</p>
+        <p>
+            <ol id="ol_pq5_kdf_v1c">
+                <li>安装 DITA Translation Package Builder 插件和 Translator Helper 插件。</li>
+                <li>在 <uicontrol>DITA Maps Manager</uicontrol> 视图打开 DITA Map，在 DITA Map 的任意位置单击右键，选择 <menucascade>
+                        <uicontrol>Translation Package Builder</uicontrol>
+                        <uicontrol>Generate Milestone</uicontrol>
+                    </menucascade>，创建时间戳。<ul id="ul_pgw_mgf_v1c">
+                        <li>如果打开的是 index.ditamap，则在源语言仓库生成一个 index_translation_milestone.xml 文件，为 index.ditamap 引用的所有文件创建时间戳。</li>
+                        <li>如果打开的是单本说明书对应的 DITA Map，则在源语言仓库生成一个 {DITA_map_name}_translation_milestone.xml 文件，比如 ASD_user_manual_translation_milestone.xml，为该 DITA Map 引用的所有文件创建时间戳。</li>
+                    </ul><note id="note_f3f_4gf_v1c" type="attention">
+                        <ul id="ul_vpk_4gf_v1c">
+                            <li>
+                                <p>{DITA_map_name}_translation_milestone.xml 文件需始终保留在源语言仓库中，如果时间戳文件被删除，则无法对比某个时间点与当前时间之间的变更。安装插件后，建议立即创建一个时间戳，并将时间戳文件提交到远程仓库。</p>
+                            </li>
+                        </ul>
+                    </note></li>
+                <li>启动翻译任务前，在 DITA Map 的任意位置单击右键，选择 <menucascade>
+                        <uicontrol>Translation Package Builder</uicontrol>
+                        <uicontrol>Create Modified Files Package</uicontrol>
+                    </menucascade>，识别自上次时间戳之后变更的所有文件，并将其打包为 ZIP 翻译包。</li>
+                <li>重新创建一个时间戳，下次打包时只会打包涉及新变更的文件。</li>
+                <li>在项目仓库之外创建一个 translation 文件夹，移动 ZIP 翻译包到该文件夹，解压后逐个打开 DITA 源文件，开始翻译。<ol
+                        id="ol_ij5_tgf_v1c">
+                        <li>在 <uicontrol>Author</uicontrol> 模式下选中需要翻译的内容，也可以选中整个文档的内容。</li>
+                        <li>单击右键，选择 <uicontrol>Translate</uicontrol>，选择翻译引擎和目标语言，跳转到翻译引擎网页。</li>
+                        <li>从网页复制译文，可使用翻译引擎提供的快捷复制按钮。</li>
+                        <li>返回 Oxygen XML Author，使用译文替换原文。<ul id="ul_z1m_5gf_v1c">
+                                <li>如果选择的原文为 DITA 源文件的标题或单个段落，复制译文后需手动替换原文。</li>
+                                <li>如果选择的原文为 DITA 源文件中的其他内容，选择 <uicontrol>Translate</uicontrol> 执行翻译后，Oxygen 通常会显示一个对话框，复制译文后，点击对话框中的 <uicontrol>Replace</uicontrol> 按钮，可直接替换选择的原文。</li>
+                            </ul></li>
+                    </ol></li>
+                <li>完成翻译后，复制包含译文的整个文件夹到目标语言仓库，替换旧文件。</li>
+                <li>提交新的时间戳文件到源文件的远程仓库。</li>
+            </ol>
+        </p>
+    </body>
+</topic>

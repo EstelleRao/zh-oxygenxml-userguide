@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="first_translate_xliff_with_trados">
+    <title>方法 2：使用 Trados 翻译 XLIFF 文件</title>
+    <body>
+        <p>对于新项目，首次翻译时可以基于 index.ditamap 或单本说明书的 DITA Map 生成对应的 XLIFF 文件，导入 XLIFF 文件到 Trados，匹配记忆库后开始翻译。</p>
+        <p>为便于团队分工，保证文件处理效率，建议基于单本说明书的 DITA Map 分次导出对应的 XLIFF 文件，而不是一次性导出整个项目的 XLIFF 文件。</p>
+        <p>
+            <ol id="ol_pq5_kdf_v1c">
+                <li>安装 Fluenta DITA Translation 插件。</li>
+                <li>为需要翻译的 DITA Map 创建一个 Fluenta 项目。<ol id="ol_apf_q2f_v1c">
+                        <li>在 <uicontrol>DITA Maps Manager</uicontrol> 视图打开单本说明书的 DITA Map（源语言）。</li>
+                        <li>选中根目录，单击右键，选择 <menucascade>
+                                <uicontrol>Fluenta</uicontrol>
+                                <uicontrol>Create project</uicontrol>
+                            </menucascade>。<image placement="break"
+                                keyref="oxygen_translation.create_fluenta_project" width="450"
+                                id="image_bvq_n3f_v1c"/></li>
+                        <li>填写项目名称、源语言和目标语言。</li>
+                        <li>点击 <uicontrol>Create project</uicontrol> 完成项目创建。</li>
+                    </ol><note id="note_dgl_z2f_v1c" type="attention">
+                        <ul id="ul_zzp_z2f_v1c">
+                            <li>
+                                <p>创建 Fluenta 项目时会自动创建一个与项目同名的翻译记忆库。一个 DITA Map 只能创建一个 Fluenta 项目，创建一次即可。创建后，可编辑更改某些项目设置。</p>
+                            </li>
+                        </ul>
+                    </note></li>
+                <li>源文件基本定稿后，基于源文件生成一个完整的 XLIFF 文件。<ol id="ol_qkz_r2f_v1c">
+                        <li>在 <uicontrol>DITA Maps Manager</uicontrol> 视图打开单本说明书的 DITA Map（源语言）。</li>
+                        <li>选中根目录，单击右键，选择 <menucascade>
+                                <uicontrol>Fluenta</uicontrol>
+                                <uicontrol>Generate XLIFF</uicontrol>
+                            </menucascade>。<image placement="break"
+                                keyref="oxygen_translation.generate_xliff" width="420"
+                                id="image_zjl_q3f_v1c"/></li>
+                        <li>填写 XLIFF 文件的保存位置和目标语言。</li>
+                        <li>勾选 <uicontrol>Use translation memory</uicontrol> 选项将使用与项目相关联的翻译记忆库，以获取尚未翻译的片段的翻译。勾选 <uicontrol>Reuse ICE matches</uicontrol> 选项将比较当前内容与过去翻译的内容，并复用现有翻译。</li>
+                        <li>点击 <uicontrol>Generate</uicontrol> 生成 XLIFF 文件。</li>
+                    </ol></li>
+                <li>创建一个新的 Trados 翻译项目，导入 XLIFF 文件进行翻译，翻译后导出 XLIFF 文件。</li>
+                <li>在 <uicontrol>DITA Maps Manager</uicontrol> 视图导入翻译后的 XLIFF 文件，自动生成目标语言的 DITA Map 和 DITA Topic 文件。<ol
+                        id="ol_nd3_t2f_v1c">
+                        <li>在 <uicontrol>DITA Maps Manager</uicontrol> 视图打开单本说明书的 DITA Map（源语言）。</li>
+                        <li>选中根目录，单击右键，选择 <menucascade>
+                                <uicontrol>Fluenta</uicontrol>
+                                <uicontrol>Import XLIFF</uicontrol>
+                            </menucascade>。<image placement="break"
+                                keyref="oxygen_translation.import_xliff" width="380"
+                                id="image_e1c_t3f_v1c"/></li>
+                        <li>选择翻译后的 XLIFF 文件，填写自动生成的 DITA 文件（目标语言）的保存位置。</li>
+                        <li>勾选 <uicontrol>Accept unapproved translations</uicontrol> 选项将使用在导入的 XLIFF 文件中未标记为批准的翻译。勾选 <uicontrol>Update "{MemoryName}" translation memory </uicontrol> 选项将把导入的翻译存储在项目翻译记忆中。</li>
+                        <li>点击 <uicontrol>Import</uicontrol>，自动生成目标语言的 DITA Map 和 DITA Topic 文件。</li>
+                    </ol></li>
+                <li>复制自动生成的 DITA Map 和 DITA Topic 文件到目标语言仓库，完成首次翻译。</li>
+            </ol>
+        </p>
+    </body>
+</topic>
