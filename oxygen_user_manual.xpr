@@ -99,26 +99,6 @@
                         <scenarioAssociation-array>
                             <scenarioAssociation>
                                 <field name="url">
-                                    <String>topics/gitlab_guide/old_repo_type.dita</String>
-                                </field>
-                                <field name="scenarioIds">
-                                    <list>
-                                        <String>pdf-zh-cn-knst-oxygen-ifu</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioTypes">
-                                    <list>
-                                        <String>DITAMAP</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioStorageLocations">
-                                    <list>
-                                        <Byte>2</Byte>
-                                    </list>
-                                </field>
-                            </scenarioAssociation>
-                            <scenarioAssociation>
-                                <field name="url">
                                     <String>index.ditamap</String>
                                 </field>
                                 <field name="scenarioIds">
@@ -139,7 +119,27 @@
                             </scenarioAssociation>
                             <scenarioAssociation>
                                 <field name="url">
-                                    <String>topics/revision.dita</String>
+                                    <String>topics/glossary/glossary.dita</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>pdf-zh-cn-knst-oxygen-ifu</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>DITAMAP</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioStorageLocations">
+                                    <list>
+                                        <Byte>2</Byte>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>topics/gitlab_guide/old_repo_type.dita</String>
                                 </field>
                                 <field name="scenarioIds">
                                     <list>
@@ -220,26 +220,6 @@
                             <scenarioAssociation>
                                 <field name="url">
                                     <String>topics/dita_guide/complete_reuse.dita</String>
-                                </field>
-                                <field name="scenarioIds">
-                                    <list>
-                                        <String>pdf-zh-cn-knst-oxygen-ifu</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioTypes">
-                                    <list>
-                                        <String>DITAMAP</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioStorageLocations">
-                                    <list>
-                                        <Byte>2</Byte>
-                                    </list>
-                                </field>
-                            </scenarioAssociation>
-                            <scenarioAssociation>
-                                <field name="url">
-                                    <String>topics/glossary/glossary.dita</String>
                                 </field>
                                 <field name="scenarioIds">
                                     <list>
@@ -400,26 +380,6 @@
                             <scenarioAssociation>
                                 <field name="url">
                                     <String>topics/dita_guide/reuse_content.dita</String>
-                                </field>
-                                <field name="scenarioIds">
-                                    <list>
-                                        <String>pdf-zh-cn-knst-oxygen-ifu</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioTypes">
-                                    <list>
-                                        <String>DITAMAP</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioStorageLocations">
-                                    <list>
-                                        <Byte>2</Byte>
-                                    </list>
-                                </field>
-                            </scenarioAssociation>
-                            <scenarioAssociation>
-                                <field name="url">
-                                    <String>topics/migration/post_process/revise_image_elements.dita</String>
                                 </field>
                                 <field name="scenarioIds">
                                     <list>

@@ -52,18 +52,19 @@ href="../resources/FlowersTreatmentManual.pdf" format="pdf"/>&lt;/p></codeblock>
 href="care.dita#care/table_1"/>&lt;/p></codeblock>
                         </entry>
                         <entry colsep="1" rowsep="1">方法一：<ol>
-                                <li id="xref-other-topic-table"
-                                        >在包含表格的 topic 中全选表格，单击鼠标右键，选择 <uicontrol>Generate IDs（生成ID）</uicontrol>，使用 <uicontrol>Ctrl+S</uicontrol> 快捷键保存。</li>
-                                <li>在待插入表格 topic 的相关位置，从工具栏选择 <menucascade>
-                                        <uicontrol>Link</uicontrol>
-                                        <uicontrol>Cross Reference</uicontrol>
-                                    </menucascade>。</li>
+                            <li id="xref-other-topic-table"
+                                >在包含表格的 topic 中全选表格，单击鼠标右键，选择 <uicontrol>Generate IDs（生成ID）</uicontrol>，使用 <uicontrol>Ctrl+S</uicontrol> 快捷键保存。</li>
+                            <li>在待插入表格 topic 的相关位置，从工具栏选择 <menucascade>
+                                <uicontrol>Link</uicontrol>
+                                <uicontrol>Cross Reference</uicontrol>
+                                </menucascade>。</li>
+                            <li>选择包含表格的 topic，选择表格 ID，点击 <uicontrol>Insert</uicontrol> 插入表格。</li>
                             </ol>方法二：<ol id="ol_zrr_lkz_21c">
-                                <li>同方法一的步骤<xref href="#./xref-other-topic-table"/>。</li>
-                                <li>在包含表格的 topic 中复制表格，粘贴时单击鼠标右键选择 <menucascade>
-                                        <uicontrol>Paste special（特殊粘贴）</uicontrol>
-                                        <uicontrol>Paste as link（粘贴为链接）</uicontrol>
-                                    </menucascade>。</li>
+                            <li>同方法一的步骤<xref href="#./xref-other-topic-table"/>。</li>
+                            <li>在包含表格的 topic 中复制表格，粘贴时单击鼠标右键选择 <menucascade>
+                                <uicontrol>Paste special（特殊粘贴）</uicontrol>
+                                <uicontrol>Paste as link（粘贴为链接）</uicontrol>
+                                </menucascade>。</li>
                             </ol></entry>
                     </row>
                     <row>

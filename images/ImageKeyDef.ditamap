@@ -212,6 +212,12 @@
         format="png"/>
     <keydef keys="oxygen_transform.edit_template" href="oxygen/oxygen_transform.edit_template.png"
         format="png"/>
+    <keydef keys="oxygen_translation.create_fluenta_project" href="oxygen/oxygen_translation.create_fluenta_project.png"
+        format="png"/>
+    <keydef keys="oxygen_translation.generate_xliff" href="oxygen/oxygen_translation.generate_xliff.png"
+        format="png"/>
+    <keydef keys="oxygen_translation.import_xliff" href="oxygen/oxygen_translation.import_xliff.png"
+        format="png"/>
     <keydef keys="oxygen_validate.apply_button" href="oxygen/oxygen_validate.apply_button.png"
         format="png"/>
     <keydef keys="oxygen_validate.configure_dropdown"
