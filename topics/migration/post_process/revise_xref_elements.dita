@@ -3,40 +3,20 @@
 <topic id="revise_xref_elements">
     <title>纠正 <codeph>&lt;xref></codeph> 元素和属性</title>
     <body>
-        <p>引用同一本说明书中的其他topic时，使用 <codeph>&lt;xref></codeph> 元素进行交叉引用，发布后显示为“<ph outputclass="blue"
-            >第+页码+页+标题文字</ph>”，例如“<ph outputclass="blue">第 166 页 系统故障排除</ph>”。</p>
-        <p>引用同一本说明书中其他位置的图片或表格时，使用 <codeph>&lt;xref></codeph> 元素和@outputclass属性进行交叉引用，发布后显示为“<ph outputclass="blue">图/表+编号</ph>”，例如“<ph outputclass="blue">图 9-4</ph>”。</p>
-        <p>引用其他说明书时，使用 <codeph>&lt;ph></codeph> 元素和@outputclass属性，发布后显示为“说明书名称”，例如“<ph
-            outputclass="blue">C1000 器械和附件说明书</ph>”。</p>
-        <section id="section_hd5_dsw_g1c">
-            <title>交叉引用其他Topic</title>
-            <p>引用同一本说明书中的其他topic，请按照如下步骤操作。<ol id="ol_e2b_45d_h1c">
-                <li><p>在待插入交叉引用的位置插入 <codeph>&lt;xref></codeph> 元素，选择需要引用的topic。</p><image
-                            keyref="dita.xref_topic_xml"/></li>
-                <li><p>发布PDF，确保发布后引用内容带页码。</p><image keyref="dita.xref_topic_output" width="300"
-                        /></li>
-                </ol></p>
-        </section>
-        <section id="section_cs1_h5d_h1c">
-            <title>交叉引用图或表</title>
-            <p>引用同一本说明书中其他位置的图片或表格，请按照如下步骤操作。<ol id="ol_bfx_2ty_g1c">
-                <li>在待插入交叉引用的位置插入 <codeph>&lt;xref></codeph> 元素，选择需要引用的图片或表格。</li>
-                <li><p>在 <codeph>&lt;xref></codeph> 元素中添加@outputclass属性，设置 <codeph>outputclass="nopage-xref"</codeph>。</p><image
-                            keyref="dita.xref_fig_xml"/></li>
-                <li>在转换场景中，设置参数 <codeph>args.figurelink.style = NUMBER</codeph> 和 <codeph>args.tablelink.style = NUMBER</codeph>。</li>
-                <li><p>发布PDF，确保发布后引用内容不带页码。</p><image keyref="dita.xref_fig_output" width="600"
-                        /></li>
-                </ol></p>
-        </section>
-        <section id="section_ogg_fsw_g1c">
-            <title>引用其他说明书</title>
-            <p>引用其他说明书时，请按照如下步骤操作。<ol id="ol_utn_4td_h1c">
-                <li>在待插入引用的位置插入 <codeph>&lt;ph></codeph> 元素，输入待引用说明书的名称。</li>
-                <li><p>在 <codeph>&lt;ph></codeph> 元素中添加@outputclass属性，设置 <codeph>outputclass="blue"</codeph>。</p><image
-                            keyref="dita.xref_fig_xml"/></li>
-                <li><p>发布PDF，确保发布后引用内容显示为<ph outputclass="blue">蓝色</ph>。</p><image
-                            keyref="dita.xref_map_output" width="560"/></li>
-                </ol></p>
-        </section>
+        <p>常见的交叉引用包括对 DITA 主题的引用、对同一主题或其他主题中图片或表格的引用，以及对其他说明书名称的引用。请检查引文格式，确保引文正确显示。</p>
+        <ul id="ul_k35_w21_wbc">
+            <li>交叉引用 DITA 主题时，使用 <codeph>&lt;xref></codeph> 元素交叉引用，输出 PDF 后显示为“<ph
+                    outputclass="blue">第 + 页码 + 页 + 标题文字</ph>”，例如“<ph outputclass="blue"
+                    >第 166 页 系统故障排除</ph>”。</li>
+        </ul>
+        <ul id="ul_q5w_w21_wbc">
+            <li>交叉引用图片或表格时， 需在 <codeph>&lt;xref></codeph> 元素中添加 <codeph>outputclass="nopage-xref"</codeph>，并在发布场景中设置发布参数 <codeph>args.figurelink.style = NUMBER</codeph> 和 <codeph>args.tablelink.style = NUMBER</codeph>，从而确保引文不显示页码和图表标题。输出 PDF 后，图表交叉引用显示为“<ph
+                    outputclass="blue">图/表 + 编号</ph>”，例如“<ph outputclass="blue">图 9-4</ph>”。</li>
+        </ul>
+        <ul id="ul_cg1_x21_wbc">
+            <li>引用说明书名称时，使用 <codeph>&lt;ph></codeph> 元素引用，并在 <codeph>&lt;ph></codeph> 元素中添加 <codeph>outputclass="blue"</codeph>，突出显示引文。输出 PDF 后，引文显示为 <ph
+                    outputclass="blue">蓝色</ph>，例如“<ph outputclass="blue">C1000 器械和附件说明书</ph>”。</li>
+        </ul>
+        <p>有关创建交叉引用的详细操作，请查阅：<xref href="../../dita_guide/linking_type.dita"/>。</p>
     </body>
 </topic>

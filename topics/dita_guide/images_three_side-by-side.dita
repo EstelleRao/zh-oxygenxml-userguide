@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="three_figures_side_by_side">
+    <title>三图并排</title>
+    <body>
+    <p>因使用场景和原图尺寸差异，需要使用不同的 DITA 元素和属性实现三图并排效果。以下展示不同情况下的 DITA 示例。</p>
+    <ol id="ol_l5d_h2z_lbc">
+      <li>
+        <p>三张图片并排时，并排图片共用一个标题，且尺寸相同。</p>
+        <codeblock id="codeblock_a25_f5z_lbc">&lt;fig>
+  &lt;title>安装工具离合扣盖&lt;/title>
+  &lt;div outputclass="inline three-column">
+    &lt;image placement="inline" href="../images/SUD_ASD/SUD_ASD.attach_TCC_step1.jpg"/>
+    &lt;image placement="inline" href="../images/SUD_ASD/SUD_ASD.attach_TCC_step2.jpg"/>
+    &lt;image placement="inline" href="../images/SUD_ASD/SUD_ASD.attach_TCC_step3.jpg"/>
+  &lt;/div>        
+&lt;/fig></codeblock>
+        <p>如果并排图片间距过大，可修改图片元素和属性以调整间距。</p>
+        <codeblock id="codeblock_h1b_gvx_lbc">&lt;fig>
+  &lt;title>安装工具离合扣盖&lt;/title>
+  &lt;div>
+    &lt;image placement="inline" width="180" href="../images/SUD_ASD/SUD_ASD.attach_TCC_step1.jpg"/>
+    &lt;image placement="inline" width="180" href="../images/SUD_ASD/SUD_ASD.attach_TCC_step2.jpg"/>
+    &lt;image placement="inline" width="180" href="../images/SUD_ASD/SUD_ASD.attach_TCC_step3.jpg"/>
+  &lt;/div>        
+&lt;/fig></codeblock>
+      </li>
+      <li>
+        <p>三张图片并排时，并排图片共用一个标题，但尺寸不同。</p>
+        <p>在此情况下，建议修改原图尺寸，或在 DITA 文件中设置相同的高度或宽度，确保并排图片上下对齐且间距合适。</p>
+        <codeblock id="codeblock_bdk_cwx_lbc">&lt;fig>
+  &lt;title>安装成功后对齐的圆盘&lt;/title>
+  &lt;div>
+    &lt;image placement="inline" height="150" href="../images/SUD_ASD/SUD_ASD.discs_aligned_side_view.png"/>
+    &lt;image placement="inline" height="150" href="../images/SUD_ASD/SUD_ASD.discs_aligned_with_labels.jpg"/>
+    &lt;image placement="inline" height="150" href="../images/SUD_ASD/SUD_ASD.discs_aligned_front_view.png"/>
+  &lt;/div>
+&lt;/fig></codeblock>
+        <codeblock id="codeblock_hfx_1wx_lbc">&lt;fig>
+  &lt;title>安装单极弯剪绝缘套&lt;/title>
+  &lt;div>
+    &lt;image placement="inline" width="100" keyref="SUD_global.SUD_STC1.attach_STC_step1"/>
+    &lt;image placement="inline" width="100" keyref="SUD_global.SUD_STC1.attach_STC_step2"/>
+    &lt;image placement="inline" width="100" keyref="SUD_global.SUD_STC1.attach_STC_step3"/>
+  &lt;/div>
+&lt;/fig></codeblock>
+        <codeblock id="codeblock_atn_pvx_lbc">&lt;fig>
+  &lt;title>展开操作臂无菌围帘&lt;/title>
+  &lt;div>
+    &lt;image placement="inline" width="150" href="../images/SUD_ASD/SUD_ASD.unfold_ASD_step1.jpg"/>
+    &lt;image placement="inline" width="150" href="../images/SUD_ASD/SUD_ASD.unfold_ASD_step2.jpg"/>  
+    &lt;image placement="inline" width="150" href="../images/SUD_ASD/SUD_ASD.unfold_ASD_step3.jpg"/>
+  &lt;/div>
+  &lt;div>
+    &lt;image placement="inline" width="150" href="../images/SUD_ASD/SUD_ASD.unfold_ASD_step4.jpg"/>    
+    &lt;image placement="inline" width="150" href="../images/SUD_ASD/SUD_ASD.unfold_ASD_step5.jpg"/>
+  &lt;/div>
+&lt;/fig></codeblock>
+      </li>
+      <li>
+        <p>三张图片并排时，并排图片各带一个小标题，但尺寸相同。</p>
+        <codeblock id="codeblock_mdw_1vx_lbc">&lt;fig>
+  &lt;title>操作臂无菌围帘组成部分&lt;/title>
+  &lt;div outputclass="inline three-column">
+    &lt;div>&lt;image placement="inline" href="../images/SUD_ASD/SUD_ASD.tool_sterile_adapter.jpg"/>&lt;p>工具无菌适配器&lt;/p>&lt;/div>
+    &lt;div>&lt;image placement="inline" href="../images/SUD_ASD/SUD_ASD.cannula_sterile_adapter.jpg"/>&lt;p>套管无菌适配器&lt;/p>&lt;/div>
+    &lt;div>&lt;image placement="inline" href="../images/SUD_ASD/SUD_ASD.tool_clutch_cover.jpg"/>&lt;p>工具离合扣盖&lt;/p>&lt;/div>
+  &lt;/div>
+&lt;/fig></codeblock>
+      </li>
+    </ol>
+    </body>
+</topic>

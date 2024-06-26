@@ -161,7 +161,7 @@ product="8003-000030-1-0001 8003-000031-1-0001 8003-000032-1-0001">
                             <entry colsep="1" rowsep="1">
                                 <ol id="ol_bwv_pcl_j1c">
                                     <li>
-                                        <p> 在公共名称定义集（<b>product_names.dita</b>）中使用 <codeph>&lt;ph></codeph> 元素引入产品名称，使用 @id 属性定义产品名称的别名。</p>
+                                        <p>在公共名称定义集（<b>product_names.dita</b>）中使用 <codeph>&lt;ph></codeph> 元素引入产品名称，使用 @id 属性定义产品名称的别名。</p>
                                         <codeblock id="codeblock_wk3_xhh_f1c" outputclass="language-xml">&lt;ph id="prodname_C1000_new">内窥镜手术系统&lt;/ph></codeblock>
                                     </li>
                                     <li>

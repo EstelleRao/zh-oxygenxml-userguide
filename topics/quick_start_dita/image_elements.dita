@@ -3,27 +3,29 @@
 <topic id="image_elements">
     <title>图片元素</title>
     <body>
-        <table frame="all" id="table_sjm_xnx_21c">
+        <table>
             <tgroup cols="3">
                 <colspec colname="c1" colnum="1" colwidth="0.6*"/>
                 <colspec colname="c2" colnum="2" colwidth="1*"/>
                 <colspec colname="c3" colnum="3" colwidth="1.4*"/>
                 <thead>
                     <row>
-                        <entry colsep="1" rowsep="1">内容对象</entry>
-                        <entry colsep="1" rowsep="1">元素样例</entry>
-                        <entry colsep="1" rowsep="1">操作方法</entry>
+                        <entry>内容对象</entry>
+                        <entry>元素样例</entry>
+                        <entry>操作方法</entry>
                     </row>
                 </thead>
                 <tbody>
                     <row>
-                        <entry colsep="1" rowsep="1">不带标题的图片</entry>
-                        <entry colsep="1" rowsep="1">
+                        <entry>不带标题的图片</entry>
+                        <entry>
                             <codeblock id="codeblock_mpx_4kf_f1c" outputclass="language-xml">&lt;image placement="break" width="650" href="../images/C1000_SGI/C1000_SGI.SGI_reprocessing_instructions.png"/></codeblock>
                         </entry>
-                        <entry morerows="1" colsep="1" rowsep="1"
-                                >方法一：从目标文件夹直接拖放图片。（仅插入 image 标签，无图片标题）<p>方法二：从工具栏选择相关按钮。（如填写 figure title，则插入 fig 标签，否则，仅插入 image 标签）</p>方法三：<ol
-                                id="ol_hdw_slz_21c">
+                        <entry morerows="1">
+                            <p>方法一：从目标文件夹直接拖放图片。（仅插入 image 标签，无图片标题）</p>
+                            <p>方法二：从工具栏选择相关按钮。（如填写 figure title，则插入 fig 标签，否则，仅插入 image 标签）</p>
+                            <p>方法三：</p>
+                            <ol id="ol_hdw_slz_21c">
                                 <li>打开 <uicontrol>DITA Reusable Components</uicontrol> 视图。</li>
                                 <li>点击 <uicontrol>Media</uicontrol> 页签。</li>
                                 <li>在 <uicontrol>Filters</uicontrol> 选项选择 <uicontrol>Images</uicontrol>。</li>
@@ -31,11 +33,12 @@
                                         id="image_ffp_3mz_21c"
                                         /> 图标，从下拉列表选择 <uicontrol>Configure working sets</uicontrol>，配置工具集，添加图像文件夹。成功加载后可直接浏览文件夹中的所有图片。</li>
                                 <li>选中一张图片，右键选择一种图片插入方式。 </li>
-                            </ol></entry>
+                            </ol>
+                        </entry>
                     </row>
                     <row>
-                        <entry colsep="1" rowsep="1">带标题的图片</entry>
-                        <entry colsep="1" rowsep="1">
+                        <entry>带标题的图片</entry>
+                        <entry>
                             <codeblock id="codeblock_w55_kkf_f1c" outputclass="language-xml">&lt;fig>
     &lt;title>将器械插入套管和工具无菌适配器&lt;/title>
     &lt;image placement="break" width="350" href="../images/C1000_SGI/C1000_SGI.install_SGI.png"/>
@@ -43,9 +46,9 @@
                         </entry>
                     </row>
                     <row>
-                        <entry colsep="1" rowsep="1">音频、视频</entry>
-                        <entry colsep="1" rowsep="1">/</entry>
-                        <entry colsep="1" rowsep="1">操作方法同图片操作方法</entry>
+                        <entry>音频、视频</entry>
+                        <entry>/</entry>
+                        <entry>操作方法同图片操作方法</entry>
                     </row>
                 </tbody>
             </tgroup>

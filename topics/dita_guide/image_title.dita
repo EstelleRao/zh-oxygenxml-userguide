@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="image_title">
+    <title>图片标题</title>
+    <body>
+        <p>标签和符号、再处理图片、表格内或行内图片通常不带标题，直接使用 <codeph>&lt;image></codeph> 元素表示。</p>
+        <p>产品实物图、操作示意图、UI 界面图通常带标题，使用 <codeph>&lt;fig></codeph> 元素表示，嵌套 <codeph>&lt;title></codeph> 元素和 <codeph>&lt;image></codeph> 元素，<codeph>&lt;title></codeph> 元素必须写在 <codeph>&lt;image></codeph> 元素前面。</p>
+        <codeblock id="codeblock_w55_kkf_f1c" outputclass="language-xml">示例：
+&lt;fig>
+    &lt;title>将器械插入套管和工具无菌适配器&lt;/title>
+    &lt;image placement="break" width="350" href="../images/C1000_SGI/C1000_SGI.install_SGI.png"/>
+&lt;/fig></codeblock>
+        <p>在发布场景的参数设置中，选择 <uicontrol>figure.title.placement</uicontrol> 为 <uicontrol>bottom</uicontrol>，导出 PDF 后，所有图片的标题均位于图片下方。</p>
+    </body>
+</topic>

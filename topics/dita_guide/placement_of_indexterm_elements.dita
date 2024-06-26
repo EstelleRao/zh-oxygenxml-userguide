@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="placement_of_indexterm_elements">
+    <title>创建索引项</title>
+    <body>
+        <p><codeph>&lt;indexterm></codeph> 元素既可以插入到 DITA Map 的 <codeph>&lt;topicref></codeph> 元素中，也可以插入到 DITA Topic 的 <codeph>&lt;prolog></codeph> 元素、<codeph>&lt;shortdesc></codeph> 元素以及 <codeph>&lt;body></codeph> 元素中。</p>
+        <p>在 DITA Map 中插入 <codeph>&lt;indexterm></codeph> 元素无法跨 DITA Map 复用索引数据，在 DITA Topic 的 <codeph>&lt;body></codeph> 中插入 <codeph>&lt;indexterm></codeph> 元素也会导致索引项分散在各个主题的不同位置，增加维护成本、翻译难度和处理难度。</p>
+        <p>所以，建议在每个主题的 <codeph>&lt;prolog></codeph> 中插入 <codeph>&lt;indexterm></codeph> 元素，确保每个主题中的索引位于同一位置，点击索引项会跳转到 DITA Topic 开头。</p>
+        <codeblock id="codeblock_un3_gpg_mbc" outputclass="language-xml">示例：
+&lt;topic id="Toc81213824">
+  &lt;title>System Overview&lt;/title>
+  &lt;prolog>
+    &lt;metadata>
+      &lt;keywords>
+        &lt;indexterm>System overview&lt;/indexterm>
+      &lt;/keywords>
+    &lt;/metadata>
+  &lt;/prolog>
+  &lt;body>
+    &lt;p>This chapter introduces the scope of application, major components, operation, and other fundamental information of this System. For details of the System feature, please refer to &lt;xref href="appendix/system_feature.dita"/>.&lt;/p>
+  &lt;/body>
+&lt;/topic></codeblock>
+        <p>如果一个 DITA Topic 的内容超过三页，可就近插入 <codeph>&lt;indexterm></codeph> 元素，便于读者快速找到索引项对应的内容。如果在 <codeph>&lt;body></codeph> 中插入索引，请遵循如下原则：</p>
+        <ul id="ul_i4j_qvm_mbc">
+            <li>当索引内容为块级元素（比如段落、表格等）时，在块级元素开始标签之后插入索引。<codeblock outputclass="language-xml" id="codeblock_j4j_qvm_mbc">&lt;p>&lt;indexterm>Networking&lt;/indexterm>This paragraph discusses the basics of networking. The discussion includes topics such as IP addressing, subnetting, and routing protocols.&lt;/p></codeblock></li>
+            <li>当索引内容为句子时，在句子之前插入索引，方便在长段落中索引特定的句子。<codeblock outputclass="language-xml" id="codeblock_k4j_qvm_mbc">&lt;p>This paragraph provides an overview of various topics. &lt;indexterm>Cloud computing&lt;/indexterm>The sentence specifically about cloud computing talks about cloud services models like IaaS, PaaS, and SaaS.&lt;/p>
+</codeblock></li>
+            <li>当索引内容为短语或词组时，在短语或词组之前插入索引，方便索引关键词或特定概念。<codeblock outputclass="language-xml" id="codeblock_l4j_qvm_mbc">&lt;p>In this paragraph, we discuss the security mechanisms in modern operating systems. This includes &lt;indexterm>authentication methods&lt;/indexterm>authentication methods such as passwords, biometrics, and two-factor authentication.&lt;/p>
+</codeblock></li>
+        </ul>
+        <note id="note_dpp_kxm_mbc" type="warning">
+            <ul id="ul_smv_kxm_mbc">
+                <li>不得使用嵌套元素的方式在不允许插入索引的位置插入 <codeph>&lt;indexterm></codeph> 元素。例如，不得使用 <codeph>&lt;ph></codeph> 元素或 <codeph>&lt;equation-inline></codeph> 元素嵌套 <codeph>&lt;indexterm></codeph> 元素的方式在 <codeph>&lt;title></codeph> 元素中插入索引。确保仅在合法的位置插入索引。</li>
+            </ul>
+        </note>
+        <note type="tip">
+            <ul>
+                <li>块级元素通常指在页面布局中作为独立块存在的元素，可以包含其他块级或内联元素。常见的块级元素包括 <codeph>&lt;p></codeph>, <codeph>&lt;table></codeph>, <codeph>&lt;ul></codeph>, <codeph>&lt;fig></codeph> 等。这些元素通常会在新行开始，占据其父元素的全部可用宽度（除非设置了宽度属性），并在其前后形成换行。</li>
+                <li>内联元素仅占据它们所需的空间，能够与其他内联元素在同一行内连续显示，不会导致换行，除非它本身具有换行特性。常见的内联元素包括图像元素（<codeph>&lt;img></codeph>）、文本样式和强调元素（<codeph>&lt;b></codeph>, <codeph>&lt;i></codeph> 等）。</li>
+            </ul>
+        </note>
+    </body>
+</topic>

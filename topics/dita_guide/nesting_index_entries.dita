@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="nesting_index_entries">
+    <title>创建多级索引</title>
+    <body>
+        <p>嵌套多个 <codeph>&lt;indexterm></codeph> 元素可以创建多级索引，页码应用于最里面的索引项。</p>
+        <codeblock id="codeblock_dbc_dpg_mbc" outputclass="language-xml">示例：
+&lt;prolog>
+    &lt;metadata>
+      &lt;keywords>
+        &lt;indexterm>System overview&lt;indexterm>Surgeon Console&lt;/indexterm>&lt;/indexterm>
+      &lt;/keywords>
+    &lt;/metadata>
+  &lt;/prolog></codeblock>
+        <p>以上标记对输出的效果如下所示：</p>
+        <pre id="pre_llm_ypn_mbc">System overview
+      Surgeon Console....................29</pre>
+        <p>嵌套索引项时避免嵌套三个以上索引元素。通常情况下，两级索引即可满足通过索引快速查找信息的需求。</p>
+        <p>如果一个主索引项有多个次索引项，可以在同一个主索引项下嵌套多个次索引项，也可以创建多个主索引项和次索引项。</p>
+        <p>换句话说，</p>
+        <codeblock id="codeblock_wyr_qrn_mbc" outputclass="language-xml">&lt;indexterm>Preparing the operating room and the system
+&lt;indexterm>Circulating nurse&lt;/indexterm>
+&lt;indexterm>Scrub nurse&lt;/indexterm>
+&lt;/indexterm></codeblock>
+        <p>等同于</p>
+        <codeblock id="codeblock_b4m_grn_mbc" outputclass="language-xml">&lt;indexterm>Preparing the operating room and the system
+&lt;indexterm>Circulating nurse&lt;/indexterm>
+&lt;/indexterm>
+&lt;indexterm>Preparing the operating room and the system
+&lt;indexterm>Scrub nurse&lt;/indexterm>
+&lt;/indexterm></codeblock>
+    </body>
+</topic>

@@ -3,18 +3,13 @@
 <topic id="bibliography">
     <title>参考资料</title>
     <body>
-        <ol id="ol_qhm_zcw_m1c">
-            <li><xref
-                    href="https://www.oxygenxml.com/doc/versions/26.0/ug-author/topics/introduction.html"
-                    format="html" scope="external" outputclass="nopage-xref"/></li>
-            <li><xref href="https://www.oxygenxml.com/dita/1.3/specs/index.html" format="html"
-                    scope="external"/></li>
-            <li><xref href="https://www.liaoxuefeng.com/wiki/896043488029600" format="html"
-                    scope="external"/></li>
-            <li><xref href="https://git-scm.com/book/zh/v2" format="html" scope="external"/></li>
-            <li><xref href="https://docs.gitlab.com/ee/user/" format="html" scope="external"/></li>
-            <li><xref href="https://www.oxygenxml.com/forum/post53740.html" format="html"
-                    scope="external"/></li>
+        <ol>
+            <li>https://www.oxygenxml.com/doc/versions/26.0/ug-author/topics/introduction.html</li>
+            <li>https://www.oxygenxml.com/dita/1.3/specs/index.html</li>
+            <li>https://www.liaoxuefeng.com/wiki/896043488029600</li>
+            <li>https://git-scm.com/book/zh/v2</li>
+            <li>https://docs.gitlab.com/ee/user/</li>
+            <li>https://www.oxygenxml.com/forum/post53740.html</li>
             <li><i>DITA Best Practices: A Roadmap for Writing, Editing, and Architecting in DITA</i> by Laura Bellamy, Michelle Carey, and Jenifer Schlotfeldt (2012). IBM Press.</li>
             <li>《结构化的技术写作与内容管理》，刘阳著，同济大学出版社，2018年10月</li>
         </ol>

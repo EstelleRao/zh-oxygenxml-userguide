@@ -32,12 +32,10 @@
     <keydef keys="dita.replace_p_with_note" href="dita/dita.replace_p_with_note.png" format="png"/>
     <keydef keys="dita.resource-only" href="dita/dita.resource-only.png" format="png"/>
     <keydef keys="dita.update_ditamap" href="dita/dita.update_ditamap.png" format="png"/>
+    <keydef keys="dita.xref_example" href="dita/dita.xref_example.png" format="png"/>
     <keydef keys="dita.xref_fig_output" href="dita/dita.xref_fig_output.png" format="png"/>
-    <keydef keys="dita.xref_fig_xml" href="dita/dita.xref_fig_xml.png" format="png"/>
-    <keydef keys="dita.xref_map_output" href="dita/dita.xref_map_output.png" format="png"/>
-    <keydef keys="dita.xref_map_xml" href="dita/dita.xref_map_xml.png" format="png"/>
+    <keydef keys="dita.xref_manual_output" href="dita/dita.xref_manual_output.png" format="png"/>
     <keydef keys="dita.xref_topic_output" href="dita/dita.xref_topic_output.png" format="png"/>
-    <keydef keys="dita.xref_topic_xml" href="dita/dita.xref_topic_xml.png" format="png"/>
     <keydef keys="gitlab.add_reviewers" href="gitlab/gitlab.add_reviewers.png" format="png"/>
     <keydef keys="gitlab.approval_settings" href="gitlab/gitlab.approval_settings.png" format="png"/>
     <keydef keys="gitlab.approve_merge_request" href="gitlab/gitlab.approve_merge_request.png"

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="image_file_size">
+    <title>图片大小</title>
+    <body>
+        <p>图片数量和图片文件大小影响说明书文件大小，也影响说明书编写软件的响应速度。</p>
+        <p>按照广东省药监局的要求，单本说明书不应超过 10 MB。按照国家药监局的要求，单本说明书不应超过 100 MB。为满足相关单位对说明书的要求，方便递交资料，应适当控制使用的图片数量和图片文件大小。</p>
+        <ul>
+            <li>制作图片时，应选择合适的图片格式。有关不同使用场景适用的图片格式，请查阅：<xref href="image_format.dita"/>。</li>
+            <li>必要时，应使用 PS、AI、Figma 等工具调整图片，如增加压缩级别、降低分辨率。</li>
+            <li>在说明书中使用的图片建议控制在单张 200 KB 以内，个别需体现较多细节的图片可超出 200 KB，但不应超出 3 MB。</li>
+        </ul>
+    </body>
+</topic>

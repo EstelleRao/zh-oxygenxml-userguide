@@ -5,6 +5,7 @@
     <shortdesc>为解决说明书工作中的难题（排版与发布、内容复用与一致性、多版本管理），技术文档团队于2023年10月从传统的Word写作模式过渡到更高效的DITA结构化写作模式。为帮助团队成员快速掌握结构化写作的要点和写作工具的使用，特制定了本使用指南，用作结构化写作的指导文档。</shortdesc>
     <conbody>
         <p>本使用指南旨在帮助团队成员快速上手，包括DITA基础入门、Oxygen基础入门、说明书工作流程以及相关规范。如需深入学习Oxygen XML Author使用和DITA写作，请查阅Oxygen官方网站和DITA 1.3 Specification。</p>
+        <p>如对本指南的内容有疑问或建议，请联系 Estelle Rao，欢迎您提出宝贵的意见和建议。</p>
         <ol id="ol_ufn_hsp_d1c">
             <li><xref keyref="quick_start_oxygen"/></li>
             <li><xref keyref="quick_start_dita"/></li>
@@ -16,4 +17,17 @@
             <li><xref keyref="troubleshoot"/></li>
         </ol>
     </conbody>
+    <related-links scope="external" format="html">
+        <linklist>
+            <link href="https://www.oxygenxml.com/doc/versions/26.0/ug-author/topics/introduction.html" outputclass="nopage-xref">
+                <linktext>User Manual of Oxygen XML Author 26.0</linktext>
+            </link>
+            <link href="https://www.oxygenxml.com/dita/1.3/specs/index.html" outputclass="nopage-xref">
+                <linktext>DITA 1.3 Specification</linktext>
+            </link>
+            <link href="https://www.amazon.com/DITA-Best-Practices-Roadmap-Architecting/dp/0132480522" outputclass="nopage-xref">
+                <linktext>DITA Best Practices</linktext>
+            </link>
+        </linklist>
+    </related-links>
 </concept>

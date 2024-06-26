@@ -3,81 +3,118 @@
 <topic id="xref_elements">
     <title>链接和引用元素</title>
     <body>
-        <table frame="all" id="table_sjm_xnx_21c">
+        <table>
             <tgroup cols="3" id="tgroup_jp2_pjz_21c">
                 <colspec colname="c1" colnum="1" colwidth="0.7*"/>
                 <colspec colname="c2" colnum="2" colwidth="1*"/>
                 <colspec colname="c3" colnum="3" colwidth="1.3*"/>
                 <thead>
                     <row>
-                        <entry colsep="1" rowsep="1">内容对象</entry>
-                        <entry colsep="1" rowsep="1">元素样例</entry>
-                        <entry colsep="1" rowsep="1">操作方法</entry>
+                        <entry>内容对象</entry>
+                        <entry>元素样例</entry>
+                        <entry>操作方法</entry>
                     </row>
                 </thead>
                 <tbody>
                     <row>
-                        <entry colsep="1" rowsep="1">
-                            <p>交叉引用其他 topic</p>
+                        <entry>
+                            <p>交叉引用 DITA 主题</p>
                         </entry>
-                        <entry colsep="1" rowsep="1">
+                        <entry>
                             <p>
                                 <codeblock id="codeblock_ay3_3lf_f1c" outputclass="language-xml">&lt;p>Learn more about it: &lt;xref href="care.dita"/>&lt;/p></codeblock>
                             </p>
                         </entry>
-                        <entry colsep="1" rowsep="1">方法一：从 <uicontrol>DITA Map Manager</uicontrol> 视图直接拖放topic。<p>方法二：光标置于待插入位置，从工具栏选择 <menucascade>
-                                    <uicontrol>Link（链接）</uicontrol>
-                                    <uicontrol>Cross Reference（交叉引用）</uicontrol>
-                                </menucascade>。</p></entry>
+                        <entry>
+                            <p>方法一：</p>
+                            <ol>
+                                <li>
+                                    <p>为需要引用的 DITA 主题定义 id。</p>
+                                </li>
+                                <li>
+                                    <p>从 <uicontrol>DITA Map Manager</uicontrol> 视图直接拖动需要引用的主题到目标位置。</p>
+                                </li>
+                            </ol>
+                            <p>方法二：</p>
+                            <ol id="ol_g5t_nxz_vbc">
+                                <li>
+                                    <p>为需要引用的 DITA 主题定义 id。</p>
+                                </li>
+                                <li>
+                                    <p>光标置于目标位置，从工具栏选择 <menucascade>
+                                            <uicontrol>Link（链接）</uicontrol>
+                                            <uicontrol>Cross Reference（交叉引用）</uicontrol>
+                                        </menucascade> 创建交叉引用。</p>
+                                </li>
+                            </ol>
+                        </entry>
                     </row>
                     <row>
-                        <entry colsep="1" rowsep="1">
+                        <entry>
                             <p>交叉引用其他文件、网址</p>
                         </entry>
-                        <entry colsep="1" rowsep="1">
+                        <entry>
                             <codeblock id="codeblock_bgp_3lf_f1c" outputclass="language-xml">&lt;p>Learn more about it: &lt;xref
 href="../resources/FlowersTreatmentManual.pdf" format="pdf"/>&lt;/p></codeblock>
                         </entry>
-                        <entry colsep="1" rowsep="1">光标置于待插入位置，从工具栏选择 <menucascade>
+                        <entry>光标置于目标位置，从工具栏选择 <menucascade>
                                 <uicontrol>Link（链接）</uicontrol>
                                 <uicontrol>File Reference（文件引用）</uicontrol>
-                            </menucascade>或 <uicontrol>Web Link（网页链接）</uicontrol>。</entry>
+                            </menucascade>或 <uicontrol>Web Link（网页链接）</uicontrol> 创建交叉引用。</entry>
                     </row>
                     <row>
-                        <entry colsep="1" rowsep="1">
-                            <p>交叉引用其他 topic 中的表格</p>
+                        <entry>
+                            <p>交叉引用图片或表格</p>
+                            <p>注：只能引用带标题的图片和表格</p>
                         </entry>
-                        <entry colsep="1" rowsep="1">
+                        <entry>
                             <codeblock id="codeblock_bkv_3lf_f1c" outputclass="language-xml">&lt;p>Learn more about it: &lt;xref
 href="care.dita#care/table_1"/>&lt;/p></codeblock>
                         </entry>
-                        <entry colsep="1" rowsep="1">方法一：<ol>
-                            <li id="xref-other-topic-table"
-                                >在包含表格的 topic 中全选表格，单击鼠标右键，选择 <uicontrol>Generate IDs（生成ID）</uicontrol>，使用 <uicontrol>Ctrl+S</uicontrol> 快捷键保存。</li>
-                            <li>在待插入表格 topic 的相关位置，从工具栏选择 <menucascade>
-                                <uicontrol>Link</uicontrol>
-                                <uicontrol>Cross Reference</uicontrol>
-                                </menucascade>。</li>
-                            <li>选择包含表格的 topic，选择表格 ID，点击 <uicontrol>Insert</uicontrol> 插入表格。</li>
-                            </ol>方法二：<ol id="ol_zrr_lkz_21c">
-                            <li>同方法一的步骤<xref href="#./xref-other-topic-table"/>。</li>
-                            <li>在包含表格的 topic 中复制表格，粘贴时单击鼠标右键选择 <menucascade>
-                                <uicontrol>Paste special（特殊粘贴）</uicontrol>
-                                <uicontrol>Paste as link（粘贴为链接）</uicontrol>
-                                </menucascade>。</li>
-                            </ol></entry>
+                        <entry>
+                            <p>方法一：</p>
+                            <ol id="ol_uzr_zxz_vbc">
+                                <li>
+                                    <p>为需要引用的图片或表格定义 id。</p>
+                                </li>
+                                <li>
+                                    <p>复制包含标题的图片或表格。</p>
+                                </li>
+                                <li>
+                                    <p>光标置于目标位置，单击鼠标右键，选择 <menucascade>
+                                            <uicontrol>Paste special（特殊粘贴）</uicontrol>
+                                            <uicontrol>Paste as link（粘贴为链接）</uicontrol>
+                                        </menucascade> 创建交叉引用。</p>
+                                </li>
+                            </ol>
+                            <p>方法二：</p>
+                            <ol id="ol_m41_1yz_vbc">
+                                <li id="xref-other-topic-table">
+                                    <p>为需要引用的图片或表格定义 id。</p>
+                                </li>
+                                <li>
+                                    <p>光标置于目标位置，从工具栏选择 <menucascade>
+                                            <uicontrol>Link</uicontrol>
+                                            <uicontrol>Cross Reference</uicontrol>
+                                        </menucascade>。</p>
+                                </li>
+                                <li>
+                                    <p>在 <uicontrol>Location</uicontrol> 字段选择图片或表格所在的 DITA 文件，在 <uicontrol>Select the target element</uicontrol> 字段下方选择图片或表格对应的 id，点击 <uicontrol>Insert</uicontrol> 创建交叉引用。</p>
+                                </li>
+                            </ol>
+                        </entry>
                     </row>
                     <row>
-                        <entry colsep="1" rowsep="1">
+                        <entry>
                             <p>相关引用</p>
                             <p>（引用其他 topic、文件、网址 ，集中出现在 topic 末尾）</p>
                         </entry>
-                        <entry colsep="1" rowsep="1">
+                        <entry>
                             <codeblock id="codeblock_xl1_jlf_f1c" outputclass="language-xml">&lt;related-links>
     &lt;link href="adjustVolume.dita" format="xml"/>
 &lt;/related-links></codeblock>
                         </entry>
-                        <entry colsep="1" rowsep="1">方法与交叉引用类似</entry>
+                        <entry>方法与交叉引用类似</entry>
                     </row>
                 </tbody>
             </tgroup>

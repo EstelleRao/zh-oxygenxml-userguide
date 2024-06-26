@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="key_definition">
+    <title>批量定义 Key</title>
+    <body>
+        <p>使用 JS 脚本可以为图片和 DITA 文件批量定义 Key，并将 Key 值自动写入 DITA Map 文件中。</p>
+        <ol id="ol_bbk_db1_mbc">
+            <li>联系 Estelle 获取 <ph>keydef.js</ph> 脚本，将脚本保存到本地仓库所在磁盘的根目录，比如 <codeph>E:\</codeph>。</li>
+            <li>点击 <xref href="https://nodejs.org/en/download/" format="html" scope="external" outputclass="nopage-xref">Node.js官网</xref>，下载并安装 Node.js 软件，提供脚本运行环境。</li>
+            <li>打开 VS Code 软件的控制台，输入 <codeph>cd 文件路径</codeph> 命令进入脚本所在目录。文件路径为脚本所在目录。<codeblock id="codeblock_ewp_zg1_mbc" outputclass="language-powershell">示例：
+cd E:\</codeblock></li>
+            <li>在控制台输入 <codeph>node keydef.js 文件路径</codeph>。文件路径为需要定义 Key 的资源路径。<codeblock id="codeblock_xvs_mb1_mbc" outputclass="language-powershell">示例：
+node keydef.js E:\RAI-IFU\common\global\images</codeblock><note id="note_ejs_vg1_mbc"
+                    type="tip">
+                    <ul id="ul_h4c_xg1_mbc">
+                        <li>如果资源路径含子目录，则会为子目录的资源一起定义 Key。</li>
+                    </ul>
+                </note></li>
+            <li>按下 <uicontrol>Enter</uicontrol> 键，开始运行脚本。</li>
+            <li>运行脚本后，为图片和 DITA 文件自动定义 Key，并将 Key 值自动保存在资源路径下的 DITA Map 文件中。<codeblock id="codeblock_aws_mb1_mbc" outputclass="language-xml">示例
+&lt;keydef keys="common_label_camera_pedal" href="common_label/common_label.camera_pedal.svg" format="svg">&lt;/keydef>
+&lt;keydef keys="common_label_catalog_number" href="common_label/common_label.catalog_number.svg" format="svg">&lt;/keydef>
+&lt;keydef keys="common_label_center_of_gravity" href="common_label/common_label.center_of_gravity.svg" format="svg">&lt;/keydef></codeblock></li>
+            <li>在 DITA Map 的开头添加 XML 声明语句、DITA Map 类型数据、<codeph>&lt;map></codeph> 元素以及相应的说明，在结尾添加 <codeph>&lt;/map></codeph> 元素。<codeblock id="codeblock_jcl_s21_mbc" outputclass="language-xml">示例：
+&lt;?xml version="1.0" encoding="utf-8"?>
+&lt;!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd"[]>
+&lt;map xml:lang="global">
+    &lt;title>公共图片&lt;/title>
+    &lt;topicmeta>
+        &lt;author type="author">Estelle&lt;/author>
+        &lt;data>
+            &lt;draft-comment author="Estelle">此文件用于定义通用公共图片（global）的key。通用公共图片（global）适用于全部产品（C1000、S1000等）下全部项目（K2、K9等）的全部语言版本（zh-CN、en-US等），通常包括标签、安全符号、文档符号、公司logo、商标等，无需进行本地化处理。&lt;/draft-comment>
+        &lt;/data>
+    &lt;/topicmeta>
+&lt;/map></codeblock></li>
+        </ol>
+    </body>
+</topic>
+
+

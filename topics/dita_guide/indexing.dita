@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="indexing">
+    <title>索引</title>
+    <body>
+        <p><codeph>&lt;indexterm></codeph> 元素用于创建索引项，通过嵌套多个 <codeph>&lt;indexterm></codeph> 元素可以创建多级索引。</p>
+        <p><codeph>&lt;indexterm></codeph> 元素是一种元数据，不会在正文中显示，只会在索引页显示。</p>
+        <p>中文索引项按照拼音排序，英文索引项按照英文首字母排序。</p>
+    </body>
+</topic>

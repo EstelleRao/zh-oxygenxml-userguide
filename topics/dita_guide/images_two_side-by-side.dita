@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="two_figures_side_by_side">
+  <title>两图并排</title>
+  <body>
+    <p>因使用场景和原图尺寸差异，需要使用不同的 DITA 元素和属性实现两图并排效果。以下展示不同情况下的 DITA 示例。</p>
+    <ol>
+      <li>
+        <p>两张图片并排时，并排图片共用一个标题，且尺寸相同。</p>
+        <p>在此情况下，可直接使用 <b>outputclass="side-by-side"</b> 属性将两张图片并排摆放。</p>
+        <codeblock>&lt;fig outputclass="side-by-side">
+  &lt;title>插入正确的接头&lt;/title>
+  &lt;image placement="inline" href="../images/C1000_SGI/C1000_SGI.connect_monopolar_IEC_ESU.png"/>
+  &lt;image placement="break" href="../images/C1000_SGI/C1000_SGI.connect_bipolar_IEC_ESU.png"/>
+&lt;/fig></codeblock>
+      </li>
+      <li>
+        <p>两张图片并排时，并排图片共用一个标题，但尺寸不同。</p>
+        <p>在此情况下，建议修改原图尺寸，或在 DITA 文件中设置相同的高度，确保并排图片上下对齐且间距合适。</p>
+        <codeblock id="codeblock_clb_xkz_lbc">&lt;fig outputclass="side-by-side">
+  &lt;title>检查视觉推车是否正常充电&lt;/title>
+  &lt;image placement="inline" height="180" href="../images/C1000_VCT/C1000_VCT.inspect_proper_charging.jpeg"/>
+  &lt;image placement="break" height="180" href="../images/C1000_VCT/C1000_VCT.proper_charging.jpeg"/> 
+&lt;/fig></codeblock>
+        <p>如果并排图片间距过大，可修改图片元素和属性以调整间距。</p>
+        <codeblock>&lt;fig>
+  &lt;title>检查视觉推车是否正常充电&lt;/title>
+  &lt;div>
+    &lt;image placement="inline" height="180" href="../images/C1000_VCT/C1000_VCT.inspect_proper_charging.jpeg"/>
+    &lt;image placement="inline" height="180" href="../images/C1000_VCT/C1000_VCT.proper_charging.jpeg"/>
+  &lt;/div>
+&lt;/fig></codeblock>
+      </li>
+      <li>
+        <p>两张图片并排时，并排图片各带一个小标题，但尺寸相同。</p>
+        <ol id="ol_e2m_1zz_lbc">
+          <li>使用 <codeph>&lt;div></codeph> 元素将图片和小标题组合为一个块状元素。</li>
+          <li>使用 <b>outputclass="side-by-side"</b> 属性将组合后的两个块状元素并排摆放。</li>
+        </ol>
+        <codeblock>&lt;fig outputclass="side-by-side">
+  &lt;title>无菌保护套图示&lt;/title>
+  &lt;div>&lt;image placement="inline" href="../images/SUD_CSD/SUD_CSD.sterile_protective_sleeve_frontend.jpg"/>&lt;p>无菌保护套前端（有系带）&lt;/p>&lt;/div>
+  &lt;div>&lt;image placement="inline" href="../images/SUD_CSD/SUD_CSD.sterile_protective_sleeve_backend.jpg"/>&lt;p>无菌保护套后端&lt;/p>&lt;/div>
+&lt;/fig></codeblock>
+      </li>
+      <li>
+        <p>两张图片并排时，并排图片各带一个小标题，且尺寸不同。</p>
+        <codeblock>&lt;fig outputclass="side-by-side">
+  &lt;title>触摸屏提示（无菌围帘）&lt;/title>
+  &lt;div>&lt;image placement="inline" height="180" href="../images/C1000_VCT/C1000_VCT.arm4_not_draped.png"/>&lt;p>4号臂未安装无菌围帘&lt;/p>&lt;/div>
+  &lt;div>&lt;image placement="break" height="180" href="../images/C1000_VCT/C1000_VCT.arm4_draped.png"/>&lt;p>4号臂已安装无菌围帘&lt;/p>&lt;/div>
+&lt;/fig></codeblock>
+      </li>
+      <li>
+        <p>两张以上图片两两并排时，并排图片共用一个标题，且尺寸相同。</p>
+        <ol id="ol_bnx_xyz_lbc">
+          <li>使用 <codeph>&lt;div></codeph> 元素将两张连续的图片放在同一个块状元素内。</li>
+          <li>使用 <b>outputclass="side-by-side"</b> 属性将同一块状元素内的两张图片并排摆放。</li>
+        </ol>
+        <codeblock id="codeblock_t1y_vdy_lbc">&lt;fig>
+  &lt;title>弯曲固定带&lt;/title>
+  &lt;div outputclass="side-by-side">
+      &lt;image placement="inline" href="../images/SUD_ASD/SUD_ASD.bend_drape_wires_step1.jpg"/>
+      &lt;image placement="inline" href="../images/SUD_ASD/SUD_ASD.bend_drape_wires_step2.jpg"/>
+  &lt;/div>
+  &lt;div outputclass="side-by-side"> 
+      &lt;image placement="inline" href="../images/SUD_ASD/SUD_ASD.bend_drape_wires_step3.jpg"/> 
+      &lt;image placement="inline" href="../images/SUD_ASD/SUD_ASD.bend_drape_wires_step4.jpg"/> 
+  &lt;/div>
+  &lt;div>&lt;image placement="inline" href="../images/SUD_ASD/SUD_ASD.bend_drape_wires_step5.jpg"/>&lt;/div>
+&lt;/fig></codeblock>
+        <p>如果图片所占空间太大，可修改图片元素和属性，调整图片显示宽度或高度。</p>
+        <codeblock id="codeblock_cy5_jzy_lbc">&lt;fig>
+  &lt;title>弯曲固定带&lt;/title>
+  &lt;div>
+    &lt;image placement="inline" width="200" href="../images/SUD_ASD/SUD_ASD.bend_drape_wires_step1.jpg"/>
+    &lt;image placement="inline" width="200" href="../images/SUD_ASD/SUD_ASD.bend_drape_wires_step2.jpg"/>          
+  &lt;/div>
+  &lt;div>
+    &lt;image placement="inline" width="200" href="../images/SUD_ASD/SUD_ASD.bend_drape_wires_step3.jpg"/>
+    &lt;image placement="inline" width="200" href="../images/SUD_ASD/SUD_ASD.bend_drape_wires_step4.jpg"/>
+  &lt;/div>
+  &lt;div>&lt;image placement="inline" width="200" href="../images/SUD_ASD/SUD_ASD.bend_drape_wires_step5.jpg"/>&lt;/div>
+&lt;/fig></codeblock>
+      </li>
+      <li>
+        <p>两张以上图片两两并排时，并排图片各带一个小标题，且尺寸不同。</p>
+        <ol id="ol_ucz_syz_lbc">
+          <li>使用 <codeph>&lt;div></codeph> 元素将图片和小标题组合为一个块状元素。</li>
+          <li>使用 <codeph>&lt;div></codeph> 元素将组合后的两个块状元素组成为一个更大的块状元素。</li>
+          <li>使用 <b>outputclass="side-by-side"</b> 属性将两个块状元素并排摆放。</li>
+          <li>为图片设置相同的高度，确保并排图片上下对齐且间距合适。</li>
+        </ol>
+        <codeblock id="codeblock_z1h_j2y_lbc">&lt;fig>
+  &lt;title>Logic 3D CR 内窥镜系统组成部分&lt;/title>
+  &lt;div outputclass="side-by-side">
+    &lt;div>&lt;image placement="inline" height="120" href="../images/C1000_LG1000/C1000_LG1000.camera_control_unit.jpeg"/>&lt;p>Logic 3D CR 摄像控制单元&lt;/p>&lt;/div>
+    &lt;div>&lt;image placement="break" height="120" href="../images/C1000_LG1000/C1000_LG1000.light_source.png"/>&lt;p>内窥镜冷光源&lt;/p>&lt;/div>
+  &lt;/div>
+  &lt;div outputclass="side-by-side">
+    &lt;div>&lt;image placement="inline" height="120" href="../images/C1000_LG1000/C1000_LG1000.camera_head.png"/>&lt;p>Logic 3D CR 内窥镜摄像头&lt;/p>&lt;/div>
+    &lt;div>&lt;image placement="break" height="120" href="../images/C1000_LG1000/C1000_LG1000.0°_END.png"/>&lt;p>Logic 3D CR 10毫米0°内窥镜镜头&lt;/p>&lt;/div>
+  &lt;/div>
+  &lt;div outputclass="side-by-side">
+    &lt;div>&lt;image placement="inline" height="120" href="../images/C1000_LG1000/C1000_LG1000.30°_END.png"/>&lt;p>Logic 3D CR 10毫米30°内窥镜镜头 &lt;/p>&lt;/div>
+    &lt;div>&lt;image placement="break" height="120" href="../images/C1000_LG1000/C1000_LG1000.light_cable.png"/>&lt;p>Logic 3D CR 导光光缆&lt;/p>&lt;/div>
+  &lt;/div>
+&lt;/fig></codeblock>
+      </li>
+    </ol>
+  </body>
+</topic>

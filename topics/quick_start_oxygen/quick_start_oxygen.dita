@@ -15,4 +15,14 @@
         </p>
         <p>借助Oxygen XML Author，文档工程师可轻松实现XML编辑、PDF发布、内容复用和同源更新。</p>
     </body>
+    <related-links scope="external" format="html">
+        <linklist>
+            <link href="https://www.oxygenxml.com/doc/versions/26.0/ug-author/topics/add-ons.html" outputclass="nopage-xref">
+                <linktext>Oxygen Add-ons</linktext>
+            </link>
+            <link href="https://www.oxygenxml.com/doc/versions/26.0/ug-author/topics/oxygen-tools.html" outputclass="nopage-xref">
+                <linktext>Oxygen Tools</linktext>
+            </link>
+        </linklist>
+    </related-links>
 </topic>

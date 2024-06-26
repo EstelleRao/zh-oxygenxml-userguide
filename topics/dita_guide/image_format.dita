@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="image_format">
+    <title>图片格式</title>
+    <body>
+        <section id="section_rpd_kkb_3bc">
+            <title>格式优劣</title>
+            <p>图片格式影响图片的清晰度、色彩还原度、文件大小。不同格式适合展现不同的图片内容。</p>
+            <table id="table_k4x_ryb_3bc">
+                <tgroup cols="3">
+                    <colspec colname="c1" colnum="1" colwidth="0.6*"/>
+                    <colspec colname="c2" colnum="2" colwidth="1.2*"/>
+                    <colspec colname="c3" colnum="3" colwidth="1.2*"/>
+                    <thead>
+                        <row>
+                            <entry>图片格式</entry>
+                            <entry>优点</entry>
+                            <entry>缺点</entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry>SVG</entry>
+                            <entry>
+                                <ol id="ul_otq_dlc_3bc">
+                                    <li>无损缩放，高保真</li>
+                                    <li>文件小，适合呈现纯色和简单图形</li>
+                                    <li>可在文本编辑器中直接编辑，易于翻译</li>
+                                    <li>能够创建带有透明背景的图像，适合设计复杂的logo或图标</li>
+                                </ol>
+                            </entry>
+                            <entry>
+                                <ol id="ol_tmd_m3j_3bc">
+                                    <li>包含大量节点和路径时文件较大，影响加载速度</li>
+                                    <li>浏览器兼容性，某些老版本浏览器对SVG的支持有限</li>
+                                </ol>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>PNG</entry>
+                            <entry>
+                                <ol id="ol_dmm_z3j_3bc">
+                                    <li>无损压缩，保留原始图像细节和颜色</li>
+                                    <li>能够创建带有透明背景的图像，适合多层图像处理</li>
+                                    <li>高质量的色彩展现，适合复杂图像和需要细致色彩表现的场合</li>
+                                </ol>
+                            </entry>
+                            <entry>
+                                <ol id="ol_cs1_2kj_3bc">
+                                    <li>文件通常较大，影响加载速度</li>
+                                    <li>不适合保存高分辨率的照片，因为文件较大且不支持高效压缩</li>
+                                </ol>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>JPG/JPEG<p>（同一种图片格式，两种文件扩展名，适用不同的操作系统和软件）</p></entry>
+                            <entry>
+                                <ol id="ol_vm2_tkj_3bc">
+                                    <li>有损压缩，能显著减小文件大小，优化存储，适合网络传输</li>
+                                    <li>可以选择不同的压缩质量，以平衡图像质量和文件大小</li>
+                                    <li>广泛支持，适用于所有浏览器和图像查看软件</li>
+                                </ol>
+                            </entry>
+                            <entry>
+                                <ol id="ol_frf_llj_3bc">
+                                    <li>有损压缩，如果文字较多，高度压缩时可能出现文字模糊或失真</li>
+                                    <li>不支持透明度，无法创建带有透明背景的图像</li>
+                                </ol>
+                            </entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
+        </section>
+        <section id="section_wbn_n3q_3bc">
+            <title>适用场景</title>
+            <p>选择图片格式时，要综合考虑图片的使用场景、图片内容（颜色丰富度、图形复杂度、文字量）、图片质量和文件大小，选择合适的图片格式。</p>
+            <p>下表就说明书中常见的使用场景推荐了合适的图片类型和图片格式。推荐顺序自上而下排列。</p>
+            <table id="table_ksy_ltb_3bc">
+                <tgroup cols="3">
+                    <colspec colname="c1" colnum="1" colwidth="0.6*"/>
+                    <colspec colname="c2" colnum="2" colwidth="0.8*"/>
+                    <colspec colname="c3" colnum="3" colwidth="1.6*"/>
+                    <thead>
+                        <row>
+                            <entry>使用场景</entry>
+                            <entry>图片类型</entry>
+                            <entry>图片格式</entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry morerows="2">产品外观图</entry>
+                            <entry>线框图</entry>
+                            <entry>
+                                <ol id="ol_vnz_p1p_3bc">
+                                    <li>SVG（适合简单的线框图，包含线条和简单形状，比如中性酶清洁剂示意图）</li>
+                                    <li>PNG（适合复杂的线框图，包含大量节点和路径，比如托盘）</li>
+                                </ol>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>渲染图</entry>
+                            <entry morerows="1">
+                                <ol id="ol_ebt_p1p_3bc">
+                                    <li>JPG/JPEG（适合照片或渲染图，可以在压缩质量较高的情况下生成较小的文件）</li>
+                                    <li>PNG</li>
+                                </ol>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>实物图（需现场拍摄，且图片处理和更新费时费力）</entry>
+                        </row>
+                        <row>
+                            <entry morerows="1">操作示意图</entry>
+                            <entry>线框图</entry>
+                            <entry>
+                                <ol id="ol_gdz_q1p_3bc">
+                                    <li>SVG（适合简单的线框图，比如冲洗示意图）</li>
+                                    <li>PNG（适合复杂的线框图，比如浸泡托盘示意图）</li>
+                                </ol>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>实物图</entry>
+                            <entry>
+                                <ol id="ol_kdn_q1p_3bc">
+                                    <li>JPG/JPEG（适合照片）</li>
+                                    <li>PNG</li>
+                                </ol>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>流程图</entry>
+                            <entry>流程图（包含线框、文字、色块），需使用团队版 ProcessOn 制作，导出高清 PNG 或 SVG</entry>
+                            <entry>
+                                <ol id="ol_lbn_r1p_3bc">
+                                    <li>SVG（无损缩放，文件较小，易于翻译，但 Oxygen 导出 PDF 后流程图缺失线框，暂无法使用此格式）</li>
+                                    <li>PNG（适合颜色丰富且细节多的流程图，无损压缩，但文件较大）</li>
+                                </ol>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry morerows="2">UI 图</entry>
+                            <entry>原型图，使用 Figma 导出或由 UI 设计师提供</entry>
+                            <entry>
+                                <p>选择图片格式和压缩倍率应考虑文字清晰度和文件大小，也可导出多种格式和压缩倍率进行对比。</p>
+                                <ol id="ul_mvq_b1p_3bc">
+                                    <li>PNG（0.5x-1x，适合包含少量图形、颜色和文字的UI图）</li>
+                                    <li>JPG/JPEG（0.75x-1x，适合包含大块颜色和大量文字的UI图）</li>
+                                    <li>SVG（适合包含少量图形、颜色和文字的UI图，但SVG文件比PNG文件大）</li>
+                                </ol>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>屏幕截图</entry>
+                            <entry>PNG（无损压缩，保留原始图像细节和颜色）</entry>
+                        </row>
+                        <row>
+                            <entry>屏幕拍摄（有反光，不推荐）</entry>
+                            <entry>JPG/JPEG（高效压缩，文件小）</entry>
+                        </row>
+                        <row>
+                            <entry>标签</entry>
+                            <entry>由平面设计师提供设计文件（PDF 或 AI），导入设计文件到 Adobe Illustrator，再导出 SVG 格式标签</entry>
+                            <entry>
+                                <ol id="ol_ccn_s1p_3bc">
+                                    <li>SVG（简单图形，文件小，无损缩放，高清）</li>
+                                    <li>PNG</li>
+                                    <li>JPG/JPEG</li>
+                                </ol>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>UI 符号</entry>
+                            <entry>使用 Figma 导出或由 UI 设计师提供</entry>
+                            <entry>
+                                <ol id="ol_ngs_s1p_3bc">
+                                    <li>SVG（简单图形，文件小，无损缩放，高清）</li>
+                                    <li>PNG</li>
+                                    <li>JPG/JPEG</li>
+                                </ol>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>公司 logo 和产品 logo</entry>
+                            <entry>由平面设计师设计并提供</entry>
+                            <entry>
+                                <ul id="ul_fpk_51p_3bc">
+                                    <li>商标页：SVG，黑色</li>
+                                    <li>封面页：SVG，远黛绿</li>
+                                </ul>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>其他<p>（安全符号、文档符号等）</p></entry>
+                            <entry>利用现有素材制作或由设计师设计</entry>
+                            <entry>
+                                <ol id="ol_s3p_51p_3bc">
+                                    <li>SVG</li>
+                                    <li>PNG</li>
+                                    <li>JPG/JPEG</li>
+                                </ol>
+                            </entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
+        </section>
+    </body>
+</topic>

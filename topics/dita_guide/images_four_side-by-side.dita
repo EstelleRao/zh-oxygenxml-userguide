@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="four_figures_side_by_side">
+    <title>四图并排</title>
+    <body>
+    <p>因四张图片并排后图片很小，细节不明显，所以使用四图并排的场景较少。以下展示四图并排场景的 DITA 示例。</p>
+    <ul id="ul_n4n_xdz_lbc">
+      <li>
+        <p>四张图片并排时，并排图片共用一个标题，但尺寸不同。</p>
+        <codeblock id="codeblock_utg_55x_lbc">&lt;fig>
+  &lt;title>取出熔断器&lt;/title>
+  &lt;div outputclass="inline four-column">
+    &lt;image placement="inline" height="140" href="../images/C1000_PSR/C1000_PSR.remove_fuses_step1.png"/>
+    &lt;image placement="inline" height="140" href="../images/C1000_PSR/C1000_PSR.remove_fuses_step2.jpeg"/>
+    &lt;image placement="inline" height="140" href="../images/C1000_PSR/C1000_PSR.remove_fuses_step3.jpeg"/>
+    &lt;image placement="inline" height="140" href="../images/C1000_PSR/C1000_PSR.remove_fuses_step4.jpeg"/>
+  &lt;/div>
+&lt;/fig></codeblock>
+      </li>
+    </ul>
+    </body>
+</topic>

@@ -3,37 +3,53 @@
 <topic id="table_elements">
     <title>表格元素</title>
     <body>
-        <table frame="all" id="table_sjm_xnx_21c">
+        <table>
             <tgroup cols="2">
                 <colspec colname="c1" colnum="1" colwidth="0.8*"/>
                 <colspec colname="c3" colnum="2" colwidth="1.2*"/>
                 <thead>
                     <row>
-                        <entry colsep="1" rowsep="1">内容对象</entry>
-                        <entry colsep="1" rowsep="1">操作方法</entry>
+                        <entry>内容对象</entry>
+                        <entry>操作方法</entry>
                     </row>
                 </thead>
                 <tbody>
                     <row>
-                        <entry colsep="1" rowsep="1">表格</entry>
-                        <entry colsep="1" rowsep="1">
-                            <p>方法一：Author 模式下，从工具栏选择相关按钮。</p>
-                            <p>方法二： 在目标位置按下回车键，双击 <b>table</b>元素。</p>
-                            <p>注：通常选择CALS表格，支持更丰富的表格样式。</p>
+                        <entry>插入表格</entry>
+                        <entry>
+                            <p>方法一：Author 模式下，点击工具栏处的表格按钮，插入表格。</p>
+                            <p>方法二： Author 模式下，在目标位置按下回车键，双击 <b>table</b>元素，插入表格。</p>
+                            <p>注：通常选择 CALS 表格，支持更丰富的表格样式。</p>
                         </entry>
                     </row>
                     <row>
-                        <entry colsep="1" rowsep="1">合并、拆分单元格</entry>
-                        <entry morerows="3" colsep="1" rowsep="1">方法一或选中目标后从鼠标右键菜单操作</entry>
+                        <entry>合并或拆分单元格</entry>
+                        <entry morerows="1">
+                            <p>方法一：Author 模式下，点击工具栏处对应按钮，进行合并、拆分、插入或删除操作。</p>
+                            <p>方法二：Author 模式下，选中目标后，单击右键选择对应选项进行操作。</p>
+                        </entry>
                     </row>
                     <row>
-                        <entry colsep="1" rowsep="1">插入、删除行列</entry>
+                        <entry>插入或删除行或列</entry>
                     </row>
                     <row>
-                        <entry colsep="1" rowsep="1">排序</entry>
+                        <entry>设置对齐方式、边框或分隔线</entry>
+                        <entry>
+                            <p>Author 模式下，点击工具栏处的表格属性按钮或单击右键选择表格属性选项，在表格属性面板设置表格样式。</p>
+                        </entry>
                     </row>
                     <row>
-                        <entry colsep="1" rowsep="1">对齐方式、表格边框及分隔线 （表格属性按钮）</entry>
+                        <entry>设置第一行为标题行</entry>
+                        <entry>Author 模式下，选中第一行，在表格属性面板点击 <menucascade>
+                                <uicontrol>Row</uicontrol>
+                                <uicontrol>Row type</uicontrol>
+                                <uicontrol>Header</uicontrol>
+                            </menucascade>，将第一行设置为标题行。</entry>
+                    </row>
+                    <row>
+                        <entry>设置第一列为标题列</entry>
+                        <entry
+                            >Text 模式下，在 <codeph>&lt;table></codeph> 元素中添加 @rowheader 属性，将第一列设置为标题列。<codeblock id="codeblock_okg_1bw_mbc" outputclass="language-xml">&lt;table rowheader="firstcol"></codeblock>注：第一列如有合并单元格则不建议设置为标题列。</entry>
                     </row>
                 </tbody>
             </tgroup>
