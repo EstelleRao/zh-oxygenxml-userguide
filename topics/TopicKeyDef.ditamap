@@ -5,7 +5,7 @@
     <topicref keys="dita_guide" href="dita_guide/dita_guide.dita" format="dita"/>
     <topicref keys="elements_attributes" href="quick_start_dita/elements_attributes.dita"
         format="dita"/>
-    <topicref keys="figures" href="dita_guide/figures.dita" format="dita"/>
+    <topicref keys="figures" href="dita_guide/images.dita" format="dita"/>
     <topicref keys="linking" href="dita_guide/linking.dita" format="dita"/>
     <topicref keys="reuse" href="dita_guide/reuse.dita" format="dita"/>
     <topicref keys="reuse_content" href="dita_guide/reuse_content.dita" format="dita"/>

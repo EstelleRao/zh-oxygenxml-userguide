@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="image_callouts">
+    <title>图片标注</title>
+    <body>
+    <p>图片标注由图片中的数字标注和图片外的文字说明组成。文字说明使用有序列表展示，每个说明的列表编号对应图片中的数字标注。</p>
+    <note id="note_zwf_sp4_mbc" type="attention">
+      <ul id="ul_vmj_sp4_mbc">
+        <li>对于栅格类图片（PNG、JPG等），应避免在图片中添加文字说明，否则会增加多语言场景中的图片处理成本。</li>
+      </ul>
+    </note>
+    <section id="section_rzv_dd1_kbc">
+      <title>数字标注</title>
+      <p>在图片中使用阿拉伯数字标示图片中的各个部分。添加标注时，请使用 PPT 标注模板中的默认文本框（蓝色，0.9cm×1cm）和线条工具（蓝色，1.5磅）绘制，并遵循如下标注规范。</p>
+      <ol id="ol_avk_5f1_kbc">
+        <li>
+          <p>标注字号大于10pt，在图片中清晰显示。</p>
+        </li>
+        <li>
+          <p>从左上角开始标注，遵循自上而下、从左至右的标注顺序。</p>
+        </li>
+        <li>
+          <p>标注不遮盖关键信息（文字、图标、接口、丝印等）。</p>
+        </li>
+        <li>
+          <p>线条只能是横线或者是竖线，不能使用斜线。</p>
+        </li>
+        <li>
+          <p>线框不重叠，尽量保证上下左右对齐。 </p>
+        </li>
+        <li>
+          <p>所有标注尽量保证一定的间隔空间，不可过度拥挤。</p>
+        </li>
+      </ol>
+    </section>
+    <section id="section_ht5_2d1_kbc">
+      <title>文字说明</title>
+      <p>在图片标题下方添加文字说明，使用有序列表展示，每个说明的列表编号对应图片中的数字标注。</p>
+      <p>文字说明包括句子式说明（比如结构示意图的部件描述）和短语式说明（比如结构示意图的部件名称）。短语式说明可以使用 @outputclass 属性增加左侧缩进。</p>
+      <p>如果有多个短语式说明，可使用 <codeph>outputclass="image-list-split</codeph> 增加左侧缩进。</p>
+      <codeblock outputclass="language-xml" id="codeblock_awl_gd1_kbc">示例：
+&lt;ol outputclass="image-list-split">
+  &lt;li>常用设置&lt;/li>
+  &lt;li>其他设置&lt;/li>
+  &lt;li>手术指引流程&lt;/li>
+&lt;/ol></codeblock>
+      <p>如果只有一个短语式说明，可使用 <codeph>outputclass="image-list-split-single"</codeph> 继续增加左侧缩进，让该说明看起来更居中。</p>
+      <codeblock outputclass="language-xml" id="codeblock_zvl_gd1_kbc">示例1：
+&lt;ol outputclass="image-list-split-single">
+  &lt;li>制动器解除（松开）状态&lt;/li>
+&lt;/ol>
+示例2：
+&lt;ol outputclass="image-list-split-single">
+  &lt;li>防压脚挡板&lt;/li>
+&lt;/ol></codeblock>
+    </section>
+    </body>
+</topic>

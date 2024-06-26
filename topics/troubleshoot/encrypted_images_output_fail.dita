@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE troubleshooting PUBLIC "-//OASIS//DTD DITA Troubleshooting//EN" "troubleshooting.dtd">
-<troubleshooting id="topic_xt5_tcs_4zb">
-    <title>PDF发布失败</title>
+<troubleshooting id="encrypted_images_output_fail">
+    <title>加密图片发布失败</title>
     <troublebody>
         <troubleSolution>
             <cause>
                 <title>可能原因</title>
-                <p>本地打开了之前发布的 index.pdf 文件。</p>
+                <p>发布的 PDF 丢失图片，可能是因为图片为加密图片，Oxygen 无法读取加密图片。</p>
             </cause>
             <remedy>
                 <title>解决方法</title>
                 <steps-unordered>
                     <step>
-                        <cmd>关闭打开的 index.pdf 文件，重新发布。</cmd>
+                        <cmd>找 IT 同事 Kaily 确认 Oxygen XML Author 软件的加密策略是否生效。</cmd>
                     </step>
                </steps-unordered>
             </remedy>

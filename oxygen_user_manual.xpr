@@ -99,7 +99,327 @@
                         <scenarioAssociation-array>
                             <scenarioAssociation>
                                 <field name="url">
+                                    <String>topics/quick_start_dita/table_elements.dita</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>pdf-zh-cn-knst-oxygen-ifu</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>DITAMAP</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioStorageLocations">
+                                    <list>
+                                        <Byte>2</Byte>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
                                     <String>index.ditamap</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>pdf-zh-cn-knst-oxygen-ifu</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>DITAMAP</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioStorageLocations">
+                                    <list>
+                                        <Byte>2</Byte>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>topics/dita_guide/image_grouping_naming.dita</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>pdf-zh-cn-knst-oxygen-ifu</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>DITAMAP</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioStorageLocations">
+                                    <list>
+                                        <Byte>2</Byte>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>topics/migration/post_process/revise_xref_elements.dita</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>pdf-zh-cn-knst-oxygen-ifu</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>DITAMAP</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioStorageLocations">
+                                    <list>
+                                        <Byte>2</Byte>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>topics/quick_start_dita/xref_elements.dita</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>pdf-zh-cn-knst-oxygen-ifu</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>DITAMAP</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioStorageLocations">
+                                    <list>
+                                        <Byte>2</Byte>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>../RAI-IFU/C1000/topics/8003-000001-B-0001_0008-2-1-2.dita</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>pdf-zh-cn-knst-oxygen-ifu</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>DITAMAP</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioStorageLocations">
+                                    <list>
+                                        <Byte>2</Byte>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>topics/workflow/create_remote_branch.dita</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>pdf-zh-cn-knst-oxygen-ifu</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>DITAMAP</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioStorageLocations">
+                                    <list>
+                                        <Byte>2</Byte>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>topics/dita_guide/image_callouts.dita</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>pdf-zh-cn-knst-oxygen-ifu</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>DITAMAP</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioStorageLocations">
+                                    <list>
+                                        <Byte>2</Byte>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>topics/dita_guide/nesting_index_entries.dita</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>pdf-zh-cn-knst-oxygen-ifu</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>DITAMAP</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioStorageLocations">
+                                    <list>
+                                        <Byte>2</Byte>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>topics/quick_start_dita/general_text_elements.dita</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>pdf-zh-cn-knst-oxygen-ifu</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>DITAMAP</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioStorageLocations">
+                                    <list>
+                                        <Byte>2</Byte>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>topics/dita_guide/key_definition.dita</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>pdf-zh-cn-knst-oxygen-ifu</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>DITAMAP</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioStorageLocations">
+                                    <list>
+                                        <Byte>2</Byte>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>topics/dita_guide/indirect_reuse_example.dita</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>pdf-zh-cn-knst-oxygen-ifu</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>DITAMAP</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioStorageLocations">
+                                    <list>
+                                        <Byte>2</Byte>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>topics/dita_guide/keyscope.dita</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>pdf-zh-cn-knst-oxygen-ifu</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>DITAMAP</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioStorageLocations">
+                                    <list>
+                                        <Byte>2</Byte>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>topics/dita_guide/image_title.dita</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>pdf-zh-cn-knst-oxygen-ifu</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>DITAMAP</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioStorageLocations">
+                                    <list>
+                                        <Byte>2</Byte>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>topics/dita_guide/images_two_side-by-side.dita</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>pdf-zh-cn-knst-oxygen-ifu</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>DITAMAP</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioStorageLocations">
+                                    <list>
+                                        <Byte>2</Byte>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>topics/dita_guide/image_layout.dita</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>pdf-zh-cn-knst-oxygen-ifu</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>DITAMAP</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioStorageLocations">
+                                    <list>
+                                        <Byte>2</Byte>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>topics/dita_guide/image_elements.dita</String>
                                 </field>
                                 <field name="scenarioIds">
                                     <list>
@@ -160,46 +480,6 @@
                             <scenarioAssociation>
                                 <field name="url">
                                     <String>topics/quick_start_dita/bookmap.dita</String>
-                                </field>
-                                <field name="scenarioIds">
-                                    <list>
-                                        <String>pdf-zh-cn-knst-oxygen-ifu</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioTypes">
-                                    <list>
-                                        <String>DITAMAP</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioStorageLocations">
-                                    <list>
-                                        <Byte>2</Byte>
-                                    </list>
-                                </field>
-                            </scenarioAssociation>
-                            <scenarioAssociation>
-                                <field name="url">
-                                    <String>topics/dita_guide/keyscope.dita</String>
-                                </field>
-                                <field name="scenarioIds">
-                                    <list>
-                                        <String>pdf-zh-cn-knst-oxygen-ifu</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioTypes">
-                                    <list>
-                                        <String>DITAMAP</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioStorageLocations">
-                                    <list>
-                                        <Byte>2</Byte>
-                                    </list>
-                                </field>
-                            </scenarioAssociation>
-                            <scenarioAssociation>
-                                <field name="url">
-                                    <String>topics/dita_guide/indirect_reuse_example.dita</String>
                                 </field>
                                 <field name="scenarioIds">
                                     <list>
@@ -299,66 +579,6 @@
                             </scenarioAssociation>
                             <scenarioAssociation>
                                 <field name="url">
-                                    <String>topics/quick_start_dita/xref_elements.dita</String>
-                                </field>
-                                <field name="scenarioIds">
-                                    <list>
-                                        <String>pdf-zh-cn-knst-oxygen-ifu</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioTypes">
-                                    <list>
-                                        <String>DITAMAP</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioStorageLocations">
-                                    <list>
-                                        <Byte>2</Byte>
-                                    </list>
-                                </field>
-                            </scenarioAssociation>
-                            <scenarioAssociation>
-                                <field name="url">
-                                    <String>topics/quick_start_dita/general_text_elements.dita</String>
-                                </field>
-                                <field name="scenarioIds">
-                                    <list>
-                                        <String>pdf-zh-cn-knst-oxygen-ifu</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioTypes">
-                                    <list>
-                                        <String>DITAMAP</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioStorageLocations">
-                                    <list>
-                                        <Byte>2</Byte>
-                                    </list>
-                                </field>
-                            </scenarioAssociation>
-                            <scenarioAssociation>
-                                <field name="url">
-                                    <String>topics/quick_start_dita/table_elements.dita</String>
-                                </field>
-                                <field name="scenarioIds">
-                                    <list>
-                                        <String>pdf-zh-cn-knst-oxygen-ifu</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioTypes">
-                                    <list>
-                                        <String>DITAMAP</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioStorageLocations">
-                                    <list>
-                                        <Byte>2</Byte>
-                                    </list>
-                                </field>
-                            </scenarioAssociation>
-                            <scenarioAssociation>
-                                <field name="url">
                                     <String>topics/dita_guide/indirect_reuse.dita</String>
                                 </field>
                                 <field name="scenarioIds">
@@ -380,26 +600,6 @@
                             <scenarioAssociation>
                                 <field name="url">
                                     <String>topics/dita_guide/reuse_content.dita</String>
-                                </field>
-                                <field name="scenarioIds">
-                                    <list>
-                                        <String>pdf-zh-cn-knst-oxygen-ifu</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioTypes">
-                                    <list>
-                                        <String>DITAMAP</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioStorageLocations">
-                                    <list>
-                                        <Byte>2</Byte>
-                                    </list>
-                                </field>
-                            </scenarioAssociation>
-                            <scenarioAssociation>
-                                <field name="url">
-                                    <String>topics/migration/post_process/revise_xref_elements.dita</String>
                                 </field>
                                 <field name="scenarioIds">
                                     <list>
@@ -459,47 +659,7 @@
                             </scenarioAssociation>
                             <scenarioAssociation>
                                 <field name="url">
-                                    <String>../RAI-IFU/C1000/topics/8003-000001-B-0001_0008-2-1-2.dita</String>
-                                </field>
-                                <field name="scenarioIds">
-                                    <list>
-                                        <String>pdf-zh-cn-knst-oxygen-ifu</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioTypes">
-                                    <list>
-                                        <String>DITAMAP</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioStorageLocations">
-                                    <list>
-                                        <Byte>2</Byte>
-                                    </list>
-                                </field>
-                            </scenarioAssociation>
-                            <scenarioAssociation>
-                                <field name="url">
                                     <String>../RAI-IFU/C1000/topics/8003-000004-B-0001_0007-2.dita</String>
-                                </field>
-                                <field name="scenarioIds">
-                                    <list>
-                                        <String>pdf-zh-cn-knst-oxygen-ifu</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioTypes">
-                                    <list>
-                                        <String>DITAMAP</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioStorageLocations">
-                                    <list>
-                                        <Byte>2</Byte>
-                                    </list>
-                                </field>
-                            </scenarioAssociation>
-                            <scenarioAssociation>
-                                <field name="url">
-                                    <String>topics/dita_guide/image_elements.dita</String>
                                 </field>
                                 <field name="scenarioIds">
                                     <list>
@@ -872,9 +1032,6 @@
                                 <field name="lastCustomSkinCssPath">
                                     <null/>
                                 </field>
-                                <field name="webhelpResponsiveTemplate">
-                                    <null/>
-                                </field>
                                 <field name="publishingTemplateDataPO">
                                     <publishingTemplate>
                                         <field name="templateRoot">
@@ -910,7 +1067,7 @@
                                                 <null/>
                                             </field>
                                             <field name="value">
-                                                <String>E:\RAI-IFU\publishment-template\pdf-css\knst\CUSTOM.css</String>
+                                                <String>E:\RAI-IFU\publishment-template\pdf-css\CUSTOM.css</String>
                                             </field>
                                             <field name="defaultValue">
                                                 <null/>
@@ -1237,12 +1394,12 @@
                             </scenarioAssociation>
                             <scenarioAssociation>
                                 <field name="url">
-                                    <String>../test/CV2000/topics/operating_room1.dita</String>
+                                    <String>../RAI-IFU/C1000_EN/index.ditamap</String>
                                 </field>
                                 <field name="scenarioIds">
                                     <list>
-                                        <String>6/dita/dita.framework/DITA/DITA</String>
-                                        <String>6/dita/dita.framework/DITA/Accessibility</String>
+                                        <String>6/dita/ditamap.framework/DITA Map/DITA Map</String>
+                                        <String>6/dita/ditamap.framework/DITA Map/DITA Map Validation and Completeness Check</String>
                                     </list>
                                 </field>
                                 <field name="scenarioTypes">
@@ -1260,12 +1417,12 @@
                             </scenarioAssociation>
                             <scenarioAssociation>
                                 <field name="url">
-                                    <String>../RAI-IFU/C1000_EN/index.ditamap</String>
+                                    <String>../test/CV2000/topics/operating_room1.dita</String>
                                 </field>
                                 <field name="scenarioIds">
                                     <list>
-                                        <String>6/dita/ditamap.framework/DITA Map/DITA Map</String>
-                                        <String>6/dita/ditamap.framework/DITA Map/DITA Map Validation and Completeness Check</String>
+                                        <String>6/dita/dita.framework/DITA/DITA</String>
+                                        <String>6/dita/dita.framework/DITA/Accessibility</String>
                                     </list>
                                 </field>
                                 <field name="scenarioTypes">

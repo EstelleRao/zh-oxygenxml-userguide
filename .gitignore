@@ -1,0 +1,7 @@
+# pdf publishment files
+out
+temp
+
+# other files that should be ignored
+*.ini
+*.bak

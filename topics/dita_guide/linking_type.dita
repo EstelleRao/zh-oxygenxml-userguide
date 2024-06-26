@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="linking_type">
+    <title>创建交叉引用</title>
+    <body>
+                <p>常见的交叉引用包括对 DITA 主题的引用、对同一主题或其他主题中图片或表格的引用，以及对其他说明书名称的引用。</p>
+                <p>以下介绍创建交叉引用的常用方法。有关创建交叉引用的更多方法，请查阅：<xref
+                                href="../quick_start_dita/xref_elements.dita"/>。</p>
+                <section id="section_hd5_dsw_g1c">
+                        <title>交叉引用 DITA 主题</title>
+                        <ol id="ol_e2b_45d_h1c">
+                                <li>
+                                        <p>为需要引用的 DITA 主题定义 id。</p>
+                                </li>
+                                <li>
+                                        <p>从 <uicontrol>DITA Map Manager</uicontrol> 视图直接拖动需要引用的主题到目标位置。</p>
+                                        <codeblock id="codeblock_ay3_3lf_f1c" outputclass="language-xml">&lt;p>如需调整医生控制台扬声器的音量、开启或关闭医生控制台麦克风，请查阅：&lt;xref href="8003-000001-B-0001_0012-3-6.dita"/> 。&lt;/p></codeblock>
+                                </li>
+                                <li><p>输出 PDF 后，交叉引用的引文显示为“<ph outputclass="blue"
+                                                  >第 + 页码 + 页 + 主题标题</ph>”。</p><image
+                                                keyref="dita.xref_topic_output" width="600"
+                                                id="image_hfh_bzn_mbc"/></li>
+                        </ol>
+                </section>
+                <section id="section_cs1_h5d_h1c">
+                        <title>交叉引用图片或表格</title>
+                        <ol id="ol_bfx_2ty_g1c">
+                                <li>为需要引用的图片或表格定义 id。</li>
+                                <li>复制包含标题的图片或表格。</li>
+                                <li>光标置于目标位置，单击鼠标右键，选择 <menucascade>
+                                                <uicontrol>Paste special（特殊粘贴）</uicontrol>
+                                                <uicontrol>Paste as link（粘贴为链接）</uicontrol>
+                                        </menucascade> 创建交叉引用。</li>
+                                <li>
+                                        <p>在 <codeph>&lt;xref></codeph> 元素中添加 <codeph>outputclass="nopage-xref"</codeph>，确保引文不显示页码。</p>
+                                        <codeblock id="codeblock_ilr_4yz_vbc" outputclass="language-xml">&lt;p>将医生控制台移动至摆放位置后，踩下&lt;xref href="#topic_tks_5zy_jxb/fig_b4d_dlb_gxb" outputclass="nopage-xref"/>所示的平台底盘制动器（制动器红色区域不可见），即可激活制动器，固定医生控制台的位置。&lt;/p></codeblock>
+                                </li>
+                                <li>发布时，设置发布参数 <codeph>args.figurelink.style = NUMBER</codeph> 和 <codeph>args.tablelink.style = NUMBER</codeph>，确保引文不显示图表标题。</li>
+                                <li><p>输出 PDF 后，交叉引用的引文显示为“<ph outputclass="blue"
+                                                >图/表 + 编号</ph>”。</p><image
+                                                keyref="dita.xref_fig_output" width="650"
+                                                id="image_jfh_bzn_mbc"/></li>
+                        </ol>
+                </section>
+                <section id="section_ogg_fsw_g1c">
+                        <title>引用说明书名称</title>
+                        <ol id="ol_utn_4td_h1c">
+                                <li>在目标位置插入 <codeph>&lt;ph></codeph> 元素，输入待引用说明书的名称。</li>
+                                <li>
+                                        <p>在 <codeph>&lt;ph></codeph> 元素中添加 <codeph>outputclass="blue"</codeph>，突出显示引文。</p>
+                                        <codeblock id="codeblock_t52_wyz_vbc" outputclass="language-xml">&lt;p>在可实现预期手术效果的前提下，请使用最低功率或效果设置，并尽量缩短使用时长。有关高频电外科设备设置的详细信息，请查阅：&lt;ph outputclass="blue">C1000 器械和附件说明书&lt;/ph>。&lt;/p></codeblock>
+                                </li>
+                                <li><p>输出 PDF 后，引文显示为 <ph outputclass="blue">蓝色</ph>。</p><image
+                                                keyref="dita.xref_manual_output" width="600"
+                                                id="image_lfh_bzn_mbc"/></li>
+                        </ol>
+                </section>
+        </body>
+</topic>

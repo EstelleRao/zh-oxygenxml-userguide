@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="image_size">
+    <title>图片尺寸</title>
+    <body>
+        <p>图片尺寸影响图片插入文档后的显示效果和所占空间。为确保图片显示效果，在制作和使用图片时，应适当调整图片尺寸，避免出现图片溢出、图片占用过多空间的问题。</p>
+        <p>在制图环节，可使用 PS、AI、Figma 等工具调整原图尺寸，调整后的图片需满足以下要求。</p>
+        <ul id="ul_edv_j3b_kbc">
+            <li>宽度：不超出最大允许宽度（150mm）</li>
+            <li>高度：不超出最大允许高度（230mm）</li>
+            <li>分辨率：尽量满足 300dpi（印刷）/ppi（屏幕显示），应不低于200 dpi/ppi</li>
+        </ul>
+        <p>除了在制图环节调整图片尺寸，也可使用CSS自动处理图片在文档中的显示尺寸，还可以在DITA中使用@width属性、@height属性或@scale属性精细控制图片的显示尺寸，减少图片占用空间，缩小文档大小。</p>
+    </body>
+</topic>

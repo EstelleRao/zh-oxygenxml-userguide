@@ -62,12 +62,12 @@
                 <li>再次校验DITA map，确认图片引用正确。</li>
             </ol> </section>
         <section id="section_mzj_cwp_g1c">
-            <title>图片位置和尺寸</title>
+            <title>调整图片位置和尺寸</title>
             <ol id="ol_gz4_dwp_g1c">
                 <li>单击图片，使用 <codeph>Alt+Enter</codeph> 快捷键打开属性编辑窗口。</li>
-                <li>设置图片位置为行内或换行，在 <uicontrol>Name</uicontrol> 输入框输入 <codeph>placement</codeph>，在 <uicontrol>Value</uicontrol> 输入框输入 <codeph>inline</codeph>（行内显示）或 <codeph>break</codeph>（换行显示）。</li>
+                <li>设置图片位置为行内显示（inline）或换行显示（break），在 <uicontrol>Name</uicontrol> 输入框输入 <codeph>placement</codeph>，在 <uicontrol>Value</uicontrol> 输入框输入 <codeph>inline</codeph> 或 <codeph>break</codeph>。</li>
                 <li>设置图片宽度或高度，在 <uicontrol>Name</uicontrol> 输入框输入 <codeph>width</codeph> 或 <codeph>height</codeph>，在 <uicontrol>Value</uicontrol> 输入框输入具体的数值。</li>
-                <li>发布DITA map，确认图片正常显示。</li>
+                <li>发布 DITA map，确认图片正常显示。</li>
             </ol>
         </section>
     </body>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="image_elements">
+    <title>图片布局</title>
+    <body>
+        <p>为节省页面空间，同一场景的多张图片通常会并排摆放，比如两图并排、三图并排，甚至四图并排。为保证最佳的并排效果，并排图片的尺寸应保持一致。如果尺寸不同，请使用制图软件调整原图尺寸，或在 DITA 文件中为图片设置相同的显示宽度或高度。</p>
+        <p>如果原图尺寸太大，导致占用页面空间太大，也可使用制图软件调整原图尺寸，或在 DITA 文件中调整图片显示宽度或高度。</p>
+    </body>
+</topic>

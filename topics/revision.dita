@@ -130,6 +130,21 @@
                         <entry colsep="1" rowsep="1">饶雅惠</entry>
                         <entry colsep="1" rowsep="1">新增翻译流程</entry>
                     </row>
+                    <row>
+                        <entry colsep="1" rowsep="1">2024年6月26日</entry>
+                        <entry colsep="1" rowsep="1">饶雅惠</entry>
+                        <entry colsep="1" rowsep="1">
+                            <ol id="ol_hb3_ddb_wbc">
+                                <li>新增索引规范</li>
+                                <li>新增交叉引用规范，优化“链接和引用元素”“纠正 <codeph>&lt;xref></codeph> 元素和属性”章节内容</li>
+                                <li>新增图片规范</li>
+                                <li>故障排除补充“PDF 发布失败”“加密图片发布失败”“未找到 Key”三类故障</li>
+                                <li>复用规范补充批量定义 Key 的方法</li>
+                                <li>表格元素补充设置第一列为标题列的方法</li>
+                                <li>新增 .gitignore 文件，用于忽略 out 和 temp 文件夹的变更</li>
+                            </ol>
+                        </entry>
+                    </row>
                 </tbody>
             </tgroup>
         </table>

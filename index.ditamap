@@ -167,6 +167,7 @@
                     <topicref href="topics/dita_guide/keyref_conkeyref.dita"/>
                     <topicref href="topics/dita_guide/indirect_reuse_example.dita"/>
                     <topicref href="topics/dita_guide/keyscope.dita"/>
+                    <topicref href="topics/dita_guide/key_definition.dita"/>
                 </topicref>
             </topicref>
             <topicref keyref="reuse_methods">
@@ -174,73 +175,45 @@
                 <topicref href="topics/dita_guide/variable_reuse.dita"/>
             </topicref>
         </topicref>
-        <topicref keyref="linking"/>
-        <topicref keyref="figures"/>
+        <topicref keyref="linking">
+            <topicref href="topics/dita_guide/linking_type.dita"/>
+            <topicref href="topics/dita_guide/linking_principle.dita"/>
+        </topicref>
+        <topicref href="topics/dita_guide/indexing.dita">
+            <topicref href="topics/dita_guide/placement_of_indexterm_elements.dita"/>
+            <topicref href="topics/dita_guide/nesting_index_entries.dita"/>
+            <topicref href="topics/dita_guide/indexing_guidelines.dita"/>
+        </topicref>
+        <topicref keyref="figures">
+            <topicref href="topics/dita_guide/image_title.dita"/>
+            <topicref href="topics/dita_guide/image_callouts.dita"/>
+            <topicref href="topics/dita_guide/image_layout.dita">
+                <topicref href="topics/dita_guide/images_two_side-by-side.dita"/>
+                <topicref href="topics/dita_guide/images_three_side-by-side.dita"/>
+                <topicref href="topics/dita_guide/images_four_side-by-side.dita"/>
+            </topicref>
+            <topicref href="topics/dita_guide/image_grouping_naming.dita"/>
+            <topicref href="topics/dita_guide/image_file_size.dita"/>
+            <topicref href="topics/dita_guide/image_size.dita"/>
+            <topicref href="topics/dita_guide/image_format.dita"/>
+        </topicref>
     </chapter>
     <chapter keyref="troubleshoot">
         <topicref keyref="output_failed"/>
+        <topicref href="topics/troubleshoot/encrypted_images_output_fail.dita"/>
+        <topicref href="topics/troubleshoot/key_not_found.dita"/>
         <topicref keyref="reusable_components_not_listed"/>
     </chapter>
     <chapter keyref="customize_pdf"/>
     <chapter href="topics/glossary/glossary.dita"/>
+    <chapter href="topics/FAQs.dita"/>
     <chapter href="topics/TopicKeyDef.ditamap" processing-role="resource-only" toc="no"
         format="ditamap"/>
     <chapter href="images/ImageKeyDef.ditamap" processing-role="resource-only" toc="no"
         format="ditamap"/>
     <backmatter>
-        <topicref href="topics/bibliography.dita"/>  
+        <booklists>
+            <bibliolist href="topics/bibliography.dita"/>
+        </booklists>
     </backmatter>
-    <reltable>
-        <relrow>
-            <relcell>
-                <topicref keyref="create_new_repo"/>
-            </relcell>
-            <relcell>
-                <topicref href="https://gitlab.csrbtx.com/rai" format="html" scope="external"
-                    navtitle="RAI projects on GitLab" outputclass="nopage-xref"/>
-            </relcell>
-        </relrow>
-        <relrow>
-            <relcell>
-                <topicref keyref="reusable_components_not_listed"/>
-            </relcell>
-            <relcell>
-                <topicref href="https://www.oxygenxml.com/forum/post53740.html" format="html"
-                    scope="external" navtitle="Components not Reusable Components"
-                    outputclass="nopage-xref"/>
-            </relcell>
-        </relrow>
-        <relrow>
-            <relcell>
-                <topicref keyref="overview"/>
-            </relcell>
-            <relcell>
-                <topicref
-                    href="https://www.oxygenxml.com/doc/versions/26.0/ug-author/topics/introduction.html"
-                    format="html" scope="external" navtitle="User Manual of Oxygen XML Author 26.0"
-                    outputclass="nopage-xref"/>
-                <topicref href="https://www.oxygenxml.com/dita/1.3/specs/index.html" format="html"
-                    scope="external" navtitle="DITA 1.3 Specification" outputclass="nopage-xref"/>
-                <topicref
-                    href="https://www.amazon.com/DITA-Best-Practices-Roadmap-Architecting/dp/0132480522"
-                    format="html" navtitle="DITA Best Practices" scope="external"
-                    outputclass="nopage-xref"/>
-            </relcell>
-        </relrow>
-        <relrow>
-            <relcell>
-                <topicref keyref="quick_start_oxygen"/>
-            </relcell>
-            <relcell>
-                <topicref
-                    href="https://www.oxygenxml.com/doc/versions/26.0/ug-author/topics/add-ons.html"
-                    format="html" scope="external" outputclass="nopage-xref"
-                    navtitle="Oxygen Add-ons"/>
-                <topicref
-                    href="https://www.oxygenxml.com/doc/versions/26.0/ug-author/topics/oxygen-tools.html"
-                    format="html" scope="external" outputclass="nopage-xref" navtitle="Oxygen Tools"
-                />
-            </relcell>
-        </relrow>
-    </reltable>
 </bookmap>

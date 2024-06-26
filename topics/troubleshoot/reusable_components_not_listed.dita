@@ -47,4 +47,9 @@
             </remedy>
         </troubleSolution>
     </troublebody>
+    <related-links scope="external" format="html">
+        <link href="https://www.oxygenxml.com/forum/post53740.html" outputclass="nopage-xref">
+            <linktext>Components not Reusable Components</linktext>
+        </link>
+    </related-links>
 </troubleshooting>

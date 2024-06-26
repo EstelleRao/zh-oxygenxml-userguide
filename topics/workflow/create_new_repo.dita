@@ -30,8 +30,7 @@
                 <info> <image placement="break" width="450" keyref="gitlab.project_URL" id="image_ulb_fmc_jzb"/>
                     <ul id="ul_vwd_mj4_f1c">
                         <li><uicontrol>Project URL</uicontrol>：<xref
-                            href="https://gitlab.csrbtx.com/rai" format="html" scope="external"
-                            /></li>
+                            href="https://gitlab.csrbtx.com/rai" format="html" scope="external" outputclass="nopage-xref"/></li>
                         <li><uicontrol>Project slug</uicontrol>：同 <uicontrol>Project name</uicontrol>，包括大小写。</li>
                     </ul> </info>
             </step>
@@ -53,4 +52,14 @@
             </step>
         </steps>
     </taskbody>
+    <related-links scope="external" format="html">
+        <linklist>
+            <link href="https://gitlab.csrbtx.com/rai" outputclass="nopage-xref">
+                <linktext>RAI projects on GitLab</linktext>
+            </link>
+            <link href="https://www.amazon.com/DITA-Best-Practices-Roadmap-Architecting/dp/0132480522" outputclass="nopage-xref">
+                <linktext>DITA Best Practices</linktext>
+            </link>
+        </linklist>
+    </related-links>
 </task>

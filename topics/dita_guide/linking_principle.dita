@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="linking_principle">
+    <title>交叉引用规范</title>
+    <body>
+                <p>适当的链接可以为新手用户提供更多上下文，让新手用户可以通过链接获取更多信息。适当的链接也可以为资深用户提供信息阀门，让资深用户可以选择查看或跳过链接，避免过多基础或已知信息干扰信息体验。</p>
+                <p>创建交叉引用时，应注意以下原则。</p>
+                <ul id="ul_n4n_5p5_vbc">
+                        <li>
+                                <p>避免提供太多链接。太多链接会打断阅读的流畅性，在用户读完当前主题之前将用户引导到其他主题。太多链接也不易于维护和内容复用，例如，如果删除一个表格或将其移动到另一个主题，则需要更新或删除原有链接。</p>
+                        </li>
+                        <li>
+                                <p>避免提供错误或无用的链接。例如，在一个篇幅较短的主题中，没有必要对同一个主题内的表格或图片进行交叉引用。</p>
+                                <image keyref="dita.xref_example" id="image_gbp_qsz_vbc"
+                                        placement="break" width="400"/>
+                        </li>
+                </ul>
+        </body>
+</topic>

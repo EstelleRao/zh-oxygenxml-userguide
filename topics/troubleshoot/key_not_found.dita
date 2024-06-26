@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE troubleshooting PUBLIC "-//OASIS//DTD DITA Troubleshooting//EN" "troubleshooting.dtd">
+<troubleshooting id="key_not_found">
+    <title>未找到 Key</title>
+    <troublebody>
+        <troubleSolution>
+            <cause>
+                <title>可能原因</title>
+                <ul id="ol_c1y_bj5_vbc">
+                    <li>未在 index.ditamap 上添加 key 定义文件。</li>
+                    <li>公共仓库更新了资源，但 index.ditamap 未索引到更新后的资源。</li>
+                </ul>
+            </cause>
+            <remedy>
+                <title>解决方法</title>
+                <steps-unordered>
+                    <step>
+                        <cmd>添加 key 定义文件到 index.ditamap 上的 common.ditamap（公共资源管理文件）。</cmd>
+                    </step>
+                    <step>
+                        <cmd>在 <uicontrol>DITA Maps Manager</uicontrol> 视图重新打开 index.ditamap，确保上下文已切换到当前 index.ditamap，Oxygen 会重新索引公共资源。</cmd>
+                    </step>
+               </steps-unordered>
+            </remedy>
+        </troubleSolution>
+    </troublebody>
+</troubleshooting>

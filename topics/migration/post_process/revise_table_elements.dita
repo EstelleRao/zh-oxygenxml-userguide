@@ -4,9 +4,10 @@
     <title>纠正 <codeph>&lt;table></codeph> 元素和属性</title>
     <body>
         <ol id="ol_nz4_xkt_xzb">
-            <li>为标题行添加@header属性。</li>
-            <li>如有必要，可在表格属性窗口调整特定行或列的对齐方式。表格中的文字默认左对齐，图标或图片默认居中对齐。</li>
-            <li>在表格的@colwidth属性中调整列宽。</li>
+            <li>为标题行或标题列添加 @header 属性。有关操作，请查阅：<xref
+                    href="../../quick_start_dita/table_elements.dita"/>。</li>
+            <li>在表格的 @colwidth 属性中调整列宽。</li>
+            <li>如有必要，可在表格属性面板调整特定行或列的对齐方式。表格中的文字通常左对齐，图标或图片通常居中对齐。</li>
         </ol>
     </body>
 </topic>
