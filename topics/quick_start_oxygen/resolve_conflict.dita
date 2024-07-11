@@ -1,26 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="resolve_conflict">
-    <title>解决冲突</title>
+    <title>解决合并冲突</title>
     <body>
-        <p>完成更改并提交到本地仓库后，需要将更改再推送到远程仓库。如果推送时出现冲突，则表明远程仓库有新的提交，未同步到本地仓库。请按照如下步骤解决冲突。</p>
-        <ol>
-            <li>使用 <codeph>Pull（merge）</codeph> 操作拉取远程仓库的最新提交，合并更改到本地仓库。</li>
-            <li>在工作区，选中存在冲突的文件，单击右键后点击 <uicontrol>Resolve using Mine</uicontrol>、<uicontrol>Resolve using Theirs</uicontrol> 或 <uicontrol>Mark as resolved </uicontrol>，快速解决冲突。</li>
-            <li>如需逐行解决冲突，可使用文件对比窗口逐个打开存在冲突的文件，查看并解决冲突。<ol id="ol_xks_pkp_31c">
-                <li>选中文件后，双击文件或单击右键后点击 <uicontrol>Open in compare editor</uicontrol>，在文件对比窗口打开冲突文件。</li>
-                <li>查看冲突行，选择要保留和舍弃的更改，解决冲突后保存文件。</li>
-                <li>关闭文件对比窗口后，保存的文件将自动移至暂存区。</li>
-                </ol></li>
-            <li>在所有冲突均已解决，且工作区的文件均移至暂存区后，可以继续提交和推送更改。<ol>
-                <li>输入一条提交记录，提交更改到本地仓库。</li>
-                <li>推送本地仓库的更改到远程仓库。</li>
-                </ol></li>
-        </ol>
-        <note type="tip">
-            <ul>
-                <li>如需中止合并，可点击 <uicontrol>Abort merge</uicontrol>，使本地仓库恢复到拉取操作之前的状态。</li>
-            </ul>
-        </note>
+        <p>Git 通常可以自行合并不同分支的更改，比如对不同文件的更改或对同一文件中不同行的更改。当不同分支存在竞争更改时，Git 无法判断应该保留哪个版本，需要手动解决冲突。手动解决冲突时，如果无法确定应该保留哪些内容，请与团队成员讨论确定。</p>
+        <ul id="ul_v1z_2ct_zbc">
+            <li>竞争更改场景1：不同分支对相同文件的相同行做了不同的更改</li>
+            <li>竞争更改场景2：一个分支改动了文件，另一个分支删除、重命名或移动了同一文件</li>
+        </ul>
+        <p>解决合并冲突有多种方式，可以直接在 GitLab 上解决，也可以使用内置命令行的工具解决。</p>
+        <ul id="ul_zgs_3d3_ybc">
+            <li>如果合并冲突由相同行更改引起，可以尝试使用冲突编辑器在 GitLab 上解决冲突。有关详情，请查阅：<xref
+                    href="../quick_start_oxygen/resolve_conflict_using_gitlab.dita"/>。</li>
+            <li>对于其他类型的合并冲突，必须先在本地仓库解决，再将更改推送到 GitLab 远程仓库。可以使用命令行或 Oxygen Git 客户端、VS Code 之类的工具推送更改。有关详情，请查阅：<xref
+                    href="../quick_start_oxygen/resolve_conflict_using_oxygen.dita"/>、<xref
+                    href="../quick_start_oxygen/resolve_conflict_using_VS_Code.dita"/>。</li>
+        </ul>
     </body>
+    <related-links scope="external" format="html">
+        <linklist>
+            <link
+                href="https://git-scm.com/book/zh/v2/Git-%E5%88%86%E6%94%AF-%E5%88%86%E6%94%AF%E7%9A%84%E6%96%B0%E5%BB%BA%E4%B8%8E%E5%90%88%E5%B9%B6#_basic_merging"
+                outputclass="nopage-xref">
+                <linktext>分支新建与合并</linktext>
+            </link>
+            <link href="https://docs.gitlab.com/ee/user/project/merge_requests/conflicts.html"
+                outputclass="nopage-xref">
+                <linktext>Merge conflicts</linktext>
+            </link>
+            <link
+                href="https://docs.github.com/zh/pull-requests/collaborating-with-pull-requests/addressing-merge-conflicts/about-merge-conflicts"
+                outputclass="nopage-xref">
+                <linktext>合并冲突</linktext>
+            </link>
+            <link
+                href="https://www.freecodecamp.org/chinese/news/resolve-merge-conflicts-in-git-a-practical-guide/"
+                outputclass="nopage-xref">
+                <linktext>如何解决 Git 中的合并冲突</linktext>
+            </link>
+            <link href="https://blog.csdn.net/qq_27905183/article/details/78575247"
+                outputclass="nopage-xref">
+                <linktext>git权威指南总结七：git merge冲突解决</linktext>
+            </link>
+        </linklist>
+    </related-links>
 </topic>

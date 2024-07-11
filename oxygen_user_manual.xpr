@@ -99,7 +99,7 @@
                         <scenarioAssociation-array>
                             <scenarioAssociation>
                                 <field name="url">
-                                    <String>topics/quick_start_dita/table_elements.dita</String>
+                                    <String>index.ditamap</String>
                                 </field>
                                 <field name="scenarioIds">
                                     <list>
@@ -119,7 +119,27 @@
                             </scenarioAssociation>
                             <scenarioAssociation>
                                 <field name="url">
-                                    <String>index.ditamap</String>
+                                    <String>topics/quick_start_oxygen/git_merge_using_VS_Code.dita</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>pdf-zh-cn-knst-oxygen-ifu</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>DITAMAP</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioStorageLocations">
+                                    <list>
+                                        <Byte>2</Byte>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>topics/quick_start_dita/table_elements.dita</String>
                                 </field>
                                 <field name="scenarioIds">
                                     <list>
@@ -220,26 +240,6 @@
                             <scenarioAssociation>
                                 <field name="url">
                                     <String>topics/workflow/create_remote_branch.dita</String>
-                                </field>
-                                <field name="scenarioIds">
-                                    <list>
-                                        <String>pdf-zh-cn-knst-oxygen-ifu</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioTypes">
-                                    <list>
-                                        <String>DITAMAP</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioStorageLocations">
-                                    <list>
-                                        <Byte>2</Byte>
-                                    </list>
-                                </field>
-                            </scenarioAssociation>
-                            <scenarioAssociation>
-                                <field name="url">
-                                    <String>topics/dita_guide/image_callouts.dita</String>
                                 </field>
                                 <field name="scenarioIds">
                                     <list>

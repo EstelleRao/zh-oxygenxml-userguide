@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="resolve_conflict_using_VS_Code">
+    <title>使用 VS Code 解决合并冲突</title>
+    <body>
+        <p>如有冲突，可在左侧侧边栏 <uicontrol>Source Control</uicontrol> 的 <uicontrol>Merge Changes</uicontrol> 区域查看所有冲突文件。解决冲突时，可直接打开文件修改冲突行，也可在合并编辑器中修改冲突行。</p>
+        <section>
+            <title>直接打开文件修改冲突行</title>
+            <ol>
+                <li>打开冲突文件，手动修改冲突行并删除冲突标记，也可点击冲突行上方的按钮应用一方或双方的更改。<image placement="break"
+                        keyref="vscode.resolve_conflicts" width="400"/><ul id="ul_yl4_gy3_zbc">
+                        <li><uicontrol>Accept Current Change</uicontrol>：应用当前分支（比如 <codeph>feature/KL</codeph>）的更改。</li>
+                        <li><uicontrol>Accept Incoming Change</uicontrol>：应用待合并分支（比如 <codeph>develop/KL</codeph>）的更改。</li>
+                        <li><uicontrol>Accept Both Changes</uicontrol>：应用当前分支和待合并分支的更改。</li>
+                        <li><uicontrol>Compare Changes</uicontrol>：在文件对比编辑器中比较差异。</li>
+                    </ul></li>
+                <li>完成修改后，保存文件。</li>
+                <li>保存文件后，点击 <uicontrol>Stage Changes</uicontrol> 将单个文件添加到暂存区，也可点击 <uicontrol>Stage All Merge Changes</uicontrol> 将所有文件添加到暂存区。<image
+                        placement="break" keyref="vscode.stage_changes" width="400"
+                        id="image_mkx_nnp_ybc"/></li>
+                <li>填写提交记录，提交更改到本地仓库。<image placement="break" keyref="vscode.commit_changes"
+                        width="350" id="image_j31_pnp_ybc"/></li>
+                <li>推送更改到远程仓库。</li>
+            </ol>
+        </section>
+        <section>
+            <title>在合并编辑器中修改冲突行</title>
+            <ol id="ol_ydg_2bj_zbc">
+                <li>打开冲突文件，点击 <uicontrol>Resolve in Merge Editor</uicontrol> 在合并编辑器中查看高亮显示的冲突行。</li>
+                <li>使用底部视图右侧滚动条上的计数器跟踪待解决的冲突，点击计数器跳到下一个待解决的冲突。<image
+                        keyref="vscode.3-way_merge_editor" placement="break" width="500"
+                        id="image_vwr_1gj_zbc"/><ul id="ul_wwr_1gj_zbc">
+                        <li><uicontrol>Incoming（左侧视图）</uicontrol>：显示待合并分支（比如 <codeph>develop/KL</codeph>）的冲突文件，可点击 <uicontrol>Accept Incoming</uicontrol> 接受更改，或点击 <uicontrol>Accept Combination</uicontrol> 合并双方更改。</li>
+                        <li><uicontrol>Current（右侧视图）</uicontrol>：显示当前分支（比如 <codeph>feature/KL</codeph>）的冲突文件，可点击 <uicontrol>Accept Current</uicontrol> 接受更改，或点击 <uicontrol>Accept Combination</uicontrol> 合并双方更改。</li>
+                        <li><uicontrol>Result（底部视图）</uicontrol>：显示合并结果，可直接编辑冲突行，重新修改合并结果。</li>
+                    </ul></li>
+                <li>在左侧和右侧视图中点击冲突行上方的按钮应用更改，也可在底部视图中重新修改合并结果。</li>
+                <li>解决完所有冲突后，点击 <uicontrol>Complete Merge</uicontrol> 完成合并，文件自动添加到暂存区。</li>
+                <li>填写提交记录，提交更改到本地仓库。</li>
+                <li>推送更改到远程仓库。</li>
+            </ol>
+        </section>
+    </body>
+</topic>

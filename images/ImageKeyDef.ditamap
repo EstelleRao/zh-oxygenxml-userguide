@@ -1,226 +1,162 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd"[]>
 <map xml:lang="zh-CN">
-    <keydef keys="dita.alt_element" href="dita/dita.alt_element.png" format="png"/>
-    <keydef keys="dita.backmatter" href="dita/dita.backmatter.png" format="png"/>
-    <keydef keys="dita.chapter" href="dita/dita.chapter.png" format="png"/>
-    <keydef keys="dita.converted_en-US_filename" href="dita/dita.converted_en-US_filename.png"
-        format="png"/>
-    <keydef keys="dita.converted_zh-CN_filename" href="dita/dita.converted_zh-CN_filename.png"
-        format="png"/>
-    <keydef keys="dita.correct_li" href="dita/dita.correct_li.png" format="png"/>
-    <keydef keys="dita.correct_note" href="dita/dita.correct_note.png" format="png"/>
-    <keydef keys="dita.delete_alt_element" href="dita/dita.delete_alt_element.png" format="png"/>
-    <keydef keys="dita.ditamap_file_name" href="dita/dita.ditamap_file_name.png" format="png"/>
-    <keydef keys="dita.ditamap_title" href="dita/dita.ditamap_title.png" format="png"/>
-    <keydef keys="dita.frontmatter" href="dita/dita.frontmatter.png" format="png"/>
-    <keydef keys="dita.image_href" href="dita/dita.image_href.png" format="png"/>
-    <keydef keys="dita.incorrect_li" href="dita/dita.incorrect_li.png" format="png"/>
-    <keydef keys="dita.incorrect_li_xml" href="dita/dita.incorrect_li_xml.png" format="png"/>
-    <keydef keys="dita.incorrect_note" href="dita/dita.incorrect_note.png" format="png"/>
-    <keydef keys="dita.migration_word_example" href="dita/dita.migration_word_example.png"
-        format="png"/>
-    <keydef keys="dita.naming_number" href="dita/dita.naming_number.png" format="png"/>
-    <keydef keys="dita.naming_semantics" href="dita/dita.naming_semantics.png" format="png"/>
-    <keydef keys="dita.naming_semantics_levels" href="dita/dita.naming_semantics_levels.png"
-        format="png"/>
-    <keydef keys="dita.new_filter" href="dita/dita.new_filter.png" format="png"/>
-    <keydef keys="dita.new_keyword" href="dita/dita.new_keyword.png" format="png"/>
-    <keydef keys="dita.new_metadata" href="dita/dita.new_metadata.png" format="png"/>
-    <keydef keys="dita.replace_b_with_note" href="dita/dita.replace_b_with_note.png" format="png"/>
-    <keydef keys="dita.replace_p_with_image" href="dita/dita.replace_p_with_image.png" format="png"/>
-    <keydef keys="dita.replace_p_with_note" href="dita/dita.replace_p_with_note.png" format="png"/>
-    <keydef keys="dita.resource-only" href="dita/dita.resource-only.png" format="png"/>
-    <keydef keys="dita.update_ditamap" href="dita/dita.update_ditamap.png" format="png"/>
-    <keydef keys="dita.xref_example" href="dita/dita.xref_example.png" format="png"/>
-    <keydef keys="dita.xref_fig_output" href="dita/dita.xref_fig_output.png" format="png"/>
-    <keydef keys="dita.xref_manual_output" href="dita/dita.xref_manual_output.png" format="png"/>
-    <keydef keys="dita.xref_topic_output" href="dita/dita.xref_topic_output.png" format="png"/>
-    <keydef keys="gitlab.add_reviewers" href="gitlab/gitlab.add_reviewers.png" format="png"/>
-    <keydef keys="gitlab.approval_settings" href="gitlab/gitlab.approval_settings.png" format="png"/>
-    <keydef keys="gitlab.approve_merge_request" href="gitlab/gitlab.approve_merge_request.png"
-        format="png"/>
-    <keydef keys="gitlab.branch_defaults" href="gitlab/gitlab.branch_defaults.png" format="png"/>
-    <keydef keys="gitlab.branch_name" href="gitlab/gitlab.branch_name.png" format="png"/>
-    <keydef keys="gitlab.change_path" href="gitlab/gitlab.change_path.png" format="png"/>
-    <keydef keys="gitlab.cherry-pick_failed" href="gitlab/gitlab.cherry-pick_failed.png"
-        format="png"/>
-    <keydef keys="gitlab.cherry-pick_successful" href="gitlab/gitlab.cherry-pick_successful.png"
-        format="png"/>
-    <keydef keys="gitlab.cherry-pick_this_commit" href="gitlab/gitlab.cherry-pick_this_commit.png"
-        format="png"/>
-    <keydef keys="gitlab.cherry-pick_this_MR" href="gitlab/gitlab.cherry-pick_this_MR.png"
-        format="png"/>
-    <keydef keys="gitlab.clone_repository" href="gitlab/gitlab.clone_repository.png" format="png"/>
-    <keydef keys="gitlab.commits" href="gitlab/gitlab.commits.png" format="png"/>
-    <keydef keys="gitlab.commits_cherry-pick" href="gitlab/gitlab.commits_cherry-pick.png"
-        format="png"/>
-    <keydef keys="gitlab.compare_branches_and_continue"
-        href="gitlab/gitlab.compare_branches_and_continue.png" format="png"/>
-    <keydef keys="gitlab.copy_URL" href="gitlab/gitlab.copy_URL.png" format="png"/>
-    <keydef keys="gitlab.create_merge_request" href="gitlab/gitlab.create_merge_request.png"
-        format="png"/>
-    <keydef keys="gitlab.default_branch" href="gitlab/gitlab.default_branch.png" format="png"/>
-    <keydef keys="gitlab.fork_project" href="gitlab/gitlab.fork_project.png" format="png"/>
-    <keydef keys="gitlab.git_branch_model_simplified"
-        href="gitlab/gitlab.git_branch_model_simplified.png" format="png"/>
-    <keydef keys="gitlab.git_diff_add_comment" href="gitlab/gitlab.git_diff_add_comment.png"
-        format="png"/>
-    <keydef keys="gitlab.git_diff_add_comment_icon"
-        href="gitlab/gitlab.git_diff_add_comment_icon.png" format="png"/>
-    <keydef keys="gitlab.git_diff_add_to_review" href="gitlab/gitlab.git_diff_add_to_review.png"
-        format="png"/>
-    <keydef keys="gitlab.git_diff_finish_review" href="gitlab/gitlab.git_diff_finish_review.png"
-        format="png"/>
-    <keydef keys="gitlab.local_repository" href="gitlab/gitlab.local_repository.png" format="png"/>
-    <keydef keys="gitlab.merged_requests" href="gitlab/gitlab.merged_requests.png" format="png"/>
-    <keydef keys="gitlab.merge_merge_request" href="gitlab/gitlab.merge_merge_request.png"
-        format="png"/>
-    <keydef keys="gitlab.merge_options" href="gitlab/gitlab.merge_options.png" format="png"/>
-    <keydef keys="gitlab.merge_requests" href="gitlab/gitlab.merge_requests.png" format="png"/>
-    <keydef keys="gitlab.merge_request_activity" href="gitlab/gitlab.merge_request_activity.png"
-        format="png"/>
-    <keydef keys="gitlab.merge_request_approvals" href="gitlab/gitlab.merge_request_approvals.png"
-        format="png"/>
-    <keydef keys="gitlab.merge_request_changes" href="gitlab/gitlab.merge_request_changes.png"
-        format="png"/>
-    <keydef keys="gitlab.merge_request_dependencies"
-        href="gitlab/gitlab.merge_request_dependencies.png" format="png"/>
-    <keydef keys="gitlab.merge_request_notification"
-        href="gitlab/gitlab.merge_request_notification.png" format="png"/>
-    <keydef keys="gitlab.merge_request_resolve_thread"
-        href="gitlab/gitlab.merge_request_resolve_thread.png" format="png"/>
-    <keydef keys="gitlab.merge_request_target_project"
-        href="gitlab/gitlab.merge_request_target_project.png" format="png"/>
-    <keydef keys="gitlab.merge_request_title" href="gitlab/gitlab.merge_request_title.png"
-        format="png"/>
-    <keydef keys="gitlab.MR_cherry-pick" href="gitlab/gitlab.MR_cherry-pick.png" format="png"/>
-    <keydef keys="gitlab.new_branch" href="gitlab/gitlab.new_branch.png" format="png"/>
-    <keydef keys="gitlab.new_project" href="gitlab/gitlab.new_project.png" format="png"/>
-    <keydef keys="gitlab.project_name" href="gitlab/gitlab.project_name.png" format="png"/>
-    <keydef keys="gitlab.project_URL" href="gitlab/gitlab.project_URL.png" format="png"/>
-    <keydef keys="gitlab.protected_branches_expand"
-        href="gitlab/gitlab.protected_branches_expand.png" format="png"/>
-    <keydef keys="gitlab.protected_branches_settings"
-        href="gitlab/gitlab.protected_branches_settings.png" format="png"/>
-    <keydef keys="gitlab.repo_history" href="gitlab/gitlab.repo_history.png" format="png"/>
-    <keydef keys="gitlab.settings_merge_requests" href="gitlab/gitlab.settings_merge_requests.png"
-        format="png"/>
-    <keydef keys="gitlab.settings_repository" href="gitlab/gitlab.settings_repository.png"
-        format="png"/>
-    <keydef keys="gitlab.source_branch" href="gitlab/gitlab.source_branch.png" format="png"/>
-    <keydef keys="gitlab.squash_commits_when_merging"
-        href="gitlab/gitlab.squash_commits_when_merging.png" format="png"/>
-    <keydef keys="git_client.amend_last_commit" href="git_client/git_client.amend_last_commit.png"
-        format="png"/>
-    <keydef keys="git_client.auto_push_changes" href="git_client/git_client.auto_push_changes.png"
-        format="png"/>
-    <keydef keys="git_client.branch_drop-down" href="git_client/git_client.branch_drop-down.png"
-        format="png"/>
-    <keydef keys="git_client.checkout_branch" href="git_client/git_client.checkout_branch.png"
-        format="png"/>
-    <keydef keys="git_client.checkout_branch_dropbox"
-        href="git_client/git_client.checkout_branch_dropbox.png" format="png"/>
-    <keydef keys="git_client.checkout_branch_right_click"
-        href="git_client/git_client.checkout_branch_right_click.png" format="png"/>
-    <keydef keys="git_client.checkout_temp_branch_dropbox"
-        href="git_client/git_client.checkout_temp_branch_dropbox.png" format="png"/>
-    <keydef keys="git_client.checkout_temp_branch_right_click"
-        href="git_client/git_client.checkout_temp_branch_right_click.png" format="png"/>
-    <keydef keys="git_client.choose_a_previously_used_comment"
-        href="git_client/git_client.choose_a_previously_used_comment.png" format="png"/>
-    <keydef keys="git_client.clone_new_repository"
-        href="git_client/git_client.clone_new_repository.png" format="png"/>
-    <keydef keys="git_client.commit_message" href="git_client/git_client.commit_message.png"
-        format="png"/>
-    <keydef keys="git_client.create_local_temp_branch"
-        href="git_client/git_client.create_local_temp_branch.png" format="png"/>
-    <keydef keys="git_client.Git_Branch_Manager" href="git_client/git_client.Git_Branch_Manager.png"
-        format="png"/>
-    <keydef keys="git_client.git_staging_view" href="git_client/git_client.git_staging_view.png"
-        format="png"/>
-    <keydef keys="git_client.pull" href="git_client/git_client.pull.png" format="png"/>
-    <keydef keys="git_client.pull_icon" href="git_client/git_client.pull_icon.png" format="png"/>
-    <keydef keys="git_client.push" href="git_client/git_client.push.png" format="png"/>
-    <keydef keys="git_client.push_icon" href="git_client/git_client.push_icon.png" format="png"/>
-    <keydef keys="git_client.show_current_repository_history"
-        href="git_client/git_client.show_current_repository_history.png" format="png"/>
-    <keydef keys="git_client.show_Git_Branch_Manager_view"
-        href="git_client/git_client.show_Git_Branch_Manager_view.png" format="png"/>
-    <keydef keys="git_client.stage_all" href="git_client/git_client.stage_all.png" format="png"/>
-    <keydef keys="git_client.stage_files" href="git_client/git_client.stage_files.png" format="png"/>
-    <keydef keys="git_client.stage_selected" href="git_client/git_client.stage_selected.png"
-        format="png"/>
-    <keydef keys="git_client.stash_changes" href="git_client/git_client.stash_changes.png"
-        format="png"/>
-    <keydef keys="git_client.stash_drop-down_menu"
-        href="git_client/git_client.stash_drop-down_menu.png" format="png"/>
-    <keydef keys="git_client.unstage" href="git_client/git_client.unstage.png" format="png"/>
-    <keydef keys="git_client.unstage_all" href="git_client/git_client.unstage_all.png" format="png"/>
-    <keydef keys="git_client.unstage_files" href="git_client/git_client.unstage_files.png"
-        format="png"/>
-    <keydef keys="git_client.unstage_selected" href="git_client/git_client.unstage_selected.png"
-        format="png"/>
-    <keydef keys="oxygen_convert.heading_levels" href="oxygen/oxygen_convert.heading_levels.png"
-        format="png"/>
-    <keydef keys="oxygen_convert.word_to_dita" href="oxygen/oxygen_convert.word_to_dita.png"
-        format="png"/>
-    <keydef keys="oxygen_dita_maps_manager.context"
-        href="oxygen/oxygen_dita_maps_manager.context.png" format="png"/>
-    <keydef keys="oxygen_dita_maps_manager.insert_reference"
-        href="oxygen/oxygen_dita_maps_manager.insert_reference.png" format="png"/>
-    <keydef keys="oxygen_dita_maps_manager.view" href="oxygen/oxygen_dita_maps_manager.view.png"
-        format="png"/>
-    <keydef keys="oxygen_dita_reusable_components.reindex" href="oxygen/oxygen_dita_reusable_components.reindex.png" format="png"/>
-    <keydef keys="oxygen_dita_reusable_components.reuse_failed" href="oxygen/oxygen_dita_reusable_components.reuse_failed.png" format="png"/>
-    <keydef keys="oxygen_find_replace.window" href="oxygen/oxygen_find_replace.window.png" format="png"/>
-    <keydef keys="oxygen_new_file.button" href="oxygen/oxygen_new_file.button.png" format="png"/>
-    <keydef keys="oxygen_new_file.window" href="oxygen/oxygen_new_file.window.png" format="png"/>
-    <keydef keys="oxygen_preferences.open_find_index"
-        href="oxygen/oxygen_preferences.open_find_index.png" format="png"/>
-    <keydef keys="oxygen_project.move_resources" href="oxygen/oxygen_project.move_resources.png"
-        format="png"/>
-    <keydef keys="oxygen_project.main_file_support" href="oxygen/oxygen_project.main_file_support.png"
-        format="png"/>
-    <keydef keys="oxygen_project.new_project" href="oxygen/oxygen_project.new_project.png"
-        format="png"/>
-    <keydef keys="oxygen_project.preferences" href="oxygen/oxygen_project.preferences.png"
-        format="png"/>
-    <keydef keys="oxygen_project.project_view" href="oxygen/oxygen_project.project_view.png"
-        format="png"/>
-    <keydef keys="oxygen_project.root_file" href="oxygen/oxygen_project.root_file.png"
-        format="png"/>
-    <keydef keys="oxygen_project.rename" href="oxygen/oxygen_project.rename.png"
-        format="png"/>
-    <keydef keys="oxygen_project.settings_button" href="oxygen/oxygen_project.settings_button.png"
-        format="png"/>
-    <keydef keys="oxygen_project.transform" href="oxygen/oxygen_project.transform.png"
-        format="png"/>
-    <keydef keys="oxygen_project.validate" href="oxygen/oxygen_project.validate.png"
-        format="png"/>
-    <keydef keys="oxygen_transform.apply_button" href="oxygen/oxygen_transform.apply_button.png"
-        format="png"/>
-    <keydef keys="oxygen_transform.edit_button" href="oxygen/oxygen_transform.edit_button.png"
-        format="png"/>
-    <keydef keys="oxygen_transform.edit_filters" href="oxygen/oxygen_transform.edit_filters.png"
-        format="png"/>
-    <keydef keys="oxygen_transform.edit_parameters"
-        href="oxygen/oxygen_transform.edit_parameters.png" format="png"/>
-    <keydef keys="oxygen_transform.edit_scenario" href="oxygen/oxygen_transform.edit_scenario.png"
-        format="png"/>
-    <keydef keys="oxygen_transform.edit_template" href="oxygen/oxygen_transform.edit_template.png"
-        format="png"/>
-    <keydef keys="oxygen_translation.create_fluenta_project" href="oxygen/oxygen_translation.create_fluenta_project.png"
-        format="png"/>
-    <keydef keys="oxygen_translation.generate_xliff" href="oxygen/oxygen_translation.generate_xliff.png"
-        format="png"/>
-    <keydef keys="oxygen_translation.import_xliff" href="oxygen/oxygen_translation.import_xliff.png"
-        format="png"/>
-    <keydef keys="oxygen_validate.apply_button" href="oxygen/oxygen_validate.apply_button.png"
-        format="png"/>
-    <keydef keys="oxygen_validate.configure_dropdown"
-        href="oxygen/oxygen_validate.configure_dropdown.png" format="png"/>
-    <keydef keys="oxygen_validate.configure_window"
-        href="oxygen/oxygen_validate.configure_window.png" format="png"/>
-    <keydef keys="oxygen_layout.overview" href="oxygen/oxygen_layout.overview.png" format="png"/>
+    <keydef keys="dita.alt_element" href="dita/dita.alt_element.png" format="png"></keydef>
+    <keydef keys="dita.backmatter" href="dita/dita.backmatter.png" format="png"></keydef>
+    <keydef keys="dita.chapter" href="dita/dita.chapter.png" format="png"></keydef>
+    <keydef keys="dita.conkeyref" href="dita/dita.conkeyref.png" format="png"></keydef>
+    <keydef keys="dita.converted_en-US_filename" href="dita/dita.converted_en-US_filename.png" format="png"></keydef>
+    <keydef keys="dita.converted_zh-CN_filename" href="dita/dita.converted_zh-CN_filename.png" format="png"></keydef>
+    <keydef keys="dita.correct_li" href="dita/dita.correct_li.png" format="png"></keydef>
+    <keydef keys="dita.correct_note" href="dita/dita.correct_note.png" format="png"></keydef>
+    <keydef keys="dita.delete_alt_element" href="dita/dita.delete_alt_element.png" format="png"></keydef>
+    <keydef keys="dita.ditamap_file_name" href="dita/dita.ditamap_file_name.png" format="png"></keydef>
+    <keydef keys="dita.ditamap_title" href="dita/dita.ditamap_title.png" format="png"></keydef>
+    <keydef keys="dita.frontmatter" href="dita/dita.frontmatter.png" format="png"></keydef>
+    <keydef keys="dita.image_href" href="dita/dita.image_href.png" format="png"></keydef>
+    <keydef keys="dita.incorrect_li" href="dita/dita.incorrect_li.png" format="png"></keydef>
+    <keydef keys="dita.incorrect_li_xml" href="dita/dita.incorrect_li_xml.png" format="png"></keydef>
+    <keydef keys="dita.incorrect_note" href="dita/dita.incorrect_note.png" format="png"></keydef>
+    <keydef keys="dita.migration_word_example" href="dita/dita.migration_word_example.png" format="png"></keydef>
+    <keydef keys="dita.naming_number" href="dita/dita.naming_number.png" format="png"></keydef>
+    <keydef keys="dita.naming_semantics" href="dita/dita.naming_semantics.png" format="png"></keydef>
+    <keydef keys="dita.naming_semantics_levels" href="dita/dita.naming_semantics_levels.png" format="png"></keydef>
+    <keydef keys="dita.new_filter" href="dita/dita.new_filter.png" format="png"></keydef>
+    <keydef keys="dita.new_keyword" href="dita/dita.new_keyword.png" format="png"></keydef>
+    <keydef keys="dita.new_metadata" href="dita/dita.new_metadata.png" format="png"></keydef>
+    <keydef keys="dita.replace_b_with_note" href="dita/dita.replace_b_with_note.png" format="png"></keydef>
+    <keydef keys="dita.replace_p_with_image" href="dita/dita.replace_p_with_image.png" format="png"></keydef>
+    <keydef keys="dita.replace_p_with_note" href="dita/dita.replace_p_with_note.png" format="png"></keydef>
+    <keydef keys="dita.resource-only" href="dita/dita.resource-only.png" format="png"></keydef>
+    <keydef keys="dita.update_ditamap" href="dita/dita.update_ditamap.png" format="png"></keydef>
+    <keydef keys="dita.xref_example" href="dita/dita.xref_example.png" format="png"></keydef>
+    <keydef keys="dita.xref_fig_output" href="dita/dita.xref_fig_output.png" format="png"></keydef>
+    <keydef keys="dita.xref_manual_output" href="dita/dita.xref_manual_output.png" format="png"></keydef>
+    <keydef keys="dita.xref_topic_output" href="dita/dita.xref_topic_output.png" format="png"></keydef>
+    <keydef keys="gitlab.add_reviewers" href="gitlab/gitlab.add_reviewers.png" format="png"></keydef>
+    <keydef keys="gitlab.approval_settings" href="gitlab/gitlab.approval_settings.png" format="png"></keydef>
+    <keydef keys="gitlab.approve_merge_request" href="gitlab/gitlab.approve_merge_request.png" format="png"></keydef>
+    <keydef keys="gitlab.branch_defaults" href="gitlab/gitlab.branch_defaults.png" format="png"></keydef>
+    <keydef keys="gitlab.branch_name" href="gitlab/gitlab.branch_name.png" format="png"></keydef>
+    <keydef keys="gitlab.change_path" href="gitlab/gitlab.change_path.png" format="png"></keydef>
+    <keydef keys="gitlab.cherry-pick_failed" href="gitlab/gitlab.cherry-pick_failed.png" format="png"></keydef>
+    <keydef keys="gitlab.cherry-pick_successful" href="gitlab/gitlab.cherry-pick_successful.png" format="png"></keydef>
+    <keydef keys="gitlab.cherry-pick_this_commit" href="gitlab/gitlab.cherry-pick_this_commit.png" format="png"></keydef>
+    <keydef keys="gitlab.cherry-pick_this_MR" href="gitlab/gitlab.cherry-pick_this_MR.png" format="png"></keydef>
+    <keydef keys="gitlab.clone_repository" href="gitlab/gitlab.clone_repository.png" format="png"></keydef>
+    <keydef keys="gitlab.commits" href="gitlab/gitlab.commits.png" format="png"></keydef>
+    <keydef keys="gitlab.commits_cherry-pick" href="gitlab/gitlab.commits_cherry-pick.png" format="png"></keydef>
+    <keydef keys="gitlab.compare_branches_and_continue" href="gitlab/gitlab.compare_branches_and_continue.png" format="png"></keydef>
+    <keydef keys="gitlab.copy_URL" href="gitlab/gitlab.copy_URL.png" format="png"></keydef>
+    <keydef keys="gitlab.create_merge_request" href="gitlab/gitlab.create_merge_request.png" format="png"></keydef>
+    <keydef keys="gitlab.default_branch" href="gitlab/gitlab.default_branch.png" format="png"></keydef>
+    <keydef keys="gitlab.fork_project" href="gitlab/gitlab.fork_project.png" format="png"></keydef>
+    <keydef keys="gitlab.git_branch_model_simplified" href="gitlab/gitlab.git_branch_model_simplified.png" format="png"></keydef>
+    <keydef keys="gitlab.git_diff_add_comment" href="gitlab/gitlab.git_diff_add_comment.png" format="png"></keydef>
+    <keydef keys="gitlab.git_diff_add_comment_icon" href="gitlab/gitlab.git_diff_add_comment_icon.png" format="png"></keydef>
+    <keydef keys="gitlab.git_diff_add_to_review" href="gitlab/gitlab.git_diff_add_to_review.png" format="png"></keydef>
+    <keydef keys="gitlab.git_diff_finish_review" href="gitlab/gitlab.git_diff_finish_review.png" format="png"></keydef>
+    <keydef keys="gitlab.git_merge" href="gitlab/gitlab.git_merge.png" format="png"></keydef>
+    <keydef keys="gitlab.git_rebase" href="gitlab/gitlab.git_rebase.png" format="png"></keydef>
+    <keydef keys="gitlab.local_repository" href="gitlab/gitlab.local_repository.png" format="png"></keydef>
+    <keydef keys="gitlab.merged_requests" href="gitlab/gitlab.merged_requests.png" format="png"></keydef>
+    <keydef keys="gitlab.merge_conflict_commit_changes" href="gitlab/gitlab.merge_conflict_commit_changes.png" format="png"></keydef>
+    <keydef keys="gitlab.merge_merge_request" href="gitlab/gitlab.merge_merge_request.png" format="png"></keydef>
+    <keydef keys="gitlab.merge_options" href="gitlab/gitlab.merge_options.png" format="png"></keydef>
+    <keydef keys="gitlab.merge_requests" href="gitlab/gitlab.merge_requests.png" format="png"></keydef>
+    <keydef keys="gitlab.merge_request_activity" href="gitlab/gitlab.merge_request_activity.png" format="png"></keydef>
+    <keydef keys="gitlab.merge_request_approvals" href="gitlab/gitlab.merge_request_approvals.png" format="png"></keydef>
+    <keydef keys="gitlab.merge_request_changes" href="gitlab/gitlab.merge_request_changes.png" format="png"></keydef>
+    <keydef keys="gitlab.merge_request_dependencies" href="gitlab/gitlab.merge_request_dependencies.png" format="png"></keydef>
+    <keydef keys="gitlab.merge_request_notification" href="gitlab/gitlab.merge_request_notification.png" format="png"></keydef>
+    <keydef keys="gitlab.merge_request_resolve_thread" href="gitlab/gitlab.merge_request_resolve_thread.png" format="png"></keydef>
+    <keydef keys="gitlab.merge_request_target_project" href="gitlab/gitlab.merge_request_target_project.png" format="png"></keydef>
+    <keydef keys="gitlab.merge_request_title" href="gitlab/gitlab.merge_request_title.png" format="png"></keydef>
+    <keydef keys="gitlab.MR_cherry-pick" href="gitlab/gitlab.MR_cherry-pick.png" format="png"></keydef>
+    <keydef keys="gitlab.new_branch" href="gitlab/gitlab.new_branch.png" format="png"></keydef>
+    <keydef keys="gitlab.new_project" href="gitlab/gitlab.new_project.png" format="png"></keydef>
+    <keydef keys="gitlab.project_name" href="gitlab/gitlab.project_name.png" format="png"></keydef>
+    <keydef keys="gitlab.project_URL" href="gitlab/gitlab.project_URL.png" format="png"></keydef>
+    <keydef keys="gitlab.protected_branches_expand" href="gitlab/gitlab.protected_branches_expand.png" format="png"></keydef>
+    <keydef keys="gitlab.protected_branches_settings" href="gitlab/gitlab.protected_branches_settings.png" format="png"></keydef>
+    <keydef keys="gitlab.repo_history" href="gitlab/gitlab.repo_history.png" format="png"></keydef>
+    <keydef keys="gitlab.resolve_conflicts_edit_inline" href="gitlab/gitlab.resolve_conflicts_edit_inline.png" format="png"></keydef>
+    <keydef keys="gitlab.resolve_conflicts_interactive_mode" href="gitlab/gitlab.resolve_conflicts_interactive_mode.png" format="png"></keydef>
+    <keydef keys="gitlab.resolve_merge_conflicts_button" href="gitlab/gitlab.resolve_merge_conflicts_button.png" format="png"></keydef>
+    <keydef keys="gitlab.settings_merge_requests" href="gitlab/gitlab.settings_merge_requests.png" format="png"></keydef>
+    <keydef keys="gitlab.settings_repository" href="gitlab/gitlab.settings_repository.png" format="png"></keydef>
+    <keydef keys="gitlab.source_branch" href="gitlab/gitlab.source_branch.png" format="png"></keydef>
+    <keydef keys="gitlab.squash_commits_when_merging" href="gitlab/gitlab.squash_commits_when_merging.png" format="png"></keydef>
+    <keydef keys="git_client.amend_last_commit" href="git_client/git_client.amend_last_commit.png" format="png"></keydef>
+    <keydef keys="git_client.auto_push_changes" href="git_client/git_client.auto_push_changes.png" format="png"></keydef>
+    <keydef keys="git_client.branch_drop-down" href="git_client/git_client.branch_drop-down.png" format="png"></keydef>
+    <keydef keys="git_client.checkout_branch" href="git_client/git_client.checkout_branch.png" format="png"></keydef>
+    <keydef keys="git_client.checkout_branch_dropbox" href="git_client/git_client.checkout_branch_dropbox.png" format="png"></keydef>
+    <keydef keys="git_client.checkout_branch_right_click" href="git_client/git_client.checkout_branch_right_click.png" format="png"></keydef>
+    <keydef keys="git_client.checkout_temp_branch_dropbox" href="git_client/git_client.checkout_temp_branch_dropbox.png" format="png"></keydef>
+    <keydef keys="git_client.checkout_temp_branch_right_click" href="git_client/git_client.checkout_temp_branch_right_click.png" format="png"></keydef>
+    <keydef keys="git_client.choose_a_previously_used_comment" href="git_client/git_client.choose_a_previously_used_comment.png" format="png"></keydef>
+    <keydef keys="git_client.clone_new_repository" href="git_client/git_client.clone_new_repository.png" format="png"></keydef>
+    <keydef keys="git_client.commit_message" href="git_client/git_client.commit_message.png" format="png"></keydef>
+    <keydef keys="git_client.create_local_temp_branch" href="git_client/git_client.create_local_temp_branch.png" format="png"></keydef>
+    <keydef keys="git_client.Git_Branch_Manager" href="git_client/git_client.Git_Branch_Manager.png" format="png"></keydef>
+    <keydef keys="git_client.git_reset_mode" href="git_client/git_client.git_reset_mode.png" format="png"></keydef>
+    <keydef keys="git_client.git_staging_view" href="git_client/git_client.git_staging_view.png" format="png"></keydef>
+    <keydef keys="git_client.merge_conflicts" href="git_client/git_client.merge_conflicts.png" format="png"></keydef>
+    <keydef keys="git_client.pull" href="git_client/git_client.pull.png" format="png"></keydef>
+    <keydef keys="git_client.pull_icon" href="git_client/git_client.pull_icon.png" format="png"></keydef>
+    <keydef keys="git_client.push" href="git_client/git_client.push.png" format="png"></keydef>
+    <keydef keys="git_client.push_icon" href="git_client/git_client.push_icon.png" format="png"></keydef>
+    <keydef keys="git_client.resolve_conflicts" href="git_client/git_client.resolve_conflicts.png" format="png"></keydef>
+    <keydef keys="git_client.show_current_repository_history" href="git_client/git_client.show_current_repository_history.png" format="png"></keydef>
+    <keydef keys="git_client.show_Git_Branch_Manager_view" href="git_client/git_client.show_Git_Branch_Manager_view.png" format="png"></keydef>
+    <keydef keys="git_client.stage_all" href="git_client/git_client.stage_all.png" format="png"></keydef>
+    <keydef keys="git_client.stage_files" href="git_client/git_client.stage_files.png" format="png"></keydef>
+    <keydef keys="git_client.stage_selected" href="git_client/git_client.stage_selected.png" format="png"></keydef>
+    <keydef keys="git_client.stash_changes" href="git_client/git_client.stash_changes.png" format="png"></keydef>
+    <keydef keys="git_client.stash_drop-down_menu" href="git_client/git_client.stash_drop-down_menu.png" format="png"></keydef>
+    <keydef keys="git_client.unstage" href="git_client/git_client.unstage.png" format="png"></keydef>
+    <keydef keys="git_client.unstage_all" href="git_client/git_client.unstage_all.png" format="png"></keydef>
+    <keydef keys="git_client.unstage_files" href="git_client/git_client.unstage_files.png" format="png"></keydef>
+    <keydef keys="git_client.unstage_selected" href="git_client/git_client.unstage_selected.png" format="png"></keydef>
+    <keydef keys="oxygen_convert.heading_levels" href="oxygen/oxygen_convert.heading_levels.png" format="png"></keydef>
+    <keydef keys="oxygen_convert.word_to_dita" href="oxygen/oxygen_convert.word_to_dita.png" format="png"></keydef>
+    <keydef keys="oxygen_dita_maps_manager.context" href="oxygen/oxygen_dita_maps_manager.context.png" format="png"></keydef>
+    <keydef keys="oxygen_dita_maps_manager.insert_reference" href="oxygen/oxygen_dita_maps_manager.insert_reference.png" format="png"></keydef>
+    <keydef keys="oxygen_dita_maps_manager.view" href="oxygen/oxygen_dita_maps_manager.view.png" format="png"></keydef>
+    <keydef keys="oxygen_dita_reusable_components.reindex" href="oxygen/oxygen_dita_reusable_components.reindex.png" format="png"></keydef>
+    <keydef keys="oxygen_dita_reusable_components.reuse_failed" href="oxygen/oxygen_dita_reusable_components.reuse_failed.png" format="png"></keydef>
+    <keydef keys="oxygen_find_replace.window" href="oxygen/oxygen_find_replace.window.png" format="png"></keydef>
+    <keydef keys="oxygen_layout.overview" href="oxygen/oxygen_layout.overview.png" format="png"></keydef>
+    <keydef keys="oxygen_new_file.button" href="oxygen/oxygen_new_file.button.png" format="png"></keydef>
+    <keydef keys="oxygen_new_file.window" href="oxygen/oxygen_new_file.window.png" format="png"></keydef>
+    <keydef keys="oxygen_preferences.open_find_index" href="oxygen/oxygen_preferences.open_find_index.png" format="png"></keydef>
+    <keydef keys="oxygen_project.main_file_support" href="oxygen/oxygen_project.main_file_support.png" format="png"></keydef>
+    <keydef keys="oxygen_project.move_resources" href="oxygen/oxygen_project.move_resources.png" format="png"></keydef>
+    <keydef keys="oxygen_project.new_project" href="oxygen/oxygen_project.new_project.png" format="png"></keydef>
+    <keydef keys="oxygen_project.preferences" href="oxygen/oxygen_project.preferences.png" format="png"></keydef>
+    <keydef keys="oxygen_project.project_view" href="oxygen/oxygen_project.project_view.png" format="png"></keydef>
+    <keydef keys="oxygen_project.rename" href="oxygen/oxygen_project.rename.png" format="png"></keydef>
+    <keydef keys="oxygen_project.root_file" href="oxygen/oxygen_project.root_file.png" format="png"></keydef>
+    <keydef keys="oxygen_project.settings_button" href="oxygen/oxygen_project.settings_button.png" format="png"></keydef>
+    <keydef keys="oxygen_project.transform" href="oxygen/oxygen_project.transform.png" format="png"></keydef>
+    <keydef keys="oxygen_project.validate" href="oxygen/oxygen_project.validate.png" format="png"></keydef>
+    <keydef keys="oxygen_transform.apply_button" href="oxygen/oxygen_transform.apply_button.png" format="png"></keydef>
+    <keydef keys="oxygen_transform.edit_button" href="oxygen/oxygen_transform.edit_button.png" format="png"></keydef>
+    <keydef keys="oxygen_transform.edit_filters" href="oxygen/oxygen_transform.edit_filters.png" format="png"></keydef>
+    <keydef keys="oxygen_transform.edit_parameters" href="oxygen/oxygen_transform.edit_parameters.png" format="png"></keydef>
+    <keydef keys="oxygen_transform.edit_scenario" href="oxygen/oxygen_transform.edit_scenario.png" format="png"></keydef>
+    <keydef keys="oxygen_transform.edit_template" href="oxygen/oxygen_transform.edit_template.png" format="png"></keydef>
+    <keydef keys="oxygen_translation.create_fluenta_project" href="oxygen/oxygen_translation.create_fluenta_project.png" format="png"></keydef>
+    <keydef keys="oxygen_translation.generate_xliff" href="oxygen/oxygen_translation.generate_xliff.png" format="png"></keydef>
+    <keydef keys="oxygen_translation.import_xliff" href="oxygen/oxygen_translation.import_xliff.png" format="png"></keydef>
+    <keydef keys="oxygen_validate.apply_button" href="oxygen/oxygen_validate.apply_button.png" format="png"></keydef>
+    <keydef keys="oxygen_validate.configure_dropdown" href="oxygen/oxygen_validate.configure_dropdown.png" format="png"></keydef>
+    <keydef keys="oxygen_validate.configure_window" href="oxygen/oxygen_validate.configure_window.png" format="png"></keydef>
+    <keydef keys="vscode.3-way_merge_editor" href="vscode/vscode.3-way_merge_editor.png" format="png"></keydef>
+    <keydef keys="vscode.commit_changes" href="vscode/vscode.commit_changes.png" format="png"></keydef>
+    <keydef keys="vscode.git_merge" href="vscode/vscode.git_merge.png" format="png"></keydef>
+    <keydef keys="vscode.merge_changes" href="vscode/vscode.merge_changes.png" format="png"></keydef>
+    <keydef keys="vscode.resolve_conflicts" href="vscode/vscode.resolve_conflicts.png" format="png"></keydef>
+    <keydef keys="vscode.stage_changes" href="vscode/vscode.stage_changes.png" format="png"></keydef>
 </map>

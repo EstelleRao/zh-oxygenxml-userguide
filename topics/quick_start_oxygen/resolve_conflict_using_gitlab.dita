@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="resolve_conflict_using_gitlab">
+    <title>在 GitLab 上解决合并冲突</title>
+    <body>
+        <p>合入个人分支到主分支之前，如果未合并主分支的更改到个人分支，创建合并请求后，可能因竞争更改（个人分支和主分支上其他人提交的更改）产生合并冲突。如果产生合并冲突，必须解决冲突才能合入合并请求。</p>
+        <image placement="break" keyref="gitlab.resolve_merge_conflicts_button" width="500"
+            id="image_k53_43h_ybc"/>
+        <p>如果合并冲突满足以下所有条件，可以在 GitLab 上直接解决合并冲突。如果合并请求中的任一冲突文件未能满足所有这些条件，则必须在本地仓库手动解决冲突。</p>
+        <ul id="ul_sdl_mgh_ybc">
+            <li>文件是文本文件，而不是二进制文件。</li>
+            <li>文件使用 UTF-8 兼容的编码格式。</li>
+            <li>文件中没有已经存在的冲突标记。</li>
+            <li>添加冲突标记后的文件大小小于 200 KB。</li>
+            <li>文件在两个分支中都存在且路径相同。</li>
+        </ul>
+        <p>简言之，对于由相同行更改引起的简单合并冲突，可以尝试在 GitLab 上使用以下任一方式解决。</p>
+        <ul id="ul_ecx_rhh_ybc">
+            <li>
+                <p><uicontrol>Interactive mode</uicontrol>：适用于简单冲突，只需选择保留哪个版本的更改。</p>
+                <image placement="break" keyref="gitlab.resolve_conflicts_interactive_mode"
+                    width="600" id="image_als_53h_ybc"/>
+            </li>
+            <li>
+                <p><uicontrol>Edit inline</uicontrol>：适用于复杂冲突，需要重新修改或合并更改。</p>
+                <image placement="break" keyref="gitlab.resolve_conflicts_edit_inline" width="600"
+                    id="image_qsc_x3h_ybc"/>
+            </li>
+        </ul>
+        <section id="section_wwj_bjh_ybc">
+            <title><uicontrol>Interactive mode</uicontrol></title>
+            <ol id="ol_fwd_2jh_ybc">
+                <li>打开存在冲突的合并请求，点击 <uicontrol>Resolve conflicts</uicontrol>。</li>
+                <li>在每个冲突文件中，选择 <uicontrol>Use ours</uicontrol> 或 <uicontrol>Use theirs</uicontrol> 来标记需要保留的版本。</li>
+                <li>解决完所有冲突后，在 <uicontrol>Commit message</uicontrol> 字段填写提交记录。<image
+                        placement="break" keyref="gitlab.merge_conflict_commit_changes" width="500"
+                        id="image_od4_pjh_ybc"/></li>
+                <li>点击 <uicontrol>Commit to source branch</uicontrol>。</li>
+            </ol>
+        </section>
+        <section id="section_any_bjh_ybc">
+            <title><uicontrol>Edit inline</uicontrol></title>
+            <ol id="ol_ls4_xjh_ybc">
+                <li>打开存在冲突的合并请求，点击 <uicontrol>Resolve conflicts</uicontrol>。</li>
+                <li>找到需要编辑的冲突文件，向下滚动到带有冲突标记的冲突行。<ul id="ul_gwj_vkh_ybc">
+                        <li><codeph>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</codeph>：标记冲突行的开始，显示您的更改。</li>
+                        <li><codeph>=======</codeph>：标记您的更改的结束，显示目标分支中的最新更改。</li>
+                        <li><codeph>>>>>>>></codeph>：标记冲突行的结束。</li>
+                    </ul></li>
+                <li>在文件右上角，点击 <uicontrol>Edit inline</uicontrol> 打开编辑器。<image placement="break"
+                        keyref="gitlab.resolve_conflicts_edit_inline" width="600"
+                        id="image_kwj_gkh_ybc"/></li>
+                <li>编辑冲突行， 删除不需要保留的版本和三个冲突标记。</li>
+                <li>解决完所有冲突后，在 <uicontrol>Commit message</uicontrol> 字段填写提交记录。<image
+                        placement="break" keyref="gitlab.merge_conflict_commit_changes" width="500"
+                        id="image_ms4_xjh_ybc"/></li>
+                <li>点击 <uicontrol>Commit to source branch</uicontrol>。</li>
+            </ol>
+        </section>
+        <p>对于其他类型的合并冲突，必须使用命令行或内置命令行的工具在本地仓库解决。有关详情，请查阅：<xref
+                href="resolve_conflict_using_oxygen.dita"/>、<xref
+                href="resolve_conflict_using_VS_Code.dita"/>。</p>
+    </body>
+</topic>

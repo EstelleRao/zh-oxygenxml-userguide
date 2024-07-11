@@ -1,38 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="git_reset_commands">
-    <title>Revert commit vs. Reset commit</title>
+    <title>版本回退</title>
     <body>
-        <bodydiv>
-            <p>"Revert commit" 和 "Reset commit" 是 Git 中用于处理提交历史的两种不同的操作，它们有不同的目的和影响：</p>
-        </bodydiv>
-        <ol id="ol_bly_4kb_31c">
-            <li>
-                <p><b>Revert Commit</b></p>
-                <ul id="ul_cly_4kb_31c">
-                    <li><b>目的</b>：用于撤销某个提交，但不影响其之前或之后的提交。</li>
-                    <li><b>影响</b>：Revert 操作不会改变提交历史，而是在其后添加一个新的提交，该提交的更改与先前提交的更改相反。通过这种反向修改的方式撤销先前提交的更改，可以保持提交历史的完整性。</li>
-                    <li><b>适用场景</b>：假设提交历史中有三个提交（版本一、版本二、版本三），版本二有问题，需要撤销，这时可以使用 <codeph>git revert</codeph> 命令撤销版本二的更改，生成新的版本四。版本四保留了版权一和版本三的更改，但撤销了版本二的更改。</li>
-                </ul>
-                <codeblock id="codeblock_ely_4kb_31c" outputclass="language-xml">git revert &lt;commit-SHA></codeblock>
-            </li>
-            <li>
-                <p><b>Reset Commit</b></p>
-                <ul id="ul_fly_4kb_31c">
-                    <li><b>目的</b>：用于回退当前分支到指定版本，回退后重置提交历史。可以使用不同的模式进行回退，如 <codeph>--soft</codeph>、<codeph>--mixed</codeph> 或 <codeph>--hard</codeph>。</li>
-                    <li><b>影响</b>：Reset 操作会更改提交历史，因为它移除了指定提交之后的所有提交。在硬重置（<codeph>--hard</codeph>）模式下，不仅会移除提交，还会删除工作区和暂存区的更改。</li>
-                    <li><b>适用场景</b>：假设提交历史中有三个提交（版本一、版本二、版本三），最终上线只需发布版本一包含的更改，不需要发布版本二和版本三包含的更改，这时可以使用 <codeph>git reset</codeph> 命令回退当前分支到版本一，回退后，提交历史中不包含版本二和版本三的提交。</li>
-                </ul>
-                <codeblock id="codeblock_hly_4kb_31c" outputclass="language-xml">git reset --soft &lt;commit-SHA>   # 从提交历史中移除指定提交之后的所有提交，保留更改至暂存区，可在保留更改的基础上进行调整，并创建一个新的提交
-git reset --mixed &lt;commit-SHA>  # 从提交历史中移除指定提交之后的所有提交，保留更改至工作区，可将工作区的更改添加到暂存区，并创建一个新的提交
-git reset --hard &lt;commit-SHA>   # 从提交历史中移除指定提交之后的所有提交，不保留更改</codeblock>
-            </li>
-        </ol>
-        <p>在实际项目中，可根据具体需求选择使用 <codeph>git revert</codeph> 或 <codeph>git reset</codeph> 命令。<ul
-            id="ul_h2n_zwb_31c">
-            <li>对于公共分支（如主分支），应谨慎使用 <codeph>git reset</codeph> 命令，避免重置提交历史影响其他成员使用公共分支。</li>
-            <li>对于尚未推送到远程仓库的个人分支，可以使用 <codeph>git revert</codeph> 命令撤销更改，使用 <codeph>git reset</codeph> 命令回退版本。</li>
-            <li>对于已经推送到远程仓库且发起合并请求的个人分支，应谨慎使用 <codeph>git reset</codeph> 命令，避免重置提交历史影响审核人员理解。</li>
-            </ul></p>
+        <p>Git 提供两种方式进行版本回退，一种是使用 <codeph>git reset</codeph> 命令，另一种是使用 <codeph>git revert</codeph> 命令。Oxygen Git 客户端提供的 <uicontrol>Reset commit</uicontrol> 功能对应 <codeph>git reset</codeph> 命令，<uicontrol>Revert commit</uicontrol> 功能对应 <codeph>git revert</codeph> 命令。</p>
+        <section id="section_nsb_qzz_xbc">
+            <title>Reset commit</title>
+            <p><uicontrol>Reset commit</uicontrol> 功能用于回退当前版本到特定的历史版本，回退后删除特定版本之后的所有变更和提交记录。</p>
+            <p>假设当前分支提交了三个版本（版本一、版本二、版本三），最终上线只需发布版本一，不需要发布版本二和版本三，这时可以使用 <uicontrol>Reset commit</uicontrol> 功能直接回退到版本一，回退后当前分支不包含版本二和版本三的变更。</p>
+            <p><codeph>git reset</codeph> 命令有三种选项，通常使用 <codeph>--soft</codeph> 选项，应谨慎使用 <codeph>--hard</codeph> 选项。</p>
+            <codeblock id="codeblock_hly_4kb_31c" outputclass="language-xml">git reset --soft {commit} #将当前分支回滚到指定的提交，但保留工作目录和暂存区中的所有更改
+git reset --mixed {commit} #将当前分支回滚到指定的提交，清空暂存区的更改，但保留工作目录中的更改
+git reset --hard {commit} #将当前分支回滚到指定的提交，清空暂存区的更改，并强制删除工作目录中的更改</codeblock>
+        </section>
+        <section id="section_t4q_jzz_xbc">
+            <title>Revert commit</title>
+            <p><uicontrol>Revert commit</uicontrol> 功能用于撤销指定的提交，并生成一个 undo 的提交，保留了提交历史的完整性。</p>
+            <p>假设当前分支总共有三个提交（提交一、提交二、提交三），最终上线不需要包含提交二，这时可以使用 <uicontrol>Revert commit</uicontrol> 功能撤销提交二。该操作不会影响提交一和提交三。撤销提交三后，会生成一个提交四来记录这个反向修改的撤销操作。</p>
+            <codeblock id="codeblock_ely_4kb_31c" outputclass="language-xml">git revert {commit}</codeblock>
+        </section>
+        <p>在实际项目中，应按需选择使用 <uicontrol>Reset commit</uicontrol> 功能或 <uicontrol>Revert commit</uicontrol> 功能。</p>
+        <ul id="ul_h2n_zwb_31c">
+            <li>对于公共分支（如主分支），应谨慎使用 <uicontrol>Reset commit</uicontrol> 功能，避免重置提交历史影响其他成员使用公共分支。</li>
+            <li>对于尚未推送到远程仓库的个人分支，可以使用 <uicontrol>Reset commit</uicontrol> 功能回退版本，使用 <uicontrol>Revert commit</uicontrol> 功能撤销特定更改。</li>
+            <li>对于已经推送到远程仓库且发起合并请求的个人分支，应谨慎使用 <uicontrol>Reset commit</uicontrol> 功能，避免重置提交历史影响审核人员理解。</li>
+        </ul>
     </body>
 </topic>

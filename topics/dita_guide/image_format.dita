@@ -162,7 +162,7 @@
                         </row>
                         <row>
                             <entry>标签</entry>
-                            <entry>由平面设计师提供设计文件（PDF 或 AI），导入设计文件到 Adobe Illustrator，再导出 SVG 格式标签</entry>
+                            <entry>由平面设计师提供设计文件（PDF 或 AI），导入文件到 Adobe Illustrator，转曲后导出 SVG 格式</entry>
                             <entry>
                                 <ol id="ol_ccn_s1p_3bc">
                                     <li>SVG（简单图形，文件小，无损缩放，高清）</li>

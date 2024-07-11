@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="git_merge_oxygen">
+    <title>使用 Oxygen Git 客户端合并更改</title>
+    <body>
+        <p>提交临时分支修改到本地仓库后，如发现 <codeph>develop</codeph> 有远程更新，则先拉取 <codeph>develop</codeph> 远程更新，再合并 <codeph>develop</codeph> 更改到临时分支。</p>
+        <ol>
+            <li>切换到 <codeph>develop</codeph> 分支，拉取远程仓库更新。</li>
+            <li>切换回临时分支。</li>
+            <li>在 <uicontrol>Git Branch Manager</uicontrol> 视图选中 <codeph>develop</codeph> 分支，单击右键后点击 <menucascade>
+                    <uicontrol>Merge "develop" into "xx"</uicontrol>
+                    <uicontrol>Merge</uicontrol>
+                </menucascade>，开始自动合并。</li>
+            <li>如有冲突，可在工作区查看所有冲突文件。<image placement="break" keyref="git_client.merge_conflicts"
+                    width="350" id="image_alm_sz4_ybc"/></li>
+            <li>手动解决所有冲突，提交修改到本地仓库，推送临时分支到远程仓库，完成合并更改。有关操作，请查阅：<xref
+                    href="resolve_conflict_using_oxygen.dita"/>。</li>
+        </ol>
+    </body>
+</topic>

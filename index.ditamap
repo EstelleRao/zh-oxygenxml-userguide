@@ -26,9 +26,6 @@
             </topicref>
             <topicref keyref="git">
                 <topicref href="topics/quick_start_oxygen/git_clone.dita"/>
-                <topicref href="topics/quick_start_oxygen/resolve_conflict.dita"/>
-                <topicref href="topics/quick_start_oxygen/git_merge_versus_rebase.dita"/>
-                <topicref href="topics/quick_start_oxygen/revert_versus_reset_commit.dita"/>
             </topicref>
             <topicref href="topics/quick_start_oxygen/find_replace.dita"/>
             <topicref href="topics/quick_start_oxygen/compare_files.dita"/>
@@ -91,6 +88,17 @@
             <topicref keyref="cherry-pick_MR"/>
             <topicref keyref="cherry-pick_commit"/>
         </topicref>
+        <topicref href="topics/quick_start_oxygen/git_merge.dita">
+            <topicref href="topics/quick_start_oxygen/git_merge_using_oxygen.dita"/>
+            <topicref href="topics/quick_start_oxygen/git_merge_using_VS_Code.dita"/>
+        </topicref>
+        <topicref href="topics/quick_start_oxygen/resolve_conflict.dita">
+            <topicref href="topics/quick_start_oxygen/resolve_conflict_using_gitlab.dita"/>
+            <topicref href="topics/quick_start_oxygen/resolve_conflict_using_oxygen.dita"/>
+            <topicref href="topics/quick_start_oxygen/resolve_conflict_using_VS_Code.dita"/>
+        </topicref>
+        <topicref href="topics/quick_start_oxygen/revert_versus_reset_commit.dita"/>
+        <topicref href="topics/gitlab_guide/git_commands.dita"/>
     </chapter>
     <chapter keyref="workflow">
         <topicref keyref="create_new_repo"/>

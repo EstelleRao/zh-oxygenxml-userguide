@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="git_merge_VS_Code">
+    <title>使用 VS Code 合并更改</title>
+    <body>
+        <p>提交临时分支更改到本地仓库后，如发现 <codeph>develop</codeph> 有远程更新，则合并 <codeph>develop</codeph> 远程更新到本地临时分支。</p>
+        <ol id="ol_pyf_y34_ybc">
+            <li>使用快捷键 <codeph>Ctrl+Shift+P</codeph>调出顶部的指令面板，输入 <codeph>Git: Merge...</codeph>。<image
+                    placement="break" keyref="vscode.git_merge" width="200" id="image_hvs_zx4_ybc"
+                /></li>
+            <li>单击需要合并更改的远程分支（比如 <codeph>origin/develop/KL</codeph>），开始自动合并。</li>
+            <li>如有冲突，可在左侧侧边栏 <uicontrol>Source Control</uicontrol> 的 <uicontrol>Merge Changes</uicontrol> 区域查看所有冲突文件。<image
+                    placement="break" keyref="vscode.merge_changes" width="400"
+                    id="image_ajk_fy4_ybc"/></li>
+            <li>手动解决所有冲突，提交更改到本地仓库，推送临时分支到远程仓库，完成合并更改。有关操作，请查阅：<xref
+                    href="resolve_conflict_using_VS_Code.dita"/>。</li>
+        </ol>
+    </body>
+    <related-links scope="external" format="html">
+        <linklist>
+            <link href="https://code.visualstudio.com/docs/getstarted/userinterface"
+                outputclass="nopage-xref">
+                <linktext>VS Code User Interface</linktext>
+            </link>
+            <link href="https://code.visualstudio.com/docs/getstarted/tips-and-tricks"
+                outputclass="nopage-xref">
+                <linktext>Visual Studio Code Tips and Tricks</linktext>
+            </link>
+            <link href="https://code.visualstudio.com/docs/sourcecontrol/overview"
+                outputclass="nopage-xref">
+                <linktext>Using Git source control in VS Code</linktext>
+            </link>
+            <link
+                href="https://code.visualstudio.com/docs/sourcecontrol/intro-to-git"
+                outputclass="nopage-xref">
+                <linktext>Introduction to Git in VS Code</linktext>
+            </link>
+        </linklist>
+    </related-links>
+</topic>

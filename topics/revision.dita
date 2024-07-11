@@ -145,6 +145,11 @@
                             </ol>
                         </entry>
                     </row>
+                    <row>
+                        <entry colsep="1" rowsep="1">2024年7月9日</entry>
+                        <entry colsep="1" rowsep="1">饶雅惠</entry>
+                        <entry colsep="1" rowsep="1">GitLab 协作规范新增分支创建和合并、解决合并冲突、版本回退、常用命令</entry>
+                    </row>
                 </tbody>
             </tgroup>
         </table>
