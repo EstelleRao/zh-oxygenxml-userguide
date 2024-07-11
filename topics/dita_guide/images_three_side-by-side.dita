@@ -69,6 +69,17 @@
   &lt;/div>
 &lt;/fig></codeblock>
       </li>
+      <li>
+        <p>三张图片并排时，并排图片各带一个小标题，且尺寸不同。</p>
+        <codeblock id="codeblock_egm_2g4_wbc">&lt;fig>
+  &lt;title>收起患旁机器人&lt;/title>
+  &lt;div outputclass="inline three-column">
+    &lt;div>&lt;image placement="inline" height="200" keyref="C1000_global.C1000_PSR.PSR_stowed_front_view"/>&lt;p>正面&lt;/p>&lt;/div>
+    &lt;div>&lt;image placement="inline" height="200" keyref="C1000_global.C1000_PSR.PSR_stowed_back_view"/>&lt;p>背面&lt;/p>&lt;/div>
+    &lt;div>&lt;image placement="break" height="200" keyref="C1000_global.C1000_PSR.PSR_stowed_side_view"/>&lt;p>侧面&lt;/p>&lt;/div>
+  &lt;/div>
+&lt;/fig></codeblock>
+      </li>
     </ol>
     </body>
 </topic>

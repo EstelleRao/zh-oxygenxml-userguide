@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="git_merge">
+    <title>分支创建和合并</title>
+    <body>
+        <p>为尽量避免产生冲突，请按照如下规范创建和合并分支。</p>
+        <ol id="ol_amd_t23_ybc">
+            <li>切换到 <codeph>develop</codeph> 分支，拉取远程仓库更新。</li>
+            <li>基于更新后的本地 <codeph>develop</codeph> 新建临时分支，尽可能使临时分支和远程 <codeph>develop</codeph> 保持同步，减少冲突。</li>
+            <li>完成临时分支修改后，提交修改到本地仓库。</li>
+            <li>推送临时分支修改到远程仓库之前，确认远程 <codeph>develop</codeph> 是否有更新。如有更新，则拉取 <codeph>develop</codeph> 远程更新，合并 <codeph>develop</codeph> 更新到临时分支。</li>
+            <li>推送临时分支修改到远程仓库。</li>
+        </ol>
+        <note id="note_kkv_2d4_ybc" type="warning">
+            <ul id="ul_azn_fd4_ybc">
+                <li>建议在每次改动前基于最新的 <codeph>develop</codeph> 仓库新建临时分支，在临时分支上进行修改。</li>
+                <li>建议在完成临时分支修改且提交修改到本地仓库后再合并其他分支更改。如果尚未完成修改或尚未提交修改到本地仓库，则需 <codeph>stash</codeph> 修改才能切换到其他分支拉取远程更新，后续切回临时分支合并其他分支变更后可能出现 <codeph>apply stash</codeph> 失败的情况。</li>
+                <li>在可能出现合并冲突的场景下，应慎用 <codeph>stash</codeph>，避免因合并冲突问题导致无法应用原分支修改，增加处理难度和修改丢失的风险。</li>
+            </ul>
+        </note>
+    </body>
+</topic>

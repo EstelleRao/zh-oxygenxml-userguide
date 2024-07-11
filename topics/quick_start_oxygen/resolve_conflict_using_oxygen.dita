@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="resolve_conflict_using_oxygen">
+    <title>使用 Oxygen Git 客户端解决合并冲突</title>
+    <body>
+        <p>如有冲突，可在工作区查看所有冲突文件。解决冲突时，可使用操作按钮快速解决冲突，也可手动修改冲突行。</p>
+        <section id="section_pqf_xbp_ybc">
+            <title>使用操作按钮快速解决冲突</title>
+            <ol>
+                <li>选中冲突文件，单击右键后点击相应按钮。解决冲突后，文件自动添加到暂存区。<image placement="break"
+                        keyref="git_client.resolve_conflicts" width="400" id="image_v3n_xz4_ybc"
+                        /><ul id="ul_rpw_l1p_ybc">
+                        <li><uicontrol>Open in compare editor</uicontrol>：在文件对比编辑器中打开文件。</li>
+                        <li><uicontrol>Resolve Using "Mine"</uicontrol>：应用当前分支（比如 <codeph>feature/KL</codeph>）的更改。</li>
+                        <li><uicontrol>Resolve Using "Theirs"</uicontrol>：应用待合并分支（比如 <codeph>develop/KL</codeph>）的更改。</li>
+                        <li><uicontrol>Mark Resolved</uicontrol>：将冲突标记为已解决，但仍保留双方更改和冲突标记。</li>
+                        <li><uicontrol>Restart Merge</uicontrol>：放弃合并操作，重新开始合并。</li>
+                    </ul></li>
+                <li>填写提交记录，提交更改到本地仓库。</li>
+                <li>推送更改到远程仓库。</li>
+            </ol>
+        </section>
+        <section id="section_xsn_wbp_ybc">
+            <title>手动修改冲突行</title>
+            <ol id="ol_xsw_h51_ybc">
+                <li>双击打开冲突文件，在文件对比编辑器中查看并解决冲突。<ol id="ol_xks_pkp_31c">
+                        <li>向下滚动到冲突行，在当前分支（Mine）中编辑冲突行，可直接应用当前分支更改（Mine）或应用待合并分支更改（Theirs），或重新修改。</li>
+                        <li>完成修改后，保存文件。保存后，文件自动添加到暂存区。</li>
+                    </ol></li>
+                <li>填写提交记录，提交更改到本地仓库。</li>
+                <li>推送更改到远程仓库。</li>
+            </ol>
+        </section>
+        <note type="tip" id="note_aw2_351_ybc">
+            <ul id="ol_qk1_351_ybc">
+                <li>如需中止合并，可点击 <uicontrol>Abort merge</uicontrol>，使本地仓库恢复到合并更改之前的状态。</li>
+            </ul>
+        </note>
+    </body>
+</topic>

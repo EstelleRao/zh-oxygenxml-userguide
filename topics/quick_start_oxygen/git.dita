@@ -59,4 +59,12 @@
                 </ul></li>
         </ul>
     </body>
+    <related-links scope="external" format="html">
+        <linklist>
+            <link href="https://www.oxygenxml.com/doc/versions/26.0/ug-author/topics/git-addon.html"
+                outputclass="nopage-xref">
+                <linktext>Oxygen Git Client Add-on</linktext>
+            </link>
+        </linklist>
+    </related-links>
 </topic>
