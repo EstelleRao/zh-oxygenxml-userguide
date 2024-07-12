@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="regular_expression">
+    <title>使用正则批量替换文本</title>
+    <body>
+        <p>正则表达式（Regular Expression，简称“regex”）是一种用于匹配和操作文本的强大工具。它由一系列字符和特殊字符组成，这些字符用于描述要匹配的文本模式。</p>
+        <p>正则表达式通常用于文本搜索和文本替换操作。通过正则表达式，可以在大量文本中快速找到匹配特定模式的字符串，执行替换、提取和验证等操作。</p>
+        <p>正则表达式可以应用于各种编程语言和文本处理工具中，如 JavaScript、Python、Java、Perl 等。</p>
+        <section id="section_umm_ldg_1cc">
+            <title>常用正则表达式</title>
+            <table id="table_gwj_1xg_1cc">
+                <tgroup cols="3">
+                    <colspec colname="c1" colnum="1" colwidth="0.8*"/>
+                    <colspec colname="c2" colnum="2" colwidth="0.6*"/>
+                    <colspec colname="c3" colnum="3" colwidth="1.6*"/>
+                    <thead>
+                        <row>
+                            <entry>正则表达式</entry>
+                            <entry>作用</entry>
+                            <entry>示例</entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry><codeph>.*?</codeph></entry>
+                            <entry>匹配任意字符</entry>
+                            <entry>
+                                <p>匹配图片、组件等公共资源，多用于批量替换引用资源</p>
+                                <p>正则表达式：<codeph>href=".*?/images/C1000_.*?/</codeph></p>
+                                <p>匹配示例 1：<codeph>href="../../common_C1000/global/images/C1000_PSR/"</codeph></p>
+                                <p>匹配示例 2：<codeph>href="../images/C1000_VCT/"</codeph></p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry><codeph>\s+</codeph></entry>
+                            <entry>匹配空行</entry>
+                            <entry>
+                                <p>匹配段落中嵌套的图片，多用于迁移场景，纠正错误嵌套</p>
+                                <ul id="ul_jts_qzg_1cc">
+                                    <li>
+                                        <p>匹配开始标签：<codeph>&lt;p>\s+&lt;image</codeph></p>
+                                    </li>
+                                    <li>
+                                        <p>匹配结束标签：<codeph>&lt;/image>\s+&lt;/p></codeph></p>
+                                    </li>
+                                </ul>
+                                <p>匹配多余空行或换行后批量删除，用于优化 XML 书写格式</p>
+                                <ul id="ul_qr1_szg_1cc">
+                                    <li>匹配多余空行或换行：<codeph>&lt;image\s+href</codeph></li>
+                                </ul>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry><codeph>\s*</codeph></entry>
+                            <entry>匹配空格</entry>
+                            <entry>
+                                <p>匹配多余空格，用于删除多余空格</p>
+                                <ul id="ul_emz_tzg_1cc">
+                                    <li>
+                                        <p>正则表达式：<codeph>on\s*Page</codeph></p>
+                                    </li>
+                                </ul>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry><codeph>({option1}|{option2}|{option3})</codeph></entry>
+                            <entry>匹配多个选项</entry>
+                            <entry>
+                                <p>匹配多种图片格式，用于批量删除图片文件名后缀</p>
+                                <ul id="ul_gjn_vzg_1cc">
+                                    <li>
+                                        <p>正则表达式：<codeph>.(png|jpg|jpeg|svg)</codeph></p>
+                                    </li>
+                                </ul>
+                            </entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
+        </section>
+        <section id="section_zjy_2dg_1cc">
+            <title>应用场景一：批量替换公共图片</title>
+            <p>使用正则表达式批量替换 commonFilesDir 仓库的公共图片为 common 仓库的公共图片。因大部分公共图片存放在 global 目录，故替换后资源目录使用 global。完成批量替换后，需手动纠正非 global 目录下的图片引用，例如纠正 common_global 为 common_zh-CN 或 common_en-US。</p>
+            <p>此正则表达式可匹配带 <codeph>common_label</codeph>, <codeph>common_symbol</codeph>, <codeph>common_note</codeph>, <codeph>common_logo</codeph>, <codeph>common_MISC</codeph> 等前缀的图片。注意，<codeph>keyref</codeph> 前面有个空格。</p>
+            <ul id="ul_jgj_xzg_1cc">
+                <li>查找文本：<codeph>\s+href=".*?commonFilesDir/images/common_.*?/</codeph></li>
+                <li>替换后文本：<codeph> keyref="common_global.</codeph></li>
+            </ul>
+            <image placement="break" keyref="oxygen_find_replace.regex" width="450"
+                id="image_dff_bqg_1cc"/>
+            <note id="note_h4d_kqg_1cc" type="attention">
+                <ul id="ul_yqn_kqg_1cc">
+                    <li>如使用正则表达式查找或替换文本，务必勾选 <uicontrol>Regular expression</uicontrol> 选项。</li>
+                    <li>执行批量替换前，务必预览替换结果，检查是否替换到无关文件，检查替换结果是否正确。执行批量替换后，可校验 index.ditamap，再次确认替换结果。</li>
+                </ul>
+            </note>
+            <p>使用正则表达式批量替换 C1000 仓库的业务公共图片为 common_C1000 仓库的图片。因大部分公共图片存放在 global 目录，故替换后资源目录使用 global。完成批量替换后，需手动纠正非 global 目录下的图片引用，例如纠正 C1000_global 为 C1000_zh-CN 或 C1000_en-US。</p>
+            <p>此正则表达式可匹配带 <codeph>C1000_PSR</codeph>, <codeph>C1000_VCT</codeph>, <codeph>C1000_SGC</codeph>, <codeph>C1000_SGI</codeph> 等前缀的图片。注意，<codeph>keyref</codeph> 前面有个空格。</p>
+            <ul id="ul_ab1_h1h_1cc">
+                <li>查找文本：<codeph>\s+href=".*?/images/C1000_.*?/</codeph></li>
+                <li>替换后文本：<codeph> keyref="C1000_global.</codeph></li>
+            </ul>
+        </section>
+        <section id="section_qxk_gdg_1cc">
+            <title>应用场景二：批量替换公共组件</title>
+        </section>
+        <section id="section_kxk_gdg_1cc">
+            <p id="regex_component"
+                >使用正则表达式批量替换 commonFilesDir 仓库的公共组件为 common 仓库或 common_C1000 仓库的公共组件。</p>
+            <ul id="ul_vyn_z1h_1cc">
+                <li>查找文本：<codeph>\s+conref=".*?#reusable_components/</codeph></li>
+                <li>替换后文本 1：<codeph> conkeyref="common_zh-CN.common_components/</codeph></li>
+                <li>替换后文本 2：<codeph> conkeyref="C1000_zh-CN.C1000_reusable_components/</codeph></li>
+            </ul>
+        </section>
+        <p>有关正则表达式的更多应用场景，请查阅：<xref keyref="revise_image_elements"/>。</p>
+    </body>
+    <related-links scope="external" format="html">
+        <linklist>
+            <link href="https://www.runoob.com/regexp/regexp-tutorial.html"
+                outputclass="nopage-xref">
+                <linktext>正则表达式教程</linktext>
+            </link>
+            <link href="https://regexlearn.com/zh-cn" outputclass="nopage-xref">
+                <linktext>从零到一学习正则表达式</linktext>
+            </link>
+            <link href="https://www.liaoxuefeng.com/wiki/1016959663602400/1017639890281664"
+                outputclass="nopage-xref">
+                <linktext>正则表达式</linktext>
+            </link>
+        </linklist>
+    </related-links>
+</topic>

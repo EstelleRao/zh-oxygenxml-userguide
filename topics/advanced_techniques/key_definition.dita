@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="key_definition">
+    <title>批量定义 Key</title>
+    <body>
+        <p>使用 JS 脚本为资源文件批量定义 Key，并将 Key 值自动写入 DITA Map 文件中。</p>
+        <ol id="ol_bbk_db1_mbc">
+            <li>准备 JS 脚本和脚本运行环境。<ol id="ol_tff_hmn_1cc">
+                    <li>联系 Estelle 获取 <ph>keydef.js</ph> 脚本，将脚本保存到本地仓库所在磁盘的根目录，比如 <codeph>E:\</codeph>。</li>
+                    <li>点击 <xref href="https://nodejs.org/en/download/" format="html"
+                            scope="external" outputclass="nopage-xref"
+                        >Node.js官网</xref>，下载并安装 Node.js 软件。</li>
+                </ol></li>
+            <li>打开 VS Code 软件的控制台，输入 <codeph>cd {脚本目录}</codeph> 命令，按下 <uicontrol>Enter</uicontrol> 键进入脚本所在目录。<codeblock outputclass="language-powershell" id="codeblock_crm_yvf_1cc">示例：
+cd E:\</codeblock></li>
+            <li>复制需要定义 Key 的资源目录，在 VS Code 控制台继续输入 <codeph>node keydef.js {资源目录}</codeph>。<codeblock outputclass="language-powershell" id="codeblock_drm_yvf_1cc">示例：
+node keydef.js E:\RAI-IFU\common\global\images</codeblock><note type="tip"
+                    id="note_erm_yvf_1cc">
+                    <ul id="ul_frm_yvf_1cc">
+                        <li>如果资源目录包含子目录，则会为子目录的资源一起定义 Key。</li>
+                    </ul>
+                </note></li>
+            <li id="li_open_keymap">打开用于 Key 定义的 DITA Map 文件，从第一行开始复制 XML 声明语句、DITA Map 类型数据、<codeph>&lt;map></codeph> 元素以及其他说明。<codeblock id="codeblock_jcl_s21_mbc" outputclass="language-xml">示例：
+&lt;?xml version="1.0" encoding="utf-8"?>
+&lt;!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd"[]>
+&lt;map xml:lang="global">
+    &lt;title>公共图片&lt;/title>
+    &lt;topicmeta>
+        &lt;author type="author">Estelle&lt;/author>
+        &lt;data>
+            &lt;draft-comment author="Estelle">此文件用于定义通用公共图片（global）的key。通用公共图片（global）适用于全部产品（C1000、S1000等）下全部项目（K2、K9等）的全部语言版本（zh-CN、en-US等），通常包括标签、安全符号、文档符号、公司logo、商标等，无需进行本地化处理。&lt;/draft-comment>
+        &lt;/data>
+    &lt;/topicmeta></codeblock></li>
+            <li>回到 VS Code 控制台，按下 <uicontrol>Enter</uicontrol> 键，开始运行脚本。</li>
+            <li>后台按照预定义的数据格式自动在 DITA Map 文件中批量写入资源 Key。<codeblock id="codeblock_aws_mb1_mbc" outputclass="language-xml">示例
+&lt;keydef keys="common_label_camera_pedal" href="common_label/common_label.camera_pedal.svg" format="svg">&lt;/keydef>
+&lt;keydef keys="common_label_catalog_number" href="common_label/common_label.catalog_number.svg" format="svg">&lt;/keydef>
+&lt;keydef keys="common_label_center_of_gravity" href="common_label/common_label.center_of_gravity.svg" format="svg">&lt;/keydef></codeblock></li>
+            <li>打开 DITA Map 文件，在第一行粘贴第 <xref href="#./li_open_keymap" outputclass="nopage-xref"/> 步复制的内容，在结尾添加 <codeph>&lt;/map></codeph> 结束标签。</li>
+            <li>检索 DITA Map 文件中是否包含 “desktop” 字符，如有，则删除包含“desktop”的 key 定义行。</li>
+        </ol>
+    </body>
+</topic>
+
+

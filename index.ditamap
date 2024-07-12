@@ -175,7 +175,6 @@
                     <topicref href="topics/dita_guide/keyref_conkeyref.dita"/>
                     <topicref href="topics/dita_guide/indirect_reuse_example.dita"/>
                     <topicref href="topics/dita_guide/keyscope.dita"/>
-                    <topicref href="topics/dita_guide/key_definition.dita"/>
                 </topicref>
             </topicref>
             <topicref keyref="reuse_methods">
@@ -212,7 +211,11 @@
         <topicref href="topics/troubleshoot/key_not_found.dita"/>
         <topicref keyref="reusable_components_not_listed"/>
     </chapter>
-    <chapter keyref="customize_pdf"/>
+    <chapter href="topics/advanced_techniques/advanced_techniques.dita">
+        <topicref href="topics/advanced_techniques/key_definition.dita"/>
+        <topicref href="topics/advanced_techniques/rename_multiple_files.dita"/>
+        <topicref href="topics/advanced_techniques/regular_expression.dita"/>
+    </chapter>
     <chapter href="topics/glossary/glossary.dita"/>
     <chapter href="topics/FAQs.dita"/>
     <chapter href="topics/TopicKeyDef.ditamap" processing-role="resource-only" toc="no"
