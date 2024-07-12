@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="rename_multiple_files2">
+    <title>批量修改文件名</title>
+    <body>
+        <p>使用命令行和文本编辑器批量修改文件名，例如批量修改文件名前缀。请提前下载并安装 Sublime Text 编辑器。</p>
+        <ol>
+            <li>打开需要重命名的文件目录，在地址栏输入 <codeph>cmd</codeph> 打开命令行窗口。</li>
+            <li>在命令行窗口输入如下命令，将目录下所有 DITA 文件的名称保存到该目录下的 rename.txt 文件中。<codeblock>dir *.dita /b > rename.txt</codeblock></li>
+            <li>在 Sublime Text  编辑器中打开 rename.txt 文件，批量修改文件名，确保修改前后的文件名在同一行且用空格分隔。<codeblock>8003-000014-E-0001_04.dita ASD1_04.dita
+8003-000014-E-0001_05.dita ASD1_05.dita
+8003-000014-E-0001_06.dita ASD1_06.dita</codeblock><ol>
+                    <li>删除 rename.txt 文件中的空行，按下 <uicontrol>Ctrl+A</uicontrol> 复制所有文件名。</li>
+                    <li>新建一个文件，粘贴复制的文件名。</li>
+                    <li>在新建的文件中，依次按下 <menucascade>
+                            <uicontrol>Ctrl+A</uicontrol>
+                            <uicontrol>Ctrl+Shift+L</uicontrol>
+                            <uicontrol>Home</uicontrol>
+                        </menucascade>，光标定位到每行的开头。</li>
+                    <li>使用任一方式批量修改文件名。<ul>
+                            <li>按下 <uicontrol>←</uicontrol> 键和 <uicontrol>→</uicontrol> 键移动光标到需要修改的文本处，按下 <uicontrol>Backspace</uicontrol> 键删除源文本，输入修改后的文本。</li>
+                            <li>按下 <uicontrol>Shift+→</uicontrol> 连续选择需要修改的文本，直接输入修改后的文本。</li>
+                        </ul></li>
+                    <li>按下 <uicontrol>Ctrl+A</uicontrol> 复制所有修改后的文件名。</li>
+                    <li>回到 rename.txt 文件，依次按下 <menucascade>
+                            <uicontrol>Ctrl+A</uicontrol>
+                            <uicontrol>Ctrl+Shift+L</uicontrol>
+                            <uicontrol>End</uicontrol>
+                        </menucascade>，光标定位到每行的末尾。</li>
+                    <li>输入一个空格，粘贴修改后的文件名。 </li>
+                    <li>保存 rename.txt 文件。</li>
+                </ol></li>
+            <li>在命令行窗口输入如下命令，重命名目录下的所有 DITA 文件。<codeblock>for /f "tokens=1,2" %i in (rename.txt) do ren %i %j</codeblock></li>
+        </ol>
+    </body>
+</topic>
+
+

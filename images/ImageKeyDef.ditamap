@@ -127,6 +127,7 @@
     <keydef keys="oxygen_dita_reusable_components.reindex" href="oxygen/oxygen_dita_reusable_components.reindex.png" format="png"></keydef>
     <keydef keys="oxygen_dita_reusable_components.reuse_failed" href="oxygen/oxygen_dita_reusable_components.reuse_failed.png" format="png"></keydef>
     <keydef keys="oxygen_find_replace.window" href="oxygen/oxygen_find_replace.window.png" format="png"></keydef>
+    <keydef keys="oxygen_find_replace.regex" href="oxygen/oxygen_find_replace.regex.png" format="png"></keydef>
     <keydef keys="oxygen_layout.overview" href="oxygen/oxygen_layout.overview.png" format="png"></keydef>
     <keydef keys="oxygen_new_file.button" href="oxygen/oxygen_new_file.button.png" format="png"></keydef>
     <keydef keys="oxygen_new_file.window" href="oxygen/oxygen_new_file.window.png" format="png"></keydef>

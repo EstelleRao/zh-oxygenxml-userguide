@@ -148,7 +148,13 @@
                     <row>
                         <entry colsep="1" rowsep="1">2024年7月9日</entry>
                         <entry colsep="1" rowsep="1">饶雅惠</entry>
-                        <entry colsep="1" rowsep="1">GitLab 协作规范新增分支创建和合并、解决合并冲突、版本回退、常用命令</entry>
+                        <entry colsep="1" rowsep="1">GitLab 协作规范：新增分支创建和合并、解决合并冲突、版本回退、常用命令</entry>
+                    </row>
+                    <row>
+                        <entry colsep="1" rowsep="1">2024年7月12日</entry>
+                        <entry colsep="1" rowsep="1">饶雅惠</entry>
+                        <entry colsep="1" rowsep="1"
+                            >新增高级技巧章节，包含批量定义 Key、批量修改文件名、使用正则批量替换文本等技巧</entry>
                     </row>
                 </tbody>
             </tgroup>
