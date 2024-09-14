@@ -13,7 +13,7 @@
                     placement="break" keyref="vscode.merge_changes" width="400"
                     id="image_ajk_fy4_ybc"/></li>
             <li>手动解决所有冲突，提交更改到本地仓库，推送临时分支到远程仓库，完成合并更改。有关操作，请查阅：<xref
-                    href="resolve_conflict_using_VS_Code.dita"/>。</li>
+                    href="../gitlab_guide/resolve_conflict_using_VS_Code.dita"/>。</li>
         </ol>
     </body>
     <related-links scope="external" format="html">

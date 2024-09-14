@@ -51,7 +51,7 @@
     <keydef keys="gitlab.create_merge_request" href="gitlab/gitlab.create_merge_request.png" format="png"></keydef>
     <keydef keys="gitlab.default_branch" href="gitlab/gitlab.default_branch.png" format="png"></keydef>
     <keydef keys="gitlab.fork_project" href="gitlab/gitlab.fork_project.png" format="png"></keydef>
-    <keydef keys="gitlab.git_branch_model_simplified" href="gitlab/gitlab.git_branch_model_simplified.png" format="png"></keydef>
+    <keydef keys="gitlab.git_branch_model" href="gitlab/gitlab.git_branch_model.png" format="png"></keydef>
     <keydef keys="gitlab.git_diff_add_comment" href="gitlab/gitlab.git_diff_add_comment.png" format="png"></keydef>
     <keydef keys="gitlab.git_diff_add_comment_icon" href="gitlab/gitlab.git_diff_add_comment_icon.png" format="png"></keydef>
     <keydef keys="gitlab.git_diff_add_to_review" href="gitlab/gitlab.git_diff_add_to_review.png" format="png"></keydef>
@@ -77,8 +77,8 @@
     <keydef keys="gitlab.new_project" href="gitlab/gitlab.new_project.png" format="png"></keydef>
     <keydef keys="gitlab.project_name" href="gitlab/gitlab.project_name.png" format="png"></keydef>
     <keydef keys="gitlab.project_URL" href="gitlab/gitlab.project_URL.png" format="png"></keydef>
-    <keydef keys="gitlab.protected_branches_expand" href="gitlab/gitlab.protected_branches_expand.png" format="png"></keydef>
     <keydef keys="gitlab.protected_branches_settings" href="gitlab/gitlab.protected_branches_settings.png" format="png"></keydef>
+    <keydef keys="gitlab.protected_tags" href="gitlab/gitlab.protected_tags.jpg" format="jpg"></keydef>
     <keydef keys="gitlab.repo_history" href="gitlab/gitlab.repo_history.png" format="png"></keydef>
     <keydef keys="gitlab.resolve_conflicts_edit_inline" href="gitlab/gitlab.resolve_conflicts_edit_inline.png" format="png"></keydef>
     <keydef keys="gitlab.resolve_conflicts_interactive_mode" href="gitlab/gitlab.resolve_conflicts_interactive_mode.png" format="png"></keydef>
@@ -87,12 +87,14 @@
     <keydef keys="gitlab.settings_repository" href="gitlab/gitlab.settings_repository.png" format="png"></keydef>
     <keydef keys="gitlab.source_branch" href="gitlab/gitlab.source_branch.png" format="png"></keydef>
     <keydef keys="gitlab.squash_commits_when_merging" href="gitlab/gitlab.squash_commits_when_merging.png" format="png"></keydef>
+    <keydef keys="gitlab.tags" href="gitlab/gitlab.tags.jpg" format="jpg"></keydef>   
     <keydef keys="git_client.amend_last_commit" href="git_client/git_client.amend_last_commit.png" format="png"></keydef>
     <keydef keys="git_client.auto_push_changes" href="git_client/git_client.auto_push_changes.png" format="png"></keydef>
     <keydef keys="git_client.branch_drop-down" href="git_client/git_client.branch_drop-down.png" format="png"></keydef>
     <keydef keys="git_client.checkout_branch" href="git_client/git_client.checkout_branch.png" format="png"></keydef>
     <keydef keys="git_client.checkout_branch_dropbox" href="git_client/git_client.checkout_branch_dropbox.png" format="png"></keydef>
     <keydef keys="git_client.checkout_branch_right_click" href="git_client/git_client.checkout_branch_right_click.png" format="png"></keydef>
+    <keydef keys="git_client.checkout_tag" href="git_client/git_client.checkout_tag.jpg" format="jpg"></keydef>
     <keydef keys="git_client.checkout_temp_branch_dropbox" href="git_client/git_client.checkout_temp_branch_dropbox.png" format="png"></keydef>
     <keydef keys="git_client.checkout_temp_branch_right_click" href="git_client/git_client.checkout_temp_branch_right_click.png" format="png"></keydef>
     <keydef keys="git_client.choose_a_previously_used_comment" href="git_client/git_client.choose_a_previously_used_comment.png" format="png"></keydef>
@@ -102,14 +104,18 @@
     <keydef keys="git_client.Git_Branch_Manager" href="git_client/git_client.Git_Branch_Manager.png" format="png"></keydef>
     <keydef keys="git_client.git_reset_mode" href="git_client/git_client.git_reset_mode.png" format="png"></keydef>
     <keydef keys="git_client.git_staging_view" href="git_client/git_client.git_staging_view.png" format="png"></keydef>
+    <keydef keys="git_client.git_view_ellipsis" href="git_client/git_client.git_view_ellipsis.png" format="png"></keydef>
     <keydef keys="git_client.merge_conflicts" href="git_client/git_client.merge_conflicts.png" format="png"></keydef>
+    <keydef keys="git_client.manage_remote_repositories" href="git_client/git_client.manage_remote_repositories.png" format="png"></keydef>
     <keydef keys="git_client.pull" href="git_client/git_client.pull.png" format="png"></keydef>
     <keydef keys="git_client.pull_icon" href="git_client/git_client.pull_icon.png" format="png"></keydef>
     <keydef keys="git_client.push" href="git_client/git_client.push.png" format="png"></keydef>
+    <keydef keys="git_client.push_failed" href="git_client/git_client.push_failed.png" format="png"></keydef>
     <keydef keys="git_client.push_icon" href="git_client/git_client.push_icon.png" format="png"></keydef>
     <keydef keys="git_client.resolve_conflicts" href="git_client/git_client.resolve_conflicts.png" format="png"></keydef>
     <keydef keys="git_client.show_current_repository_history" href="git_client/git_client.show_current_repository_history.png" format="png"></keydef>
     <keydef keys="git_client.show_Git_Branch_Manager_view" href="git_client/git_client.show_Git_Branch_Manager_view.png" format="png"></keydef>
+    <keydef keys="git_client.show_tags" href="git_client/git_client.show_tags.png" format="png"></keydef>
     <keydef keys="git_client.stage_all" href="git_client/git_client.stage_all.png" format="png"></keydef>
     <keydef keys="git_client.stage_files" href="git_client/git_client.stage_files.png" format="png"></keydef>
     <keydef keys="git_client.stage_selected" href="git_client/git_client.stage_selected.png" format="png"></keydef>

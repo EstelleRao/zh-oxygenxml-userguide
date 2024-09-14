@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="protected_tag">
+    <title>受保护标签</title>
+    <body>
+        <p>标签保护可以防止标签被意外删除。标签规则也可用于控制标签创建权限，禁止创建与分支同名的标签，避免潜在的安全或操作问题。</p>
+        <p>每条规则可以匹配一个标签，使用通配符可以一次匹配多个标签。</p>
+        <section id="section_o41_5bx_rcc">
+            <title>设置受保护标签</title>
+            <p>如需设置受保护标签，您必须至少拥有该项目的 Maintainer 权限。</p>
+            <ol id="ol_vxj_l2x_rcc">
+                <li>在左侧菜单栏点击 <uicontrol>Search or go to</uicontrol>，找到并进入项目仓库。</li>
+                <li>点击 <menucascade>
+                        <uicontrol>Settings</uicontrol>
+                        <uicontrol>Repository</uicontrol>
+                    </menucascade>。</li>
+                <li>展开 <uicontrol>Protected tags</uicontrol>。</li>
+                <li>点击 <uicontrol>Add tag</uicontrol>。</li>
+                <li>如需保护单个标签，点击 <uicontrol>Tag</uicontrol>，从下拉列表中选择需要保护的标签。</li>
+                <li>如需保护某个字符串能匹配到的所有标签，请按照以下步骤操作：<ol id="ol_vxw_mfx_rcc">
+                        <li>点击 <uicontrol>Tag</uicontrol>。</li>
+                        <li>输入用于标签匹配的字符串。支持使用通配符（<codeph>*</codeph>）。</li>
+                        <li>点击 <uicontrol>Create wildcard</uicontrol>。</li>
+                    </ol></li>
+                <li>在 <uicontrol>Allowed to create</uicontrol> 下拉框中，选择允许创建受保护标签的角色。</li>
+                <li>点击 <uicontrol>Protect</uicontrol>，创建的规则显示在受保护标签列表中。</li>
+            </ol>
+        </section>
+        <section id="section_nkq_5bx_rcc">
+            <title>使用通配符匹配受保护标签</title>
+            <p>您可以指定一个通配符保护标签，该标签可以保护该通配符匹配到的所有标签。</p>
+            <simpletable relcolwidth="1* 1*" id="simpletable_rdd_qk2_scc" frame="topbot">
+                <sthead>
+                    <stentry>通配符保护标签</stentry>
+                    <stentry>匹配的标签</stentry>
+                </sthead>
+                <strow>
+                    <stentry><codeph><codeph>*-000*</codeph></codeph></stentry>
+                    <stentry><codeph>A-0001</codeph>, <codeph>B-0001</codeph>, <codeph>8003-000036-A-0001</codeph></stentry>
+                </strow>
+                <strow>
+                    <stentry><codeph>develop*</codeph></stentry>
+                    <stentry><codeph>develop/K2</codeph>, <codeph>develop/KL</codeph>, <codeph>develop/CE</codeph></stentry>
+                </strow>
+                <strow>
+                    <stentry><codeph>feature*</codeph></stentry>
+                    <stentry><codeph>feature/KL/review-feedback</codeph>, <codeph>feature/K2/registration-feedback</codeph></stentry>
+                </strow>
+            </simpletable>
+            <p>两个不同的通配符可能会匹配同一个标签。例如，<codeph>*-stable</codeph> 和 <codeph>production-*</codeph> 都会匹配 <codeph>production-stable</codeph> 标签。在这种情况下，如果这些受保护标签中的任何一个标签有“<uicontrol>Allowed to create</uicontrol>”等设置，那么 <codeph>production-stable</codeph> 标签也会继承这个设置。</p>
+            <p>点击某个受保护标签的名称，GitLab 会显示所有匹配的标签。</p>
+            <image placement="break" keyref="gitlab.protected_tags" id="image_dhs_tdc_scc"
+                width="550"/>
+        </section>
+        <section id="section_qhm_wbx_rcc">
+            <title>设置标签和分支不同名</title>
+            <p>同名标签和分支可能包含不同的提交。如果标签和分支使用了相同的名称，用户在运行 <codeph>git checkout</codeph> 命令时，可能会误将 <codeph>qa</codeph> 标签检出，而实际上他们想要检出的是 <codeph>qa</codeph> 分支。为了提高仓库安全性，应避免创建与分支同名的标签。混淆两者可能会导致潜在的安全或操作问题。</p>
+            <p>为防止出现该问题，您可以创建受保护标签规则，设置不允许任何人创建与某类分支同名的标签。</p>
+            <ol id="ol_itc_fhx_rcc">
+                <li>确定哪些分支名称不能用作标签名称。</li>
+                <li>如 <xref href="#./section_o41_5bx_rcc"/> 中所述，创建一个受保护标签规则。<ol id="ol_r5z_jhx_rcc">
+                        <li>在 <uicontrol>Tag</uicontrol> 字段中，输入名称，例如 <codeph>develop</codeph>。您还可以创建通配符，例如 <codeph>develop*</codeph>，以匹配多个名称，如 <codeph>develop/K2</codeph> 和 <codeph>develop/KL</codeph>。</li>
+                        <li>在 <uicontrol>Allowed to create</uicontrol> 下拉框中，选择 <uicontrol>No one</uicontrol>。</li>
+                        <li>点击 <uicontrol>Protect</uicontrol>。</li>
+                    </ol></li>
+            </ol>
+            <p>这样，用户仍然可以创建分支，但不能创建与分支同名的标签。</p>
+        </section>
+        <section id="section_hk1_1cx_rcc">
+            <title>删除受保护标签</title>
+            <p>您可以通过 GitLab 用户界面或 GitLab API 手动删除受保护的标签。</p>
+            <p>如需删除受保护标签，您必须至少拥有该项目的 Maintainer 权限。</p>
+            <ol id="ol_n2z_phx_rcc">
+                <li>在左侧菜单栏点击 <uicontrol>Search or go to</uicontrol>，找到并进入项目仓库。</li>
+                <li>点击 <menucascade>
+                        <uicontrol>Code</uicontrol>
+                        <uicontrol>Tags</uicontrol>
+                    </menucascade>。</li>
+                <li>在要删除的标签旁边，点击 <uicontrol> Delete</uicontrol>。</li>
+                <li>在确认弹窗中，输入标签名称，并选择 “<uicontrol>Yes, delete protected tag</uicontrol>”。</li>
+            </ol>
+            <p>受保护的标签只能通过 GitLab 用户界面或 GitLab API 删除。这些保护措施可以防止您通过本地 Git 命令或第三方 Git 客户端（比如 Oxygen XML Author 或 VS Code 的 Git 客户端）意外删除标签。</p>
+        </section>
+    </body>
+</topic>

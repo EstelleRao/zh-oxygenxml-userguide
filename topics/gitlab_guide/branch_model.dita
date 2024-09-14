@@ -3,12 +3,11 @@
 <concept id="dj2_tn5_hzb">
     <title>分支类型</title>
     <conbody>
-        <image placement="break" keyref="gitlab.git_branch_model_simplified" width="400"
+        <image placement="break" keyref="gitlab.git_branch_model" width="400"
             id="image_tmh_plz_hzb"/>
         <ul id="ul_x23_qlz_hzb">
-            <li><codeph>feature</codeph> 从 <codeph>develop</codeph> 创建，开发完成后merge到 <codeph>develop</codeph>，合并后删除。</li>
-            <li><codeph>hotfix</codeph> 从 <codeph>develop</codeph> 创建，修复完成后merge到 <codeph>develop</codeph>，合并后删除。</li>
-            <li><codeph>release</codeph> 从 <codeph>develop</codeph> 创建，如有改动，发布后merge到 <codeph>develop</codeph>，如无改动，发布后保留分支。</li>
+            <li><codeph>feature</codeph> 从 <codeph>develop</codeph> 创建，开发完成后 merge 到 <codeph>develop</codeph>，合并后删除。</li>
+            <li><codeph>hotfix</codeph> 从 <codeph>develop</codeph> 创建，修复完成后 merge 到 <codeph>develop</codeph>，合并后删除。</li>
         </ul>
         <section>
          <title>长期主要分支</title>
@@ -19,9 +18,8 @@
         <section>
             <title>临时辅助分支</title>
             <ul id="ul_z44_klz_hzb">
-                <li><codeph>feature</codeph>：跟踪ECR变更需求，使用ECR编号标识分支名称，从 <codeph>develop</codeph> 创建，开发完成后merge到 <codeph>develop</codeph>，合并后删除。合并时勾选 <uicontrol>delete source branch</uicontrol> 自动删除远端分支，本地分支需手动删除。</li>
-                <li><codeph>hotfix</codeph>：跟踪型检注册反馈、公司内部反馈、文档组自查问题、用户反馈，从 <codeph>develop</codeph> 创建，修复完成后merge到 <codeph>develop</codeph>，合并后删除。如果转为ECR变更需求，则使用 <codeph>feature</codeph> 跟踪。</li>
-                <li><codeph>release</codeph>：跟踪分支和版本的关联，使用项目代号和版本号标识分支名称。通常在受控或型检注册提交节点，从 <codeph>develop</codeph> 创建 <codeph>release</codeph> 分支，用于测试和发布版本。创建分支后，只允许少量问题修复、元数据修改，修复完成后merge到 <codeph>develop</codeph>，无需删除。一经发布不可改动，保留稳定的正式版本。</li>
+                <li><codeph>feature</codeph>：跟踪 ECR 变更需求，使用 ECR 编号标识分支名称，从 <codeph>develop</codeph> 创建，开发完成后 merge 到 <codeph>develop</codeph>，合并后删除。合并时勾选 <uicontrol>delete source branch</uicontrol> 自动删除远端分支，本地分支需手动删除。</li>
+                <li><codeph>hotfix</codeph>：跟踪型检注册反馈、公司内部反馈、文档组自查问题、用户反馈，从 <codeph>develop</codeph> 创建，修复完成后 merge 到 <codeph>develop</codeph>，合并后删除。如果转为 ECR 变更需求，则使用 <codeph>feature</codeph> 跟踪。</li>
             </ul>
         </section>
     </conbody>

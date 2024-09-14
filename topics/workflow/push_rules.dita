@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="push_rules">
+    <title>设置推送规则</title>
+    <shortdesc>虽然分支保护可以控制分支推送权限，但使用更具体的推送规则可以更好地控制哪些内容可以或不可以推送到仓库中。推送规则不仅可以用于校验提交信息是否符合预期格式，还可以强制执行分支名称规则，防止删除 Git 标签。</shortdesc>
+    <body>
+        <ol id="steps_khn_tf5_hzb">
+            <li>在远程仓库的左侧导航栏点击 <menucascade>
+                    <uicontrol>Settings</uicontrol>
+                    <uicontrol>Repository</uicontrol>
+                </menucascade>。</li>
+            <li>展开 <uicontrol>Push rules</uicontrol>。</li>
+            <li>设置 commit 描述格式和分支名称规则，支持正则表达式，且区分大小写。<ul id="ul_hct_jsd_scc">
+                    <li><uicontrol>Require expression in commit messages</uicontrol>：<codeph>【.*?】【.*?】.*</codeph></li>
+                    <li><uicontrol>Branch name</uicontrol>：<codeph>(develop|feature|hotfix)/*</codeph></li>
+                </ul></li>
+        </ol>
+    </body>
+</topic>

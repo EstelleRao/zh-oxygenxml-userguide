@@ -156,6 +156,18 @@
                         <entry colsep="1" rowsep="1"
                             >新增高级技巧章节，包含批量定义 Key、批量修改文件名、使用正则批量替换文本等技巧</entry>
                     </row>
+                    <row>
+                        <entry colsep="1" rowsep="1">2024年9月13日</entry>
+                        <entry colsep="1" rowsep="1">饶雅惠</entry>
+                        <entry colsep="1" rowsep="1">
+                            <ol id="ol_vjw_gvd_scc">
+                                <li>Oxygen 基础入门：新增“创建标签”章节</li>
+                                <li>GitLab 协作规范：分支管理取消 <codeph>release</codeph> 分支，使用标签标记发布版本；新增“标签管理”章节；常用命令新增标签管理命令</li>
+                                <li>业务流程：新增“设置受保护标签”“设置推送规则”“创建标签”，删除“发布版本”</li>
+                                <li>故障排除：新增“推送失败”故障解决方法</li>
+                            </ol>
+                        </entry>
+                    </row>
                 </tbody>
             </tgroup>
         </table>

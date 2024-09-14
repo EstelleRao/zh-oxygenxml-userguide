@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="protected_tags">
+    <title>设置受保护标签</title>
+    <shortdesc>标签保护可以防止标签被意外删除。标签规则也可用于控制标签创建权限，禁止创建与分支同名的标签，避免潜在的安全或操作问题。</shortdesc>
+    <body>
+        <p>如需设置受保护标签，您必须至少拥有该项目的 Maintainer 权限。</p>
+        <ol id="ol_vxj_l2x_rcc">
+            <li>在远程仓库的左侧导航栏点击 <menucascade>
+                    <uicontrol>Settings</uicontrol>
+                    <uicontrol>Repository</uicontrol>
+                </menucascade>。</li>
+            <li>展开 <uicontrol>Protected tags</uicontrol>。</li>
+            <li>点击 <uicontrol>Add tag</uicontrol>。</li>
+            <li>如需保护单个标签，点击 <uicontrol>Tag</uicontrol>，从下拉列表中选择需要保护的标签。</li>
+            <li>如需保护某个字符串能匹配到的所有标签，请按照以下步骤操作：<ol id="ol_vxw_mfx_rcc">
+                    <li>点击 <uicontrol>Tag</uicontrol>。</li>
+                    <li>输入用于标签匹配的字符串。支持使用通配符（<codeph>*</codeph>）。</li>
+                    <li>点击 <uicontrol>Create wildcard</uicontrol>。</li>
+                </ol></li>
+            <li>在 <uicontrol>Allowed to create</uicontrol> 下拉框中，选择允许创建受保护标签的角色。</li>
+            <li>点击 <uicontrol>Protect</uicontrol>，创建的规则显示在受保护标签列表中。</li>
+        </ol>
+    </body>
+</topic>

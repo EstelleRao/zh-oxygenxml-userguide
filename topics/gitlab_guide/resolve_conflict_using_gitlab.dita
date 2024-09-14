@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="resolve_conflict_using_gitlab">
-    <title>在 GitLab 上解决合并冲突</title>
+    <title>使用 GitLab 解决合并冲突</title>
     <body>
         <p>合入个人分支到主分支之前，如果未合并主分支的更改到个人分支，创建合并请求后，可能因竞争更改（个人分支和主分支上其他人提交的更改）产生合并冲突。如果产生合并冲突，必须解决冲突才能合入合并请求。</p>
         <image placement="break" keyref="gitlab.resolve_merge_conflicts_button" width="500"

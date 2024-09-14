@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="create_tags">
+    <title>创建标签</title>
+    <body>
+        <p>标签用于标记某个重要的提交，例如标记一个发布版本。相比由随机数字和字母组合的 commit ID，有意义的标签更容易让人记住。</p>
+        <p>在 <uicontrol>Git Staging</uicontrol> 视图，您可以点击 <uicontrol><image
+                    keyref="git_client.show_current_repository_history" id="image_ukq_rnh_31c"
+                /> Show current repository history</uicontrol>，在 <uicontrol>Git Staging</uicontrol> 窗口为某个 commit 创建标签。</p>
+        <p>您也可以通过以下任一入口查看和管理所有标签。在标签列表中，可以删除或检出本地标签和已推送的标签。对于仅存在于本地分支的标签，可以将其推送到远程仓库。</p>
+        <ul id="ul_xzz_5hy_pcc">
+            <li><image placement="inline" keyref="git_client.git_view_ellipsis"
+                    id="image_jnx_gyx_pcc"/>
+                <uicontrol>Ellipsis (three vertical dots) menu</uicontrol>：点击 <uicontrol><image
+                        placement="inline" keyref="git_client.show_tags" id="image_jxv_rzx_pcc"
+                    /> Show tags</uicontrol>，查看所有标签。</li>
+            <li>顶部菜单栏的 <uicontrol>Git</uicontrol> 菜单：点击 <uicontrol><image placement="inline"
+                        keyref="git_client.show_tags" id="image_sh3_s3y_pcc"
+                /> Show tags</uicontrol>，查看所有标签。</li>
+        </ul>
+    </body>
+</topic>

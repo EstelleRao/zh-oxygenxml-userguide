@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="topic_dlg_5vf_fzb">
-    <title>Git客户端</title>
+    <title>Git 客户端</title>
     <body>
-        <p>Git客户端用于GitLab版本管理和团队协作，支持克隆和切换仓库，拉取远程仓库变更，推送本地仓库变更，新建、切换和检出分支，查看变更记录，对比差异等操作。</p>
-        <p>在顶部菜单栏点击 <menucascade>
+        <p>Git 客户端用于 GitLab 版本管理和团队协作，支持克隆仓库，拉取远程仓库更新，推送本地仓库变更，新建、切换、检出分支，创建、推送、删除、检出标签，查看提交历史，对比文件差异等功能。</p>
+        <p>Git 视图如下所示，在顶部菜单栏点击 <menucascade>
                 <uicontrol>Window</uicontrol>
                 <uicontrol>Show View</uicontrol>
                 <uicontrol>Git Staging</uicontrol>
-            </menucascade>，可打开Git视图。</p>
+            </menucascade> 即可打开。</p>
         <image placement="break" keyref="git_client.git_staging_view" height="400"
             id="image_dkv_t4c_jzb"/>
         <ul id="ul_bdl_1pn_h1c">
@@ -19,16 +19,33 @@
             <li><uicontrol><image keyref="git_client.pull_icon" id="image_skq_rnh_31c"
                 /> Pull</uicontrol>：从远程分支拉取最新的更改到本地分支，以保持代码同步。默认使用 <uicontrol>Pull（merge）</uicontrol> 操作。</li>
             <li><uicontrol><image keyref="git_client.stash_drop-down_menu" id="image_tkq_rnh_31c"
-                /> Stash</uicontrol>：选中工作区或暂存区的文件，点击 <menucascade>
-                <uicontrol>Stash</uicontrol>
-                <uicontrol>Stash changes</uicontrol>
-                </menucascade> 保存更改，方便切换或查看其他分支。</li>
+                    /> Stash</uicontrol>：切换到其他分支之前，贮藏当前分支未提交的更改，使工作区保持一个干净的状态。<ul
+                    id="ul_lzs_fwx_pcc">
+                    <li><menucascade>
+                            <uicontrol>Stash changes</uicontrol>
+                        </menucascade>：贮藏当前分支未提交的更改。</li>
+                    <li><menucascade>
+                            <uicontrol>List changes</uicontrol>
+                        </menucascade>：列出当前分支贮藏的更改。</li>
+                </ul></li>
             <li><uicontrol><image keyref="git_client.show_current_repository_history"
-                id="image_ukq_rnh_31c"
-                /> Show current repository history</uicontrol>：查看项目的提交历史，包括提交者、提交记录和提交时间等信息。在提交历史窗口可创建分支，创建标签，撤销提交（Revert commit）或回退版本（Reset commit）。</li>
+                        id="image_ukq_rnh_31c"
+                /> Show current repository history</uicontrol>：查看项目的提交历史，包括提交者、commit 描述和提交时间等信息。在提交历史窗口可创建分支，创建标签，撤销提交（Revert commit）或回退版本（Reset commit）。</li>
             <li><uicontrol><image keyref="git_client.show_Git_Branch_Manager_view"
-                id="image_vkq_rnh_31c"
-                /> Show Git Branch Manager view</uicontrol>：显示远程仓库分支和本地仓库分支。在此视图可检出远程分支到本地，创建、切换或删除本地分支。</li>
+                        id="image_vkq_rnh_31c"
+                /> Show Git Branch Manager view</uicontrol>：显示远程仓库分支和本地仓库分支，可检出远程分支到本地，创建、切换或删除本地分支，合并其他分支变更。</li>
+            <li><image placement="inline" keyref="git_client.git_view_ellipsis"
+                    id="image_jnx_gyx_pcc"/>
+                <uicontrol>Ellipsis (three vertical dots) menu</uicontrol>：包括查看标签、管理远程仓库、追踪远程分支等功能。<ul
+                    id="ul_kbv_lyx_pcc">
+                    <li><image placement="inline" keyref="git_client.show_tags"
+                            id="image_jxv_rzx_pcc"/>
+                        <uicontrol>Show tags</uicontrol>：列出所有标签。在标签列表中，可以删除或检出本地标签和已推送的标签。对于仅存在于本地分支的标签，可以将其推送到远程仓库。</li>
+                    <li><image placement="inline" keyref="git_client.manage_remote_repositories"
+                            id="image_sxd_5zx_pcc"/>
+                        <uicontrol>Manage remote repositories</uicontrol>：添加、编辑、删除当前仓库对应的远程仓库。</li>
+                    <li><uicontrol>Track remote branch</uicontrol>：设置本地分支执行拉取、推送等操作关联的远程分支。</li>
+                </ul></li>
             <li><uicontrol>Unstaged files</uicontrol>：通常称为“工作区”，显示本地分支所有已更改、未暂存的文件。在工作区可 <image
                 keyref="git_client.stage_selected" id="image_a42_tmh_31c"/> 移动选定文件到暂存区，<image
                 keyref="git_client.stage_all" id="image_b42_tmh_31c"

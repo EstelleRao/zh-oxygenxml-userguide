@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="tag_type">
+    <title>标签类型</title>
+    <body>
+        <p>Git 支持两种标签：轻量标签（lightweight）与附注标签（annotated）。</p>
+        <p>轻量标签只是对某个特定提交的引用，不会保存任何其他信息。而附注标签是带有说明文字的标签，保存了打标签者的信息、打标签的日期时间、附注信息。通常建议创建附注标签。</p>
+    </body>
+</topic>

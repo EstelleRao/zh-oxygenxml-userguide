@@ -84,7 +84,7 @@
             <p>此正则表达式可匹配带 <codeph>common_label</codeph>, <codeph>common_symbol</codeph>, <codeph>common_note</codeph>, <codeph>common_logo</codeph>, <codeph>common_MISC</codeph> 等前缀的图片。注意，<codeph>keyref</codeph> 前面有个空格。</p>
             <ul id="ul_jgj_xzg_1cc">
                 <li>查找文本：<codeph>\s+href=".*?commonFilesDir/images/common_.*?/</codeph></li>
-                <li>替换后文本：<codeph> keyref="common_global.</codeph></li>
+                <li>替换后文本： <codeph>keyref="common_global.</codeph></li>
             </ul>
             <image placement="break" keyref="oxygen_find_replace.regex" width="450"
                 id="image_dff_bqg_1cc"/>
@@ -98,7 +98,7 @@
             <p>此正则表达式可匹配带 <codeph>C1000_PSR</codeph>, <codeph>C1000_VCT</codeph>, <codeph>C1000_SGC</codeph>, <codeph>C1000_SGI</codeph> 等前缀的图片。注意，<codeph>keyref</codeph> 前面有个空格。</p>
             <ul id="ul_ab1_h1h_1cc">
                 <li>查找文本：<codeph>\s+href=".*?/images/C1000_.*?/</codeph></li>
-                <li>替换后文本：<codeph> keyref="C1000_global.</codeph></li>
+                <li>替换后文本： <codeph>keyref="C1000_global.</codeph></li>
             </ul>
         </section>
         <section id="section_qxk_gdg_1cc">
@@ -109,8 +109,8 @@
                 >使用正则表达式批量替换 commonFilesDir 仓库的公共组件为 common 仓库或 common_C1000 仓库的公共组件。</p>
             <ul id="ul_vyn_z1h_1cc">
                 <li>查找文本：<codeph>\s+conref=".*?#reusable_components/</codeph></li>
-                <li>替换后文本 1：<codeph> conkeyref="common_zh-CN.common_components/</codeph></li>
-                <li>替换后文本 2：<codeph> conkeyref="C1000_zh-CN.C1000_reusable_components/</codeph></li>
+                <li>替换后文本 1： <codeph>conkeyref="common_zh-CN.common_components/</codeph></li>
+                <li>替换后文本 2： <codeph>conkeyref="C1000_zh-CN.C1000_reusable_components/</codeph></li>
             </ul>
         </section>
         <p>有关正则表达式的更多应用场景，请查阅：<xref keyref="revise_image_elements"/>。</p>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_rcn_yxf_fzb">
+    <title>创建标签</title>
+    <body>
+        <p>使用标签标记发布版本，如 A-0001, B-0001。在标签说明中可以补充额外的版本信息，比如 “首次注册递交版本”。</p>
+        <ol id="ol_rj3_pqn_rcc">
+            <li>在 <uicontrol>Git Staging</uicontrol> 视图，点击 <uicontrol><image
+                        keyref="git_client.show_current_repository_history" id="image_ukq_rnh_31c"
+                    /> Show current repository history</uicontrol>。</li>
+            <li>在 <uicontrol>Git History</uicontrol> 窗口，选中某个 commit，单击右键后点击 <uicontrol>Create tag</uicontrol>。</li>
+            <li>填写标签名称、标签说明，勾选 <uicontrol>Push tag</uicontrol>。</li>
+            <li>点击 <uicontrol>Create</uicontrol>，完成标签创建并自动推送标签到远程仓库。</li>
+        </ol>
+    </body>
+</topic>

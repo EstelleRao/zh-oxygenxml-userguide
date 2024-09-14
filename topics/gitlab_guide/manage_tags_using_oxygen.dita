@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="manage_tags_using_oxygen">
+    <title>使用 Oxygen Git 客户端创建和管理标签</title>
+    <body>
+        <section id="section_b5m_kn3_rcc">
+            <title>查看和管理标签</title>
+            <p>如需查看和管理某个项目仓库的标签，请按照如下步骤操作。</p>
+            <ol id="ol_uwp_sn3_rcc">
+                <li>在 <uicontrol>Git Staging</uicontrol> 视图打开项目仓库。</li>
+                <li>通过以下任一方式打开标签列表。<ul id="ul_xzz_5hy_pcc">
+                        <li><image placement="inline" keyref="git_client.git_view_ellipsis"
+                                id="image_jnx_gyx_pcc"/>
+                            <uicontrol>Ellipsis (three vertical dots) menu</uicontrol>：点击 <uicontrol><image
+                                    placement="inline" keyref="git_client.show_tags"
+                                    id="image_jxv_rzx_pcc"/> Show tags</uicontrol>，查看所有标签。</li>
+                        <li>顶部菜单栏的 <uicontrol>Git</uicontrol> 菜单：点击 <uicontrol><image
+                                    placement="inline" keyref="git_client.show_tags"
+                                    id="image_sh3_s3y_pcc"/> Show tags</uicontrol>，查看所有标签。</li>
+                    </ul></li>
+                <li>在标签列表中，点击 <uicontrol>Delete</uicontrol> 可删除本地标签和已推送的标签，点击 <uicontrol>Checkout</uicontrol> 可检出本地标签和已推送的标签。对于仅存在于本地分支的标签，点击 <uicontrol>Push</uicontrol> 可将其推送到远程仓库。</li>
+            </ol>
+        </section>
+        <section id="section_d5m_ln3_rcc">
+            <title>创建标签</title>
+            <p>如需创建标签，请按照如下步骤操作。</p>
+            <ol id="ol_rj3_pqn_rcc">
+                <li>在 <uicontrol>Git Staging</uicontrol> 视图，点击 <uicontrol><image
+                            keyref="git_client.show_current_repository_history"
+                            id="image_ukq_rnh_31c"
+                    /> Show current repository history</uicontrol>。</li>
+                <li>在 <uicontrol>Git History</uicontrol> 窗口，选中某个 commit，单击右键后点击 <uicontrol>Create tag</uicontrol>。</li>
+                <li>填写标签名称、标签说明，勾选 <uicontrol>Push tag</uicontrol>。</li>
+                <li>点击 <uicontrol>Create</uicontrol>，完成标签创建并自动推送标签到远程仓库。</li>
+            </ol>
+        </section>
+        <section id="section_kqm_b4n_rcc">
+            <title>检出标签</title>
+            <p>如需检出标签，请按照如下步骤操作。</p>
+            <ol id="ol_tg1_sb4_rcc">
+                <li>在 <uicontrol>Git Staging</uicontrol> 视图打开项目仓库。</li>
+                <li>通过以下任一方式打开标签列表。<ul id="ul_wb4_wb4_rcc">
+                        <li><image placement="inline" keyref="git_client.git_view_ellipsis"
+                                id="image_xb4_wb4_rcc"/>
+                            <uicontrol>Ellipsis (three vertical dots) menu</uicontrol>：点击 <uicontrol><image
+                                    placement="inline" keyref="git_client.show_tags"
+                                    id="image_yb4_wb4_rcc"/> Show tags</uicontrol>，查看所有标签。</li>
+                        <li>顶部菜单栏的 <uicontrol>Git</uicontrol> 菜单：点击 <uicontrol><image
+                                    placement="inline" keyref="git_client.show_tags"
+                                    id="image_zb4_wb4_rcc"/> Show tags</uicontrol>，查看所有标签。</li>
+                    </ul></li>
+                <li>在标签列表中，选中单个标签， 点击 <uicontrol>Checkout</uicontrol>。</li>
+                <li>选中 <uicontrol>Create a new branch</uicontrol>，填写分支名称，使用新建分支的方式检出标签指向的版本。<image
+                        placement="break" keyref="git_client.checkout_tag" id="image_i1z_rq4_rcc"
+                        width="500"/><note id="note_sdj_wq4_rcc" type="attention">
+                        <ul id="ul_ofq_wq4_rcc">
+                            <li>在 Oxygen XML Author 中不建议使用 <uicontrol>Detached HEAD</uicontrol> 方式检出标签指向的版本，因为本地仓库无法成功切换分支，无法查看和导出 PDF。</li>
+                        </ul>
+                    </note></li>
+                <li>点击 <uicontrol>Checkout</uicontrol>，检出分支。</li>
+            </ol>
+        </section>
+    </body>
+</topic>

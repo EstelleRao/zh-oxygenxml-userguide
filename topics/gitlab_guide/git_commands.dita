@@ -5,9 +5,9 @@
     <body>
         <table id="table_dm4_pwf_ybc">
             <tgroup cols="3">
-                <colspec colname="c1" colnum="1" colwidth="0.8*"/>
+                <colspec colname="c1" colnum="1" colwidth="0.7*"/>
                 <colspec colname="c2" colnum="2" colwidth="1*"/>
-                <colspec colname="newCol3" colnum="3" colwidth="1.2*"/>
+                <colspec colname="c3" colnum="3" colwidth="1.3*"/>
                 <thead>
                     <row>
                         <entry>命令</entry>
@@ -17,7 +17,7 @@
                 </thead>
                 <tbody>
                     <row>
-                        <entry namest="c1" nameend="newCol3"><b>windows 命令</b></entry>
+                        <entry namest="c1" nameend="c3"><b>windows 命令</b></entry>
                     </row>
                     <row>
                         <entry><codeph>ls</codeph></entry>
@@ -41,10 +41,10 @@
                         </entry>
                     </row>
                     <row>
-                        <entry namest="c1" nameend="newCol3"><b>常用 git 命令</b></entry>
+                        <entry namest="c1" nameend="c3"><b>常用 git 命令</b></entry>
                     </row>
                     <row>
-                        <entry namest="c1" nameend="newCol3"><b>创建本地仓库和远程仓库后，关联本地仓库和远程仓库</b></entry>
+                        <entry namest="c1" nameend="c3"><b>创建本地仓库和远程仓库后，关联本地仓库和远程仓库</b></entry>
                     </row>
                     <row>
                         <entry><codeph>git init {本地目录}</codeph></entry>
@@ -62,7 +62,7 @@
                         <entry><codeph>git remote add origin https://gitlab.csrbtx.com/rai/S1000.git</codeph>：将本地仓库关联 S1000 远程仓库<p><b>注意</b>：在 git 中，远程仓库相对本地仓库的默认名称为 origin。</p></entry>
                     </row>
                     <row>
-                        <entry namest="c1" nameend="newCol3"><b>创建远程仓库后，克隆远程仓库到本地</b></entry>
+                        <entry namest="c1" nameend="c3"><b>创建远程仓库后，克隆远程仓库到本地</b></entry>
                     </row>
                     <row>
                         <entry><codeph>git clone {远程仓库网址}</codeph></entry>
@@ -75,7 +75,7 @@
                         <entry><codeph>git clone https://gitlab.csrbtx.com/rai/common_CV2000.git CV2000_common</codeph>：在本地生成一个 CV2000_common 目录。</entry>
                     </row>
                     <row>
-                        <entry namest="c1" nameend="newCol3"><b>配置用户名和邮箱</b></entry>
+                        <entry namest="c1" nameend="c3"><b>配置用户名和邮箱</b></entry>
                     </row>
                     <row>
                         <entry><codeph>git config user.name "{name}"</codeph>
@@ -89,7 +89,7 @@
                         <entry><codeph>git config --global user.email "estelle.rao@csrbtx.com"</codeph>：为当前系统的登录用户配置邮箱为 estelle.rao@csrbtx.com，来自该用户的所有提交都将使用该邮箱。</entry>
                     </row>
                     <row>
-                        <entry namest="c1" nameend="newCol3"><b>查看、切换、创建、删除、合并分支</b></entry>
+                        <entry namest="c1" nameend="c3"><b>查看、切换、创建、删除、合并分支</b></entry>
                     </row>
                     <row>
                         <entry><codeph>git branch</codeph></entry>
@@ -134,7 +134,7 @@
                         <entry>强制删除本地仓库中的某个分支</entry>
                     </row>
                     <row>
-                        <entry namest="c1" nameend="newCol3"><b>暂存、提交更改</b></entry>
+                        <entry namest="c1" nameend="c3"><b>暂存、提交更改</b></entry>
                     </row>
                     <row>
                         <entry><codeph>git add .</codeph></entry>
@@ -171,7 +171,7 @@
                         <entry><codeph>git status</codeph></entry>
                         <entry>查看哪些文件未被跟踪（从未暂存）、未被暂存（暂存后文件被删除或移动）、等待提交（已暂存，未提交）</entry>
                         <entry>
-                            <codeblock id="codeblock_cgn_rgl_zbc">PS E:\RAI-IFU\C1000} git status                                                                                           
+                            <codeblock id="codeblock_cgn_rgl_zbc" outputclass="language-powershell">$ git status                                                                                           
 On branch develop/KL
 Your branch is up to date with 'origin/develop/KL'.
 
@@ -185,7 +185,7 @@ Untracked files:
                         </entry>
                     </row>
                     <row>
-                        <entry namest="c1" nameend="newCol3"><b>拉取远程分支更新</b></entry>
+                        <entry namest="c1" nameend="c3"><b>拉取远程分支更新</b></entry>
                     </row>
                     <row>
                         <entry><codeph>git fetch {远程仓库}</codeph></entry>
@@ -199,7 +199,7 @@ Untracked files:
                             <codeph>git fetch origin master</codeph></entry>
                     </row>
                     <row>
-                        <entry namest="c1" nameend="newCol3"><b>拉取并合并远程分支更新</b></entry>
+                        <entry namest="c1" nameend="c3"><b>拉取并合并远程分支更新</b></entry>
                     </row>
                     <row>
                         <entry><codeph>git pull {远程仓库}{远程分支}:{本地分支}</codeph></entry>
@@ -209,13 +209,13 @@ Untracked files:
                     <row>
                         <entry><codeph>git pull {远程仓库}{远程分支}</codeph></entry>
                         <entry>拉取远程仓库特定分支的更新，与当前分支合并</entry>
-                        <entry><codeph>git pull origin next</codeph>：拉取 <codeph>origin</codeph> 远程仓库的 <codeph>next</codeph> 分支，与当前分支合并。实质上，等同于先做 <codeph>git fetch</codeph>，再做 <codeph>git merge</codeph><codeblock id="codeblock_a5q_4rs_zbc">$ git fetch origin
+                        <entry><codeph>git pull origin next</codeph>：拉取 <codeph>origin</codeph> 远程仓库的 <codeph>next</codeph> 分支，与当前分支合并。实质上，等同于先做 <codeph>git fetch</codeph>，再做 <codeph>git merge</codeph><codeblock id="codeblock_a5q_4rs_zbc" outputclass="language-powershell">$ git fetch origin
 $ git merge origin/next</codeblock></entry>
                     </row>
                     <row>
                         <entry><codeph>git pull {远程仓库}</codeph></entry>
                         <entry>如果当前分支与远程分支存在追踪关系，可以省略远程分支</entry>
-                        <entry><codeph>git pull origin</codeph>：在本地的当前分支上自动合并 <codeph>origin</codeph> 远程仓库中的追踪分支。<p>在某些场合，Git会在本地分支与远程分支之间自动建立一种追踪关系（tracking）。比如，在<codeph> git clone</codeph> 的时候，所有本地分支默认与远程仓库的同名分支建立追踪关系，也就是说，本地的 <codeph>master</codeph> 分支自动追踪 <codeph>origin/master </codeph>分支。</p><p>Git也允许手动建立追踪关系。</p><p><codeph>git branch --set-upstream master origin/next</codeph>：指定<codeph>master</codeph>分支追踪<codeph>origin/next</codeph>分支。</p></entry>
+                        <entry><codeph>git pull origin</codeph>：在本地的当前分支上自动合并 <codeph>origin</codeph> 远程仓库中的追踪分支。<p>在某些场合，Git会在本地分支与远程分支之间自动建立一种追踪关系（tracking）。比如，在 <codeph>git clone</codeph> 的时候，所有本地分支默认与远程仓库的同名分支建立追踪关系，也就是说，本地的 <codeph>master</codeph> 分支自动追踪 <codeph>origin/master</codeph> 分支。</p><p>Git也允许手动建立追踪关系。</p><p><codeph>git branch --set-upstream master origin/next</codeph>：指定<codeph>master</codeph>分支追踪<codeph>origin/next</codeph>分支。</p></entry>
                     </row>
                     <row>
                         <entry><codeph>git pull</codeph></entry>
@@ -223,7 +223,7 @@ $ git merge origin/next</codeblock></entry>
                         <entry>在当前分支上自动合并唯一一个追踪分支。</entry>
                     </row>
                     <row>
-                        <entry namest="c1" nameend="newCol3"><b>推送本地分支更新</b></entry>
+                        <entry namest="c1" nameend="c3"><b>推送本地分支更新</b></entry>
                     </row>
                     <row>
                         <entry><codeph>git push {远程仓库}{本地分支}:{远程分支}</codeph></entry>
@@ -233,22 +233,22 @@ $ git merge origin/next</codeblock></entry>
                     <row>
                         <entry><codeph>git push {远程仓库}{本地分支}</codeph></entry>
                         <entry>如果省略远程分支，则表示将本地分支推送到与其存在“追踪关系”的远程分支（通常两者同名）。如果该远程分支不存在，则会新建分支。</entry>
-                        <entry><codeph>git pull origin master</codeph>：将本地的<codeph> master</codeph> 分支推送到<codeph> origin</codeph> 远程仓库的<codeph> master</codeph> 分支。如果后者不存在，则新建<codeph> master</codeph> 远程分支。</entry>
+                        <entry><codeph>git pull origin master</codeph>：将本地的 <codeph>master</codeph> 分支推送到 <codeph>origin</codeph> 远程仓库的 <codeph>master</codeph> 分支。如果后者不存在，则新建 <codeph>master</codeph> 远程分支。</entry>
                     </row>
                     <row>
                         <entry><codeph>git push {远程仓库}:{远程分支}</codeph></entry>
                         <entry>如果省略本地分支，则表示删除指定的远程分支，等同于推送一个空的本地分支到远程分支。</entry>
                         <entry>
-                            <codeblock id="codeblock_ff2_15s_zbc">$ git push origin :master
+                            <codeblock id="codeblock_ff2_15s_zbc" outputclass="language-powershell">$ git push origin :master
 # 等同于
 $ git push origin --delete master</codeblock>
-                            <p>以上命令表示删除 <codeph>origin</codeph> 远程仓库的<codeph> master</codeph> 分支。</p>
+                            <p>以上命令表示删除 <codeph>origin</codeph> 远程仓库的 <codeph>master</codeph> 分支。</p>
                         </entry>
                     </row>
                     <row>
                         <entry><codeph>git push {远程仓库}</codeph></entry>
                         <entry>如果当前分支与远程分支之间存在追踪关系，可以省略本地分支和远程分支。</entry>
-                        <entry><codeph>git pull origin</codeph>：将当前分支推送到<codeph> origin</codeph> 远程仓库的对应分支。</entry>
+                        <entry><codeph>git pull origin</codeph>：将当前分支推送到 <codeph>origin</codeph> 远程仓库的对应分支。</entry>
                     </row>
                     <row>
                         <entry><codeph>git push</codeph></entry>
@@ -258,10 +258,10 @@ $ git push origin --delete master</codeblock>
                     <row>
                         <entry><codeph>git push -u {远程仓库} {本地分支}</codeph></entry>
                         <entry>如果当前分支与多个主机存在追踪关系，则可以使用 <codeph>-u</codeph> 选项指定一个默认的远程仓库，后面就可以不加任何参数使用 <codeph>git push</codeph>。</entry>
-                        <entry><codeph>git push -u origin master</codeph>：将本地的 <codeph>master </codeph>分支推送到 <codeph>origin</codeph> 远程仓库，同时指定 <codeph>origin</codeph> 为默认远程仓库，后面就可以不加任何参数使用<codeph> git push</codeph>。</entry>
+                        <entry><codeph>git push -u origin master</codeph>：将本地的 <codeph>master</codeph> 分支推送到 <codeph>origin</codeph> 远程仓库，同时指定 <codeph>origin</codeph> 为默认远程仓库，后面就可以不加任何参数使用 <codeph>git push</codeph>。</entry>
                     </row>
                     <row>
-                        <entry namest="c1" nameend="newCol3"><b>撤销提交、回退版本</b></entry>
+                        <entry namest="c1" nameend="c3"><b>撤销提交、回退版本</b></entry>
                     </row>
                     <row>
                         <entry><codeph>git revert {commit}</codeph></entry>
@@ -291,13 +291,13 @@ $ git push origin --delete master</codeblock>
                         <entry>/</entry>
                     </row>
                     <row>
-                        <entry namest="c1" nameend="newCol3"><b>临时存储更改、应用更改</b></entry>
+                        <entry namest="c1" nameend="c3"><b>临时存储更改、应用更改</b></entry>
                     </row>
                     <row>
                         <entry><codeph>git stash</codeph></entry>
-                        <entry>临时存储未提交的更改，便于切换分支</entry>
+                        <entry>切换到其他分支之前，临时存储当前分支未提交的更改，使工作区保持一个干净的状态</entry>
                         <entry>
-                            <codeblock id="codeblock_dmw_l1s_zbc">$ git stash
+                            <codeblock id="codeblock_dmw_l1s_zbc" outputclass="language-powershell">$ git stash
 Saved working directory and index state \
   "WIP on master: 049d078 added the index file"
 HEAD is now at 049d078 added the index file
@@ -308,7 +308,7 @@ HEAD is now at 049d078 added the index file
                         <entry><codeph>git stash list</codeph></entry>
                         <entry>查看 stash 列表</entry>
                         <entry>
-                            <codeblock id="codeblock_iym_41s_zbc">$ git stash list
+                            <codeblock id="codeblock_iym_41s_zbc" outputclass="language-powershell">$ git stash list
 stash@{0}: WIP on master: 049d078 added the index file
 stash@{1}: WIP on master: c264051 Revert "added file_size"
 stash@{2}: WIP on master: 21d80a5 added number to log</codeblock>
@@ -328,7 +328,7 @@ stash@{2}: WIP on master: 21d80a5 added number to log</codeblock>
                         <entry><codeph>git stash drop stash@{n}</codeph></entry>
                         <entry>删除 stash 列表中指定的 stash</entry>
                         <entry>
-                            <codeblock id="codeblock_icj_s2s_zbc">$ git stash drop stash@{0}
+                            <codeblock id="codeblock_icj_s2s_zbc" outputclass="language-powershell">$ git stash drop stash@{0}
 Dropped stash@{0} (364e91f3f268f0900bc3ee613f9f733e82aaed43)</codeblock>
                         </entry>
                     </row>
@@ -338,7 +338,7 @@ Dropped stash@{0} (364e91f3f268f0900bc3ee613f9f733e82aaed43)</codeblock>
                         <entry>输入命令后直接应用并删除最近存储的一个 stash，添加 stash 编号可应用并删除指定的 stash</entry>
                     </row>
                     <row>
-                        <entry namest="c1" nameend="newCol3"><b>合并更改</b></entry>
+                        <entry namest="c1" nameend="c3"><b>合并更改</b></entry>
                     </row>
                     <row>
                         <entry><codeph>git merge {branch}</codeph></entry>
@@ -374,7 +374,163 @@ git rebase origin/develop/K2：同步 develop/K2 远程分支的所有更改到�
                         <entry>/</entry>
                     </row>
                     <row>
-                        <entry namest="c1" nameend="newCol3"><b>其他 git 命令</b></entry>
+                        <entry namest="c1" nameend="c3"><b>标签管理</b></entry>
+                    </row>
+                    <row>
+                        <entry><codeph>git tag</codeph></entry>
+                        <entry>查看所有标签</entry>
+                        <entry>
+                            <p>按照字母顺序列出所有标签<codeblock id="codeblock_bwd_m42_qcc" outputclass="language-powershell">$ git tag
+K2/B-0001
+K9/A-0001
+KL/A-0001
+KL/A-0002</codeblock></p>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry>
+                            <p><codeph>git tag --list</codeph></p>
+                            <p><codeph>git tag -l</codeph></p>
+                        </entry>
+                        <entry>按照特定模式查找标签，可使用通配符</entry>
+                        <entry>
+                            <codeblock id="codeblock_pt5_st2_qcc" outputclass="language-powershell">$ git tag --list "*-000*"
+A-0001
+B-0001
+8003-000036-A-0001
+$ git tag --list "develop*" 
+develop/CE
+develop/K2
+develop/KL
+$ git tag -l "feature*"
+feature/K2/registration-feedback
+feature/KL/review-feedback
+feature/typetest-feedback</codeblock>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry><codeph>git tag {tagname}</codeph></entry>
+                        <entry>创建轻量标签</entry>
+                        <entry>
+                            <codeblock id="codeblock_v3n_1jc_scc" outputclass="language-powershell">$ git tag v1.4-lw
+$ git tag
+v0.1
+v1.3
+v1.4
+v1.4-lw
+v1.5</codeblock>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry><codeph>git tag -a {tagname} -m "{message}"</codeph></entry>
+                        <entry>创建附注标签（带额外说明）</entry>
+                        <entry><codeph>-m</codeph> 选项指定了一条将会存储在标签中的信息。 如果没有为附注标签指定一条信息，Git 会启动编辑器要求你输入信息。<codeblock id="codeblock_enf_glc_scc" outputclass="language-powershell">$ git tag -a C-0001 -m "注册发布版本"
+$ git tag
+A-0001
+B-0001
+C-0001</codeblock></entry>
+                    </row>
+                    <row>
+                        <entry><codeph>git show {tagname}</codeph></entry>
+                        <entry>查看提交信息，附注标签还会显示额外的标签信息</entry>
+                        <entry>输出显示了打标签者的信息、打标签的日期时间、附注信息，然后显示具体的提交信息。<codeblock id="codeblock_nr5_zlc_scc" outputclass="language-powershell">$ git show C-0001                    
+tag C-0001
+Tagger: Estelle Rao {estelle.rao@csrbtx.com}
+Date:   Fri Sep 13 11:47:17 2024 +0800
+
+注册发布版本
+
+commit a1a502bef03a5d1555ba5b89a07c641d91ea28b8 (HEAD -> develop, tag: C-0001, origin/develop)
+Merge: f6a06d2 2d29e3e
+Author: Estelle Rao {estelle.rao@csrbtx.com}
+Date:   Thu Sep 12 06:44:11 2024 +0000
+
+    Merge branch 'hotfix/review-feedback' into 'develop'
+
+    【评审反馈】【All】修改文档概述中的再处理说明为维护说明，重新引用文档符号说明文件</codeblock></entry>
+                    </row>
+                    <row>
+                        <entry><codeph>git tag {tagname} {commit ID}</codeph></entry>
+                        <entry>补打标签</entry>
+                        <entry>
+                            <codeblock id="codeblock_np1_1nc_scc" outputclass="language-powershell"># 使用 git log 命令查看 commit ID
+$ git log --pretty=oneline --abbrev-commit
+# 假设在 A-0002 时忘记给项目打标签，可以在之后补上标签，补打标签需要指定 commit ID。
+$ git tag -a A-0002 58fb6d</codeblock>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry><codeph>git push origin {tagname}</codeph></entry>
+                        <entry>推送单个本地标签到远程仓库</entry>
+                        <entry>
+                            <codeblock id="codeblock_jfd_q4c_scc" outputclass="language-powershell">$ git push origin A-0002
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://gitlab.csrbtx.com/rai/CV2000.git
+ * [new tag]         A-0002 -> A-0002</codeblock>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry><codeph>git push origin --tags</codeph></entry>
+                        <entry>一次性推送所有本地标签到远程仓库</entry>
+                        <entry>
+                            <codeblock id="codeblock_a55_t4c_scc" outputclass="language-powershell">$ git push origin --tags
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://gitlab.csrbtx.com/rai/CV2000.git
+ * [new tag]         C-0001 -> C-0001</codeblock>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry><codeph>git tag -d {tagname}</codeph></entry>
+                        <entry>删除本地仓库标签</entry>
+                        <entry><codeblock id="codeblock_rzc_jpc_scc" outputclass="language-powershell">$ git tag -d C-0001
+Deleted tag 'C-0001' (was eb8eb38)</codeblock>注意：上述命令并不会从任何远程仓库中移除这个标签，必须使用 <codeph>git push {remote} :refs/tags/{tagname}</codeph> 来更新远程仓库。</entry>
+                    </row>
+                    <row>
+                        <entry><codeph>git push {remote} :refs/tags/{tagname}</codeph> </entry>
+                        <entry>删除远程仓库标签</entry>
+                        <entry>将冒号前面的空值推送到远程仓库，替换远程标签，从而删除远程标签<codeblock id="codeblock_n4f_vpc_scc" outputclass="language-powershell">$ git push origin :refs/tags/C-0001
+To https://gitlab.csrbtx.com/rai/CV2000.git
+ - [deleted]         C-0001</codeblock></entry>
+                    </row>
+                    <row>
+                        <entry><codeph>git push origin --delete {tagname}</codeph></entry>
+                        <entry>删除远程仓库标签</entry>
+                        <entry>使用这种方式删除远程标签更直观<codeblock id="codeblock_wvb_dqc_scc" outputclass="language-powershell">$ git push origin --delete A-0002
+To https://gitlab.csrbtx.com/rai/CV2000.git
+ - [deleted]         A-0002</codeblock></entry>
+                    </row>
+                    <row>
+                        <entry><codeph>git checkout {tagname}</codeph></entry>
+                        <entry>检出标签</entry>
+                        <entry>使用此方式检出标签后，仓库处于“分离头指针（detached HEAD）”的状态。如果在此状态下提交更改，标签不会发生变化，新提交不属于任何分支，且无法访问，除非使用 <codeph>git checkout {commit ID}</codeph> 命名指定 commit ID 才能访问。<codeblock id="codeblock_chr_3fd_scc" outputclass="language-powershell">$ git checkout A-0001
+Note: switching to 'A-0001'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c {new-branch-name}
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at bf6857f 【评审反馈】【All】新增网络接口、USB接口、消毒参数验证提示，更新C1000组件名称，删除三维校正</codeblock></entry>
+                    </row>
+                    <row>
+                        <entry><codeph>git checkout -b {branch} {tagname}</codeph></entry>
+                        <entry>检出标签</entry>
+                        <entry>如果需要更改，比如修复旧版本中的错误，建议创建一个新分支。创建新分支后，如果提交了新的更改，<codeph>feature/B-0001</codeph> 分支就会因为这个更改向前移动， 该分支包含的提交就不同于 <codeph>B-0001</codeph> 标签包含的标签。<codeblock id="codeblock_z52_shd_scc" outputclass="language-powershell">$ git checkout -b feature/B-0001 B-0001
+Switched to a new branch 'feature/B-0001'</codeblock>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry namest="c1" nameend="c3"><b>其他 git 命令</b></entry>
                     </row>
                     <row>
                         <entry><codeph>git reset</codeph></entry>
@@ -384,7 +540,7 @@ git rebase origin/develop/K2：同步 develop/K2 远程分支的所有更改到�
                     <row>
                         <entry><codeph>git reset {file 1} {file 2}</codeph></entry>
                         <entry>移除暂存区的指定修改，恢复修改到工作区</entry>
-                        <entry><codeph>git reset topics/8003-000001-B-0001_0010-2-1-1.dit</codeph></entry>
+                        <entry><codeph>git reset topics/8003-000001-B-0001_0010-2-1-1.dita</codeph></entry>
                     </row>
                     <row>
                         <entry><codeph>git reset --hard</codeph></entry>
@@ -401,9 +557,7 @@ git rebase origin/develop/K2：同步 develop/K2 远程分支的所有更改到�
                     <row>
                         <entry><codeph>git rm {file}</codeph></entry>
                         <entry>删除工作区和暂存区的修改</entry>
-                        <entry>
-                            <p><codeph>git rm topics/8003-000001-B-0001_0011-5.dita</codeph></p>
-                        </entry>
+                        <entry><codeph>git rm topics/8003-000001-B-0001_0011-5.dita</codeph></entry>
                     </row>
                     <row>
                         <entry><codeph>git diff</codeph></entry>
@@ -451,11 +605,11 @@ git rebase origin/develop/K2：同步 develop/K2 远程分支的所有更改到�
                         <entry>/</entry>
                     </row>
                     <row>
-                        <entry><codeph>git log --oneline</codeph></entry>
+                        <entry><codeph>git log --pretty=oneline --abbrev-commit</codeph></entry>
                         <entry>每行显示一条记录</entry>
                         <entry>
-                            <codeblock id="codeblock_efv_gjl_zbc" outputclass="language-powershell">PS E:\RAI-IFU\C1000} git log --pretty=oneline --abbrev-commit        
-b3ee2be (HEAD -} develop/KL, origin/develop/KL) Merge branch 'feature/KL/CAC-update' into 'develop/KL'
+                            <codeblock id="codeblock_efv_gjl_zbc" outputclass="language-powershell">$ git log --pretty=oneline --abbrev-commit        
+b3ee2be (HEAD -> develop/KL, origin/develop/KL) Merge branch 'feature/KL/CAC-update' into 'develop/KL'
 9879da7 【注册变更】【系统使用】CAC纳入系统注册，从联合使用产品列表删除，更新CAC说明书名称
 831bf91 Merge branch 'hotfix/KL/rearchitect_C1000_repo' into 'develop/KL'
 2d7627b 【自查】【All】重构C1000仓库KL分支，使用keyref引用公共资源，纠正KL图片和引用</codeblock>
@@ -465,8 +619,8 @@ b3ee2be (HEAD -} develop/KL, origin/develop/KL) Merge branch 'feature/KL/CAC-upd
                         <entry><codeph>git log --graph --pretty=oneline --abbrev-commit</codeph></entry>
                         <entry>查看分支合并图，同时简化提交历史</entry>
                         <entry>
-                            <codeblock id="codeblock_x1z_hjl_zbc" outputclass="language-powershell">PS E:\RAI-IFU\C1000} git log --graph --pretty=oneline --abbrev-commit
-*   b3ee2be (HEAD -} develop/KL, origin/develop/KL) Merge branch 'feature/KL/CAC-update' into 'develop/KL'
+                            <codeblock id="codeblock_x1z_hjl_zbc" outputclass="language-powershell">$ git log --graph --pretty=oneline --abbrev-commit
+*   b3ee2be (HEAD -> develop/KL, origin/develop/KL) Merge branch 'feature/KL/CAC-update' into 'develop/KL'
 |\
 | * 9879da7 【注册变更】【系统使用】CAC纳入系统注册，从联合使用产品列表删除，更新CAC说明书名称
 |/
@@ -476,10 +630,13 @@ b3ee2be (HEAD -} develop/KL, origin/develop/KL) Merge branch 'feature/KL/CAC-upd
                         </entry>
                     </row>
                     <row>
-                        <entry>
-                            <p><codeph>git reflog</codeph></p>
-                        </entry>
+                        <entry><codeph>git reflog</codeph></entry>
                         <entry>查看当前分支的命令历史</entry>
+                        <entry>/</entry>
+                    </row>
+                    <row>
+                        <entry><codeph>git checkout {commit ID}</codeph></entry>
+                        <entry>检出特定提交</entry>
                         <entry>/</entry>
                     </row>
                 </tbody>
@@ -488,21 +645,21 @@ b3ee2be (HEAD -} develop/KL, origin/develop/KL) Merge branch 'feature/KL/CAC-upd
     </body>
     <related-links scope="external" format="html">
         <linklist>
-            <link href="https://git-scm.com/book/id/v2/Appendix-C%3A-Git-Commands-Setup-and-Config"
+            <link href="https://git-scm.com/book/zh/v2/%E9%99%84%E5%BD%95-C%3A-Git-%E5%91%BD%E4%BB%A4-%E8%AE%BE%E7%BD%AE%E4%B8%8E%E9%85%8D%E7%BD%AE"
                 outputclass="nopage-xref">
-                <linktext>Git Commands</linktext>
+                <linktext>Git 命令</linktext>
             </link>
             <link href="https://www.ruanyifeng.com/blog/2014/06/git_remote.html"
                 outputclass="nopage-xref">
-                <linktext>Git远程操作详解</linktext>
+                <linktext>Git 远程操作详解</linktext>
             </link>
             <link href="https://www.liaoxuefeng.com/wiki/896043488029600" outputclass="nopage-xref">
-                <linktext>Git教程</linktext>
+                <linktext>Git 教程</linktext>
             </link>
             <link
                 href="https://mp.weixin.qq.com/s?__biz=Mzg2NTg5MTE4NA==&amp;mid=2247490492&amp;idx=1&amp;sn=ee8deae4e9d2b3e9daff299eaa8735a7&amp;chksm=ce527da3f925f4b5ec28359de8afbe133ae4e24c6591a4080db6af4c2a54a7aa3083124eb95d&amp;mpshare=1&amp;scene=1&amp;srcid=07056OVl9tc1NfnySTPwwe3b&amp;sharer_shareinfo=b2d40293a6988a8d9ee16b970ef66c6e&amp;sharer_shareinfo_first=b2d40293a6988a8d9ee16b970ef66c6e&amp;from=industrynews&amp;version=4.1.26.6024&amp;platform=win&amp;nwr_flag=1#wechat_redirect"
                 outputclass="nopage-xref">
-                <linktext>Git详细操作指导</linktext>
+                <linktext>Git 详细操作指导</linktext>
             </link>
         </linklist>
     </related-links>

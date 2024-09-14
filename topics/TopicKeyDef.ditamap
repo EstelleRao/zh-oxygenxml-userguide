@@ -79,7 +79,7 @@
     <topicref keys="merge_requests" href="workflow/merge_requests.dita" format="dita"/>
     <topicref keys="protected_branches" href="workflow/protected_branches.dita" format="dita"/>
     <topicref keys="push_local_branch" href="workflow/push_local_branch.dita" format="dita"/>
-    <topicref keys="release_branch" href="workflow/release_branch.dita" format="dita"/>
+    <topicref keys="release_branch" href="workflow/create_tag.dita" format="dita"/>
     <topicref keys="review_merge_request" href="workflow/review_merge_request.dita" format="dita"/>
     <topicref keys="workflow" href="workflow/workflow.dita" format="dita"/>
 </map>

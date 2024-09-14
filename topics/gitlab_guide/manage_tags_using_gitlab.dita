@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="manage_tags_using_gitlab">
+    <title>使用 GitLab 创建和管理标签</title>
+    <body>
+        <section id="section_b5m_kn3_rcc">
+            <title>查看和管理标签</title>
+            <p>如需查看和管理某个项目仓库的标签，请按照如下步骤操作。</p>
+            <ol id="ol_uwp_sn3_rcc">
+                <li>在左侧菜单栏点击 <uicontrol>Search or go to</uicontrol>，找到并打开项目仓库。</li>
+                <li>从 <uicontrol>Tags</uicontrol> 或 <uicontrol>Commits</uicontrol> 入口进入标签列表页面。<ul
+                        id="ol_cql_3mn_rcc">
+                        <li>（推荐）<uicontrol>Tags</uicontrol> 入口：点击 <menucascade>
+                                <uicontrol>Code</uicontrol>
+                                <uicontrol>Tags</uicontrol>
+                            </menucascade>，查看所有标签。<image placement="break" keyref="gitlab.tags"
+                                width="650" id="image_ggb_wp3_rcc"/><ul id="ul_dyx_3mn_rcc">
+                                <li>第一行：标签名称、受保护标签标记</li>
+                                <li>第二行：关联的 commit ID、commit 描述、提交时间</li>
+                                <li>第三行：标签说明，可提供更多信息，如版本说明</li>
+                            </ul></li>
+                        <li><uicontrol>Commits</uicontrol> 入口：点击 <menucascade>
+                                <uicontrol>Code</uicontrol>
+                                <uicontrol>Commits</uicontrol>
+                            </menucascade>，查看 commit 对应的标签。</li>
+                    </ul></li>
+                <li>点击下载图标可下载源文件，点击删除图标可删除标签。</li>
+            </ol>
+        </section>
+        <section id="section_d5m_ln3_rcc">
+            <title>创建标签</title>
+            <p>如需创建标签，请按照如下步骤操作。</p>
+            <ol id="ol_erf_xr3_rcc">
+                <li>在左侧菜单栏点击 <uicontrol>Search or go to</uicontrol>，找到并打开项目仓库。</li>
+                <li>从 <uicontrol>Tags</uicontrol> 或 <uicontrol>Commits</uicontrol> 入口进入标签创建页面。<ul
+                        id="ol_g2c_ys3_rcc">
+                        <li><uicontrol>Tags</uicontrol> 入口：点击 <menucascade>
+                                <uicontrol>Code</uicontrol>
+                                <uicontrol>Tags</uicontrol>
+                                <uicontrol>New tag</uicontrol>
+                            </menucascade>。</li>
+                        <li>（推荐）<uicontrol>Commits</uicontrol> 入口：点击 <menucascade>
+                                <uicontrol>Code</uicontrol>
+                                <uicontrol>Commits</uicontrol>
+                            </menucascade>，打开某个 commit，点击 <menucascade>
+                                <uicontrol>Options</uicontrol>
+                                <uicontrol>Tag</uicontrol>
+                            </menucascade>。</li>
+                    </ul></li>
+                <li>填写标签信息。<ul id="ul_z4f_gs3_rcc">
+                        <li><uicontrol>Tag name</uicontrol>：标签名称</li>
+                        <li><uicontrol>Create from</uicontrol>：标签关联的分支名称、commit ID 或现有标签</li>
+                        <li><uicontrol>Message</uicontrol>：标签说明，可提供更多信息，如版本说明</li>
+                    </ul></li>
+                <li>点击 <uicontrol>Create tag</uicontrol>，完成标签创建。</li>
+            </ol>
+            <note id="note_mjd_hnn_rcc" type="attention">
+                <ul id="ul_fcn_hnn_rcc">
+                    <li>标签默认打在最新提交的 commit 上。如果要为之前提交的 commit 补打标签，需指定 commit ID，从 <uicontrol>Commits</uicontrol> 入口进入标签创建页面会自动添加 commit ID。</li>
+                </ul>
+            </note>
+        </section>
+        <section id="section_kqm_b4n_rcc">
+            <title>检出标签</title>
+            <p>如果你想查看某个标签所指向的版本，可以使用 <codeph>git checkout</codeph> 命令，此时 Git 提示当前处于“分离头指针（detached HEAD）”状态。</p>
+            <codeblock id="codeblock_h13_j4n_rcc">$ git checkout v2.0.0
+Note: checking out 'v2.0.0'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by performing another checkout.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -b with the checkout command again. Example:
+
+  git checkout -b &lt;new-branch>
+
+HEAD is now at 99ada87... Merge pull request #89 from schacon/appendix-final
+
+$ git checkout 2.0-beta-0.1
+Previous HEAD position was 99ada87... Merge pull request #89 from schacon/appendix-final
+HEAD is now at df3f601... add atlas.json and cover image</codeblock>
+            <p>在“分离头指针”状态下，如果你做了某些更改然后提交它们，标签不会发生变化， 新的提交将不属于任何分支，并且将无法访问，除非通过确切的 commit ID 才能访问。 因此，如果需要进行更改，比如修复旧版本中的错误，那么通常需要创建一个新分支。</p>
+            <codeblock id="codeblock_prc_k4n_rcc">$ git checkout -b version2 v2.0.0
+Switched to a new branch 'version2'</codeblock>
+            <p>如果在这之后又进行了一次提交，<codeph>version2</codeph> 分支就会因为这个改动向前移动， 此时它就会和 <codeph>v2.0.0</codeph> 标签稍微有些不同。</p>
+        </section>
+    </body>
+</topic>

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
 <concept id="f2n_bpc_3zb">
-    <title>Commit规范</title>
+    <title>Commit 规范</title>
     <shortdesc>提交记录有规范，检索追溯更高效。</shortdesc>
     <conbody>
-        <section id="section_sbf_fhv_3zb"> <title>正确使用Commit</title>
+        <section id="section_sbf_fhv_3zb"> <title>正确使用 Commit</title>
             <p>commit的使用必须遵循独立性和完整性两大原则。</p> <ul id="ul_gwp_v3v_3zb">
             <li>独立性：每个提交只解决一个问题或实现一个功能。通过保持提交的独立性，可以更容易地理解和审查代码，减少冲突和问题的发生，并使回滚和撤销更加简单。</li>
             <li>完整性：每个提交应包含所有必要的更改，以实现承诺的功能或修复。通过保持提交的完整性，可以确保内容的一致性和稳定性，并减少因未完成的更改而引入的错误。</li>
@@ -14,8 +14,8 @@
             <li>一个ECR使用一个临时分支，commit一次。</li>
             <li>commit包含的变更必须相关。不同变更不能包含在一个commit中。</li>
             </ol> </section>
-        <section id="section_l1c_ghv_3zb"> <title>正确书写Commit Message和Merge Request Title</title> <ul id="ul_vnq_dlk_lzb">
-                <li>格式<p>【Source】【Scope】{action}{description}<?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?></p></li><?oxy_custom_end?>
+        <section id="section_l1c_ghv_3zb"> <title>正确书写 Commit Message 和 Merge Request Title</title> <ul id="ul_vnq_dlk_lzb">
+                <li>格式<p>【Source】【Scope】{action}{description}</p></li>
             </ul> <ul id="ul_lky_2lk_lzb">
             <li>示例<ul id="ul_wyd_llk_lzb">
                 <li>【ECR#59676】【再处理】新增新华灭菌器型号</li>

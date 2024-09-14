@@ -26,6 +26,7 @@
             </topicref>
             <topicref keyref="git">
                 <topicref href="topics/quick_start_oxygen/git_clone.dita"/>
+                <topicref href="topics/quick_start_oxygen/create_tags.dita"/>
             </topicref>
             <topicref href="topics/quick_start_oxygen/find_replace.dita"/>
             <topicref href="topics/quick_start_oxygen/compare_files.dita"/>
@@ -83,6 +84,13 @@
             <topicref keyref="branch_naming_rule"/>
             <topicref keyref="branch_permissions"/>
         </topicref>
+        <topicref href="topics/gitlab_guide/tag.dita">
+            <topicref href="topics/gitlab_guide/tag_type.dita"/>
+            <topicref href="topics/gitlab_guide/tag_naming.dita"/>
+            <topicref href="topics/gitlab_guide/manage_tags_using_gitlab.dita"/>
+            <topicref href="topics/gitlab_guide/manage_tags_using_oxygen.dita"/>
+            <topicref href="topics/gitlab_guide/protected_tag.dita"/>
+        </topicref>
         <topicref keyref="commit_message"/>
         <topicref href="topics/workflow/cherry-pick.dita">
             <topicref keyref="cherry-pick_MR"/>
@@ -92,18 +100,20 @@
             <topicref href="topics/quick_start_oxygen/git_merge_using_oxygen.dita"/>
             <topicref href="topics/quick_start_oxygen/git_merge_using_VS_Code.dita"/>
         </topicref>
-        <topicref href="topics/quick_start_oxygen/resolve_conflict.dita">
-            <topicref href="topics/quick_start_oxygen/resolve_conflict_using_gitlab.dita"/>
-            <topicref href="topics/quick_start_oxygen/resolve_conflict_using_oxygen.dita"/>
-            <topicref href="topics/quick_start_oxygen/resolve_conflict_using_VS_Code.dita"/>
+        <topicref href="topics/gitlab_guide/resolve_conflict.dita">
+            <topicref href="topics/gitlab_guide/resolve_conflict_using_gitlab.dita"/>
+            <topicref href="topics/gitlab_guide/resolve_conflict_using_oxygen.dita"/>
+            <topicref href="topics/gitlab_guide/resolve_conflict_using_VS_Code.dita"/>
         </topicref>
-        <topicref href="topics/quick_start_oxygen/revert_versus_reset_commit.dita"/>
+        <topicref href="topics/gitlab_guide/revert_versus_reset_commit.dita"/>
         <topicref href="topics/gitlab_guide/git_commands.dita"/>
     </chapter>
     <chapter keyref="workflow">
         <topicref keyref="create_new_repo"/>
         <topicref keyref="create_remote_branch">
             <topicref keyref="protected_branches"/>
+            <topicref href="topics/workflow/protected_tags.dita"/>
+            <topicref href="topics/workflow/push_rules.dita"/>
             <topicref keyref="merge_requests"/>
         </topicref>
         <topicref keyref="clone_remote_branch"/>
@@ -210,6 +220,7 @@
         <topicref href="topics/troubleshoot/encrypted_images_output_fail.dita"/>
         <topicref href="topics/troubleshoot/key_not_found.dita"/>
         <topicref keyref="reusable_components_not_listed"/>
+        <topicref href="topics/troubleshoot/push_failed.dita"/>
     </chapter>
     <chapter href="topics/advanced_techniques/advanced_techniques.dita">
         <topicref href="topics/advanced_techniques/key_definition.dita"/>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="tag_naming" xml:lang="zh-CN">
+    <title>标签命名规范</title>
+    <body>
+        <p>通常在长期保护分支（<codeph>develop</codeph> 分支）上打标签。根据仓库的主分支数量，使用说明书版本号和项目代号来命名标签。</p>
+        <ul>
+            <li>同仓库单个 <codeph>develop</codeph> 分支：使用说明书版本号来命名标签，符合 <codeph>[A-Z0-9]-000[0-9] </codeph>的格式，比如 1-0001、A-0001、B-0002。</li>
+            <li>同仓库多个 <codeph>develop</codeph> 分支：使用说明书版本号和项目代号来命名标签，符合 <codeph>{项目代号}/[A-Z0-9]-000[0-9]</codeph> 的格式，比如 <codeph>K2/A-0001</codeph>, <codeph>KL/B-0001</codeph>, <codeph>CE/C-0002</codeph>。</li>
+        </ul>
+        <note type="attention">
+            <ul>
+                <li>标签名称区分大小写。</li>
+                <li>标签名称不得与分支名称同名，以免出现错误操作，比如检出分支可能变成检出标签。建议在受保护标签中排除分支名称，排除后 GitLab 会限制创建与分支名称同名的标签名称。</li>
+                <li>标签名称不得包含空格。</li>
+                <li>标签名称不得以 <codeph>-</codeph>, <codeph>refs/heads</codeph>, <codeph>refs/tags</codeph>, 或 <codeph>refs/remotes</codeph> 开头。</li>
+                <li>标签名称不得以 40 位或 64 位十六进制字符开头，因为此类名称和 Git commit ID 相似，容易混淆或导致兼容性问题。</li>
+            </ul>
+        </note>
+    </body>
+</topic>

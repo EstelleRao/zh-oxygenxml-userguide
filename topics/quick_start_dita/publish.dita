@@ -2,7 +2,7 @@
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
 <task id="topic_bbn_rfp_dzb">
     <title>发布DITA Map</title>
-    <shortdesc>使用 Oxygen XML Author  发布 DITA 文件（DITA Topic 或 DITA Map），需要先配置发布场景。在发布场景中添加 CSS 样式表，可将 DITA 文件导出为定制的 PDF 样式。在发布场景中添加过滤文件，可根据过滤条件导出指定的说明书。</shortdesc>
+    <shortdesc>在 Oxygen XML Author 中选择<uicontrol> DITA Map PDF - based on HTML5 &amp; CSS</uicontrol> 发布场景，添加 .opt 发布模板，导出 DITA 文件（可导出单个 DITA Topic 或整个 DITA Map）为 PDF 格式。在发布场景中添加 .ditaval 过滤器，可根据过滤条件（比如说明书料号）导出指定说明书。</shortdesc>
     <taskbody>
         <context>
             <p>请按照如下步骤配置 DITA Map 的发布场景，发布 DITA Map。</p>

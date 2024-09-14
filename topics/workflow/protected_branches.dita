@@ -17,12 +17,7 @@
                 </info>
             </step>
             <step>
-                <cmd>在 <uicontrol>Repository Settings</uicontrol> 页面点击 <uicontrol>Protected branches</uicontrol> 右侧的 <uicontrol>Expand</uicontrol>。</cmd>
-                <info>
-                    <image placement="inline"
-                        keyref="gitlab.protected_branches_expand"
-                        id="image_nhn_tf5_hzb" width="400"/>
-                </info>
+                <cmd>展开 <uicontrol>Protected branches</uicontrol>。</cmd>
             </step>
             <step>
                 <cmd>为主要分支设置推送、强制推送、合并、审核权限。</cmd>

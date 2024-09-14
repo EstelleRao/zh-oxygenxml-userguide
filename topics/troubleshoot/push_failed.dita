@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE troubleshooting PUBLIC "-//OASIS//DTD DITA Troubleshooting//EN" "troubleshooting.dtd">
+<troubleshooting id="push_failed">
+    <title>推送失败</title>
+    <troublebody>
+        <condition id="condition_arm_bvd_scc">
+            <title>故障现象</title>
+            <p>推送本地更改到远程仓库失败。</p>
+            <image keyref="git_client.push_failed" id="image_brm_bvd_scc" width="400"/>
+        </condition>
+        <troubleSolution>
+            <cause>
+                <title>可能原因</title>
+                <ol id="ol_oty_ztd_scc">
+                    <li>没有直接推送本地更改到远程分支（通常为受保护分支）的权限，比如直接推送本地 <codeph>develop</codeph> 更改到远程 <codeph>develop</codeph> 分支。</li>
+                    <li>分支名称、commit 描述不符合规范。</li>
+                </ol>
+            </cause>
+            <remedy>
+                <title>解决方法</title>
+                <steps-unordered>
+                    <step>
+                        <cmd>确认是在受保护分支（比如 <codeph>develop</codeph>）上提交的更改还是在新分支上提交的更改。如果是在受保护分支上提交的更改，需从受保护分支新建分支，重新推送分支到远程仓库。</cmd>
+                    </step>
+                    <step>
+                        <cmd>检查分支名称和 commit 描述是否符合 GitLab 仓库设置的推送规则。</cmd>
+                    </step>
+               </steps-unordered>
+            </remedy>
+        </troubleSolution>
+    </troublebody>
+</troubleshooting>

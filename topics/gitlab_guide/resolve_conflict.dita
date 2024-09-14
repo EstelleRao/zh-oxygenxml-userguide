@@ -11,10 +11,10 @@
         <p>解决合并冲突有多种方式，可以直接在 GitLab 上解决，也可以使用内置命令行的工具解决。</p>
         <ul id="ul_zgs_3d3_ybc">
             <li>如果合并冲突由相同行更改引起，可以尝试使用冲突编辑器在 GitLab 上解决冲突。有关详情，请查阅：<xref
-                    href="../quick_start_oxygen/resolve_conflict_using_gitlab.dita"/>。</li>
+                    href="resolve_conflict_using_gitlab.dita"/>。</li>
             <li>对于其他类型的合并冲突，必须先在本地仓库解决，再将更改推送到 GitLab 远程仓库。可以使用命令行或 Oxygen Git 客户端、VS Code 之类的工具推送更改。有关详情，请查阅：<xref
-                    href="../quick_start_oxygen/resolve_conflict_using_oxygen.dita"/>、<xref
-                    href="../quick_start_oxygen/resolve_conflict_using_VS_Code.dita"/>。</li>
+                    href="resolve_conflict_using_oxygen.dita"/>、<xref
+                    href="resolve_conflict_using_VS_Code.dita"/>。</li>
         </ul>
     </body>
     <related-links scope="external" format="html">

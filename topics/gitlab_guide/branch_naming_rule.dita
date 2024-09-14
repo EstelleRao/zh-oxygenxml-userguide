@@ -11,31 +11,25 @@
 示例：develop/K2
 注：{project_label}对应型检注册阶段的项目代号，例如“K2”“K9”“KL”。如果没有项目代号，则直接命名为develop。注意分支名称不能重复。
 
-C1000仓库有4个develop分支：
-develop/K2（导入K2相关ECR变更和内外部反馈）
+C1000仓库目前有3个develop分支：
+develop/K2（导入K2相关 ECR 变更和内外部反馈）
 develop/K9（默认分支，导入K9相关手动清洗变更）
-develop/KL（12月使用，导入昆仑变更）
-develop（完成注册后使用，导入ECR变更和内外部反馈）</codeblock></li>
-                    <li><codeph>feature</codeph> 分支<codeblock id="codeblock_acd_tpz_hzb">格式：feature/{project_label}/#{ECR_number}-add-feature-description
+develop/KL（12月使用，导入昆仑变更）</codeblock></li>
+                    <li><codeph>feature</codeph> 分支<codeblock id="codeblock_acd_tpz_hzb">格式：feature/{project_label}/#{ ECR _number}-add-feature-description
 示例：feature/K2/#59676-add-STERRAD-sterilizer
 
-注：如果没有ECR编号，可以不填写。</codeblock></li>
+注：如果没有 ECR 编号，可以不填写。</codeblock></li>
                     <li><codeph>hotfix</codeph> 分支<codeblock id="codeblock_omm_wpz_hzb">格式：hotfix/{project_label}/add-hotfix-description
 示例：hotfix/K2/replace-SVG-reprocessing-diagrams-with-PNG</codeblock></li>
-                    <li><codeph>release</codeph> 分支<codeblock id="codeblock_nfh_xpz_hzb">格式：release/{project_label}/{PN}
-示例：release/K2/E-0001；release/K2/D-0001；release/K9/A-0001
-
-注：{project_label}对应型检注册阶段的项目代号，例如“K2”“K9”“KL”。如果没有项目代号，可以不填写。{PN}对应说明书的物料编码，只需填写后五位，例如“E-0001”。</codeblock></li>
                 </ul>
             </p>
         </section>
         <section id="section_imj_gnz_hzb">
             <title>注意事项</title>
             <ol id="ol_vp2_hnz_hzb">
-                <li>使用斜杠（/）来分隔分支名称的不同部分，例如 <codeph>develop/K2</codeph> 或 <codeph>release/K2/D-0001</codeph>，方便分类和筛选分支。</li>
-                <li>使用连字符（-）来连接分支名称中的单词，例如 <codeph>feature/K2/#59676-add-STERRAD-sterilizer</codeph> 或 <codeph>hotfix/K2/replace-SVG-reprocessing-diagrams-with-PNG</codeph>，方便保持分支名称的简洁和清晰。</li>
-                <li>使用ECR编号来标识<codeph>feature</codeph>分支名称，例如 <codeph>feature/K2/#59676-add-STERRAD-sterilizer</codeph>，方便跟踪分支和问题之间的关联。</li>
-                <li>使用项目代号和版本号来标识<codeph>release</codeph>分支名称，例如 <codeph>release/K9/A-0001</codeph>，方便跟踪分支和版本之间的关联。</li>
+                <li>使用斜杠（/）来分隔分支名称的不同部分，建立分支的父子级关系，例如 <codeph>develop/K2</codeph> 或 <codeph>feature/K2/#59676-add-STERRAD-sterilizer</codeph>，方便分支管理和查找。</li>
+                <li>使用连字符（-）连接分支名称中的不同单词，例如 <codeph>hotfix/K2/replace-SVG-reprocessing-diagrams-with-PNG</codeph>，保持分支名称的简洁和清晰。</li>
+                <li>使用 ECR 编号标记触发说明书更新的工程变更编号，例如 <codeph>feature/K2/#59676-add-STERRAD-sterilizer</codeph>，方便跟踪 <codeph>feature</codeph> 分支和工程变更的关联。</li>
             </ol>
         </section>
     </conbody>
