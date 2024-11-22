@@ -21,7 +21,7 @@
                             <p>2023年11月6日</p>
                         </entry>
                         <entry colsep="1" rowsep="1">
-                            <p>饶雅惠</p>
+                            <p>Estelle Rao</p>
                         </entry>
                         <entry colsep="1" rowsep="1">
                             <p>初版发布</p>
@@ -32,7 +32,7 @@
                             <p>2023年11月10日</p>
                         </entry>
                         <entry colsep="1" rowsep="1">
-                            <p>饶雅惠</p>
+                            <p>Estelle Rao</p>
                         </entry>
                         <entry colsep="1" rowsep="1">
                             <ol id="ol_rvw_jhd_j1c">
@@ -46,7 +46,7 @@
                             <p>2023年11月10日</p>
                         </entry>
                         <entry colsep="1" rowsep="1">
-                            <p>饶雅惠</p>
+                            <p>Estelle Rao</p>
                         </entry>
                         <entry colsep="1" rowsep="1">
                             <ol id="ol_bz1_c3d_j1c">
@@ -60,7 +60,7 @@
                             <p>2023年12月1日</p>
                         </entry>
                         <entry colsep="1" rowsep="1">
-                            <p>饶雅惠</p>
+                            <p>Estelle Rao</p>
                         </entry>
                         <entry colsep="1" rowsep="1">
                             <ol id="ol_etq_j3d_j1c">
@@ -74,7 +74,7 @@
                             <p>2023年12月29日</p>
                         </entry>
                         <entry colsep="1" rowsep="1">
-                            <p>饶雅惠</p>
+                            <p>Estelle Rao</p>
                         </entry>
                         <entry colsep="1" rowsep="1">
                             <p>新增单本说明书的迁移流程</p>
@@ -85,7 +85,7 @@
                             <p>2024年1月26日</p>
                         </entry>
                         <entry colsep="1" rowsep="1">
-                            <p>饶雅惠</p>
+                            <p>Estelle Rao</p>
                         </entry>
                         <entry colsep="1" rowsep="1">
                             <ol id="ol_r34_q12_j1c">
@@ -101,7 +101,7 @@
                             <p>2024年2月21日</p>
                         </entry>
                         <entry colsep="1" rowsep="1">
-                            <p>饶雅惠</p>
+                            <p>Estelle Rao</p>
                         </entry>
                         <entry colsep="1" rowsep="1">
                             <ol id="ol_cgv_m12_j1c">
@@ -116,7 +116,7 @@
                     </row>
                     <row>
                         <entry colsep="1" rowsep="1">2024年3月6日</entry>
-                        <entry colsep="1" rowsep="1">饶雅惠</entry>
+                        <entry colsep="1" rowsep="1">Estelle Rao</entry>
                         <entry colsep="1" rowsep="1">
                             <ol id="ol_byr_hfr_q1c">
                                 <li>仓库目录：从业务公共仓库移除文本变量到常规业务仓库，更名为“产品名称变量”，避免因过滤器未排除所有料号导致错误发布</li>
@@ -127,12 +127,12 @@
                     </row>
                     <row>
                         <entry colsep="1" rowsep="1">2024年3月22日</entry>
-                        <entry colsep="1" rowsep="1">饶雅惠</entry>
+                        <entry colsep="1" rowsep="1">Estelle Rao</entry>
                         <entry colsep="1" rowsep="1">新增翻译流程</entry>
                     </row>
                     <row>
                         <entry colsep="1" rowsep="1">2024年6月26日</entry>
-                        <entry colsep="1" rowsep="1">饶雅惠</entry>
+                        <entry colsep="1" rowsep="1">Estelle Rao</entry>
                         <entry colsep="1" rowsep="1">
                             <ol id="ol_hb3_ddb_wbc">
                                 <li>新增索引规范</li>
@@ -147,18 +147,18 @@
                     </row>
                     <row>
                         <entry colsep="1" rowsep="1">2024年7月9日</entry>
-                        <entry colsep="1" rowsep="1">饶雅惠</entry>
+                        <entry colsep="1" rowsep="1">Estelle Rao</entry>
                         <entry colsep="1" rowsep="1">GitLab 协作规范：新增分支创建和合并、解决合并冲突、版本回退、常用命令</entry>
                     </row>
                     <row>
                         <entry colsep="1" rowsep="1">2024年7月12日</entry>
-                        <entry colsep="1" rowsep="1">饶雅惠</entry>
+                        <entry colsep="1" rowsep="1">Estelle Rao</entry>
                         <entry colsep="1" rowsep="1"
                             >新增高级技巧章节，包含批量定义 Key、批量修改文件名、使用正则批量替换文本等技巧</entry>
                     </row>
                     <row>
                         <entry colsep="1" rowsep="1">2024年9月13日</entry>
-                        <entry colsep="1" rowsep="1">饶雅惠</entry>
+                        <entry colsep="1" rowsep="1">Estelle Rao</entry>
                         <entry colsep="1" rowsep="1">
                             <ol id="ol_vjw_gvd_scc">
                                 <li>Oxygen 基础入门：新增“创建标签”章节</li>
@@ -170,7 +170,7 @@
                     </row>
                     <row>
                         <entry colsep="1" rowsep="1">2024年11月13日</entry>
-                        <entry colsep="1" rowsep="1">饶雅惠</entry>
+                        <entry colsep="1" rowsep="1">Estelle Rao</entry>
                         <entry colsep="1" rowsep="1">
                             <ol id="ol_gxw_gw2_jdc">
                                 <li>业务流程：优化新建仓库和分支流程</li>

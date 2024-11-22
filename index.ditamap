@@ -2,7 +2,7 @@
 <!DOCTYPE bookmap PUBLIC "-//OASIS//DTD DITA BookMap//EN" "bookmap.dtd">
 <bookmap id="oxygen_xml_author_user_manual" xml:lang="zh-CN">
     <booktitle>
-        <mainbooktitle>Oxygen XML Author 使用指南</mainbooktitle>
+        <mainbooktitle>DITA 结构化写作指南：基于 Oxygen XML Author 和 GitLab 的技术文档开发实践</mainbooktitle>
     </booktitle>
     <bookmeta>
         <author>Estelle Rao</author>
