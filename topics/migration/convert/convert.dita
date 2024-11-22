@@ -9,25 +9,24 @@
             </menucascade> 安装插件。</prereq><steps>
         <step>
                 <cmd>在顶部菜单栏点击 <menucascade>
-                    <uicontrol>Tools</uicontrol>
-                    <uicontrol>Batch Documents Converter</uicontrol>
-                    <uicontrol/>
-                    <uicontrol>Word to DITA</uicontrol>
+                        <uicontrol>Tools</uicontrol>
+                        <uicontrol>Batch Documents Converter</uicontrol>
+                        <uicontrol>Word to DITA</uicontrol>
                     </menucascade>。</cmd>
             </step>
         <step><cmd>在 <wintitle>Word to DITA</wintitle> 窗口，点击 <uicontrol>Add files</uicontrol> 添加待迁移的Word文档。</cmd>
                 <info>
                     <image placement="break" keyref="oxygen_convert.word_to_dita" width="300"/>
                     <ul>
-                        <li><uicontrol>Output folder</uicontrol>：通常设置为业务仓库的topics目录，用于存放迁移后的DITA map、DITA topic和图片。</li>
-                        <li><uicontrol>Open the converted files</uicontrol>：默认勾选，迁移后在 <uicontrol>DITA Maps Manager</uicontrol> 视图自动打开生成的DITA map。</li>
-                        <li><uicontrol>Create DITA maps from Word documents containing multiple headings</uicontrol>：默认勾选，从Word文档创建DITA map，保留Word文档中的层级和结构。</li>
+                        <li><uicontrol>Output folder</uicontrol>：通常设置为业务仓库的 topics 目录，用于存放迁移后的 DITA map、DITA topic 和图片。</li>
+                        <li><uicontrol>Open the converted files</uicontrol>：默认勾选，迁移后在 <uicontrol>DITA Maps Manager</uicontrol> 视图自动打开生成的 DITA map。</li>
+                        <li><uicontrol>Create DITA maps from Word documents containing multiple headings</uicontrol>：默认勾选，从 Word 文档创建 DITA map，保留 Word 文档中的层级和结构。</li>
                     </ul>
                 </info></step>
         <step><cmd>点击 <uicontrol>Conversion options</uicontrol>，设置标题层级。<image placement="break"
-                    keyref="oxygen_convert.heading_levels" width="400"/></cmd></step>
+                        keyref="oxygen_convert.heading_levels" width="500"/></cmd></step>
         <step>
-                <cmd>点击 <uicontrol>Convert</uicontrol>，开始转换文档格式。完成转换后，在 <uicontrol>DITA Maps Manager</uicontrol> 视图自动打开生成的DITA map 。</cmd>
+                <cmd>点击 <uicontrol>Convert</uicontrol>，开始转换文档格式。完成转换后，生成的 DITA map 会自动显示在 <uicontrol>DITA Maps Manager</uicontrol> 视图中。</cmd>
             </step>
     </steps></taskbody>
 </task>

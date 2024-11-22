@@ -125,6 +125,25 @@
                         </entry>
                     </row>
                     <row>
+                        <entry><codeph>git branch -m {new-name}</codeph></entry>
+                        <entry>重命名本地分支</entry>
+                        <entry><p><codeph>git branch -m {new-name}</codeph>：重命名当前分支，例如 <codeph>git branch -m develop</codeph></p><p><codeph>git branch -m {old-name} {new-name}</codeph>：在当前分支上重命名其他分支，例如 <codeph>git branch -m master develop</codeph></p>重命名后，运行 <codeph>git branch -a</codeph> 查看所有分支，确认分支是否已重命名。</entry>
+                    </row>
+                    <row>
+                        <entry>
+                            <p><codeph>git push origin --delete {old-branch-name}</codeph></p>
+                            <p><codeph>git push origin -u {new-branch-name}</codeph>
+                            </p>
+                        </entry>
+                        <entry>重命名远程分支</entry>
+                        <entry>
+                            <ol id="ol_t11_brq_3dc">
+                                <li>运行 <codeph>git push origin --delete {old-branch-name}</codeph>，删除旧的远程分支名称。</li>
+                                <li>运行 <codeph>git push origin -u {new-branch-name}</codeph>，将上游分支重置为新本地分支的名称。</li>
+                            </ol>
+                        </entry>
+                    </row>
+                    <row>
                         <entry><codeph>git branch -d {branch}</codeph></entry>
                         <entry>删除本地仓库中的某个分支</entry>
                         <entry morerows="1">注意：如果某个分支已检出，则无法删除，需切换到其他分支后再删除该分支。</entry>
@@ -533,6 +552,11 @@ Switched to a new branch 'feature/B-0001'</codeblock>
                         <entry namest="c1" nameend="c3"><b>其他 git 命令</b></entry>
                     </row>
                     <row>
+                        <entry><codeph>git --version</codeph></entry>
+                        <entry>查看本机是否安装 Git</entry>
+                        <entry>如本机已安装 Git，则返回结果：<codeph>git version X.Y.Z</codeph></entry>
+                    </row>
+                    <row>
                         <entry><codeph>git reset</codeph></entry>
                         <entry>移除暂存区的所有修改</entry>
                         <entry>/</entry>
@@ -576,17 +600,17 @@ Switched to a new branch 'feature/B-0001'</codeblock>
                     </row>
                     <row>
                         <entry><codeph>git remote</codeph></entry>
-                        <entry>查看本地仓库关联的远端仓库</entry>
+                        <entry>查看本地仓库关联的远程仓库</entry>
                         <entry>命令行界面输入 <codeph>git remote</codeph>，返回已经关联的远程仓库列表</entry>
                     </row>
                     <row>
                         <entry><codeph>git remote -v</codeph></entry>
-                        <entry>查看本地仓库关联的远端仓库的网址</entry>
+                        <entry>查看本地仓库关联的远程仓库的网址</entry>
                         <entry>命令行界面输入 <codeph>git remote -v</codeph>，返回已经关联的远程仓库列表、网址及跟踪分支的信息</entry>
                     </row>
                     <row>
                         <entry><codeph>git remote show {name}</codeph></entry>
-                        <entry>查看本地仓库关联的远端仓库的详细信息</entry>
+                        <entry>查看本地仓库关联的远程仓库的详细信息</entry>
                         <entry><codeph>git remote show origin</codeph>：返回已经关联的远程仓库列表及网址，以及远程分支和本地分支列表</entry>
                     </row>
                     <row>
@@ -632,6 +656,16 @@ b3ee2be (HEAD -> develop/KL, origin/develop/KL) Merge branch 'feature/KL/CAC-upd
                     <row>
                         <entry><codeph>git reflog</codeph></entry>
                         <entry>查看当前分支的命令历史</entry>
+                        <entry>/</entry>
+                    </row>
+                    <row>
+                        <entry><codeph>git log {file}</codeph></entry>
+                        <entry>查看某个文件的提交历史</entry>
+                        <entry><codeph>git log index.ditamap</codeph></entry>
+                    </row>
+                    <row>
+                        <entry><codeph>git blame {file}</codeph></entry>
+                        <entry>查看某个文件的改动历史</entry>
                         <entry>/</entry>
                     </row>
                     <row>

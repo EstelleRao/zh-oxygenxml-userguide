@@ -2,29 +2,29 @@
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
 <task id="topic_b5m_yxf_fzb">
     <title>新建说明书</title>
-    <shortdesc>新建说明书无需从零开始搭建框架，可以复用旧说明书的架构进行调整。在新建说明书的场景下，需要为新的说明书定义元数据，创建页面变量，创建过滤文件，添加公共资源。</shortdesc>
+    <shortdesc>新建说明书无需从零开始搭建框架，可以复用旧说明书的架构，在其基础上删除旧说明书的元数据、变量和过滤器，并添加新说明书的数据。</shortdesc>
     <taskbody>
         <steps id="ol_qj2_rqn_fzb">
             <step>
-                <cmd>在 metadata.ditamap 中为新说明书定义元数据，添加新说明书的料号和导航标题。</cmd>
+                <cmd>在 metadata.ditamap 中为新说明书定义元数据，添加新说明书的料号和标题。</cmd>
                 <info>
                     <image placement="break" keyref="dita.new_metadata" width="400"
                         id="image_ily_qrb_3zb"/>
-                    <p>知识拓展：</p>
-                    <ul id="ul_g4s_yfc_3zb">
-                        <li>元数据定义集用于集中存储、管理和共享自定义的条件发布属性和值，通过自定义属性和 DITA 默认属性（如 @product 属性）的关联关系，将自定义属性的值应用于 DITA 默认属性，从而满足多样化的条件发布需求。</li>
-                        <li><codeph>navtitle</codeph> 属性用于指定在导航中显示的标题。如果 DITA Map 使用 <codeph>title</codeph> 元素定义了标题，则优先使用 <codeph>title</codeph> 元素中的标题。</li>
-                    </ul>
+                    <note id="note_bwd_lxd_jdc" type="attention">
+                        <ul id="ul_dxh_lxd_jdc">
+                            <li><codeph>navtitle</codeph> 属性用于定义显示在导航栏中的标题。如果 DITA Map 使用 <codeph>title</codeph> 元素定义标题，则优先使用 <codeph>title</codeph> 元素中的标题。</li>
+                        </ul>
+                    </note>
                 </info>
             </step>
             <step>
                 <cmd>在 pdf_page_variables.ditamap 中为新说明书创建页面变量。</cmd>
                 <substeps id="substeps_lyr_hh2_j1c">
                     <substep>
-                        <cmd>在@product属性中添加新说明书的料号，删除旧说明书的料号。</cmd>
+                        <cmd>在 @product 属性中添加新说明书的料号，删除旧说明书的料号。</cmd>
                     </substep>
                     <substep>
-                        <cmd>使用 <codeph>&lt;keyword></codeph> 元素添加出现在封面、页眉、页脚的系统名称和说明书名称，添加出现在声明页、封底的版权归属年份、料号、版本号等文本。</cmd>
+                        <cmd>使用 <codeph>&lt;keyword></codeph> 元素添加出现在封面、页眉、页脚的系统名称和说明书名称，添加出现在声明页、封底的版权归属年份、料号、版本号等信息。</cmd>
                         <info>
                             <image placement="break" keyref="dita.new_keyword" width="500"
                                 id="image_m3b_1cc_3zb"/>
@@ -36,14 +36,14 @@
                 <cmd>为新说明书创建过滤文件，保存文件到当前仓库的 <b>filters</b> 目录。</cmd>
                 <substeps id="substeps_dl2_c32_j1c">
                     <substep>
-                        <cmd>在新说明书的过滤文件中添加条件发布属性，为新说明书应用 <codeph>include</codeph> 属性值，为其他说明书应用 <codeph>exclude</codeph> 属性值。</cmd>
+                        <cmd>在新说明书的过滤文件中，使用<codeph> include</codeph> 属性关联新说明书的料号，使用 <codeph>exclude</codeph> 属性关联其他说明书的料号，以便发布新说明书时排除其他说明书的内容。</cmd>
                         <info>
                             <image placement="break" keyref="dita.new_filter" width="400"
                                 id="image_vnk_ddc_3zb"/>
                         </info>
                     </substep>
                     <substep>
-                        <cmd>在其他说明书的过滤文件中添加条件发布属性，为新说明书应用 <codeph>exclude</codeph> 属性值。</cmd>
+                        <cmd>在其他说明书的过滤文件中，使用 <codeph>exclude</codeph> 属性关联新说明书的料号，以便发布其他说明书时排除新说明书的内容。</cmd>
                     </substep>
                 </substeps>
             </step>
@@ -51,7 +51,7 @@
                 <cmd>在 <ph outputclass="blue">index.ditamap</ph> 中为新说明书添加前言、索引和封底。</cmd>
                 <substeps id="substeps_qvv_t4v_m1c">
                     <substep>
-                        <cmd>在 <codeph>&lt;frontmatter></codeph> 元素下使用 <codeph>&lt;topicref></codeph> 元素引用公共的版权、商标、声明文件。如果新说明书和旧说明书引用同样的公共资源，可直接修改@product属性中的料号为新说明书的料号。</cmd>
+                        <cmd>在 <codeph>&lt;frontmatter></codeph> 元素下使用 <codeph>&lt;topicref></codeph> 元素引用公共的版权、商标、声明文件。如果新说明书和旧说明书引用同样的公共资源，可直接修改 @product 属性中的料号为新说明书的料号。</cmd>
                         <info>
                             <image placement="break" keyref="dita.frontmatter" width="450"
                                 id="image_qt2_zjc_3zb"/>
@@ -78,7 +78,7 @@
                         <cmd>使用 <codeph>&lt;chapter></codeph> 元素引用项目资源管理文件（{product}_{lang}.ditamap）和公共资源管理文件（common.ditamap）。</cmd>
                     </substep>
                     <substep>
-                        <cmd>设置@processing-role、@toc、@format属性。</cmd>
+                        <cmd>设置 @processing-role、@toc、@format 属性。</cmd>
                         <info><image keyref="dita.resource-only" id="image_mvh_ltj_g1c" width="500"
                                 /><ul id="ul_gzf_kwj_g1c">
                                 <li>@processing-role：“resource-only”表示当前资源为复用资源，可在 <uicontrol>DITA Reusable Components</uicontrol> 视图中查看和使用。</li>
@@ -96,7 +96,7 @@
                 </info>
             </step>
             <step>
-                <cmd>使用新说明书的料号或英文名称重命名旧说明书的 DITA Map 文件名。</cmd>
+                <cmd>使用新说明书的料号或英文名称重命名旧说明书的 DITA Map 文件。</cmd>
                 <info>
                     <image placement="break" keyref="dita.ditamap_file_name" width="400"
                         id="image_v2s_hkc_3zb"/>

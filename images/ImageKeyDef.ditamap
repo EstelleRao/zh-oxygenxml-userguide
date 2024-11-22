@@ -20,7 +20,7 @@
     <keydef keys="dita.migration_word_example" href="dita/dita.migration_word_example.png" format="png"></keydef>
     <keydef keys="dita.naming_number" href="dita/dita.naming_number.png" format="png"></keydef>
     <keydef keys="dita.naming_semantics" href="dita/dita.naming_semantics.png" format="png"></keydef>
-    <keydef keys="dita.naming_semantics_levels" href="dita/dita.naming_semantics_levels.png" format="png"></keydef>
+    <keydef keys="dita.naming_semantics_levels" href="dita/dita.naming_semantics_levels.jpg" format="jpg"></keydef>
     <keydef keys="dita.new_filter" href="dita/dita.new_filter.png" format="png"></keydef>
     <keydef keys="dita.new_keyword" href="dita/dita.new_keyword.png" format="png"></keydef>
     <keydef keys="dita.new_metadata" href="dita/dita.new_metadata.png" format="png"></keydef>
@@ -48,7 +48,9 @@
     <keydef keys="gitlab.commits_cherry-pick" href="gitlab/gitlab.commits_cherry-pick.png" format="png"></keydef>
     <keydef keys="gitlab.compare_branches_and_continue" href="gitlab/gitlab.compare_branches_and_continue.png" format="png"></keydef>
     <keydef keys="gitlab.copy_URL" href="gitlab/gitlab.copy_URL.png" format="png"></keydef>
+    <keydef keys="gitlab.create_default_branch" href="gitlab/gitlab.create_default_branch.png" format="png"></keydef>
     <keydef keys="gitlab.create_merge_request" href="gitlab/gitlab.create_merge_request.png" format="png"></keydef>
+    <keydef keys="gitlab.create_new_branch" href="gitlab/gitlab.create_new_branch.jpg" format="jpg"></keydef>
     <keydef keys="gitlab.default_branch" href="gitlab/gitlab.default_branch.png" format="png"></keydef>
     <keydef keys="gitlab.fork_project" href="gitlab/gitlab.fork_project.png" format="png"></keydef>
     <keydef keys="gitlab.git_branch_model" href="gitlab/gitlab.git_branch_model.png" format="png"></keydef>
@@ -73,8 +75,8 @@
     <keydef keys="gitlab.merge_request_target_project" href="gitlab/gitlab.merge_request_target_project.png" format="png"></keydef>
     <keydef keys="gitlab.merge_request_title" href="gitlab/gitlab.merge_request_title.png" format="png"></keydef>
     <keydef keys="gitlab.MR_cherry-pick" href="gitlab/gitlab.MR_cherry-pick.png" format="png"></keydef>
-    <keydef keys="gitlab.new_branch" href="gitlab/gitlab.new_branch.png" format="png"></keydef>
     <keydef keys="gitlab.new_project" href="gitlab/gitlab.new_project.png" format="png"></keydef>
+    <keydef keys="gitlab.project_configuration" href="gitlab/gitlab.project_configuration.jpeg" format="jpeg"></keydef>
     <keydef keys="gitlab.project_name" href="gitlab/gitlab.project_name.png" format="png"></keydef>
     <keydef keys="gitlab.project_URL" href="gitlab/gitlab.project_URL.png" format="png"></keydef>
     <keydef keys="gitlab.protected_branches_settings" href="gitlab/gitlab.protected_branches_settings.png" format="png"></keydef>
@@ -85,9 +87,9 @@
     <keydef keys="gitlab.resolve_merge_conflicts_button" href="gitlab/gitlab.resolve_merge_conflicts_button.png" format="png"></keydef>
     <keydef keys="gitlab.settings_merge_requests" href="gitlab/gitlab.settings_merge_requests.png" format="png"></keydef>
     <keydef keys="gitlab.settings_repository" href="gitlab/gitlab.settings_repository.png" format="png"></keydef>
-    <keydef keys="gitlab.source_branch" href="gitlab/gitlab.source_branch.png" format="png"></keydef>
     <keydef keys="gitlab.squash_commits_when_merging" href="gitlab/gitlab.squash_commits_when_merging.png" format="png"></keydef>
-    <keydef keys="gitlab.tags" href="gitlab/gitlab.tags.jpg" format="jpg"></keydef>   
+    <keydef keys="gitlab.tags" href="gitlab/gitlab.tags.jpg" format="jpg"></keydef>
+    <keydef keys="gitlab.upload_file" href="gitlab/gitlab.upload_file.jpg" format="jpg"></keydef>   
     <keydef keys="git_client.amend_last_commit" href="git_client/git_client.amend_last_commit.png" format="png"></keydef>
     <keydef keys="git_client.auto_push_changes" href="git_client/git_client.auto_push_changes.png" format="png"></keydef>
     <keydef keys="git_client.branch_drop-down" href="git_client/git_client.branch_drop-down.png" format="png"></keydef>
@@ -148,12 +150,14 @@
     <keydef keys="oxygen_project.settings_button" href="oxygen/oxygen_project.settings_button.png" format="png"></keydef>
     <keydef keys="oxygen_project.transform" href="oxygen/oxygen_project.transform.png" format="png"></keydef>
     <keydef keys="oxygen_project.validate" href="oxygen/oxygen_project.validate.png" format="png"></keydef>
+    <keydef keys="oxygen_transform.access_denied" href="oxygen/oxygen_transform.access_denied.png" format="png"></keydef>
     <keydef keys="oxygen_transform.apply_button" href="oxygen/oxygen_transform.apply_button.png" format="png"></keydef>
     <keydef keys="oxygen_transform.edit_button" href="oxygen/oxygen_transform.edit_button.png" format="png"></keydef>
     <keydef keys="oxygen_transform.edit_filters" href="oxygen/oxygen_transform.edit_filters.png" format="png"></keydef>
     <keydef keys="oxygen_transform.edit_parameters" href="oxygen/oxygen_transform.edit_parameters.png" format="png"></keydef>
     <keydef keys="oxygen_transform.edit_scenario" href="oxygen/oxygen_transform.edit_scenario.png" format="png"></keydef>
     <keydef keys="oxygen_transform.edit_template" href="oxygen/oxygen_transform.edit_template.png" format="png"></keydef>
+    <keydef keys="oxygen_transform.file_opened" href="oxygen/oxygen_transform.file_opened.png" format="png"></keydef>
     <keydef keys="oxygen_translation.create_fluenta_project" href="oxygen/oxygen_translation.create_fluenta_project.png" format="png"></keydef>
     <keydef keys="oxygen_translation.generate_xliff" href="oxygen/oxygen_translation.generate_xliff.png" format="png"></keydef>
     <keydef keys="oxygen_translation.import_xliff" href="oxygen/oxygen_translation.import_xliff.png" format="png"></keydef>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
 <task id="topic_nqm_rfp_dzb">
-    <title>添加现有DITA Topic到DITA Map</title>
+    <title>添加现有 DITA Topic 到 DITA Map</title>
     <taskbody>
         <steps id="steps_pjp_rmb_kzb">
             <step>
@@ -17,13 +17,10 @@
                 </choices>
             </step>
             <step importance="optional">
-                <cmd>如有需要，可在 <wintitle>Insert Topic Reference</wintitle> 窗口编辑 <uicontrol>Metadata</uicontrol>、<uicontrol>Profiling</uicontrol>、<uicontrol>Attribute</uicontrol> 等属性，或稍后选中文件，单击右键，点击 <uicontrol>Edit Properties</uicontrol> 编辑属性。</cmd>
+                <cmd>在 <wintitle>Insert Topic Reference</wintitle> 窗口编辑 <uicontrol>Metadata</uicontrol>、<uicontrol>Profiling</uicontrol>、<uicontrol>Attribute</uicontrol> 等属性，或稍后选中文件，单击右键，点击 <uicontrol>Edit Properties</uicontrol> 编辑属性。</cmd>
             </step>
             <step>
                 <cmd>点击 <uicontrol>Insert and close</uicontrol>，成功添加 DITA Topic 到 DITA Map。</cmd>
-            </step>
-            <step>
-                <cmd>使用 <uicontrol>Ctrl + S</uicontrol> 快捷键保存 DITA Map。</cmd>
             </step>
         </steps>
     </taskbody>

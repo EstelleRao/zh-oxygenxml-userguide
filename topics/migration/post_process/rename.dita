@@ -12,28 +12,36 @@
             </ul>
             </note><p>如果源文档为英文文档，转换后的DITA文件以英文标题命名。如果存在相同的标题，批量转换工具会在文件名后添加数字后缀以做区分。</p><image
             keyref="dita.converted_en-US_filename" width="400"/></section>
-        <section> <title>使用说明书料号和章节编号重命名</title> <ol>
-            <li>在<uicontrol>topics</uicontrol>文件夹下，为每本手册创建一个子文件夹，使用说明书的料号命名文件夹，例如 “8003-000001-B-0001”。</li>
-            <li>
-                <p>使用说明书料号和章节编号命名DITA文件，例如，“8003-000001-B-0001_6-4”表示“8003-000001-B-0001”手册的6.4章节，“8003-000001-B-0001_6-4-2”表示“8003-000001-B-0001”手册的6.4.2章节。</p>
-                <image placement="break" keyref="dita.naming_number" width="450"
-                id="image_fpq_w1t_xzb"/> </li>
-            </ol> </section>
-        <section> <title>使用英文标题重命名（推荐）</title>
+        <section id="section_v1p_q22_jdc">
+            <title>使用英文标题重命名（推荐）</title>
             <p>
                 <note id="note_q5n_1mj_31c" type="tip">
                     <ul id="ul_xnq_1mj_31c">
                         <li>在实际工作中，料号可能变化，文件可能需要重组、删除或新增，使用料号和章节编号命名需要调整现有DITA文件的文件名。使用英文标题命名则无需调整现有文件，更加灵活，更易维护。</li>
                     </ul>
                 </note>
-            </p> <ol>
-            <li>在<b>topics</b>文件夹下，为每本手册创建一个子文件夹，参考手册英文名称使用1-2个单词命名文件夹，例如 “reprocessing”。</li>
-            <li> <p>在单本手册的文件夹下，为每个一级章节创建一个子文件夹，参考一级标题使用1-2个单词命名文件夹，例如“group_1”。</p> <image
-                placement="break" keyref="dita.naming_semantics_levels" width="220"/> </li>
-            <li>如有必要，可根据标题层级继续创建子文件夹。但需注意，如果文件夹层级太深，DITA Map中的topic引用路径会很长，可能导致DITA Map文件太大而加载缓慢。</li>
-            <li> <p>使用1-4个单词命名DITA文件，例如“automated_cleaning”。不同文件夹下的DITA文件可以重名。</p> <image
-                placement="break" keyref="dita.naming_semantics" width="200" id="image_ysn_2zs_xzb"
-                /> </li>
+            </p>
+            <ol id="ol_w1p_q22_jdc">
+                <li>在<b>topics</b>文件夹下，为每本手册创建一个子文件夹，参考手册英文名称使用1-2个单词命名文件夹，例如 “reprocessing”。</li>
+                <li>
+                    <p>在单本手册的文件夹下，为每个一级章节创建一个子文件夹，参考一级标题使用1-2个单词命名文件夹。</p>
+                    <image placement="break" keyref="dita.naming_semantics_levels" width="220"
+                        id="image_x1p_q22_jdc"/>
+                </li>
+                <li>如有必要，可根据标题层级继续创建子文件夹。但需注意，如果文件夹层级太深，DITA Map中的topic引用路径会很长，可能导致DITA Map文件太大而加载缓慢。</li>
+                <li>
+                    <p>使用1-4个单词命名DITA文件，例如“automated_cleaning”。不同文件夹下的DITA文件可以重名。</p>
+                    <image placement="break" keyref="dita.naming_semantics" width="200"
+                        id="image_ysn_2zs_xzb"/>
+                </li>
+            </ol>
+        </section>
+        <section> <title>使用说明书料号和章节编号重命名</title> <ol>
+            <li>在<uicontrol>topics</uicontrol>文件夹下，为每本手册创建一个子文件夹，使用说明书的料号命名文件夹，例如 “8003-000001-B-0001”。</li>
+            <li>
+                <p>使用说明书料号和章节编号命名DITA文件，例如，“8003-000001-B-0001_6-4”表示“8003-000001-B-0001”手册的6.4章节，“8003-000001-B-0001_6-4-2”表示“8003-000001-B-0001”手册的6.4.2章节。</p>
+                <image placement="break" keyref="dita.naming_number" width="450"
+                id="image_fpq_w1t_xzb"/> </li>
             </ol> </section>
     </body>
 </topic>

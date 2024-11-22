@@ -1,32 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
 <task id="topic_ssm_rfp_dzb">
-    <title>添加新的DITA Topic到DITA Map</title>
+    <title>添加新的 DITA Topic 到 DITA Map</title>
     <taskbody>
         <steps id="steps_qsh_4rb_kzb">
             <step>
-                <cmd>在 <uicontrol>DITA Maps Manager</uicontrol> 视图选中预期插入位置的前一个文件或后一个文件。</cmd>
+                <cmd>在 <uicontrol>DITA Maps Manager</uicontrol> 视图，选中预期插入位置的前一个文件或后一个文件。</cmd>
             </step>
             <step>
-                <cmd>单击右键，选择 <menucascade>
-                        <uicontrol>Append Child</uicontrol>
-                        <uicontrol>New</uicontrol>
-                    </menucascade>、<menucascade>
-                        <uicontrol>Insert Before</uicontrol>
-                        <uicontrol>New</uicontrol>
-                    </menucascade>、<menucascade>
-                        <uicontrol>Insert After</uicontrol>
-                        <uicontrol>New</uicontrol>
-                    </menucascade> 或 <uicontrol>Duplicate</uicontrol> 选项创建并插入一个新文件。</cmd>
+                <cmd>插入单个文件或多个文件。</cmd>
+                <choices id="choices_ytd_vc2_jdc">
+                    <choice>单击右键，选择 <menucascade>
+                            <uicontrol>Append Child</uicontrol>
+                            <uicontrol>New</uicontrol>
+                        </menucascade>、<menucascade>
+                            <uicontrol>Insert Before</uicontrol>
+                            <uicontrol>New</uicontrol>
+                        </menucascade>、<menucascade>
+                            <uicontrol>Insert After</uicontrol>
+                            <uicontrol>New</uicontrol>
+                        </menucascade> 或 <uicontrol>Duplicate</uicontrol> 选项创建并插入一个新文件。</choice>
+                    <choice>单击右键，选择 <uicontrol>Fast Create Topics</uicontrol> 批量创建并插入多个新文件。</choice>
+                </choices>
             </step>
             <step importance="optional">
-                <cmd>单击右键，选择 <uicontrol>Fast Create Topics</uicontrol> 批量创建并插入多个新文件。</cmd>
-            </step>
-            <step>
-                <cmd>使用 <uicontrol>Ctrl + S</uicontrol> 快捷键保存DITA Map。</cmd>
-            </step>
-            <step>
-                <cmd>如有需要，可自由拖动DITA Topic，调整其在DITA Map中的顺序。</cmd>
+                <cmd>自由拖动 DITA Topic，调整其在 DITA Map 中的顺序。</cmd>
             </step>
         </steps>
     </taskbody>

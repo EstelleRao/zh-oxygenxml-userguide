@@ -27,7 +27,6 @@
     <topicref keys="old_repo_type" href="gitlab_guide/old_repo_type.dita" format="dita"/>
     <topicref keys="repo" href="gitlab_guide/repo.dita" format="dita"/>
     <topicref keys="convert" href="migration/convert/convert.dita" format="dita"/>
-    <topicref keys="create_DITA_map" href="migration/prepare/create_DITA_map.dita" format="dita"/>
     <topicref keys="create_project" href="migration/prepare/create_project.dita" format="dita"/>
     <topicref keys="migration" href="migration/migration.dita" format="dita"/>
     <topicref keys="validate_and_publish" href="migration/post_process/validate_and_publish.dita" format="dita"/>

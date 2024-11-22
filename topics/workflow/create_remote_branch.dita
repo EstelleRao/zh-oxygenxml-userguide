@@ -1,73 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
-<task id="topic_dhh_3rd_hzb">
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_dhh_3rd_hzb" xml:lang="en-US">
     <title>新建远程分支</title>
-    <shortdesc>fork 的仓库会继承源仓库的所有分支，而新建的空仓库只有一个 <codeph>master</codeph> 默认分支。多分支管理时，可重新指定默认分支。</shortdesc>
-    <taskbody>
-        <context id="context_od3_kvz_hzb">
-            <p>在实际项目中，通常使用 <codeph>develop</codeph> 分支作为主要分支，合入临时分支改动，保持最新的开发状态。</p>
-        </context>
-        <steps id="steps_a21_vrz_hzb">
-            <step>
-                <cmd>在远程仓库主页新建  <codeph>develop</codeph> 分支。</cmd>
-                <substeps id="substeps_nyz_fq1_3zb">
-                    <substep>
-                        <cmd>选择源分支。</cmd>
-                        <info>
-                            <image placement="break" keyref="gitlab.source_branch"
-                                width="400" id="image_kgm_vq1_3zb"/>
-                        </info>
-                    </substep>
-                    <substep>
-                        <cmd>点击 <menucascade>
+    <shortdesc>创建仓库后，新建 <codeph>develop</codeph> 分支作为默认分支和受保护的主分支。文档人员通过临时分支提交改动，经审核通过后可合入主分支。</shortdesc>
+    <body>
+        <ol id="steps_a21_vrz_hzb">
+            <li>
+                <p>新建 <codeph>develop</codeph> 分支。</p>
+                <ol id="ol_bj3_bry_3dc">
+                    <li>
+                        <p>在远程仓库主页点击 <uicontrol>Upload File</uicontrol>。</p>
+                        <image placement="break" keyref="gitlab.create_default_branch" width="450"
+                            id="image_ebj_l4y_3dc"/>
+                    </li>
+                    <li>
+                        <p>上传 .gitignore 文件，填写第一条提交记录和 <codeph>develop</codeph> 分支名称，点击 <uicontrol>Upload file</uicontrol> 完成第一个分支（也是默认分支）的创建。</p>
+                        <image placement="break" keyref="gitlab.upload_file" width="400"
+                            id="image_vkp_q4y_3dc"/>
+                    </li>
+                </ol>
+            </li>
+            <li importance="optional">
+                <p><b>可选</b>：新建其他分支。</p>
+                <ol id="substeps_nyz_fq1_3zb">
+                    <li>
+                        <p>点击 <menucascade>
                                 <uicontrol>+</uicontrol>
                                 <uicontrol>New branch</uicontrol>
-                            </menucascade>，基于源分支新建一个  <codeph>develop</codeph> 分支。</cmd>
-                    </substep>
-                </substeps>
-                <info>
-                    <image placement="break" keyref="gitlab.new_branch" width="400"
-                        id="image_tmv_pvz_hzb"/>
-                </info>
-            </step>
-            <step>
-                <cmd>为 <codeph>develop</codeph> 分支命名。有关命名规范，请查阅：<xref keyref="branch_naming_rule"/>。</cmd>
-                <info>
-                    <image placement="break" keyref="gitlab.branch_name" width="450"
-                        id="image_ift_qvz_hzb"/>
-                </info>
-            </step>
-            <step importance="optional">
-                <cmd>以同样的方式新建其他 <codeph>develop</codeph> 分支。</cmd>
-            </step>
-            <step>
-                <cmd>重新指定默认分支。</cmd>
-            <substeps>
-                <substep>
-                    <cmd>在左侧导航栏点击 <menucascade>
-                        <uicontrol>Settings</uicontrol>
-                        <uicontrol>Repository</uicontrol>
-                    </menucascade>。</cmd>
-                    <info>
-                        <image placement="inline" keyref="gitlab.settings_repository"
-                            height="200"/>
-                    </info>
-                </substep>
-                <substep>
-                    <cmd>在 <uicontrol>Repository Settings</uicontrol> 页面展开 <uicontrol>Branch defaults</uicontrol> 折叠面板，重新指定默认分支。默认分支不可删除。</cmd>
-                    <info>
-                        <image placement="inline" keyref="gitlab.branch_defaults"
-                            width="300"/>
-                        <image placement="inline" keyref="gitlab.default_branch"
-                            width="300"/>
-                    </info>
-                </substep>
-            </substeps>
-            </step>
-            <step>
-                <cmd>将 <codeph>develop</codeph> 分支设为受保护分支。有关操作，请查阅：<xref keyref="protected_branches"
-                    />。</cmd>
-            </step>
-        </steps>
-    </taskbody>
-</task>
+                            </menucascade>。</p>
+                        <image placement="break" keyref="gitlab.create_new_branch" width="300"
+                            id="image_tmv_pvz_hzb"/>
+                    </li>
+                    <li>
+                        <p>填写分支名称。有关命名规范，请查阅：<xref keyref="branch_naming_rule"/>。</p>
+                        <image placement="break" keyref="gitlab.branch_name" width="450"
+                            id="image_ift_qvz_hzb"/>
+                    </li>
+                </ol>
+            </li>
+            <li importance="optional">
+                <p><b>可选</b>：重新指定默认分支。</p>
+                <ol>
+                    <li><p>在左侧导航栏点击 <menucascade>
+                                <uicontrol>Settings</uicontrol>
+                                <uicontrol>Repository</uicontrol>
+                            </menucascade>。</p>
+                        <image placement="inline" keyref="gitlab.settings_repository" height="200"/>
+                    </li>
+                    <li><p>在 <uicontrol>Repository Settings</uicontrol> 页面展开 <uicontrol>Branch defaults</uicontrol> 折叠面板，重新指定默认分支。默认分支不可删除。</p>
+                        <image placement="inline" keyref="gitlab.branch_defaults" width="300"/>
+                        <image placement="inline" keyref="gitlab.default_branch" width="300"/>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p>将 <codeph>develop</codeph> 分支设为受保护分支。有关操作，请查阅：<xref keyref="protected_branches"
+                    />。</p>
+            </li>
+        </ol>
+    </body>
+</topic>

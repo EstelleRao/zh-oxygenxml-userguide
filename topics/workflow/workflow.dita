@@ -2,7 +2,7 @@
 <!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
 <concept id="writing_process">
     <title>业务流程</title>
-    <shortdesc>文档工程师使用Oxygen XML Author编写和发布说明书，使用Oxygen XML Author提供的Git插件提交说明书到远程仓库，使用GitLab对远程仓库的说明书进行版本管理（来自不同产品、不同项目、不同语言的版本）和团队协同（资源共享和评审）。</shortdesc>
+    <shortdesc>文档工程师使用 Oxygen XML Author 编写和发布说明书，使用 Oxygen XML Author 内置的 Git 客户端提交和获取说明书更新，使用 GitLab 共享、评审及管理各个版本的说明书。</shortdesc>
     <conbody>
         <p>熟练掌握以下业务流程，有助于高效完成说明书工作。</p>
         <ol id="ol_hgl_z13_d1c">
@@ -22,5 +22,12 @@
             <li><xref keyref="review_merge_request"/></li>
             <li><xref keyref="release_branch"/></li>
         </ol>
+        <note id="note_iys_kmq_3dc" type="attention">
+            <ul id="ul_pfc_lmq_3dc">
+                <li>建议在本机安装 <xref href="https://git-scm.com/downloads" format="html"
+                        scope="external" outputclass="nopage-xref"
+                        >Git 客户端</xref>，以便在 Oxygen XML Author 故障时使用本机上的 Git 客户端和其他软件完成故障排查和 Git 操作。安装 Git 客户端时，可修改默认分支名称为 <codeph>develop</codeph>。</li>
+            </ul>
+        </note>
     </conbody>
 </concept>

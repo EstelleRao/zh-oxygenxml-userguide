@@ -134,7 +134,6 @@
             </topicmeta>
             <topicref keyref="prepare_word"/>
             <topicref keyref="create_project"/>
-            <topicref keyref="create_DITA_map"/>
         </topichead>
         <topichead>
             <topicmeta>

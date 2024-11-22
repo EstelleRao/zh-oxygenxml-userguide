@@ -1,18 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE troubleshooting PUBLIC "-//OASIS//DTD DITA Troubleshooting//EN" "troubleshooting.dtd">
 <troubleshooting id="topic_xt5_tcs_4zb">
-    <title>PDF发布失败</title>
+    <title>PDF 发布失败</title>
     <troublebody>
+        <condition id="condition_g2c_yhp_3dc">
+            <title>故障现象</title>
+            <p>PDF 发布失败。</p>
+            <image placement="break" keyref="oxygen_transform.file_opened" id="image_ojd_z3p_3dc"
+                width="500"/>
+            <image placement="break" keyref="oxygen_transform.access_denied" width="500"
+                id="image_qjj_3jp_3dc"/>
+        </condition>
         <troubleSolution>
             <cause>
                 <title>可能原因</title>
-                <p>本地打开了之前发布的 index.pdf 文件。</p>
+                <p>根据故障提示确定故障原因。发布失败可能由以下一种或多种原因导致：</p>
+                <ul id="ul_bwy_kjp_3dc">
+                    <li>本地打开了 PDF 存储路径下发布过的 index.pdf 文件。</li>
+                    <li>.chemistry-cache 文件被加密。</li>
+                </ul>
             </cause>
             <remedy>
                 <title>解决方法</title>
                 <steps-unordered>
                     <step>
                         <cmd>关闭打开的 index.pdf 文件，重新发布。</cmd>
+                    </step>
+                    <step>
+                        <cmd>删除 C:\Users\CSR000xxx 路径下的 .chemistry-cache 文件，重新发布。</cmd>
                     </step>
                </steps-unordered>
             </remedy>

@@ -32,7 +32,7 @@
                                 <li>topics：存放通用公共主题，比如商标、版权、声明、文档符号说明、封底等</li>
                                 <li>components：存放通用公共组件，比如产品名称、通用的安全提示</li>
                             </ol>
-                            <p>注：metadata 用于存放所有说明书的元数据（料号），存放在 global 目录</p>
+                            <p>注：metadata 元数据定义集用于存放所有说明书的料号，存放在 global 目录</p>
                         </entry>
                     </row>
                     <row>
@@ -81,5 +81,10 @@
                 </tbody>
             </tgroup>
         </table>
+        <note id="note_bwd_lxd_jdc" type="attention">
+            <ul id="ul_dxh_lxd_jdc">
+                <li>元数据定义集用于集中存储、管理和共享自定义的条件发布属性和值，通过自定义属性和 DITA 默认属性（如 @product 属性）的关联关系，将自定义属性的值应用于 DITA 默认属性，从而满足多样化的条件发布需求。</li>
+            </ul>
+        </note>
     </body>
 </topic>

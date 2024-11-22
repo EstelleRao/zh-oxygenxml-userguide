@@ -5,3 +5,4 @@ temp
 # other files that should be ignored
 *.ini
 *.bak
+*.xpr

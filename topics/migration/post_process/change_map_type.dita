@@ -3,18 +3,19 @@
 <topic id="change_map_type">
     <title>重构DITA Map</title>
     <body>
-        <p>转换后的 DITA map 为基础的 DITA map 类型。在实际项目中，index.ditamap 和单本说明书对应的 DITA map 均使用 DITA Bookmap 类型。因此，需要手动转换 DITA map 类型。有关基础的 DITA map 和 DITA Bookmap 的说明，请查阅：<xref
+        <p>转换后的 DITA map 为基础的 DITA map 类型，需重构为 DITA Bookmap 类型。有关 DITA map 类型说明，请查阅：<xref
                 href="../../quick_start_dita/ditamap.dita"/> 和 <xref
                 href="../../quick_start_dita/bookmap.dita"/>。</p>
         <ol id="ol_d1h_kmv_m1c">
-            <li>添加转换后的 DITA map 到 index.ditamap。操作方法同添加现有 DITA topic 到 DITA map，详情请查阅：<xref
+            <li>添加转换后的 DITA map 到 index.ditamap，操作方法同添加现有 DITA topic 到 DITA map。有关详情，请查阅：<xref
                     keyref="add_existing_topic"/>。</li>
             <li>在 <uicontrol>DITA Maps Manager</uicontrol> 视图点击添加的 DITA map，单击右键，选择 <menucascade>
                     <uicontrol>Refactoring</uicontrol>
                     <uicontrol/>
                     <uicontrol>Convert DITA Map to Bookmap</uicontrol>
                 </menucascade>。</li>
-            <li>点击 <uicontrol>Preview</uicontrol>，预览重构前后的差异。如确认无误，则点击 <uicontrol>Finish</uicontrol> 完成重构操作。重构后，当前说明书的 Map 结构为 DITA Bookmap 的结构。</li>
+            <li>点击 <uicontrol>Preview</uicontrol>，预览重构前后的差异。</li>
+            <li>确认无误后，点击 <uicontrol>Finish</uicontrol> 完成重构操作。</li>
         </ol>
     </body>
 </topic>

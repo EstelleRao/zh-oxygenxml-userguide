@@ -168,6 +168,18 @@
                             </ol>
                         </entry>
                     </row>
+                    <row>
+                        <entry colsep="1" rowsep="1">2024年11月13日</entry>
+                        <entry colsep="1" rowsep="1">饶雅惠</entry>
+                        <entry colsep="1" rowsep="1">
+                            <ol id="ol_gxw_gw2_jdc">
+                                <li>业务流程：优化新建仓库和分支流程</li>
+                                <li>GitLab 协作规范：常用命令新增分支重命名、查看文件提交历史和改动历史</li>
+                                <li>迁移流程：简化操作步骤和描述</li>
+                                <li>故障排除：新增 PDF 发布失败场景和解决方法</li>
+                            </ol>
+                        </entry>
+                    </row>
                 </tbody>
             </tgroup>
         </table>

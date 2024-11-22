@@ -5,12 +5,12 @@
     <body>
         <section id="section_jlh_f4p_g1c">
             <title>错误原因</title>
-            <ol id="ol_bnh_f4p_g1c">
+            <ul id="ol_bnh_f4p_g1c">
                 <li>元素误用：安全提示使用<codeph>&lt;b></codeph>元素或<codeph>&lt;p></codeph>元素，未使用<codeph>&lt;note></codeph>元素。</li>
                 <li>错误嵌套：<codeph>&lt;table></codeph>元素和<codeph>&lt;p></codeph>元素嵌套<codeph>&lt;note></codeph>元素。<image
                         placement="break" keyref="dita.incorrect_note" width="500"
                         id="image_llh_f4p_g1c"/></li>
-            </ol>
+            </ul>
         </section>
         <section> <title>纠正方法</title>
             <ol id="ol_c1n_34p_g1c">

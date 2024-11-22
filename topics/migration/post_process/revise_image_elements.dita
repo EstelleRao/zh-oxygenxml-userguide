@@ -5,7 +5,7 @@
     <body>
         <section id="section_fvv_5np_g1c">
             <title>错误原因</title>
-            <ol id="ol_r14_14p_g1c">
+            <ul id="ol_r14_14p_g1c">
                 <li><p>生成多余元素：转换过程中从Word文档中的图片自动生成文本生成<codeph>&lt;alt></codeph>元素。</p><image
                         placement="inline" keyref="dita.alt_element" id="image_dmv_vnp_g1c"
                         width="375"/></li>
@@ -15,7 +15,7 @@
                 <li><p>引用失效：大量图片已调整位置并重命名，转换后自动生成的基于相对路径（@href属性）的图片引用失效。</p><image
                         keyref="dita.image_href" id="image_bvr_15p_g1c" width="220"/></li>
                 <li>图片位置和尺寸有误：图片太大或太小，行内图片换行显示。</li>
-            </ol>
+            </ul>
         </section>
         <section id="section_plc_nkt_xzb"
             ><title>删除 <codeph>&lt;alt></codeph> 元素</title><p>使用 <codeph>Ctrl+Shift+H</codeph> 快捷键打开查找/替换窗口，输入以下文本，指定查找/替换范围和文档格式，全局删除<codeph>&lt;alt></codeph>元素及其内容。<ul
