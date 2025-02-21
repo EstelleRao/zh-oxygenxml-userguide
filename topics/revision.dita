@@ -180,6 +180,16 @@
                             </ol>
                         </entry>
                     </row>
+                    <row>
+                        <entry colsep="1" rowsep="1">2025年2月21日</entry>
+                        <entry colsep="1" rowsep="1">Estelle Rao</entry>
+                        <entry colsep="1" rowsep="1">
+                            <ol id="ol_q3l_1f2_l2c">
+                                <li>明确定义分支类型，区分feature分支和hotfix分支应用场景</li>
+                                <li>补充分支命名规范</li>
+                            </ol>
+                        </entry>
+                    </row>
                 </tbody>
             </tgroup>
         </table>

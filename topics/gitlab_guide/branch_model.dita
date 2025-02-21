@@ -6,20 +6,20 @@
         <image placement="break" keyref="gitlab.git_branch_model" width="400"
             id="image_tmh_plz_hzb"/>
         <ul id="ul_x23_qlz_hzb">
-            <li><codeph>feature</codeph> 从 <codeph>develop</codeph> 创建，开发完成后 merge 到 <codeph>develop</codeph>，合并后删除。</li>
-            <li><codeph>hotfix</codeph> 从 <codeph>develop</codeph> 创建，修复完成后 merge 到 <codeph>develop</codeph>，合并后删除。</li>
+            <li><codeph>feature</codeph> 分支从 <codeph>develop</codeph> 分支创建，开发完成后合并回 <codeph>develop</codeph> 分支，合并后删除。</li>
+            <li><codeph>hotfix</codeph> 分支从 <codeph>develop</codeph> 分支创建，修复完成后合并回 <codeph>develop</codeph> 分支，合并后删除。</li>
         </ul>
         <section>
          <title>长期主要分支</title>
             <ul id="ul_tx3_glz_hzb">
-                <li><codeph>develop</codeph> （受保护）：长期主要分支，持续开发，最新状态，例如 <codeph>develop/K2</codeph>、<codeph>develop/K9 (default)</codeph>、<codeph>develop/KL</codeph>。主要分支均设为受保护分支，不可直接修改，只能合并临时分支改动。</li>
+                <li><codeph>develop</codeph>：作为开发主线长期维护，用于合并 <codeph>feature</codeph> 分支和 <codeph>hotfix</codeph> 分支的修改，标记和管理正式发布版本。为了保证主线仓库的稳定性和安全性，通常会将 <codeph>develop</codeph> 分支设为受保护分支，不允许直接 push 代码，只能通过创建合并请求的方式合并临时分支的修改，防止未经审核的内容直接进入正式发布版本。</li>
             </ul>
         </section>
         <section>
             <title>临时辅助分支</title>
             <ul id="ul_z44_klz_hzb">
-                <li><codeph>feature</codeph>：跟踪 ECR 变更需求，使用 ECR 编号标识分支名称，从 <codeph>develop</codeph> 创建，开发完成后 merge 到 <codeph>develop</codeph>，合并后删除。合并时勾选 <uicontrol>delete source branch</uicontrol> 自动删除远端分支，本地分支需手动删除。</li>
-                <li><codeph>hotfix</codeph>：跟踪型检注册反馈、公司内部反馈、文档组自查问题、用户反馈，从 <codeph>develop</codeph> 创建，修复完成后 merge 到 <codeph>develop</codeph>，合并后删除。如果转为 ECR 变更需求，则使用 <codeph>feature</codeph> 跟踪。</li>
+                <li><codeph>feature</codeph>：用于导入新产品、新功能、重大变更、型检反馈、注册反馈，如新增说明书、新增产品型号、新增软件功能。从 <codeph>develop</codeph> 分支创建，开发完成后合并回 <codeph>develop</codeph> 分支，合并后删除。合并时勾选 <uicontrol>delete source branch</uicontrol> 自动删除远端分支，本地分支需手动删除。</li>
+                <li><codeph>hotfix</codeph>：用于纠正错误图片、错误内容，如错别字、语法错误、表述歧义、语句不通顺等语言表述类问题或数据错误等事实类问题。从 <codeph>develop</codeph> 分支创建，修复完成后合并回 <codeph>develop</codeph>分支，合并后删除。</li>
             </ul>
         </section>
     </conbody>

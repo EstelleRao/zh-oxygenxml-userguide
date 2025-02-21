@@ -7,7 +7,7 @@
         <p>相比由随机数字和字母组合的 commit ID，有语义的标签名称更容易让人记住，比如 “B-0001”。此外，在标签说明中可以补充额外的版本信息，比如 “首次注册递交版本”。</p>
         <note id="note_u3t_xb3_rcc" type="attention">
             <ul id="ul_aly_xb3_rcc">
-                <li>标签总是和某个 commit 挂钩。如果这个 commit 既出现在 develop/K2 分支，又出现在 develop/KL 分支，那么在这两个分支上都可以看到这个标签。</li>
+                <li>在 Git 版本控制系统中，标签与提交绑定。若两个分支包含同一个提交，在这两个分支上都能看到该提交关联的标签。 </li>
             </ul>
         </note>
     </body>
